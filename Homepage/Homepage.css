@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Petemoss&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Cinzel", serif;
+}
+
+
+body{
+    height: 100%;
+    background-color: #0E2427;
+    padding: 0;
+    margin: 0;
+}
+
+
+.book {
+    position: absolute;
+	--book-height: 450px;
+	--book-ratio: 1.5;
+    top: 22%;
+    left: 40%;
+}
+/* DIE KLASSE "book" QUASI DAS GANZE BUCH */
+
+
+.book > div {
+	height: var(--book-height);
+	width: calc(var(--book-height) / var(--book-ratio));
+	overflow: auto;
+	background-color: #0a0a0a;
+	transform: scale(0.9);
+	border-radius: 6px;
+	transform-origin: left;
+}
+
+
+.book-cover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 9;
+	text-align: center;
+	background: linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+		linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+		linear-gradient(315deg, black 25%, transparent 25%),
+		linear-gradient(45deg, black 25%, transparent 25%);
+	background-size: 2em 2em;
+	background-color: #232323;
+	color: white;
+	transition: transform 2s;
+}
+
+
+.book-cover::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	right: 20px;
+	top: 0;
+	bottom: 0;
+	background-color: #b11509;
+}
+/* DAS LEERZEICHEN ÄHNLLICHE VERTIKALE BAND 
+AUF DEM BUCH */
+
+
+h2 {
+	font-size: 16px;
+}
+/* DER TEXT AUF DEM BUCH "BY TEAMFORCE"  */
+
+.separator {
+	--separator-size: 8px;
+	width: var(--separator-size);
+	height: var(--separator-size);
+	background-color: #dbd75d;
+	margin: 50px auto 60px auto;
+	border-radius: 50%;
+	position: relative;
+}
+
+.separator::after,
+.separator::before {
+	content: "";
+	position: absolute;
+	width: 12px;
+	background-color: white;
+	height: 2px;
+	top: calc(50% - 1px);
+}
+
+
+.separator::after {
+	left: 15px;
+}
+.separator::before {
+	right: 15px;
+}
+/* MITTLEREN STRICHE L UND R VON DEM 
+GELBEN PUNKT */
+
+
+.book-content {
+	transform: scale(0.9) translateY(30px);
+	background-color: white !important;
+	transition: all 1.4s 1s;
+}
+/* IST FÜR DIE HINTERGRUNDFARBE SOWIE WANN DEN INHALT 
+ERSTELLT WERDEN SOLL ZUSTÄNDIG */
+
+
+h3 {
+	padding: 30px;
+}
+/* DER TEXT IM INNEREN(ÜBERSCHRIFT) */
+
+
+.book-cover > div {
+	transition: opacity 0s 0.6s;
+}
+/* BEIM ZUKLAPPEN DES BUCHS WIRD DAS ANZEIGEN
+DES COVERS VERZÖGERT */
+
+
+.book:hover > .book-cover {
+	transform: rotateY(180deg) scale(0.9);
+}
+/* ÖFFNET DAS BUCH */
+
+
+.book:hover > .book-cover > div {
+	opacity: 0;
+}
+/* WENN DAS BUCH AUF IST WIR AUF DER LINKEN SEITE
+(DUNKLE SEITE) DIE VORDERSEITE NICHT ANGEZEIGT */
+
+
+.book:hover > .book-content {
+	transform: scale(0.9) translateY(0px);
+}
+/*VERSCHIEBT DIE WEIßE SEITE NICHT*/
+
+
+.book:hover > .book-content h3,
+.book:hover > .book-content p {
+	opacity: 1;
+}
+/* FÜR DIE SICHTBARKEIT DER ÜBERSCHRIFT AUF
+DER WEIßEN SEITE */
+
+
+.div{
+    position: fixed;
+    top: 2%;
+}
+/* "DESIGN, FREUNDEBUCH" WIRD BEIM SCROLLEN
+MITGENOMMEN */
+
+
+.link{
+    color: #fff;
+    text-decoration: none;
+}
+/* DIE "li" MIT DER KLASSE "link" WERDEN MIT 
+WEIßER SCHRIFT UND OHNE UNTERSCHTRICH WIEDERGEGEBEN */
+
+
+li {
+    display: inline-block;
+    color: #fff;
+    padding-left: 4px;
+}
+/* "li" ELEMENTE ERHALTEN DIE SCHRIFTFARBE WEIß,
+20px ABSTAND VON DER LINKEN KANTE UND 
+WERDEN ZU inline-block ELEMENTEN */
+
+
+#design{
+    background-color: #0E2427;
+    color: #fff;
+    border: none;
+}
+
+
+#design:hover{
+    cursor: pointer;
+}
+
+
+#img {
+    width: 15%;
+    height: 20%;
+    display: inline-block;
+    position: absolute;
+    top: 1%;
+    left: 43%;
+	background-color: inherit;
+}
+/* TEAMFORCE BILD */
+
+#img:hover{
+	cursor: pointer;
+} 
+
+
+#input {
+    display: inline-block;
+    position: fixed;
+    top: 5%;
+    left: 80%;
+
+}
+/* DIE SUCHFUNKTION */
+
+#input::placeholder
+{
+    text-align:right;
+}
+/* placeholder = 🔍 WIRD NACH RECHTS VERSCHOBEN */
+
+#input::target-text
+{
+    text-align:left;
+}
+/* DER TEXT IM input FELD WIRD LINKS ANFANGEN */
+
+
+
+/* --------FOOTER---------- */
+footer {
+    background-color: #F9F9F9;
+    margin-top:50%;
+}
+
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+
+.footer-section {
+flex: 1;
+min-width: 200px;
+text-align: left;
+
+}
+
+
+.footer-section h5 {
+font-size: 18px;
+margin-bottom: 20px;
+}
+
+
+.footer-section ul {
+list-style-type: none;
+padding: 0;
+}
+
+
+.footer-section ul li {
+margin-bottom: 10px;
+}
+
+
+.footer-section ul li a {
+text-decoration: none;
+color: #333;
+}
+
+
+.footer-section form {
+display: flex;
+flex-direction: column;
+}
+
+
+.footer-section input[type="email"] {
+margin-bottom: 6px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+
+.social-links a img {
+width: 24px;
+height: 24px;
+}
+/* ZSM. */
+#instagram{
+    width: 40px;
+}
+
+
+#footer-button {
+	margin-bottom: 20px;
+}
