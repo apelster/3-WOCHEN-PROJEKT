@@ -1,21 +1,19 @@
 .main-content {
     overflow: hidden;
-    max-height: 70vh;
+    max-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
-    /* padding: 20px 0; */
     background-color: #0E2427;
     width: 100vw;
-    
 }
 
 
 .Book-Background{
-    height: 100%;
     max-height: 80vh;
-    width: 80vw;
+    width: 100vw;
+    opacity: 0.5;
 }
 
 
@@ -23,11 +21,62 @@
     transform: scaleX(-1);
     rotate: 17deg;
     width: 20vw;
-    height: 60vh;
-    margin-left: 5vw;
+    height: 70vh;
+    /* margin-left: 5vw; */
+    opacity: 0.2;
+    position: relative;
+    right: -210px;
+    top: -75px;
 }
 
 .container {
     width: 90vw;
     height: 60vh;
+}
+
+
+.checkbox{
+    display: block;
+    position: absolute;
+    bottom: 120px;
+    right: 600px;
+    list-style: none;
+    text-align: right;
+}
+
+
+.Headline {
+    position: absolute;
+    top: 130px;
+    left: 480px;
+}
+
+
+.box{
+    position: relative;
+    top: 2px;
+    width: 40px;
+}
+
+
+.paragraph{
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+
+#inline{
+    display: inline-block;
+    position: absolute;
+    right: 662px;
+    top: 200px;
+}
+
+
+#inline1{
+    display: inline-block;
+    position: absolute;
+    right: 600px;
+    top: 200px;
 }
