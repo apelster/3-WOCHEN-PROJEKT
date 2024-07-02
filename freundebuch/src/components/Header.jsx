@@ -3,10 +3,7 @@ import './Header.css';
 const Header = () => {
     return (
         <header className="header">
-            <div className="logo">
-            <img src="/img/teamforce.png" alt="logo" />
-                
-            </div>
+            
             <nav>
                 <ul className="nav-links">
                     <li><a href="/" className="nav-button">Home</a></li>
@@ -15,6 +12,10 @@ const Header = () => {
                     <li><a href="/downloads" className="nav-button">Downloads</a></li>
                 </ul>
             </nav>
+            <div className="logo">
+            <img src="/img/teamforce.png" alt="logo" />
+                
+            </div>
             <div className="search-bar">
                 <input type="text" placeholder="Search..." />
             </div>
