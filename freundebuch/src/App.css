@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0A2A3D;
+  color: white;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header, footer {
+  flex-shrink: 0; /* Ensure header and footer do not shrink */
+}
+.main-content {
+  flex-grow: 1; /* Allow main content to grow and fill the available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0; /* Add padding to give some space around the flip book */
+  background-color: #0A2A3D;
+}

@@ -1,0 +1,30 @@
+.main-content {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    /* padding: 20px 0; */
+    background-color: #0E2427;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.Book-Background{
+    height: 100%;
+    width: 90vw;
+}
+
+
+.feder{
+    transform: scaleX(-1);
+    rotate: 17deg;
+    width: 10vw;
+    height: 100vh;
+}
+
+.container {
+    width: 90vw;
+    height: 90vh;
+}

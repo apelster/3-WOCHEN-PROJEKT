@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0B3D51;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #0B3D51;
+    padding: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.logo img {
+    height: 50px;
+}
+.search input {
+    padding: 5px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.book {
+    display: flex;
+    background-image: url('../Buch-removebg-preview.png');
+    background-size: cover;
+    width: 70%;
+    height: 60%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.left-page, .right-page {
+    width: 50%;
+    padding: 20px;
+}
+.image-placeholder {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.image-placeholder span {
+    color: #fff;
+}
+.info p, .right-page p {
+    margin: 10px 0;
+}
+input[type="text"], textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
