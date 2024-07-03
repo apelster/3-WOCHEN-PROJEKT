@@ -1,0 +1,30 @@
+body {
+    background-color: #0e2e2e;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+ul {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #00bfff; /* Farbe des Links */
+}

@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
-
-
-    <link rel="stylesheet" href="Kontakt.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-
-    <script src="Kontakt.js"></script>
+    <div class="container">
+        <h1>Kontakt</h1>
+        <div id="content">
+            <p>
+                Wenn Sie Fragen zu unserem Unternehmen haben oder weitere Informationen benötigen, können Sie uns gerne kontaktieren:
+            </p>
+            <p>
+                Teamforce One<br>
+                Stefan Henke<br>
+                Rheinstraße 40<br>
+                47495 Rheinberg<br>
+                Deutschland
+            </p>
+            <p>
+                Telefon:0178/8715208 <br>
+                E-Mail: henke.stefan1985@gmail.com
+            </p>
+            <p>
+                Alternativ können Sie auch das untenstehende Kontaktformular verwenden:
+            </p>
+            <form id="contact-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">E-Mail:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Nachricht:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Absenden">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
