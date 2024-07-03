@@ -1,26 +1,34 @@
 import React from 'react';
 import './Datenschutz.css';
 
+
 const Datenschutz = () => {
   return (
-    <div className="container">
-      <h1>Datenschutzerklärung</h1>
+    
+    <div className="containerD">
+      
+      <h1 id='h1D'>Datenschutzerklärung</h1>
+
       <div id="content">
-        <p>
+
+        <p className='pD'>
           Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:
         </p>
-        <p>
+
+        <p className='pD'>
           Teamforce One<br />
-          Stefan Henke<br />
+          Max Mustermann<br />
           Rheinstraße 40<br />
-          47495 Rheinberg<br />
+          08157 Kaufland<br />
           Deutschland
         </p>
-        <p>
+
+        <p className='pD'>
           Ihre Betroffenenrechte<br />
           Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:
         </p>
-        <ul>
+
+        <ul className='ulD'>
           <li>Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung,</li>
           <li>Berichtigung unrichtiger personenbezogener Daten,</li>
           <li>Löschung Ihrer bei uns gespeicherten Daten,</li>
@@ -28,10 +36,12 @@ const Datenschutz = () => {
           <li>Widerspruch gegen die Verarbeitung Ihrer Daten bei uns und</li>
           <li>Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben.</li>
         </ul>
-        <p>
+
+        <p className='pD'>
           Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.
         </p>
-        <p>
+        
+        <p className='pD'>
           Weitere Informationen finden Sie in unserer vollständigen <a href="#">Datenschutzerklärung</a>.
         </p>
       </div>

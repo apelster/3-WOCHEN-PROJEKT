@@ -8,10 +8,12 @@
 
 
 .logo img {
-    height: 100px;
-    padding-top: 2rem;
+    height: 145px;
+    padding-top: 7rem;
+    width: 150px;
     position: relative;
-    right: 100px;
+    left: -10px;
+    bottom: 15px;
 }
 
 

@@ -16,8 +16,8 @@ const MainContent = () => {
             <h1 className='Headline'>Was bin ich?</h1>
 
 
-            <p id='inline'>JA</p>
-            <p id='inline1'>NEIN</p>
+            <p id='ja'>JA</p>
+            <p id='nein'>NEIN</p>
 
             <ul className='checkbox'>
 

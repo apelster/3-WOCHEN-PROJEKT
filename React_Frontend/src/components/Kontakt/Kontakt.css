@@ -1,52 +1,60 @@
-body {
-    background-color: #0e2e2e;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
+.containerK {
+    width: 30%;
+    position: absolute;
+    left: 200px;
 }
 
-.container {
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
+
+#h1K {
+    font-size: 2rem;
+    position: absolute;
+    left: 370px;
+    top: 80px;
 }
 
-h1 {
-    font-size: 2em;
-}
-
-p {
+.pK {
     text-align: left;
-    margin-bottom: 10px;
-}
-
-form {
-    text-align: left;
-}
-
-label {
-    display: block;
     margin-bottom: 5px;
 }
 
-input, textarea {
+#contact-form {
+    text-align: left;
+}
+
+
+.inputK , #textareaK {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+    padding: 3px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 input[type="submit"] {
-    width: auto;
     background-color: #00bfff;
     color: white;
-    border: none;
+    border: 3px solid white;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
+    position: absolute;
+    left: 35%;
 }
 
 input[type="submit"]:hover {
     background-color: #008fcc;
+}
+
+
+#form-input-position {
+    position: absolute;
+    left: 600px;
+    top: 200px;
+    width: 80%;
+}
+
+
+#p-position {
+    position: absolute;
+    top: 180px;
 }

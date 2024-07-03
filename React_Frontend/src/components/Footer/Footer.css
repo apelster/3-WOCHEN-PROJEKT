@@ -3,8 +3,8 @@
     text-align: center;
     opacity: 0.4;
     overflow-y: visible;
-    position : relative;
-    bottom: 33px;
+    position : absolute;
+    top: 610px;
 }
 
 

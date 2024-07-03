@@ -1,30 +1,31 @@
-body {
-    background-color: #0e2e2e;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-.container {
-    width: 50%;
-    margin: 0 auto;
+.containerD {
+    width: 80%;
     padding: 20px;
+    font-size: 15px;
+    text-align: left;
+    position: absolute;
+    top: 130px;
+    left: 100px;
 }
 
-h1 {
+
+#h1D {
     font-size: 2em;
 }
 
-p {
+
+.ulD {
     text-align: left;
-    margin-bottom: 10px;
+    padding-left: 14px;
+    font-weight: bold;
 }
 
-ul {
-    text-align: left;
-    margin-bottom: 10px;
-}
 
 a {
-    color: #00bfff; /* Farbe des Links */
+    color: #00bfff;
+}
+
+
+.pD {
+    font-weight: bold;
 }

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
+body {
+    background-color: #0e2e2e;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
 .main-content {
     overflow: hidden;
     max-height: 100vh;
@@ -17,13 +25,6 @@
     width: 100vw;
     opacity: 0.5;
     position: relative;
-    right: 80px;
-}
-
-
-.container {
-    width: 90vw;
-    height: 60vh;
 }
 
 
@@ -35,15 +36,21 @@
     margin-left: -4vw;
     opacity: 0.2;
     position: relative;
-    right: -160px;
+    right: -240px;
     top: -75px;
 }
+
+.container {
+    width: 90vw;
+    height: 60vh;
+}
+
 
 .checkbox{
     display: block;
     position: absolute;
     bottom: 120px;
-    right: 700px;
+    right: 650px;
     list-style: none;
     text-align: right;
 }
@@ -52,7 +59,7 @@
 .Headline {
     position: absolute;
     top: 145px;
-    left: 380px;
+    left: 480px;
     font-family: "Dancing Script", cursive;
     border-bottom: 4px solid #fff;
 }
@@ -73,26 +80,26 @@
 }
 
 
-#inline{
+#ja{
     display: inline-block;
     position: absolute;
-    right: 762px;
-    top: 215px;
+    right: 672px;
+    top: 205px;
     font-family: "Dancing Script", cursive;;
 }
 
 
-#inline1{
+#nein{
     display: inline-block;
     position: absolute;
-    right: 705px;
-    top: 215px;
+    right: 615px;
+    top: 205px;
     font-family: "Dancing Script", cursive;;
 }
 
 
 .liste {
     position: relative;
-    right: 2px;
+    left: 40px;
     top: 10px;
 }
