@@ -2,8 +2,9 @@
     background-color: #0E2427;
     text-align: center;
     opacity: 0.4;
-    overflow-y: hidden;
-
+    overflow-y: visible;
+    position : relative;
+    bottom: 33px;
 }
 
 
@@ -13,10 +14,17 @@
 }
 
 
-.footer1{
-    text-align: left;
-    list-style-type: none;
-    display: inline-block;
-    padding-left: 10px;
-    color: #fff;
+.nav-bar-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 105px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 40vw ;
+    height: 10vh;
+    position: relative;
+    bottom: 27px;
+    left: 400px;
 }

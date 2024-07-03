@@ -1,18 +1,17 @@
 import React from 'react';
 import './MainContent.css';
 
-
 const MainContent = () => {
     return (
+
         <main className="main-content">
-    
 
         <div className='container'>
             <img className='feder' src="/img/feder.png" alt="" />          
         </div>
 
         <div>
-            <img className='Book-Background' src="./img/Background.png" alt=""/>
+            <img className='Book-Background' src="/img/book.png" alt=""/>
         
             <h1 className='Headline'>Was bin ich?</h1>
 
@@ -22,7 +21,7 @@ const MainContent = () => {
 
             <ul className='checkbox'>
 
-                <li>
+                <li className='liste'>
                     <label htmlFor="box">
                         <p className='paragraph'>Wie lautet dein Name ?</p>
                         <input className='box' type="checkbox" />
@@ -30,7 +29,7 @@ const MainContent = () => {
                     </label>
                 </li>
                 
-                <li>
+                <li className='liste'>
                     <label htmlFor="box">
                     <p className='paragraph'>Wie lautet dein Name ?</p>
                     <input className='box' type="checkbox" />
@@ -38,7 +37,7 @@ const MainContent = () => {
                     </label>
                 </li>
 
-                <li>
+                <li className='liste'>
                     <label htmlFor="box">
                     <p className='paragraph'>Wie lautet dein Name ?</p>
                     <input className='box' type="checkbox" />
@@ -46,7 +45,7 @@ const MainContent = () => {
                     </label>
                 </li>
           
-                <li>
+                <li className='liste'>
                     <label htmlFor="box">
                     <p className='paragraph'>Wie lautet dein Name ?</p>
                     <input className='box' type="checkbox" />
@@ -54,7 +53,7 @@ const MainContent = () => {
                     </label>
                 </li>
           
-                <li>
+                <li className='liste'>
                     <label htmlFor="box">
                     <p className='paragraph'>Wie lautet dein Name ?</p>
                     <input className='box' type="checkbox" />
@@ -62,7 +61,7 @@ const MainContent = () => {
                     </label>
                 </li>
              
-                <li>
+                <li className='liste'>
                     <label htmlFor="box">
                     <p className='paragraph'>Wie lautet dein Name ?</p>
                     <input className='box' type="checkbox" />
@@ -70,7 +69,7 @@ const MainContent = () => {
                     </label>
                 </li>
              
-                <li>
+                <li className='liste'>
                     <label htmlFor="box">
                     <p className='paragraph'>Wie lautet dein Name ?</p>
                     <input className='box' type="checkbox" />
@@ -82,7 +81,6 @@ const MainContent = () => {
             </ul>
         </div>        
         </main>
-
         
     );
 };

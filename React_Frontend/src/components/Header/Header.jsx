@@ -14,11 +14,11 @@ const Header = () => {
                 </ul>
             </nav>
             <div className="logo">
-            <img src="/img/teamforce.png" alt="logo" />
+            <img src="/img/logo.png" alt="logo" />
                 
             </div>
             <div className="search-bar">
-                <input type="text" placeholder="Search..." />
+                <input type="text" placeholder="🔍" />
             </div>
         </header>
     );
