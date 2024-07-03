@@ -1,5 +1,9 @@
 import React from 'react';
 import './Footer.css';
+// import './Impressum/Impressum.jsx'
+import './Datenschutz/Datenschutz.jsx'
+
+
 
 const Footer = () => {
 return (
@@ -9,13 +13,18 @@ return (
         <div>
             <nav>
                 <ol>
-                    <li className='footer1'>IMPRESSUM</li>
-                    <li className='footer1'>AGB</li>
-                    <li className='footer1'>DATENSCHUTZ</li>
+                    
+                <li><a href="/Impressum" className="nav-button"></a></li>
+                <li><a href="/AGB" className="nav-button">AGB</a></li>
+                <li><a href="/Datenschutz" className="nav-button">Datenschutz</a></li>
+                <li><a href="/Kontakt" className="nav-button">Kontakt</a></li>
+
                 </ol>
             </nav>
         </div>
+
     </footer>
 );
 };
+
 export default Footer;

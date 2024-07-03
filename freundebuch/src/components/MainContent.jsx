@@ -1,6 +1,7 @@
 import React from 'react';
 // import DemoBook from './FlipBook';
 import './MainContent.css';
+
 const MainContent = () => {
     return (
         <main className="main-content">
@@ -30,7 +31,7 @@ const MainContent = () => {
                 </li>
                 
                 <li>
-                    <label htmlFor="">
+                    <label htmlFor="box">
                     <p className='paragraph'>Wie lautet dein Name ?</p>
                     <input className='box' type="checkbox" />
                     <input className='box' type="checkbox" />
@@ -38,7 +39,7 @@ const MainContent = () => {
                 </li>
 
                 <li>
-                    <label htmlFor="">
+                    <label htmlFor="box">
                     <p className='paragraph'>Wie lautet dein Name ?</p>
                     <input className='box' type="checkbox" />
                     <input className='box' type="checkbox" />
@@ -46,7 +47,7 @@ const MainContent = () => {
                 </li>
           
                 <li>
-                    <label htmlFor="">
+                    <label htmlFor="box">
                     <p className='paragraph'>Wie lautet dein Name ?</p>
                     <input className='box' type="checkbox" />
                     <input className='box' type="checkbox" />
@@ -54,7 +55,7 @@ const MainContent = () => {
                 </li>
           
                 <li>
-                    <label htmlFor="">
+                    <label htmlFor="box">
                     <p className='paragraph'>Wie lautet dein Name ?</p>
                     <input className='box' type="checkbox" />
                     <input className='box' type="checkbox" />
@@ -62,7 +63,7 @@ const MainContent = () => {
                 </li>
              
                 <li>
-                    <label htmlFor="">
+                    <label htmlFor="box">
                     <p className='paragraph'>Wie lautet dein Name ?</p>
                     <input className='box' type="checkbox" />
                     <input className='box' type="checkbox" />
@@ -70,7 +71,7 @@ const MainContent = () => {
                 </li>
              
                 <li>
-                    <label htmlFor="">
+                    <label htmlFor="box">
                     <p className='paragraph'>Wie lautet dein Name ?</p>
                     <input className='box' type="checkbox" />
                     <input className='box' type="checkbox" />
