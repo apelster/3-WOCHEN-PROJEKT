@@ -1,5 +1,4 @@
 import React from 'react';
-// import DemoBook from './FlipBook';
 import './MainContent.css';
 
 
@@ -13,7 +12,7 @@ const MainContent = () => {
         </div>
 
         <div>
-            <img className='Book-Background' src="/img/Background.png" alt=""/>
+            <img className='Book-Background' src="./img/Background.png" alt=""/>
         
             <h1 className='Headline'>Was bin ich?</h1>
 
@@ -79,12 +78,9 @@ const MainContent = () => {
                     </label>
                 </li>
 
+
             </ul>
-
-            
-        </div>
-
-        
+        </div>        
         </main>
 
         
