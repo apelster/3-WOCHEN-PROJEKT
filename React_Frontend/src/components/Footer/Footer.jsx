@@ -11,7 +11,7 @@ const Footer = () => {
       <nav>
         <ul className="nav-bar-down">
           <li>
-            <Link to="/Impressum">Impressum</Link>
+          <Link to="/Impressum">Impressum</Link>
           </li>
 
           <li>

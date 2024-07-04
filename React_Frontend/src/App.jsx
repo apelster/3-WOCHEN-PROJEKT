@@ -2,25 +2,29 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./styles.css";
-import "./components/MainContent/MainContent.css"
 
-import MainContent from "./components/MainContent/MainContent.jsx";
+
+import Home from "./components/Home/Home.jsx";
 import Contact from './components/Kontakt/Kontakt.jsx'
 import Datenschutz from './components/Datenschutz/Datenschutz.jsx'
 import Impressum from './components/Impressum/Impressum.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Header from "./components/Header/Header.jsx";
+import Profil from "./components/Profil/Profil.jsx"
+import Datenschutzerklärung from "./components/Datenschutz/Datenschutzerklärung.jsx";
 
 
 function App() {
   return (
     <BrowserRouter>
     <Header></Header>
-      <Routes>
-      <Route path="/" element={<MainContent/>} />
+    <Routes>
+      <Route path="/Profil" element={<Profil/>} />
+      <Route path="/Home" element={<Home/>} />
       <Route path="/Kontakt" element={<Contact />} />
       <Route path="/Datenschutz" element={<Datenschutz />} />
       <Route path="/Impressum" element={<Impressum />} />
+      <Route path="/Datenschutzerklärung" element={<Datenschutzerklärung />} />
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

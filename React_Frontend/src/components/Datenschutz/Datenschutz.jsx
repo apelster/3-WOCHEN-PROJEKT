@@ -1,13 +1,13 @@
 import React from 'react';
 import './Datenschutz.css';
-
+import { Link } from 'react-router-dom';
 
 const Datenschutz = () => {
   return (
     
     <div className="containerD">
       
-      <h1 id='h1D'>Datenschutzerklärung</h1>
+      <h1 id='h1D'>Datenschutz</h1>
 
       <div id="content">
 
@@ -40,10 +40,12 @@ const Datenschutz = () => {
         <p className='pD'>
           Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.
         </p>
-        
-        <p className='pD'>
-          Weitere Informationen finden Sie in unserer vollständigen <a href="#">Datenschutzerklärung</a>.
-        </p>
+
+
+        <li className='pD'>
+        Weitere Informationen finden Sie in unserer vollständigen : <span></span> 
+        <Link to="/Datenschutzerklärung">Datenschutzerklärung</Link>.
+        </li>
       </div>
     </div>
   );
