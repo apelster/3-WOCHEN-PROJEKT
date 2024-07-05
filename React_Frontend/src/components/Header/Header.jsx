@@ -10,7 +10,7 @@ const Header = () => {
                     <li><Link  className='nav-button' to="/Home">Home</Link></li>
                     <li><Link  className='nav-button' to="/Profil">Profil</Link></li>
                     <li><Link  className='nav-button' to="/Freunde">Freunde</Link></li>
-                    <li><Link  className='nav-button' to="/">Profil</Link></li>
+                    <li><Link  className='nav-button' to="/">Was anderes</Link></li>
                 </ul>
             </nav>
             <div className="logo">

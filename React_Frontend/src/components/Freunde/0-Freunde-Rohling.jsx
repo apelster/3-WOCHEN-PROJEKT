@@ -1,9 +1,9 @@
 import React from 'react';
-import './Profil.css';
+import '../Profil/Profil-Design.css';
 
 import Header from '../Header/Header'
 
-    const Profil = () => {
+    const Freunde = () => {
         return (
             <main className="main-content">
                 <div className='container'>
@@ -78,4 +78,4 @@ import Header from '../Header/Header'
         );
     };
     
-    export default Profil;
+    export default Freunde;
