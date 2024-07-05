@@ -11,9 +11,9 @@
     height: 145px;
     padding-top: 7rem;
     width: 150px;
-    position: relative;
-    left: -10px;
-    bottom: 15px;
+    position: absolute;
+    left: 650px;
+    bottom: 525px;
 }
 
 
@@ -27,6 +27,8 @@
     padding: 0;
     width: 40vw ;
     height: 10vh;
+    position: absolute;
+    bottom: 600px;
 }
 
 
@@ -51,8 +53,9 @@
     align-items: center;
     height: 10vh;
     width: 20vw;
-    position: relative;
+    position: absolute;
     right: 40px;
+    bottom: 600px;
 }
 
 
