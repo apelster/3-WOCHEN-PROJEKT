@@ -1,7 +1,6 @@
 import React from 'react';
 import './Profil-Design.css';
 
-import Header from '../Header/Header'
 
     const Profil = () => {
         return (

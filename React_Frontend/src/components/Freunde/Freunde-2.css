@@ -1,0 +1,125 @@
+#Familienfoto2 {
+    display: flex;
+    position: absolute;
+    width: 29%;
+    height: 50%;
+    top: 200px;
+    left: 750px;
+    opacity: 0.5;
+}
+
+
+#Freunde2{
+    position: absolute;
+    top: 540px;
+    right: 130px;
+    border: none;
+    background-color: initial;
+    font-family: "Dancing Script";
+}
+
+
+#Zurück2{
+    position: absolute;
+    top: 540px;
+    left: 320px;
+    border: none;
+    background-color: initial;
+    font-family: "Dancing Script";
+}
+
+
+#Headline1{
+    display: flex;
+    position: absolute;
+    top: 160px;
+    left: 420px;
+    text-decoration: underline;
+}
+
+
+
+.liste1 {
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+
+
+
+.liste1 {
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+
+.liste2 {
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+
+.liste3 {
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+
+.liste4 {
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+
+.liste5 {
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+
+.liste6 {
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+
+.liste7 {
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+
+.checkbox{
+    display: block;
+    position: absolute;
+    bottom: 110px;
+    right: 650px;
+    list-style: none;
+    text-align: right;
+}
+
+
+
+#Ja{
+    display: inline-block;
+    position: absolute;
+    right: 693px;
+    top: 215px;
+    font-family: "Dancing Script", cursive;;
+}
+
+
+#Nein{
+    display: inline-block;
+    position: absolute;
+    right: 640px;
+    top: 215px;
+    font-family: "Dancing Script", cursive;;
+}

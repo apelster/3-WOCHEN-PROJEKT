@@ -1,9 +1,10 @@
 import React from 'react';
-import './Profil.css';
+import '../Profil/Profil-Design.css';
+import './Freunde-9.css';
+import { Link } from 'react-router-dom';
 
-import Header from '../Header/Header'
 
-    const Profil = () => {
+    const Freunde9 = () => {
         return (
             <main className="main-content">
                 <div className='container'>
@@ -74,8 +75,19 @@ import Header from '../Header/Header'
                         </li>
                     </ul>
                 </div>
+
+                
+
+      <button id="Freunde9">
+        <Link to="/10-Freunde">10.Seite</Link>
+      </button>
+      
+      <button id="Zurück9">
+        <Link to="/8-Freunde">8.Seite</Link>
+      </button>
+    
             </main>
         );
     };
     
-    export default Profil;
+    export default Freunde9;

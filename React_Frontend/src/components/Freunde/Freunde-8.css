@@ -1,0 +1,29 @@
+#Familienfoto {
+    display: flex;
+    width: 31%;
+    height: 50%;
+    position: absolute;
+    top: 205px;
+    left: 325px;
+    opacity: 0.7;
+}
+
+
+#Freunde8{
+    position: absolute;
+    top: 540px;
+    right: 130px;
+    background-color: initial;
+    border: none;
+    font-family: "Dancing Script";
+}
+
+
+#Zurück8{
+    position: absolute;
+    top: 540px;
+    left: 320px;
+    border: none;
+    background-color: initial;
+    font-family: "Dancing Script";
+}
