@@ -32,10 +32,15 @@
 }
 
 .generated-link {
-    margin-top: 10px; /* Abstand nach oben */
-    text-align: center; /* Zentriere den Link */
-    font-size: 1rem; /* Schriftgröße anpassen */
-    color: #000; /* Textfarbe anpassen */
+    position: absolute ;
+    top: 80px;
+    left: 25px;
+    font-size: 1rem; 
+    color: #000;
+    background-color: #fff;
+    border: 5px solid #fff;
+    border-radius: 5px;
+
 }
 
 .generated-link a {
