@@ -31,6 +31,7 @@
     bottom: 600px;
 }
 
+
 .generated-link {
     position: absolute ;
     top: 80px;
@@ -43,14 +44,18 @@
 
 }
 
+
 .generated-link a {
     color: #1a73e8; /* Farbe des Links anpassen */
     text-decoration: none; /* Link-Dekoration entfernen */
 }
 
+
 .generated-link a:hover {
     text-decoration: underline; /* Unterstreichung beim Hover */
 }
+
+
 .nav-button {
     background-color: #1A4F63;
     color: white;
@@ -66,6 +71,7 @@
 .nav-button:hover {
     background-color: #15607A;
 }
+
 
 .search-bar {
     display: flex;

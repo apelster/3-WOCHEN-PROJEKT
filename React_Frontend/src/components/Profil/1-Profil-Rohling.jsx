@@ -1,80 +1,74 @@
-import React from 'react';
-import './Profil-Design.css';
+import React from "react";
+import "./Profil-Design.css";
+
+const App = () => {
+  return (
+    
+    <div className="container">
+      <div className="book2">
+        <div className="left-page">
+          <div className="image-placeholder">
+            <label id="file2" htmlFor="file">
+              Bild einfügen
+            </label>
+            <input type="file" id="file" />
+          </div>
+
+          <div className="text-info">
+            <p>
+              Hallo! Mein Name ist{" "}
+              <input type="text" className="input1" />.
+            </p>
+            <p>
+              Ich wohne in <input type="text" className="input1" />.
+            </p>
+            <p>
+              Meine Telefonnummer ist{" "}
+              <input type="text" className="input1"/>.
+            </p>
+            <p>
+              Wir kennen uns durch?^
+              <input type="text" className="input1"/>.
+            </p>
+          </div>
+        </div>
 
 
-    const Profil = () => {
-        return (
-            <main className="main-content">
-                <div className='container'>
-                    <img className='feder' src="/img/feder.png" alt="" />
-                </div>
-    
-                <div>
-                    <img className='Book-Background' src="/img/book.png" alt=""/>
-                    <h1 className='Headline'>Was bin ich?</h1>
-                    <p id='ja'>JA</p>
-                    <p id='nein'>NEIN</p>
-    
-                    <ul className='checkbox'>
-                        <li className='liste'>
-                            <label htmlFor="question1">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question1" />
-                                <input className='box' type="radio" name="question1" />
-                            </label>
-                        </li>
-    
-                        <li className='liste'>
-                            <label htmlFor="question2">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question2" />
-                                <input className='box' type="radio" name="question2" />
-                            </label>
-                        </li>
-    
-                        <li className='liste'>
-                            <label htmlFor="question3">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question3" />
-                                <input className='box' type="radio" name="question3" />
-                            </label>
-                        </li>
-    
-                        <li className='liste'>
-                            <label htmlFor="question4">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question4" />
-                                <input className='box' type="radio" name="question4" />
-                            </label>
-                        </li>
-    
-                        <li className='liste'>
-                            <label htmlFor="question5">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question5" />
-                                <input className='box' type="radio" name="question5" />
-                            </label>
-                        </li>
-    
-                        <li className='liste'>
-                            <label htmlFor="question6">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question6" />
-                                <input className='box' type="radio" name="question6" />
-                            </label>
-                        </li>
-    
-                        <li className='liste'>
-                            <label htmlFor="question7">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question7" />
-                                <input className='box' type="radio" name="question7" />
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-            </main>
-        );
-    };
-    
-    export default Profil;
+        <div className="right-page">
+          <div className="book-page">
+            <p className="angled-text">
+              Meine Lieblingsfarbe ist{" "}
+              <input type="text" className="custom-input" />.
+            </p>
+            <p className="angled-text">
+              Mein Lieblingsessen ist{" "}
+              <input type="text" className="custom-input" />.
+            </p>
+            <p className="angled-text">
+              Mein Lieblingshobby ist{" "}
+              <input type="text" className="custom-input" />.
+            </p>
+            <p className="angled-text">
+              Mein Lieblingstier ist{" "}
+              <input type="text" className="custom-input" />.
+            </p>
+            <p className="angled-text">
+              Mein Lieblingsfilm ist{" "}
+              <input type="text" className="custom-input" />.
+            </p>
+            <p className="angled-text">
+              Mein Lieblingsbuch ist{" "}
+              <input type="text" className="custom-input" />.
+            </p>
+            <p className="angled-text">
+              Mein Traumberuf ist <input type="text" className="custom-input" />.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button className="Profilbtn">2.Seite</button>
+    </div>
+  );
+};
+export default App;
