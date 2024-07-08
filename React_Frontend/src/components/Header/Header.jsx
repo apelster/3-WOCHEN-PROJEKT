@@ -22,21 +22,21 @@ const Header = () => {
                 <ul className="nav-links">
                     <li><Link className='nav-button' to="/Home">Home</Link></li>
                     <li><Link className='nav-button' to="/Profil">Profil</Link></li>
-                    <li><Link className='nav-button' to="/1-Freunde">Freundebuch</Link></li>
+                    <li><Link className='nav-button' to="/Freunde">Freunde</Link></li>
                     <li><a href="/" className='nav-button' onClick={generateLink}>Mein Freundebuch teilen</a></li>
                 </ul>
             </nav>
+            {link && (
+                <div className="generated-link">
+                    <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
+                </div>
+            )}
             <div className="logo">
                 <img src="/img/logo.png" alt="logo" />
             </div>
             <div className="search-bar">
                 <input type="text" placeholder="🔍" />
             </div>
-            {link && (
-                <div>
-                    <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
-                </div>
-            )}
         </header>
     );
 };

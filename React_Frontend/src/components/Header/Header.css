@@ -31,7 +31,21 @@
     bottom: 600px;
 }
 
+.generated-link {
+    margin-top: 10px; /* Abstand nach oben */
+    text-align: center; /* Zentriere den Link */
+    font-size: 1rem; /* Schriftgröße anpassen */
+    color: #000; /* Textfarbe anpassen */
+}
 
+.generated-link a {
+    color: #1a73e8; /* Farbe des Links anpassen */
+    text-decoration: none; /* Link-Dekoration entfernen */
+}
+
+.generated-link a:hover {
+    text-decoration: underline; /* Unterstreichung beim Hover */
+}
 .nav-button {
     background-color: #1A4F63;
     color: white;
