@@ -1,6 +1,6 @@
 import React from "react";
 import "../Profil/Profil-Design.css"
-import "../Freunde/Freunde-2.css";
+import "./Freunde-2.css";
 import { Link } from "react-router-dom";
 
 

@@ -11,17 +11,17 @@ import Footer from './components/Footer/Footer.jsx';
 import Header from "./components/Header/Header.jsx";
 import Profil from "./components/Profil/1-Profil-Rohling.jsx";
 import Datenschutzerklärung from "./components/Datenschutz/Datenschutzerklärung.jsx";
-import Freunde1 from "./components/Freunde/1-Freunde.jsx";
-import Freunde2 from "./components/Freunde/2-Freunde.jsx";
-import Freunde3 from "./components/Freunde/3-Freunde.jsx";
-import Freunde4 from "./components/Freunde/4-Freunde.jsx";
-import Freunde5 from "./components/Freunde/5-Freunde.jsx";
-import Freunde6 from "./components/Freunde/6-Freunde.jsx";
-import Freunde7 from "./components/Freunde/7-Freunde.jsx";
-import Freunde8 from "./components/Freunde/8-Freunde.jsx";
-import Freunde9 from "./components/Freunde/9-Freunde.jsx";
-import Freunde10 from "./components/Freunde/10-Freunde.jsx";
-import Freunde11 from "./components/Freunde/11-Freunde.jsx";
+import Freunde1 from "./components/Freundebuch/1-Freunde.jsx";
+import Freunde2 from "./components/Freundebuch/2-Freunde.jsx";
+import Freunde3 from "./components/Freundebuch/3-Freunde.jsx";
+import Freunde4 from "./components/Freundebuch/4-Freunde.jsx";
+import Freunde5 from "./components/Freundebuch/5-Freunde.jsx";
+import Freunde6 from "./components/Freundebuch/6-Freunde.jsx";
+import Freunde7 from "./components/Freundebuch/7-Freunde.jsx";
+import Freunde8 from "./components/Freundebuch/8-Freunde.jsx";
+import Freunde9 from "./components/Freundebuch/9-Freunde.jsx";
+import Freunde10 from "./components/Freundebuch/10-Freunde.jsx";
+import Freunde11 from "./components/Freundebuch/11-Freunde.jsx";
 import DemoBook from "./components/FlipBook/FlipBook.jsx";
 
 
@@ -37,7 +37,7 @@ function App() {
         <Route path="/Datenschutz" element={<Datenschutz />} />
         <Route path="/Impressum" element={<Impressum />} />
         <Route path="/Datenschutzerklärung" element={<Datenschutzerklärung />} />
-        <Route path="/1-Freunde" element={<Freunde1 />}></Route>
+        <Route path="/Freundebuch" element={<Freunde1 />}></Route>
         <Route path="/2-Freunde" element={<Freunde2 />}></Route>
         <Route path="/3-Freunde" element={<Freunde3 />}></Route>
         <Route path="/4-Freunde" element={<Freunde4 />}></Route>

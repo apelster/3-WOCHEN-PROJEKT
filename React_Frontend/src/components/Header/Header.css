@@ -54,10 +54,11 @@
 .nav-button {
     background-color: #1A4F63;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     text-decoration: none;
     border: none;
     border-radius: 5px;
+    font-size: 14px;
     transition: background-color 0.3s ease;
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import "../Profil/Profil-Design.css";
-import "../Freunde/Freunde-1.css";
+import "./Freunde-1.css";
 import { Link } from "react-router-dom";
 
 const Freunde1 = () => {
