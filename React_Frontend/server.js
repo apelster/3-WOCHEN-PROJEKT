@@ -17,7 +17,7 @@ app.get('/use_link/:linkId', (req, res) => {
   const { linkId } = req.params;
   if (links[linkId]) {
     links[linkId] = false;  // Invalidate the link after use
-    res.send("This link has been used.");
+    res.redirect('http://localhost:3000/Profil');  // Weiterleitung zur gewünschten Seite
   } else {
     res.status(404).send("This link is no longer valid or has already been used.");
   }
