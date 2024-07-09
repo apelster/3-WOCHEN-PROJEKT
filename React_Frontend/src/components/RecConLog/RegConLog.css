@@ -1,0 +1,86 @@
+body {
+    background-color: #0e2e2e;
+    color: white;
+    font-family: "Dancing Script", sans-serif;
+    text-align: center;
+  }
+  
+  .main-content {
+    overflow: hidden;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: #0e2427;
+    width: 100vw;
+  }
+  
+  .Book-Background {
+    max-height: 80vh;
+    width: 100vw;
+    opacity: 0.5;
+    position: relative;
+  }
+  
+  .feder {
+    transform: scaleX(-1);
+    rotate: 17deg;
+    width: 20vw;
+    height: 70vh;
+    margin-left: -4vw;
+    opacity: 0.2;
+    position: relative;
+    right: -225px;
+    top: -75px;
+  }
+  .container {
+    width: 90vw;
+    height: 60vh;
+  }
+.register-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}.Headline {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}.register-form {
+    display: flex;
+    flex-direction: column;
+}.register-form label {
+    margin-bottom: 15px;
+    text-align: left;
+}.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}.register-button {
+    padding: 10px 20px;
+    background-color: #007BFF
+;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}.register-button:hover {
+    background-color: #0056B3
+;
+}#Zurück {
+    margin-top: 20px;
+}#Zurück a {
+    text-decoration: none;
+    color: #007BFF
+;
+}#Zurück a:hover {
+    text-decoration: underline;
+}

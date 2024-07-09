@@ -23,7 +23,9 @@ import Freunde9 from "./components/Freundebuch/9-Freunde.jsx";
 import Freunde10 from "./components/Freundebuch/10-Freunde.jsx";
 import Freunde11 from "./components/Freundebuch/11-Freunde.jsx";
 import DemoBook from "./components/FlipBook/FlipBook.jsx";
-
+import Register from "./components/RecConLog/register.jsx";
+import Login from "./components/RecConLog/login.jsx";
+import Confirm from "./components/RecConLog/confirm.jsx";
 
 function App() {
   return (
@@ -49,6 +51,9 @@ function App() {
         <Route path="/10-Freunde" element={<Freunde10 />}></Route>
         <Route path="/11-Freunde" element={<Freunde11 />}></Route>
         <Route path="/FlipBook" element={<DemoBook />}></Route>
+        <Route path="/register" element={<Register />}></Route>
+        <Route path="/confirm" element={<Confirm />}></Route>
+        <Route path="/login" element={<Login />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
