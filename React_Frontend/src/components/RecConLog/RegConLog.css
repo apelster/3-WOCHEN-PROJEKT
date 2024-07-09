@@ -1,84 +1,144 @@
-  .main-content1 {
-    overflow: hidden;
-    max-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    width: 100vw;
-  }
+.main-content1 {
+  overflow: hidden;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100vw;
+}
 
-  .Book-Background1 {
-    max-height: 80vh;
-    width: 100vw;
-    opacity: 1;
-    position: relative;
-    top: 230px;
-    left: 100px;
-  }
+.Book-Background1 {
+  max-height: 80vh;
+  width: 100vw;
+  opacity: 1;
+  position: relative;
+  top: 230px;
+  left: 100px;
+}
 
-  .feder1 {
-    transform: scaleX(-1);
-    rotate: 17deg;
-    width: 20vw;
-    height: 70vh;
-    opacity: 1;
-    position: relative;
-    bottom: 300px;
-    right: 445px;
-  }
+.feder1 {
+  transform: scaleX(-1);
+  rotate: 17deg;
+  width: 20vw;
+  height: 70vh;
+  opacity: 1;
+  position: relative;
+  bottom: 300px;
+  right: 445px;
+}
 
-  .register-container {
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 100vw;
-    text-align: center;
-    color: #0E2E2E;
-    position: absolute;
-    left: 360px;
-    bottom: 150px;
-  }
-  .Headline {
-    font-size: 24px;
-    color: #0E2E2E;
-    position: absolute;
-    left: 100px;
-    top: -5px;
-  }
-  .register-form {
-    display: flex;
-    flex-direction: column;
-  }
-  .register-form label {
-    text-align: left;
-  }
-  .input-field {
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  .register-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .register-button:hover {
-    background-color: #0056B3;
-  }
-  #Zurück {
-    position: absolute;
-    bottom: 110px;
-    left: 320px;
-  }
-  #Zurück a {
-    text-decoration: none;
-    color: #007BFF;
-  }
-  #Zurück a:hover {
-    text-decoration: underline;
-  }
+.register-container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100vw;
+  text-align: center;
+  color: #0e2e2e;
+  position: absolute;
+  left: 360px;
+  bottom: 125px;
+}
+
+
+
+.Headline1 {
+  font-size: 24px;
+  color: #0e2e2e;
+  position: absolute;
+  left: 100px;
+  top: -5px;
+}
+
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+.register-form label {
+  text-align: left;
+}
+.input-field {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.register-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.register-button:hover {
+  background-color: #0056b3;
+}
+#Zurück {
+  position: absolute;
+  bottom: 110px;
+  left: 320px;
+}
+#Zurück a {
+  text-decoration: none;
+  color: #007bff;
+}
+#Zurück a:hover {
+  text-decoration: underline;
+}
+
+/* login bereich  */
+
+
+.register-container1 {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100vw;
+  text-align: center;
+  color: #0e2e2e;
+  position: absolute;
+  left: 360px;
+  top: 280px;
+}
+
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: left;
+  color: #0e2e2e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

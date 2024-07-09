@@ -1,8 +1,9 @@
 import React from 'react';
-import './Profil.css';
+import './Profil-Design.css';
+import { Link } from "react-router-dom";
 
 
-    const Profil = () => {
+    const Profil6 = () => {
         return (
             <main className="main-content">
                 <div className='container'>
@@ -72,9 +73,21 @@ import './Profil.css';
                             </label>
                         </li>
                     </ul>
+
+                    <button className='leftbtn'>
+                    <Link to="/5-Profil">Vorherige Seite</Link>
+                </button>
+
+                
+                <button className='rightbtn'>
+                    <Link to="/7-Profil">Nächste Seite</Link>
+                </button>
+
                 </div>
+
+               
             </main>
         );
     };
     
-    export default Profil;
+    export default Profil6;

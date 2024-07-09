@@ -1,17 +1,15 @@
 import React, { useState } from "react";
-import { CognitoUserPool } from "amazon-cognito-identity-js";
-import AWS from "aws-sdk";
+import { CognitoUserPool, CognitoUserAttribute } from "amazon-cognito-identity-js";
 import "./RegConLog.css";
-import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 const poolData = {
   UserPoolId: "eu-central-1_7lxpfCbZ1", // Your user pool id here
   ClientId: "3ps9g5oni6i3d2p087gv5h5m1s", // Your app client id here
 };
-
 const userPool = new CognitoUserPool(poolData);
 const Register = () => {
   const [form, setForm] = useState({
+    username: "",
     name: "",
     family_name: "",
     email: "",
@@ -19,52 +17,56 @@ const Register = () => {
     address: "",
     password: "",
   });
-
+  const navigate = useNavigate();
+  const [message, setMessage] = useState("");
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const { name, family_name, email, birthdate, address, password } = form;
-    userPool.signUp(
-      email,
-      password,
-      [
-        { Name: "name", Value: name },
-        { Name: "family_name", Value: family_name },
-        { Name: "birthdate", Value: birthdate },
-        { Name: "address", Value: address },
-      ],
-      null,
-      (err, result) => {
-        if (err) {
-          console.error("Error signing up:", err);
-          return;
-        }
-        console.log("Sign up successful:", result);
+    const { username, name, family_name, email, birthdate, address, password } = form;
+    const attributeList = [
+      new CognitoUserAttribute({ Name: "name", Value: name }),
+      new CognitoUserAttribute({ Name: "family_name", Value: family_name }),
+      new CognitoUserAttribute({ Name: "email", Value: email }),
+      new CognitoUserAttribute({ Name: "birthdate", Value: birthdate }),
+      new CognitoUserAttribute({ Name: "address", Value: address }),
+    ];
+    userPool.signUp(username, password, attributeList, null, (err, result) => {
+      if (err) {
+        console.error("Error signing up:", err);
+        setMessage(`Error: ${err.message}`);
+        return;
       }
-    );
+      console.log("Sign up successful:", result);
+      setMessage("Registrierung erfolgreich! Sie werden zur Bestätigungsseite weitergeleitet...");
+      setTimeout(() => {
+        navigate("/confirm");
+      }, 2000); // Leitet nach 2 Sekunden zur Bestätigungsseite weiter
+    });
   };
-
   return (
     <main className="main-content1">
       <div>
-        <img
-          className="Book-Background1"
-          src="/img/book.png"
-          alt="Book Background"
-        />
-        <img className="feder1" src="/img/feder.png" alt="Feder" /> */}
+        <img className="Book-Background1" src="/img/book.png" alt="Book Background" />
+        <img className="feder1" src="/img/feder.png" alt="Feder" />
       </div>
-
-
       <div className="register-container">
-        
-        <h1 className="Headline">Registrieren</h1>
+        <h1 className="Headline1">Registrieren</h1>
         <form className="register-form" onSubmit={handleSubmit}>
+          <label htmlFor="username">
+            Benutzername:
+            <input
+              className="input-field"
+              type="text"
+              id="username"
+              name="username"
+              value={form.username}
+              onChange={handleChange}
+              required
+            />
+          </label>
           <label htmlFor="name">
             Vorname:
             <input
@@ -141,10 +143,8 @@ const Register = () => {
             Registrieren
           </button>
         </form>
+        {message && <p className="message">{message}</p>}
       </div>
-      <button id="Zurück">
-        <Link to="/confirm">Zurück</Link>
-      </button>
     </main>
   );
 };

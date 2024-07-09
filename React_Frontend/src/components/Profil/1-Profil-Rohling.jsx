@@ -1,9 +1,10 @@
 import React from "react";
 import "./Profil-Design.css";
+import { Link } from "react-router-dom";
 
-const App = () => {
+
+const Profil1 = () => {
   return (
-    
     <div className="container">
       <div className="book2">
         <div className="left-page">
@@ -16,23 +17,20 @@ const App = () => {
 
           <div className="text-info">
             <p>
-              Hallo! Mein Name ist{" "}
-              <input type="text" className="input1" />.
+              Hallo! Mein Name ist <input type="text" className="input1" />.
             </p>
             <p>
               Ich wohne in <input type="text" className="input1" />.
             </p>
             <p>
-              Meine Telefonnummer ist{" "}
-              <input type="text" className="input1"/>.
+              Meine Telefonnummer ist <input type="text" className="input1" />.
             </p>
             <p>
               Wir kennen uns durch?^
-              <input type="text" className="input1"/>.
+              <input type="text" className="input1" />.
             </p>
           </div>
         </div>
-
 
         <div className="right-page">
           <div className="book-page">
@@ -61,14 +59,18 @@ const App = () => {
               <input type="text" className="custom-input" />.
             </p>
             <p className="angled-text">
-              Mein Traumberuf ist <input type="text" className="custom-input" />.
+              Mein Traumberuf ist <input type="text" className="custom-input" />
+              .
             </p>
           </div>
+          
+      <button id="firstPagebtn">
+        <Link to="/2-Profil">Nächste Seite</Link>
+      </button>
         </div>
       </div>
 
-      <button className="Profilbtn">2.Seite</button>
     </div>
   );
 };
-export default App;
+export default Profil1;

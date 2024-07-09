@@ -254,3 +254,49 @@ body {
     text-decoration: underline;
     opacity: 0.5;
 }
+
+
+.leftbtn {
+  position: relative;
+  bottom: 95px;
+  left: -320px;
+  font-size: 12px;
+  background-color: initial;
+  border: none;
+  font-weight: 900;
+}
+
+
+
+.rightbtn {
+  position: relative;
+  bottom: 95px;
+  right: -300px;
+  font-size: 12px;
+  background-color: initial;
+  border: none;
+  font-weight: 900;
+}
+
+
+
+#firstPagebtn{
+  position: relative;
+  top: 58px;
+  left: 70px;
+  transform: rotate(10deg);
+  background-color: initial;
+  border: none;
+  font-weight: 900;
+}
+
+
+
+#lastPagebtn{
+  position: relative;
+  bottom: 95px;
+  left: -370px;
+  background-color: initial;
+  border: none;
+  font-weight: 900;
+}
