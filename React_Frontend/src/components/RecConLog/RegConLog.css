@@ -8,6 +8,7 @@
   width: 100vw;
 }
 
+
 .Book-Background1 {
   max-height: 80vh;
   width: 100vw;
@@ -16,6 +17,7 @@
   top: 230px;
   left: 100px;
 }
+
 
 .feder1 {
   transform: scaleX(-1);
@@ -28,6 +30,7 @@
   right: 445px;
 }
 
+
 .register-container {
   background: white;
   padding: 40px;
@@ -38,7 +41,7 @@
   color: #0e2e2e;
   position: absolute;
   left: 360px;
-  bottom: 125px;
+  bottom: 85px;
 }
 
 
@@ -56,15 +59,21 @@
   display: flex;
   flex-direction: column;
 }
+
+
 .register-form label {
   text-align: left;
 }
+
+
 .input-field {
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
 }
+
+
 .register-button {
   background-color: #007bff;
   color: white;
@@ -72,18 +81,26 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+
 .register-button:hover {
   background-color: #0056b3;
 }
+
+
 #Zurück {
   position: absolute;
   bottom: 110px;
   left: 320px;
 }
+
+
 #Zurück a {
   text-decoration: none;
   color: #007bff;
 }
+
+
 #Zurück a:hover {
   text-decoration: underline;
 }
@@ -101,7 +118,7 @@
   color: #0e2e2e;
   position: absolute;
   left: 360px;
-  top: 280px;
+  top: 300px;
 }
 
 
@@ -118,6 +135,8 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -130,12 +149,16 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
 .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
+
+
 .close:hover,
 .close:focus {
   color: black;

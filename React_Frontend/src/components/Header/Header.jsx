@@ -36,9 +36,11 @@ const Header = () => {
             <div className="logo">
                 <img src="/img/logo.png" alt="logo" />
             </div>
+            
             <div className="search-bar">
-                <input type="text" placeholder="🔍" />
+                <input type="text" placeholder="🔍" name="search"/>
             </div>
+
         </header>
     );
 };

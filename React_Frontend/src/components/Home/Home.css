@@ -1,0 +1,80 @@
+#browndiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+#Brownbook {
+  position: absolute;
+  top: 25px;
+  left: 260px;
+  width: 62%;
+}
+
+
+#federhome {
+  position: absolute;
+  right: 200px;
+  top:120px;
+  width: 26%;
+  opacity: 0.4;
+}
+
+
+#h1Home{
+    display: inline-block;
+    position: relative;
+    top: 140px;
+    left: 70px;
+    transform: rotate(-15deg);
+}
+
+
+#LoginHome {
+  position: relative;
+  bottom: -230px;
+  right: 15px;
+  transform: rotate(-15deg);
+  font-size: 18px;
+  font-family: "Dancing Script", Arial, Helvetica, sans-serif;
+  background-color: inherit;
+  border: 5px solid inherit;
+  border-radius: 50px;
+  cursor: pointer;
+
+}
+
+
+#RegistrierungHome {
+  position: relative;
+  bottom: -310px;
+  right: 75px;
+  transform: rotate(-15deg);
+  font-size: 20px;
+  font-family: "Dancing Script", Arial, Helvetica, sans-serif;
+  background-color: inherit;
+  border: 5px solid inherit;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+#LinkHome {
+  position: relative;
+  bottom: -390px;
+  right: 160px;
+  transform: rotate(-15deg);
+  font-size: 18px;
+  width: 8.2%;
+  font-family: "Dancing Script", Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  color: rgb(0, 200, 255);
+  background-color: inherit;
+  border: 5px solid inherit;
+  border-radius: 50px;
+  cursor: pointer;
+
+}
