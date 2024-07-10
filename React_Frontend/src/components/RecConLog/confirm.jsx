@@ -46,7 +46,7 @@ const Confirm = () => {
         <img className="feder1" src="/img/feder.png" alt="Feder" />
       </div>
       <div className="register-container">
-        <h1 className="Headline">Bestätigen</h1>
+        <h1 className="Headline1">Bestätigen</h1>
         <form className="register-form" onSubmit={handleSubmit}>
           <label htmlFor="username">
             Benutzername:

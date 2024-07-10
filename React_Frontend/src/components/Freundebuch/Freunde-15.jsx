@@ -1,103 +1,90 @@
 import React from "react";
-import "../Profil/Profil-Design.css"
-import "./Freunde-2.css";
+import "../Profil/Profil-Design.css";
+import "./Freunde-15.css";
+
 import { Link } from "react-router-dom";
 
-
-const Freunde2 = () => {
+const Freunde15 = () => {
   return (
     <main className="main-content">
       <div className="container">
-        <img className="feder" src="/img/feder.png" alt="Foto von einer Feder" />
+        <img className="feder" src="/img/feder.png" alt="" />
       </div>
 
       <div>
-
-      <img className="Book-Background" src="/img/book.png" alt="" />
-
-      <img
-        id="Familienfoto2"
-        src="/img/Familienfoto_2-removebg-preview.png"
-        alt="Familienfoto"
-      />      
-
-      <h1 id="Headline1">Ich hab noch nie?</h1>
-
-      <p id="Ja">Ja</p>
-      <p id="Nein">Nein</p>
-
+        <img className="Book-Background" src="/img/book.png" alt="" />
+        <h1 className="Headline">Was bin ich?</h1>
+        <p id="ja">JA</p>
+        <p id="nein">NEIN</p>
 
         <ul className="checkbox">
-          <li className="liste1">
+          <li className="liste">
             <label htmlFor="question1">
-              <p className="paragraph"></p>
+              <p className="paragraph">Wie lautet dein Name ?</p>
               <input className="box" type="radio" name="question1" />
               <input className="box" type="radio" name="question1" />
             </label>
           </li>
 
-          <li className="liste2">
+          <li className="liste">
             <label htmlFor="question2">
-              <p className="paragraph"></p>
+              <p className="paragraph">Wie lautet dein Name ?</p>
               <input className="box" type="radio" name="question2" />
               <input className="box" type="radio" name="question2" />
             </label>
           </li>
 
-          <li className="liste3">
+          <li className="liste">
             <label htmlFor="question3">
-              <p className="paragraph"></p>
+              <p className="paragraph">Wie lautet dein Name ?</p>
               <input className="box" type="radio" name="question3" />
               <input className="box" type="radio" name="question3" />
             </label>
           </li>
 
-          <li className="liste4">
+          <li className="liste">
             <label htmlFor="question4">
-              <p className="paragraph"></p>
+              <p className="paragraph">Wie lautet dein Name ?</p>
               <input className="box" type="radio" name="question4" />
               <input className="box" type="radio" name="question4" />
             </label>
           </li>
 
-          <li className="liste5">
+          <li className="liste">
             <label htmlFor="question5">
-              <p className="paragraph"></p>
+              <p className="paragraph">Wie lautet dein Name ?</p>
               <input className="box" type="radio" name="question5" />
               <input className="box" type="radio" name="question5" />
             </label>
           </li>
 
-          <li className="liste6">
+          <li className="liste">
             <label htmlFor="question6">
-              <p className="paragraph"></p>
+              <p className="paragraph">Wie lautet dein Name ?</p>
               <input className="box" type="radio" name="question6" />
               <input className="box" type="radio" name="question6" />
             </label>
           </li>
 
-          <li className="liste7">
+          <li className="liste">
             <label htmlFor="question7">
-              <p className="paragraph"></p>
+              <p className="paragraph">Wie lautet dein Name ?</p>
               <input className="box" type="radio" name="question7" />
               <input className="box" type="radio" name="question7" />
             </label>
           </li>
         </ul>
+
+        <button id="Freunde15">
+          <Link to="/16-Freunde">16.Seite</Link>
+        </button>
+
+        <button id="Zurück15">
+          <Link to="/14-Freunde">14.Seite</Link>
+        </button>
       </div>
-
-
-      <button id="Freunde2">
-        <Link to="/3-Freunde">3.Seite</Link>
-      </button>
-
-
-      <button id="Zurück2">
-        <Link to="/Freundebuch">1.Seite</Link>
-      </button>
-    
     </main>
   );
 };
 
-export default Freunde2;
+export default Freunde15;

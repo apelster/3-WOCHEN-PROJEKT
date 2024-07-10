@@ -1,19 +1,26 @@
-#Familienfoto {
-    display: flex;
-    width: 31%;
-    height: 50%;
+#frdiv {
     position: absolute;
-    top: 205px;
-    left: 325px;
-    opacity: 0.7;
+    bottom: 35px;
+    height: 81%;
+    width: 1300px;
+}
+
+
+#frbook{   
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
 }
 
 
 #Freunde{
     position: absolute;
-    top: 540px;
-    right: 130px;
+    top: 440px;
+    right: 250px;
     border: none;
-    background-color: initial;
+    background-color: inherit;
     font-family: "Dancing Script";
+    font-size: 17px;
+    text-decoration: underline;
+    opacity: 1;
 }

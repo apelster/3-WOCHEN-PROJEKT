@@ -21,10 +21,10 @@ const Header = () => {
             <nav>
                 <ul className="nav-links">
                     <li><Link className='nav-button' to="/Home">Home</Link></li>
-                    <li><Link className='nav-button' to="/1-Profil">Profil</Link></li>
+                    <li><Link className='nav-button' to="/Profil">Profil</Link></li>
                     <li><Link className='nav-button' to="/Freundebuch">Freundebuch</Link></li>
                     <li><a href="/" className='nav-button' onClick={generateLink}>Mein Freundebuch teilen</a></li>
-                    <li><Link className='nav-button' to="/Freunde">Meine Freunde</Link></li>
+                    <li><Link className='nav-button' to="/MeineFreunde">Meine Freunde</Link></li>
 
                 </ul>
             </nav>
