@@ -1,143 +1,143 @@
-#h1DE1{
+/* Überschrift zentrieren, absolute Positionierung entfernt */
+#h1DE1 {
     text-align: center;
-    position: absolute;
-    top: 125px;
-    left: 550px;
+    margin-top: 125px; /* Abstand nach oben */
     font-size: 20px;
 }
 
+/* Allgemeine Einstellungen, absolute Positionierung entfernt, Breite angepasst */
 #Allg {
-    display: inline-block ;
-    position: absolute;
-    top: 170px;
+    display: block;
+    margin-top: 20px; /* Abstand nach oben */
     text-align: left;
-    left: 20px;
-    width: 25%;
+    width: 100%; /* Volle Breite */
     font-size: 10px;
     font-weight: bold;
-}  
+}
 
-/* -------------------- */
-
-#ZugD{
-    display: inline-block;
-    position: absolute;
-    top: 310px;
-    left: 20px;
-    width: 100%;
+/* ZugD Einstellungen, absolute Positionierung entfernt */
+#ZugD {
+    display: block;
+    margin-top: 20px; /* Abstand nach oben */
+    width: 100%; /* Volle Breite */
     font-size: 10px;
     font-weight: bold;
     text-align: left;
 }
 
-.ulDE1{
+/* ulDE1 Einstellungen */
+.ulDE1 {
     text-align: left;
     list-style: decimal;
-    position: relative;
-    right: 30px;
+    margin-left: 20px; /* Abstand nach links */
 }
 
-/* ---------------------- */
-
-
-#Umgang{
-    display: inline-block;
-    position: absolute;
-    top: 170px;
+/* Umgang Einstellungen, absolute Positionierung entfernt */
+#Umgang {
+    display: block;
+    margin-top: 20px; /* Abstand nach oben */
     text-align: left;
-    width: 100%;
-    left: 350px;
+    width: 100%; /* Volle Breite */
     font-size: 10px;
     font-weight: bold;
 }
 
-.ulDE2{
+/* ulDE2 Einstellungen */
+.ulDE2 {
     text-align: left;
     list-style: decimal;
-    position: relative;
-    right: 30px;
+    margin-left: 20px; /* Abstand nach links */
 }
 
-/* ------------------------ */
-
-
-#Rechte{
-    display: inline-block;
-    position: absolute;
-    top: 370px;
+/* Rechte Einstellungen, absolute Positionierung entfernt */
+#Rechte {
+    display: block;
+    margin-top: 20px; /* Abstand nach oben */
     text-align: left;
-    width: 16%;
-    left: 350px;
+    width: 100%; /* Volle Breite */
     font-size: 10px;
     font-weight: bold;
 }
 
-
-/* ---------------------------- */
-
-
+/* Widerspruch Einstellungen, absolute Positionierung entfernt */
 #Widerspruch {
-    display: inline-block;
-    position: absolute;
-    top: 170px;
+    display: block;
+    margin-top: 20px; /* Abstand nach oben */
     text-align: left;
-    width: 15%;
-    left: 620px;
+    width: 100%; /* Volle Breite */
     font-size: 10px;
     font-weight: bold;
 }
 
-
-/* ------------------ */
-
-
-#Kontaktaufnahme{
-    display: inline-block;
-    position: absolute;
-    top: 370px;
+/* Kontaktaufnahme Einstellungen, absolute Positionierung entfernt */
+#Kontaktaufnahme {
+    display: block;
+    margin-top: 20px; /* Abstand nach oben */
     text-align: left;
-    width: 12%;
-    left: 620px;
+    width: 100%; /* Volle Breite */
     font-size: 10px;
     font-weight: bold;
 }
 
-/* ----------------------------- */
-
+/* Speicherung Einstellungen, absolute Positionierung entfernt */
 #Speicherung {
-    display: inline-block;
-    position: absolute;
-    top: 170px;
+    display: block;
+    margin-top: 20px; /* Abstand nach oben */
     text-align: left;
-    width: 11%;
-    left: 870px;
+    width: 100%; /* Volle Breite */
     font-size: 10px;
     font-weight: bold;
 }
 
-/* ------------------------- */
-
-
+/* Änderungen Einstellungen, absolute Positionierung entfernt */
 #Änderungen {
-    display: inline-block;
-    position: absolute;
-    top: 340px;
+    display: block;
+    margin-top: 20px; /* Abstand nach oben */
     text-align: left;
-    width: 11%;
-    left: 870px;
+    width: 100%; /* Volle Breite */
     font-size: 10px;
     font-weight: bold;
 }
 
-/* --------------------------- */
-
+/* Löschung Einstellungen, absolute Positionierung entfernt */
 #Löschung {
-    display: inline-block;
-    position: absolute;
-    top: 166px;
+    display: block;
+    margin-top: 20px; /* Abstand nach oben */
     text-align: left;
-    width: 14%;
-    left: 1080px;
+    width: 100%; /* Volle Breite */
     font-size: 12.5px;
     font-weight: bold;
+}
+
+/* Media Queries für verschiedene Bildschirmgrößen */
+@media (max-width: 768px) {
+    #h1DE1 {
+        font-size: 18px; /* Schriftgröße reduziert */
+        margin-top: 100px; /* Abstand nach oben reduziert */
+    }
+    
+    #Allg, #ZugD, #Umgang, #Rechte, #Widerspruch, #Kontaktaufnahme, #Speicherung, #Änderungen, #Löschung {
+        font-size: 9px; /* Schriftgröße reduziert */
+        margin-top: 15px; /* Abstand nach oben reduziert */
+    }
+    
+    .ulDE1, .ulDE2 {
+        margin-left: 15px; /* Abstand nach links reduziert */
+    }
+}
+
+@media (max-width: 480px) {
+    #h1DE1 {
+        font-size: 16px; /* Schriftgröße weiter reduziert */
+        margin-top: 80px; /* Abstand nach oben weiter reduziert */
+    }
+    
+    #Allg, #ZugD, #Umgang, #Rechte, #Widerspruch, #Kontaktaufnahme, #Speicherung, #Änderungen, #Löschung {
+        font-size: 8px; /* Schriftgröße weiter reduziert */
+        margin-top: 10px; /* Abstand nach oben weiter reduziert */
+    }
+    
+    .ulDE1, .ulDE2 {
+        margin-left: 10px; /* Abstand nach links weiter reduziert */
+    }
 }
