@@ -51,9 +51,9 @@ const Login = () => {
     cognitoUser.authenticateUser(authenticationDetails, {
       onSuccess: (result) => {
         console.log("Login successful:", result);
-        setMessage("Login erfolgreich! Sie werden zur Startseite weitergeleitet...");
+        setMessage("Login erfolgreich! Sie werden zur Profilseite weitergeleitet...");
         setTimeout(() => {
-          navigate("/home");
+          navigate("/Profil");
         }, 2000); // Leitet nach 2 Sekunden zur gewünschten Seite weiter
       },
       onFailure: (err) => {

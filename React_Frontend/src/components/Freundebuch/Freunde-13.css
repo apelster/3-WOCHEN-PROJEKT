@@ -16,3 +16,97 @@
     background-color: initial;
     font-family: "Dancing Script";
 }
+
+
+
+#Headline6 {
+    position: absolute;
+    top: 150px;
+    left: 325px;
+    text-decoration: underline;
+  }
+  
+  
+  #paragraph31 {
+    position: relative;
+    top: 0px;
+    display: inline-block;
+    left: 210px;
+    font-size: 20px;
+  }
+  
+  
+  #input31 {
+    position: relative;
+    left: 530px;
+    top: 0px;
+    width: 130px;
+  }
+  
+  
+  #paragraph32{
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    left: 380px;
+    font-size: 20px;
+  }
+  
+  
+  #input32 {
+    position: relative;
+    left: 530px;
+    top: -5px;
+    width: 130px;
+  }
+  
+  
+  #paragraph33 {
+    position: relative;
+    top: -25px;
+    display: inline-block;
+    left: 390px;
+    font-size: 20px;
+  }
+  
+  
+  #input33 {
+    position: relative;
+    left: 530px;
+    top: -35px;
+    width: 130px;
+  }
+  
+  
+  #paragraph34 {
+    position: relative;
+    display: inline-block;
+    top: -35px;
+    left: 390px;
+    font-size: 20px;
+  }
+  
+  
+  #input34 {
+    position: relative;
+    left: 530px;
+    top: -35px;
+    width: 130px;
+  }
+  
+  
+  #paragraph35 {
+    position: relative;
+    top: -45px;
+    display: inline-block;
+    left: 380px;
+    font-size: 20px;
+  }
+  
+  
+  #input35 {
+    position: relative;
+    left: 530px;
+    top: -65px;
+    width: 130px;
+  }

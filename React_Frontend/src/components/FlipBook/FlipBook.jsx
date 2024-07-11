@@ -101,7 +101,7 @@ function DemoBook() {
             </HTMLFlipBook>
 
             <button id="ZurückFlipBook">
-        <Link to="/16-Freunde">16.Seite</Link>
+        <Link to="/20-Freunde">20.Seite</Link>
       </button>
       
         </>

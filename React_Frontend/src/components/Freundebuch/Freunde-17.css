@@ -1,4 +1,4 @@
-#Freunde15{
+#Freunde17{
     position: absolute;
     top: 540px;
     right: 130px;
@@ -8,7 +8,7 @@
 }
 
 
-#Zurück15{
+#Zurück17{
     position: absolute;
     top: 540px;
     left: 320px;
@@ -19,7 +19,7 @@
 
 
 
-#Headline7 {
+#Headline8 {
     position: absolute;
     top: 150px;
     left: 325px;
@@ -27,86 +27,86 @@
   }
   
   
-  #paragraph36 {
+  #paragraph41 {
     position: relative;
-    top: 50px;
+    top: -15px;
     display: inline-block;
     left: 380px;
     font-size: 20px;
   }
   
   
-  #input36 {
+  #input41 {
     position: relative;
     left: 530px;
-    top: 45px;
+    top: -15px;
     width: 130px;
   }
   
   
-  #paragraph37{
+  #paragraph42{
     position: relative;
-    top: 30px;
+    top: -30px;
     display: inline-block;
-    left: 380px;
+    left: 365px;
     font-size: 20px;
   }
   
   
-  #input37 {
+  #input42 {
     position: relative;
     left: 530px;
-    top: 25px;
+    top: -35px;
     width: 130px;
   }
   
   
-  #paragraph38 {
+  #paragraph43 {
     position: relative;
-    top: 5px;
+    top: -40px;
     display: inline-block;
-    left: 300px;
+    left: 350px;
     font-size: 20px;
   }
   
   
-  #input38 {
+  #input43 {
     position: relative;
     left: 530px;
-    top: 0px;
+    top: -35px;
     width: 130px;
   }
   
   
-  #paragraph39 {
+  #paragraph44 {
     position: relative;
     display: inline-block;
-    top: -20px;
-    left: 390px;
-    font-size: 20px;
-  }
-  
-  
-  #input39 {
-    position: relative;
-    left: 530px;
-    top: -25px;
-    width: 130px;
-  }
-  
-  
-  #paragraph40 {
-    position: relative;
     top: -45px;
-    display: inline-block;
-    left: 240px;
+    left: 310px;
     font-size: 20px;
   }
   
   
-  #input40 {
+  #input44 {
     position: relative;
     left: 530px;
-    top: -50px;
+    top: -55px;
+    width: 130px;
+  }
+  
+  
+  #paragraph45 {
+    position: relative;
+    top: -55px;
+    display: inline-block;
+    left: 330px;
+    font-size: 20px;
+  }
+  
+  
+  #input45 {
+    position: relative;
+    left: 530px;
+    top: -55px;
     width: 130px;
   }

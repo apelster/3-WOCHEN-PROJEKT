@@ -1,29 +1,109 @@
-#Familienfoto {
-    display: flex;
-    width: 31%;
-    height: 50%;
-    position: absolute;
-    top: 205px;
-    left: 325px;
-    opacity: 0.7;
+#Freunde3 {
+  position: absolute;
+  top: 540px;
+  right: 130px;
+  border: none;
+  background-color: initial;
+  font-family: "Dancing Script";
+}
+
+#Zurück3 {
+  position: absolute;
+  top: 540px;
+  left: 320px;
+  border: none;
+  background-color: initial;
+  font-family: "Dancing Script";
+}
+
+#Headline1 {
+  position: absolute;
+  top: 150px;
+  left: 325px;
+  text-decoration: underline;
 }
 
 
-#Freunde3{
-    position: absolute;
-    top: 540px;
-    right: 130px;
-    border: none;
-    background-color: initial;
-    font-family: "Dancing Script";
+#paragraph6 {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  left: 350px;
+  font-size: 20px;
 }
 
 
-#Zurück3{
-    position: absolute;
-    top: 540px;
-    left: 320px;
-    border: none;
-    background-color: initial;
-    font-family: "Dancing Script";
+#input6 {
+  position: relative;
+  left: 530px;
+  top: 5px;
+  width: 130px;
+}
+
+
+#paragraph7 {
+  position: relative;
+  top: -5px;
+  display: inline-block;
+  left: 300px;
+  font-size: 20px;
+}
+
+
+#input7 {
+  position: relative;
+  left: 530px;
+  top: -15px;
+  width: 130px;
+}
+
+
+#paragraph8 {
+  position: relative;
+  top: -25px;
+  display: inline-block;
+  left: 350px;
+  font-size: 20px;
+}
+
+
+#input8 {
+  position: relative;
+  left: 530px;
+  top: -35px;
+  width: 130px;
+}
+
+
+#paragraph9 {
+  position: relative;
+  display: inline-block;
+  top: -35px;
+  left: 350px;
+  font-size: 20px;
+}
+
+
+#input9 {
+  position: relative;
+  left: 530px;
+  top: -35px;
+  width: 130px;
+}
+
+
+#paragraph10 {
+  position: relative;
+  top: -35px;
+  display: inline-block;
+  left: 375px;
+  font-size: 20px;
+}
+
+
+#input10 {
+  position: relative;
+  left: 530px;
+  top: -35px;
+  width: 130px;
 }

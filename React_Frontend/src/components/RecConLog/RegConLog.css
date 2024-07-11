@@ -12,10 +12,11 @@
 .Book-Background1 {
   max-height: 80vh;
   width: 100vw;
-  opacity: 1;
+  opacity: 0.5;
   position: relative;
   top: 230px;
   left: 100px;
+  opacity: 0.5;
 }
 
 
@@ -28,6 +29,7 @@
   position: relative;
   bottom: 300px;
   right: 445px;
+  opacity: 0.5;
 }
 
 
@@ -41,7 +43,7 @@
   color: #0e2e2e;
   position: absolute;
   left: 360px;
-  bottom: 85px;
+  bottom: 155px;
 }
 
 
@@ -118,7 +120,7 @@
   color: #0e2e2e;
   position: absolute;
   left: 360px;
-  top: 300px;
+  top: 250px;
 }
 
 

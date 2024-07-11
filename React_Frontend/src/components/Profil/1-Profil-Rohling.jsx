@@ -16,7 +16,7 @@ const Profil1 = () => {
           Meine Telefonnummer ist <input type="text" className="input1" />.
         </p>
         <p>
-          Wir kennen uns durch?^
+          Ich habe Geburtstag am ?
           <input type="text" className="input1" />.
         </p>
       </div>

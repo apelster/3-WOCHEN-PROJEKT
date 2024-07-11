@@ -1,19 +1,18 @@
-
-#Freunde16{
-    position: absolute;
-    top: 540px;
-    right: 130px;
-    background-color: initial;
-    border: none;
-    font-family: "Dancing Script";
+#Freunde16 {
+  position: absolute;
+  top: 540px;
+  right: 130px;
+  background-color: initial;
+  border: none;
+  font-family: "Dancing Script";
 }
 
 
-#Zurück16{
-    position: absolute;
-    top: 540px;
-    left: 320px;
-    border: none;
-    background-color: initial;
-    font-family: "Dancing Script";
+#Zurück16 {
+  position: absolute;
+  top: 540px;
+  left: 320px;
+  border: none;
+  background-color: initial;
+  font-family: "Dancing Script";
 }

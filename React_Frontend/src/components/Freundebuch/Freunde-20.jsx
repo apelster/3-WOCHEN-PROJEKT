@@ -1,9 +1,9 @@
 import React from "react";
 import "../Profil/Profil-Design.css";
-import "./Freunde-16.css";
+import "./Freunde-20.css";
 import { Link } from "react-router-dom";
 
-const Freunde16 = () => {
+const Freunde20 = () => {
   return (
     <main className="main-content">
       <div className="container">
@@ -74,16 +74,16 @@ const Freunde16 = () => {
           </li>
         </ul>
 
-        <button id="Zurück16">
-          <Link to="/15-Freunde">15.Seite</Link>
+        <button id="Zurück20">
+          <Link to="/19-Freunde">19.Seite</Link>
         </button>
 
-        <button id="Freunde16">
-          <Link to="/17-Freunde">17.Seite</Link>
+        <button id="Freunde20">
+          <Link to="/Flipbook">Flipbook</Link>
         </button>
       </div>
     </main>
   );
 };
 
-export default Freunde16;
+export default Freunde20;

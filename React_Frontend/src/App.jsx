@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import "./styles.css";
 
@@ -36,12 +36,20 @@ import Freunde13 from "./components/Freundebuch/Freunde-13.jsx";
 import Freunde14 from "./components/Freundebuch/Freunde-14.jsx";
 import Freunde15 from "./components/Freundebuch/Freunde-15.jsx";
 import Freunde16 from "./components/Freundebuch/Freunde-16.jsx";
+import Freunde17 from "./components/Freundebuch/Freunde-17.jsx";
+import Freunde18 from "./components/Freundebuch/Freunde-18.jsx";
+import Freunde19 from "./components/Freundebuch/Freunde-19.jsx";
+import Freunde20 from "./components/Freundebuch/Freunde-20.jsx";
 
 
 function App() {
+  const location = useLocation();
+
+  const hideHeaderRoutes = ['/', '/Home', '/login', '/register', '/confirm'];
+
   return (
-    <BrowserRouter>
-      <Header />
+    <>
+      {!hideHeaderRoutes.includes(location.pathname) && <Header />}
       <Routes>
         <Route path="/Home" element={<Home />} />
         <Route path="/" element={<Home />} />
@@ -50,41 +58,46 @@ function App() {
         <Route path="/Impressum" element={<Impressum />} />
         <Route path="/Datenschutzerklärung" element={<Datenschutzerklärung />} />
 
+        <Route path="/Freundebuch" element={<Freunde1 />} />
+        <Route path="/2-Freunde" element={<Freunde2 />} />
+        <Route path="/3-Freunde" element={<Freunde3 />} />
+        <Route path="/4-Freunde" element={<Freunde4 />} />
+        <Route path="/5-Freunde" element={<Freunde5 />} />
+        <Route path="/6-Freunde" element={<Freunde6 />} />
+        <Route path="/7-Freunde" element={<Freunde7 />} />
+        <Route path="/8-Freunde" element={<Freunde8 />} />
+        <Route path="/9-Freunde" element={<Freunde9 />} />
+        <Route path="/10-Freunde" element={<Freunde10 />} />
+        <Route path="/11-Freunde" element={<Freunde11 />} />
+        <Route path="/12-Freunde" element={<Freunde12 />} />
+        <Route path="/13-Freunde" element={<Freunde13 />} />
+        <Route path="/14-Freunde" element={<Freunde14 />} />
+        <Route path="/15-Freunde" element={<Freunde15 />} />
+        <Route path="/16-Freunde" element={<Freunde16 />} />
+        <Route path="/17-Freunde" element={<Freunde17 />} />
+        <Route path="/18-Freunde" element={<Freunde18 />} />
+        <Route path="/19-Freunde" element={<Freunde19 />} />
+        <Route path="/20-Freunde" element={<Freunde20 />} />
+        
+        <Route path="/FlipBook" element={<DemoBook />} />
 
-        <Route path="/Freundebuch" element={<Freunde1 />}></Route>
-        <Route path="/2-Freunde" element={<Freunde2 />}></Route>
-        <Route path="/3-Freunde" element={<Freunde3 />}></Route>
-        <Route path="/4-Freunde" element={<Freunde4 />}></Route>
-        <Route path="/5-Freunde" element={<Freunde5 />}></Route>
-        <Route path="/6-Freunde" element={<Freunde6 />}></Route>
-        <Route path="/7-Freunde" element={<Freunde7 />}></Route>
-        <Route path="/8-Freunde" element={<Freunde8 />}></Route>
-        <Route path="/9-Freunde" element={<Freunde9 />}></Route>
-        <Route path="/10-Freunde" element={<Freunde10 />}></Route>
-        <Route path="/11-Freunde" element={<Freunde11 />}></Route>
-        <Route path="/12-Freunde" element={<Freunde12 />}></Route>
-        <Route path="/13-Freunde" element={<Freunde13 />}></Route>
-        <Route path="/14-Freunde" element={<Freunde14 />}></Route>
-        <Route path="/15-Freunde" element={<Freunde15 />}></Route>
-        <Route path="/16-Freunde" element={<Freunde16 />}></Route>
-        <Route path="/FlipBook" element={<DemoBook />}></Route>
+        <Route path="/MeineFreunde" element={<Book />} />
 
-        <Route path="/MeineFreunde" element={<Book/>}></Route>
+        <Route path="/Profil" element={<Profil1 />} />
 
-
-        <Route path="/Profil" element={<Profil1/>}></Route>
-
-
-        <Route path="/confirm" element={<Confirm />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/register" element={<Register/>}></Route>
-
-
+        <Route path="/confirm" element={<Confirm />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 
-export default App;
+const AppWrapper = () => (
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
 
+export default AppWrapper;

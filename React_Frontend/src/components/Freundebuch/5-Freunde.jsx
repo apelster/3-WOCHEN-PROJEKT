@@ -1,93 +1,72 @@
-import React from 'react';
-import '../Profil/Profil-Design.css';
-import './Freunde-5.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "../Profil/Profil-Design.css";
+import "./Freunde-5.css";
+import { Link } from "react-router-dom";
 
+const Freunde5 = () => {
+  return (
+    <main className="main-content">
+      <div className="container">
+        <img className="feder" src="/img/feder.png" alt="" />
+      </div>
 
-    const Freunde5 = () => {
-        return (
-            <main className="main-content">
-                <div className='container'>
-                    <img className='feder' src="/img/feder.png" alt="" />
-                </div>
-    
-                <div>
-                    <img className='Book-Background' src="/img/book.png" alt=""/>
-                    <h1 className='Headline'>Was bin ich?</h1>
-                    <p id='ja'>JA</p>
-                    <p id='nein'>NEIN</p>
-    
-                    <ul className='checkbox'>
-                        <li className='liste'>
-                            <label htmlFor="question1">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question1" />
-                                <input className='box' type="radio" name="question1" />
-                            </label>
-                        </li>
-    
-                        <li className='liste'>
-                            <label htmlFor="question2">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question2" />
-                                <input className='box' type="radio" name="question2" />
-                            </label>
-                        </li>
-    
-                        <li className='liste'>
-                            <label htmlFor="question3">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question3" />
-                                <input className='box' type="radio" name="question3" />
-                            </label>
-                        </li>
-    
-                        <li className='liste'>
-                            <label htmlFor="question4">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question4" />
-                                <input className='box' type="radio" name="question4" />
-                            </label>
-                        </li>
-    
-                        <li className='liste'>
-                            <label htmlFor="question5">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question5" />
-                                <input className='box' type="radio" name="question5" />
-                            </label>
-                        </li>
-    
-                        <li className='liste'>
-                            <label htmlFor="question6">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question6" />
-                                <input className='box' type="radio" name="question6" />
-                            </label>
-                        </li>
-    
-                        <li className='liste'>
-                            <label htmlFor="question7">
-                                <p className='paragraph'>Wie lautet dein Name ?</p>
-                                <input className='box' type="radio" name="question7" />
-                                <input className='box' type="radio" name="question7" />
-                            </label>
-                        </li>
-                    </ul>
-                </div>
+      <div>
+        <img className="Book-Background" src="/img/book.png" alt="" />
 
-                
+        <h1 id="Headline2">Beantworte kurz ein paar Fragen</h1>
+        
+        <ul className="input">
+          <li className="liste">
+            <label htmlFor="question1">
+              <p id="paragraph11">Welche fiktive Figur wärst du gerne für einen Tag?
+              </p>
+              <input id="input11" type="text" />
+            </label>
+          </li>
+
+          <li className="liste">
+            <label htmlFor="question2">
+              <p id="paragraph12">Was ist das Dümmste, was du <br />je gemacht hast, ohne es zu bereuen?</p>
+              <input id="input12" type="text" />
+            </label>
+          </li>
+
+          <li className="liste">
+            <label htmlFor="question3">
+              <p id="paragraph13">Wenn du ein eigenes Land gründen<br /> könntest, wie würdest du es nennen?</p>
+              <input id="input13" type="text" />
+            </label>
+          </li>
+
+          <li className="liste">
+            <label htmlFor="question4">
+              <p id="paragraph14">
+              Was ist dein Lieblingsessen, das du <br />heimlich nicht so gerne magst?
+              </p>
+              <input id="input14" type="text" />
+            </label>
+          </li>
+
+          <li className="liste">
+            <label htmlFor="question5">
+              <p id="paragraph15">
+              Was ist die verrückteste Ausrede, die du je benutzt<br /> hast, um nicht zur Schule/Arbeit zu gehen?
+              </p>
+              <input id="input15" type="text" />
+            </label>
+          </li>
+        </ul>
+      </div>
 
       <button id="Freunde5">
         <Link to="/6-Freunde">6.Seite</Link>
       </button>
-      
+
       <button id="Zurück5">
         <Link to="/4-Freunde">4.Seite</Link>
       </button>
-    
-            </main>
-        );
-    };
-    
-    export default Freunde5;
+    </main>
+  );
+};
+
+export default Freunde5;

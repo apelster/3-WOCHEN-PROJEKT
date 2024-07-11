@@ -13,64 +13,51 @@ const Freunde15 = () => {
 
       <div>
         <img className="Book-Background" src="/img/book.png" alt="" />
-        <h1 className="Headline">Was bin ich?</h1>
-        <p id="ja">JA</p>
-        <p id="nein">NEIN</p>
+        <h1 id="Headline7">Beantworte kurz ein paar Fragen</h1>
 
-        <ul className="checkbox">
+        <ul className="input">
           <li className="liste">
             <label htmlFor="question1">
-              <p className="paragraph">Wie lautet dein Name ?</p>
-              <input className="box" type="radio" name="question1" />
-              <input className="box" type="radio" name="question1" />
+              <p id="paragraph36">
+              Wenn du eine Erfindung der Vergangenheit rückgängig <br /> machen könntest, welche wäre es?
+                </p>
+              <input id="input36" type="text" />
             </label>
           </li>
 
           <li className="liste">
             <label htmlFor="question2">
-              <p className="paragraph">Wie lautet dein Name ?</p>
-              <input className="box" type="radio" name="question2" />
-              <input className="box" type="radio" name="question2" />
+              <p id="paragraph37">
+              Was ist das merkwürdigste Ritual, das du <br /> vor Prüfungen hast?
+              </p>
+              <input id="input37" type="text" />
             </label>
           </li>
 
           <li className="liste">
             <label htmlFor="question3">
-              <p className="paragraph">Wie lautet dein Name ?</p>
-              <input className="box" type="radio" name="question3" />
-              <input className="box" type="radio" name="question3" />
+              <p id="paragraph38">
+              Wenn du in einem Märchen leben könntest, <br /> welches wäre es und warum?
+              </p>
+              <input id="input38" type="text" />
             </label>
           </li>
 
           <li className="liste">
             <label htmlFor="question4">
-              <p className="paragraph">Wie lautet dein Name ?</p>
-              <input className="box" type="radio" name="question4" />
-              <input className="box" type="radio" name="question4" />
+              <p id="paragraph39">
+              Was ist das Lustigste, was du je <br /> bei einer Familienfeier erlebt hast?
+              </p>
+              <input id="input39" type="text" />
             </label>
           </li>
 
           <li className="liste">
             <label htmlFor="question5">
-              <p className="paragraph">Wie lautet dein Name ?</p>
-              <input className="box" type="radio" name="question5" />
-              <input className="box" type="radio" name="question5" />
-            </label>
-          </li>
-
-          <li className="liste">
-            <label htmlFor="question6">
-              <p className="paragraph">Wie lautet dein Name ?</p>
-              <input className="box" type="radio" name="question6" />
-              <input className="box" type="radio" name="question6" />
-            </label>
-          </li>
-
-          <li className="liste">
-            <label htmlFor="question7">
-              <p className="paragraph">Wie lautet dein Name ?</p>
-              <input className="box" type="radio" name="question7" />
-              <input className="box" type="radio" name="question7" />
+              <p id="paragraph40">
+              Wenn du ein Lied schreiben müsstest, <br /> wovon würde es handeln?
+              </p>
+              <input id="input40" type="text" />
             </label>
           </li>
         </ul>

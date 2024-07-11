@@ -24,3 +24,130 @@
     text-decoration: underline;
     opacity: 1;
 }
+
+/* 
+#ja{
+    position: absolute;
+    top: 120px;
+    left: 235px;
+}
+
+
+#nein{
+    position: absolute;
+    top: 120px;
+    left: 270px;
+} */
+
+
+.liste{
+    position: relative;
+    left: -150px;
+    top: 55px;
+}
+
+
+#Headline{
+    position: absolute;
+    top: 60px;
+    left: 235px;
+    text-decoration: underline;
+}
+
+
+.input {
+    display: block;
+    position: absolute;
+    bottom: 120px;
+    right: 650px;
+    list-style: none;
+    text-align: right;
+  }
+
+
+  #paragraph{
+    position: relative;
+    top: 35px;
+    display: inline-block;
+    left: 150px;
+    font-size: 20px;
+  }
+
+
+  #input1{
+    position: relative;
+    left: 420px;
+    top: 32px;
+    width: 130px;
+  }
+
+
+  #paragraph2{
+    position: relative;
+    top: 35px;
+    display: inline-block;
+    left: 150px;
+    font-size: 20px;
+  }
+
+
+  #input2{
+    position: relative;
+    left: 420px;
+    top: 32px;
+    width: 130px;
+  }
+
+
+  
+  #paragraph3{
+    position: relative;
+    top: 35px;
+    display: inline-block;
+    left: 235px;
+    font-size: 20px;
+  }
+
+
+  #input3{
+    position: relative;
+    left: 420px;
+    top: 32px;
+    width: 130px;
+  }
+
+
+  
+  #paragraph4{
+    position: relative;
+    display: inline-block;
+    top: 35px;
+    left: 235px;
+    font-size: 20px;
+  }
+
+
+  #input4{
+    position: relative;
+    left: 420px;
+    top: 15px;
+    width: 130px;
+  }
+
+
+  
+  #paragraph5{
+    position: relative;
+    top: 17px;
+    display: inline-block;
+    left: 260px;
+    font-size: 20px;
+  }
+
+
+  #input5{
+    position: relative;
+    left: 420px;
+    top: 17px;
+    width: 130px;
+  }
