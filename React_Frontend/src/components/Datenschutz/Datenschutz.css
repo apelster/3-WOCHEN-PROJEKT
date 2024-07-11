@@ -1,31 +1,63 @@
+/* .containerD: Die Breite auf 100% gesetzt und relative Positionierung verwendet.
+   Padding und font-size bleiben gleich. */
 .containerD {
-    width: 80%;
+    width: 100%;
     padding: 20px;
     font-size: 15px;
     text-align: left;
-    position: absolute;
+    position: relative; /* Ändern zu relative */
     top: 130px;
-    left: 100px;
+    left: 0; /* Entfernen der absoluten Positionierung */
+    margin: 0 auto; /* Zentriert den Inhalt */
 }
 
-
+/* #h1D: Schriftgröße angepasst */
 #h1D {
     font-size: 2em;
+    text-align: center; /* Überschrift zentriert */
 }
 
-
+/* .ulD: Padding bleibt gleich, Textausrichtung links */
 .ulD {
     text-align: left;
     padding-left: 14px;
     font-weight: bold;
 }
 
-
+/* a: Farbe bleibt gleich */
 a {
     color: #00bfff;
 }
 
-
+/* .pD: Textausrichtung links */
 .pD {
     font-weight: bold;
+    text-align: left;
+}
+
+/* Media Query: Anpassungen für kleinere Bildschirme */
+@media (max-width: 768px) {
+    /* .containerD: Breite reduziert, Positionierung angepasst */
+    .containerD {
+        width: 90%; /* Breite auf 90% reduziert */
+        padding: 10px; /* Padding reduziert */
+        font-size: 14px; /* Schriftgröße reduziert */
+        top: 100px; /* Abstand nach oben reduziert */
+    }
+
+    /* #h1D: Schriftgröße reduziert */
+    #h1D {
+        font-size: 1.5em;
+    }
+
+    /* .ulD: Padding und Schriftgröße angepasst */
+    .ulD {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+
+    /* .pD: Schriftgröße angepasst */
+    .pD {
+        font-size: 14px;
+    }
 }
