@@ -1,26 +1,49 @@
+/* Flexibles Container-Layout für #frdiv */
 #frdiv {
-    position: absolute;
-    bottom: 35px;
-    height: 81%;
-    width: 1300px;
+    position: relative; /* Relative Positionierung für flexibles Layout */
+    bottom: 0; /* Abstand nach unten entfernt */
+    height: auto; /* Höhe automatisch an Inhalt angepasst */
+    width: 100%; /* Breite auf 100% gesetzt */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px; /* Padding hinzugefügt */
 }
 
-
-#frbook{   
+/* Innerer Inhalt von #frdiv auf volle Breite und Höhe setzen */
+#frbook {
     height: 100%;
     width: 100%;
     opacity: 0.5;
 }
 
-
-#Freunde{
-    position: absolute;
-    top: 440px;
-    right: 250px;
+/* Button für Freunde */
+#Freunde {
+    position: relative; /* Relative Positionierung für flexibles Layout */
+    top: auto; /* Abstand nach oben entfernt */
+    right: auto; /* Abstand nach rechts entfernt */
     border: none;
     background-color: inherit;
     font-family: "Dancing Script";
     font-size: 17px;
     text-decoration: underline;
     opacity: 1;
+    margin: 20px; /* Margin hinzugefügt */
+}
+
+/* Media Queries für verschiedene Bildschirmgrößen */
+@media (max-width: 768px) {
+    #frdiv {
+        padding: 10px; /* Padding reduziert */
+    }
+
+    #Freunde {
+        font-size: 15px; /* Schriftgröße reduziert */
+    }
+}
+
+@media (max-width: 480px) {
+    #Freunde {
+        font-size: 13px; /* Schriftgröße weiter reduziert */
+    }
 }
