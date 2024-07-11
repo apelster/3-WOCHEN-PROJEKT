@@ -1,42 +1,37 @@
+/* Hauptcontainer, flexibles Layout */
 #browndiv {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
+  flex-direction: column; /* Spaltenlayout für vertikale Ausrichtung */
 }
 
-
+/* Brownbook Einstellungen, absolute Positionierung entfernt */
 #Brownbook {
-  position: absolute;
-  top: 25px;
-  left: 260px;
+  margin-top: 25px; /* Abstand nach oben */
   width: 62%;
 }
 
-
+/* Federhome Einstellungen, absolute Positionierung entfernt */
 #federhome {
-  position: absolute;
-  right: 200px;
-  top:120px;
+  margin-top: 20px; /* Abstand nach oben */
   width: 26%;
   opacity: 0.4;
 }
 
-
-#h1Home{
-    display: inline-block;
-    position: relative;
-    top: 140px;
-    left: 70px;
-    transform: rotate(-15deg);
+/* Überschrift, absolute Positionierung entfernt */
+#h1Home {
+  display: inline-block;
+  margin-top: 20px; /* Abstand nach oben */
+  transform: rotate(-15deg);
 }
 
-
+/* Login Button, absolute Positionierung entfernt */
 #LoginHome {
   position: relative;
-  bottom: -230px;
-  right: 15px;
+  margin-top: 20px; /* Abstand nach oben */
   transform: rotate(-15deg);
   font-size: 18px;
   font-family: "Dancing Script", Arial, Helvetica, sans-serif;
@@ -44,14 +39,12 @@
   border: 5px solid inherit;
   border-radius: 50px;
   cursor: pointer;
-
 }
 
-
+/* Registrierungs Button, absolute Positionierung entfernt */
 #RegistrierungHome {
   position: relative;
-  bottom: -310px;
-  right: 75px;
+  margin-top: 20px; /* Abstand nach oben */
   transform: rotate(-15deg);
   font-size: 20px;
   font-family: "Dancing Script", Arial, Helvetica, sans-serif;
@@ -61,14 +54,13 @@
   cursor: pointer;
 }
 
-
+/* Link Einstellungen, absolute Positionierung entfernt */
 #LinkHome {
   position: relative;
-  bottom: -390px;
-  right: 160px;
+  margin-top: 20px; /* Abstand nach oben */
   transform: rotate(-15deg);
   font-size: 18px;
-  width: 8.2%;
+  width: auto; /* Automatische Breite */
   font-family: "Dancing Script", Arial, Helvetica, sans-serif;
   text-decoration: underline;
   color: rgb(0, 200, 255);
@@ -76,5 +68,19 @@
   border: 5px solid inherit;
   border-radius: 50px;
   cursor: pointer;
+}
 
+/* Media Queries für verschiedene Bildschirmgrößen */
+@media (max-width: 768px) {
+  #Brownbook, #federhome, #h1Home, #LoginHome, #RegistrierungHome, #LinkHome {
+    width: 80%; /* Breite angepasst für kleinere Bildschirme */
+    font-size: 16px; /* Schriftgröße reduziert */
+  }
+}
+
+@media (max-width: 480px) {
+  #Brownbook, #federhome, #h1Home, #LoginHome, #RegistrierungHome, #LinkHome {
+    width: 100%; /* Volle Breite für sehr kleine Bildschirme */
+    font-size: 14px; /* Schriftgröße weiter reduziert */
+  }
 }
