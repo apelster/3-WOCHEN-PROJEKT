@@ -1,20 +1,58 @@
+<<<<<<< HEAD
 #Freunde9{
     position: absolute;
     top: 540px;
     right: 130px;
-    background-color: initial;
-    border: none;
-    font-family: "Dancing Script";
+=======
+/* Stil für #Familienfoto */
+#Familienfoto {
+    display: flex;
+    width: 100%; /* Volle Breite für Flexbox */
+    max-width: 31%; /* Maximale Breite begrenzt */
+    height: auto; /* Höhe automatisch anpassen */
+    margin: 20px auto; /* Zentrierung und Margin hinzugefügt */
+    opacity: 0.7;
+    position: relative; /* Absolute Positionierung entfernt */
+    top: 0; /* Zurückgesetzt */
+    left: 0; /* Zurückgesetzt */
 }
 
-
-#Zurück9{
-    position: absolute;
-    top: 540px;
-    left: 320px;
-    border: none;
+/* Stil für den #Freunde9 Button */
+#Freunde9 {
+    position: relative; /* Absolute Positionierung entfernt */
+    margin-top: 20px; /* Abstand nach oben hinzugefügt */
+>>>>>>> 773adc6edc421adba71b7d273d0032b09860da29
     background-color: initial;
+    border: none;
     font-family: "Dancing Script";
+    display: block; /* Als Blockelement dargestellt */
+    text-align: center; /* Zentriert den Text */
+}
+
+/* Stil für den #Zurück9 Button */
+#Zurück9 {
+    position: relative; /* Absolute Positionierung entfernt */
+    margin-top: 20px; /* Abstand nach oben hinzugefügt */
+    background-color: initial;
+    border: none;
+    font-family: "Dancing Script";
+    display: block; /* Als Blockelement dargestellt */
+    text-align: center; /* Zentriert den Text */
+}
+
+/* Media Queries für verschiedene Bildschirmgrößen */
+@media (max-width: 768px) {
+    #Familienfoto, #Freunde9, #Zurück9 {
+        font-size: 14px; /* Schriftgröße reduziert */
+        margin: 10px; /* Margin reduziert */
+    }
+}
+
+@media (max-width: 480px) {
+    #Familienfoto, #Freunde9, #Zurück9 {
+        font-size: 12px; /* Schriftgröße weiter reduziert */
+        margin: 5px; /* Margin weiter reduziert */
+    }
 }
 
 

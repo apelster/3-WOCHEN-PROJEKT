@@ -1,12 +1,13 @@
+/* Flipbook Container, absolute Positionierung entfernt */
 .flipbook {
-    margin: 0 auto;
+    margin: 0 auto; /* Zentriert das Element */
     box-shadow: 10px 25px 100px 1px aqua;
-    position: absolute;
-    top: 143px;
-    right: 300px;
+    /* Positionierung angepasst */
+    margin-top: 143px; /* Abstand nach oben */
+    max-width: 90%; /* Maximale Breite auf 90% des Bildschirms beschränkt */
 }
 
-
+/* Demo Page */
 .demoPage {
     width: 100%;
     height: 100%;
@@ -19,14 +20,42 @@
     border: 5px solid blue;
 }
 
-
-/* Button */
-#ZurückFlipBook{
-    position: absolute;
-    top:340px;
-    left: 20px;
+/* Button, absolute Positionierung entfernt */
+#ZurückFlipBook {
+    position: relative;
+    margin-top: 20px; /* Abstand nach oben */
     font-size: 40px;
     border: none;
     background-color: initial;
     font-family: "Dancing Script";
+}
+
+/* Media Queries für verschiedene Bildschirmgrößen */
+@media (max-width: 768px) {
+    .flipbook {
+        margin-top: 100px; /* Abstand für mittlere Bildschirme reduziert */
+    }
+    
+    .demoPage {
+        font-size: 18px; /* Schriftgröße reduziert */
+    }
+    
+    #ZurückFlipBook {
+        font-size: 35px; /* Schriftgröße reduziert */
+    }
+}
+
+@media (max-width: 480px) {
+    .flipbook {
+        margin-top: 80px; /* Abstand für kleine Bildschirme reduziert */
+        max-width: 100%; /* Maximale Breite auf 100% des Bildschirms beschränkt */
+    }
+    
+    .demoPage {
+        font-size: 16px; /* Schriftgröße weiter reduziert */
+    }
+    
+    #ZurückFlipBook {
+        font-size: 30px; /* Schriftgröße weiter reduziert */
+    }
 }

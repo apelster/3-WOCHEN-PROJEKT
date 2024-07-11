@@ -1,29 +1,32 @@
+/* Korrigierter CSS-Code für eine responsive Webseite */
+
+/* Container-Styles: Positionierung geändert zu relativer oder statischer Positionierung */
 .containerK {
     width: 30%;
-    position: absolute;
-    left: 200px;
-    top: 70px;
+    margin: 2rem auto; /* Zentriert und Abstand hinzugefügt */
+    position: relative; /* Positionierung geändert */
 }
 
-
+/* Header-Styles: Absolute Positionierung entfernt und Margin hinzugefügt */
 #h1K {
     font-size: 2rem;
-    position: absolute;
-    left: 370px;
-    top: 80px;
+    margin: 1rem 0; /* Margin hinzugefügt für Abstand */
+    text-align: center; /* Zentriert den Text */
 }
 
+/* Paragraph-Styles: Keine Änderung notwendig */
 .pK {
     text-align: left;
     margin-bottom: 5px;
 }
 
+/* Contact-Form-Styles: Keine Änderung notwendig */
 #contact-form {
     text-align: left;
 }
 
-
-.inputK , #textareaK {
+/* Input-Styles: Keine Änderung notwendig */
+.inputK, #textareaK {
     width: 100%;
     padding: 3px;
     margin-bottom: 15px;
@@ -31,6 +34,7 @@
     border-radius: 4px;
 }
 
+/* Submit-Button-Styles: Absolute Positionierung entfernt */
 input[type="submit"] {
     background-color: #00bfff;
     color: white;
@@ -38,24 +42,65 @@ input[type="submit"] {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
-    position: absolute;
-    left: 35%;
+    display: block; /* Block-Display für volle Breite */
+    margin: 1rem auto; /* Zentriert den Button */
 }
 
 input[type="submit"]:hover {
     background-color: #008fcc;
 }
 
-
+/* Form-Input-Position: Absolute Positionierung entfernt */
 #form-input-position {
-    position: absolute;
-    left: 600px;
-    top: 200px;
+    margin-top: 2rem; /* Abstand nach oben */
     width: 80%;
+    margin: 0 auto; /* Zentriert das Element */
 }
 
-
+/* Paragraph-Position: Absolute Positionierung entfernt */
 #p-position {
-    position: absolute;
-    top: 180px;
+    margin-top: 1rem; /* Abstand nach oben */
+    text-align: left; /* Text linksbündig */
+}
+
+/* Media Queries für verschiedene Bildschirmgrößen */
+@media (max-width: 768px) {
+    .containerK {
+        width: 80%; /* Breitere Container für kleinere Bildschirme */
+    }
+
+    #h1K {
+        font-size: 1.5rem; /* Kleinere Schriftgröße für kleinere Bildschirme */
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Volle Breite für kleinere Bildschirme */
+        padding: 8px 16px; /* Kleinere Padding */
+    }
+
+    #form-input-position {
+        width: 100%; /* Volle Breite für kleinere Bildschirme */
+    }
+
+    #p-position {
+        font-size: 0.9rem; /* Kleinere Schriftgröße für kleinere Bildschirme */
+    }
+}
+
+@media (max-width: 480px) {
+    .containerK {
+        width: 90%; /* Noch breitere Container für sehr kleine Bildschirme */
+    }
+
+    #h1K {
+        font-size: 1.2rem; /* Noch kleinere Schriftgröße */
+    }
+
+    input[type="submit"] {
+        padding: 6px 12px; /* Noch kleinere Padding */
+    }
+
+    #p-position {
+        font-size: 0.8rem; /* Noch kleinere Schriftgröße */
+    }
 }

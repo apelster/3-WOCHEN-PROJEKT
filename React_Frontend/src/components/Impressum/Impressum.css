@@ -1,25 +1,56 @@
+/* Korrigierter CSS-Code für eine responsive Webseite */
+
+/* Container-Styles: Positionierung geändert zu relativer oder statischer Positionierung */
 .containerI {
     width: 100%;
     text-align: left;
-    position: absolute;
-    left: 50px;
-    top: 40px;
+    margin: 2rem; /* Margin hinzugefügt, um Abstand zu schaffen */
+    position: relative; /* Positionierung geändert */
 }
 
-
+/* Impressum-Styles: Absolute Positionierung entfernt und Flexbox hinzugefügt */
 #Impressum {
-    position: absolute;
-    top: 115px;
-    left: 550px;
     font-size: 2em;
+    margin: 2rem 0; /* Margin hinzugefügt für Abstand */
 }
 
-
+/* Paragraph-Styles: Positionierung angepasst und Padding/Margin vereinfacht */
 .pI {
-    position: relative;
-    top: 180px;
-    padding-left: 60px;
-    margin-top: -5px;
+    margin-top: 1rem; /* Standard-Margin für Abstand */
+    padding-left: 1rem; /* Padding für Abstand */
     font-size: 14px;
     font-weight: bold;
+}
+
+/* Media Queries für verschiedene Bildschirmgrößen */
+@media (max-width: 768px) {
+    .containerI {
+        margin: 1rem; /* Kleinere Abstände für kleinere Bildschirme */
+    }
+
+    #Impressum {
+        font-size: 1.5em; /* Kleinere Schriftgröße für kleinere Bildschirme */
+        margin: 1rem 0;
+    }
+
+    .pI {
+        font-size: 12px; /* Kleinere Schriftgröße für kleinere Bildschirme */
+        padding-left: 0.5rem; /* Weniger Padding für kleinere Bildschirme */
+    }
+}
+
+@media (max-width: 480px) {
+    .containerI {
+        margin: 0.5rem; /* Noch kleinere Abstände für sehr kleine Bildschirme */
+    }
+
+    #Impressum {
+        font-size: 1.2em; /* Noch kleinere Schriftgröße */
+        margin: 0.5rem 0;
+    }
+
+    .pI {
+        font-size: 10px; /* Noch kleinere Schriftgröße */
+        padding-left: 0.2rem; /* Minimaler Padding */
+    }
 }
