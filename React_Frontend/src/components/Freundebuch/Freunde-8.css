@@ -1,29 +1,47 @@
+/* Stil für #Familienfoto */
 #Familienfoto {
     display: flex;
-    width: 31%;
-    height: 50%;
-    position: absolute;
-    top: 205px;
-    left: 325px;
+    position: relative; /* Absolute Positionierung entfernt */
+    width: 100%; /* Volle Breite für Flexbox */
+    max-width: 31%; /* Maximale Breite begrenzt */
+    height: auto; /* Höhe automatisch anpassen */
+    margin: 20px auto; /* Zentrierung und Margin hinzugefügt */
     opacity: 0.7;
 }
 
-
-#Freunde8{
-    position: absolute;
-    top: 540px;
-    right: 130px;
+/* Stil für den #Freunde8 Button */
+#Freunde8 {
+    position: relative; /* Absolute Positionierung entfernt */
+    margin-top: 20px; /* Abstand nach oben hinzugefügt */
     background-color: initial;
     border: none;
     font-family: "Dancing Script";
+    display: block; /* Als Blockelement dargestellt */
+    text-align: center; /* Zentriert den Text */
 }
 
-
-#Zurück8{
-    position: absolute;
-    top: 540px;
-    left: 320px;
-    border: none;
+/* Stil für den #Zurück8 Button */
+#Zurück8 {
+    position: relative; /* Absolute Positionierung entfernt */
+    margin-top: 20px; /* Abstand nach oben hinzugefügt */
     background-color: initial;
+    border: none;
     font-family: "Dancing Script";
+    display: block; /* Als Blockelement dargestellt */
+    text-align: center; /* Zentriert den Text */
+}
+
+/* Media Queries für verschiedene Bildschirmgrößen */
+@media (max-width: 768px) {
+    #Familienfoto, #Freunde8, #Zurück8 {
+        font-size: 14px; /* Schriftgröße reduziert */
+        margin: 10px; /* Margin reduziert */
+    }
+}
+
+@media (max-width: 480px) {
+    #Familienfoto, #Freunde8, #Zurück8 {
+        font-size: 12px; /* Schriftgröße weiter reduziert */
+        margin: 5px; /* Margin weiter reduziert */
+    }
 }
