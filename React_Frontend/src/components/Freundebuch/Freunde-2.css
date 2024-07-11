@@ -1,125 +1,89 @@
+/* Stil für #Familienfoto2 */
 #Familienfoto2 {
     display: flex;
-    position: absolute;
-    width: 29%;
-    height: 50%;
-    top: 200px;
-    left: 750px;
+    position: relative; /* Relative Positionierung für flexibles Layout */
+    width: 100%; /* Volle Breite für Flexbox */
+    max-width: 29%; /* Maximale Breite begrenzt */
+    height: auto; /* Höhe automatisch anpassen */
+    top: auto; /* Abstand nach oben entfernt */
+    left: auto; /* Abstand nach links entfernt */
+    margin: 20px auto; /* Zentrierung und Margin hinzugefügt */
     opacity: 0.5;
 }
 
+/* Stil für den #Freunde2 Button */
+#Freunde2 {
+    position: relative; /* Relative Positionierung für flexibles Layout */
+    top: auto; /* Abstand nach oben entfernt */
+    right: auto; /* Abstand nach rechts entfernt */
+    background-color: initial;
+    border: none;
+    font-family: "Dancing Script";
+    margin: 20px; /* Margin hinzugefügt */
+    display: block; /* Als Blockelement dargestellt */
+}
 
-#Freunde2{
-    position: absolute;
-    top: 540px;
-    right: 130px;
+/* Stil für den #Zurück2 Button */
+#Zurück2 {
+    position: relative; /* Relative Positionierung für flexibles Layout */
+    top: auto; /* Abstand nach oben entfernt */
+    left: auto; /* Abstand nach links entfernt */
     border: none;
     background-color: initial;
     font-family: "Dancing Script";
+    margin: 20px; /* Margin hinzugefügt */
+    display: block; /* Als Blockelement dargestellt */
 }
 
-
-#Zurück2{
-    position: absolute;
-    top: 540px;
-    left: 320px;
-    border: none;
-    background-color: initial;
-    font-family: "Dancing Script";
-}
-
-
-#Headline1{
+/* Stil für die #Headline1 */
+#Headline1 {
     display: flex;
-    position: absolute;
-    top: 160px;
-    left: 420px;
+    position: relative; /* Relative Positionierung für flexibles Layout */
+    top: auto; /* Abstand nach oben entfernt */
+    left: auto; /* Abstand nach links entfernt */
+    margin: 20px auto; /* Zentrierung und Margin hinzugefügt */
     text-decoration: underline;
 }
 
-
-
-.liste1 {
-    position: relative;
-    left: 40px;
-    top: 10px;
-}
-
-
-
-.liste1 {
+/* Liste-Stile optimiert */
+.liste1, .liste2, .liste3, .liste4, .liste5, .liste6, .liste7 {
     position: relative;
     left: 20px;
     top: 10px;
 }
 
-
-.liste2 {
-    position: relative;
-    left: 20px;
-    top: 10px;
-}
-
-
-.liste3 {
-    position: relative;
-    left: 20px;
-    top: 10px;
-}
-
-
-.liste4 {
-    position: relative;
-    left: 20px;
-    top: 10px;
-}
-
-
-.liste5 {
-    position: relative;
-    left: 20px;
-    top: 10px;
-}
-
-
-.liste6 {
-    position: relative;
-    left: 20px;
-    top: 10px;
-}
-
-
-.liste7 {
-    position: relative;
-    left: 20px;
-    top: 10px;
-}
-
-
-.checkbox{
+/* Stil für die .checkbox */
+.checkbox {
     display: block;
-    position: absolute;
-    bottom: 110px;
-    right: 650px;
+    position: relative; /* Relative Positionierung für flexibles Layout */
+    bottom: auto; /* Abstand nach unten entfernt */
+    right: auto; /* Abstand nach rechts entfernt */
     list-style: none;
     text-align: right;
+    margin: 20px; /* Margin hinzugefügt */
 }
 
-
-
-#Ja{
+/* Stil für #Ja und #Nein */
+#Ja, #Nein {
     display: inline-block;
-    position: absolute;
-    right: 693px;
-    top: 215px;
-    font-family: "Dancing Script", cursive;;
+    position: relative; /* Relative Positionierung für flexibles Layout */
+    right: auto; /* Abstand nach rechts entfernt */
+    top: auto; /* Abstand nach oben entfernt */
+    margin: 20px; /* Margin hinzugefügt */
+    font-family: "Dancing Script", cursive;
 }
 
+/* Media Queries für verschiedene Bildschirmgrößen */
+@media (max-width: 768px) {
+    #Familienfoto2, #Freunde2, #Zurück2, #Headline1, .checkbox, #Ja, #Nein {
+        font-size: 14px; /* Schriftgröße reduziert */
+        margin: 10px; /* Margin reduziert */
+    }
+}
 
-#Nein{
-    display: inline-block;
-    position: absolute;
-    right: 640px;
-    top: 215px;
-    font-family: "Dancing Script", cursive;;
+@media (max-width: 480px) {
+    #Familienfoto2, #Freunde2, #Zurück2, #Headline1, .checkbox, #Ja, #Nein {
+        font-size: 12px; /* Schriftgröße weiter reduziert */
+        margin: 5px; /* Margin weiter reduziert */
+    }
 }
