@@ -1,19 +1,38 @@
-
-#Freunde14{
-    position: absolute;
-    top: 540px;
-    right: 130px;
+/* Stil für den #Freunde14 Button */
+#Freunde14 {
+    position: relative; /* Relative Positionierung für flexibles Layout */
+    top: auto; /* Abstand nach oben entfernt */
+    right: auto; /* Abstand nach rechts entfernt */
     background-color: initial;
     border: none;
     font-family: "Dancing Script";
+    margin: 20px; /* Margin hinzugefügt */
+    display: block; /* Als Blockelement dargestellt */
 }
 
-
-#Zurück14{
-    position: absolute;
-    top: 540px;
-    left: 320px;
+/* Stil für den #Zurück14 Button */
+#Zurück14 {
+    position: relative; /* Relative Positionierung für flexibles Layout */
+    top: auto; /* Abstand nach oben entfernt */
+    left: auto; /* Abstand nach links entfernt */
     border: none;
     background-color: initial;
     font-family: "Dancing Script";
+    margin: 20px; /* Margin hinzugefügt */
+    display: block; /* Als Blockelement dargestellt */
+}
+
+/* Media Queries für verschiedene Bildschirmgrößen */
+@media (max-width: 768px) {
+    #Freunde14, #Zurück14 {
+        font-size: 14px; /* Schriftgröße reduziert */
+        margin: 10px; /* Margin reduziert */
+    }
+}
+
+@media (max-width: 480px) {
+    #Freunde14, #Zurück14 {
+        font-size: 12px; /* Schriftgröße weiter reduziert */
+        margin: 5px; /* Margin weiter reduziert */
+    }
 }
