@@ -1,29 +1,56 @@
+/* Flexibles Layout für das Familienfoto */
 #Familienfoto {
     display: flex;
     width: 31%;
-    height: 50%;
-    position: absolute;
-    top: 205px;
-    left: 325px;
+    height: auto; /* Höhe automatisch an den Inhalt angepasst */
+    margin: 20px auto; /* Zentriert und mit Abstand versehen */
     opacity: 0.7;
+    max-width: 100%; /* Maximale Breite auf 100% beschränkt */
 }
 
-
-#Freunde10{
-    position: absolute;
-    top: 540px;
-    right: 130px;
+/* Flexibles Layout für den Freunde-Button */
+#Freunde10 {
+    position: relative; /* Relative Positionierung für flexibles Layout */
+    top: auto; /* Abstand nach oben entfernt */
+    right: auto; /* Abstand nach rechts entfernt */
     background-color: initial;
     border: none;
     font-family: "Dancing Script";
+    margin: 20px; /* Margin hinzugefügt */
+    display: block; /* Als Blockelement dargestellt */
 }
 
-
-#Zurück10{
-    position: absolute;
-    top: 540px;
-    left: 320px;
+/* Flexibles Layout für den Zurück-Button */
+#Zurück10 {
+    position: relative; /* Relative Positionierung für flexibles Layout */
+    top: auto; /* Abstand nach oben entfernt */
+    left: auto; /* Abstand nach links entfernt */
     border: none;
     background-color: initial;
     font-family: "Dancing Script";
+    margin: 20px; /* Margin hinzugefügt */
+    display: block; /* Als Blockelement dargestellt */
+}
+
+/* Media Queries für verschiedene Bildschirmgrößen */
+@media (max-width: 768px) {
+    #Familienfoto {
+        width: 50%; /* Breite auf 50% reduziert */
+    }
+
+    #Freunde10, #Zurück10 {
+        font-size: 14px; /* Schriftgröße reduziert */
+        margin: 10px; /* Margin reduziert */
+    }
+}
+
+@media (max-width: 480px) {
+    #Familienfoto {
+        width: 70%; /* Breite auf 70% reduziert */
+    }
+
+    #Freunde10, #Zurück10 {
+        font-size: 12px; /* Schriftgröße weiter reduziert */
+        margin: 5px; /* Margin weiter reduziert */
+    }
 }
