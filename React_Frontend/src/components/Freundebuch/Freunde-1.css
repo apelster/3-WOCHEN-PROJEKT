@@ -1,34 +1,30 @@
-/* Flexibles Container-Layout für #frdiv */
 #frdiv {
-    position: relative; /* Relative Positionierung für flexibles Layout */
-    bottom: 0; /* Abstand nach unten entfernt */
-    height: auto; /* Höhe automatisch an Inhalt angepasst */
-    width: 100%; /* Breite auf 100% gesetzt */
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 20px; /* Padding hinzugefügt */
+  position: relative; /* Relative Positionierung für flexibles Layout */
+  bottom: 0; /* Abstand nach unten entfernt */
+  height: auto; /* Höhe automatisch an Inhalt angepasst */
+  width: 100%; /* Breite auf 100% gesetzt */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px; /* Padding hinzugefügt */
 }
 
-/* Innerer Inhalt von #frdiv auf volle Breite und Höhe setzen */
 #frbook {
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
 }
 
-/* Button für Freunde */
 #Freunde {
-    position: relative; /* Relative Positionierung für flexibles Layout */
-    top: auto; /* Abstand nach oben entfernt */
-    right: auto; /* Abstand nach rechts entfernt */
-    border: none;
-    background-color: inherit;
-    font-family: "Dancing Script";
-    font-size: 17px;
-    text-decoration: underline;
-    opacity: 1;
-<<<<<<< HEAD
+  position: relative; /* Relative Positionierung für flexibles Layout */
+  top: auto; /* Abstand nach oben entfernt */
+  right: auto; /* Abstand nach rechts entfernt */
+  border: none;
+  background-color: inherit;
+  font-family: "Dancing Script";
+  font-size: 17px;
+  text-decoration: underline;
+  opacity: 1;
 }
 
 /* 
@@ -45,136 +41,99 @@
     left: 270px;
 } */
 
-
-.liste{
-    position: relative;
-    left: -150px;
-    top: 55px;
+.liste {
+  position: relative;
+  left: -150px;
+  top: 55px;
 }
 
-
-#Headline{
-    position: absolute;
-    top: 60px;
-    left: 235px;
-    text-decoration: underline;
+#Headline {
+  position: absolute;
+  top: 60px;
+  left: 235px;
+  text-decoration: underline;
 }
-
 
 .input {
-    display: block;
-    position: absolute;
-    bottom: 120px;
-    right: 650px;
-    list-style: none;
-    text-align: right;
-  }
-
-
-  #paragraph{
-    position: relative;
-    top: 35px;
-    display: inline-block;
-    left: 150px;
-    font-size: 20px;
-  }
-
-
-  #input1{
-    position: relative;
-    left: 420px;
-    top: 32px;
-    width: 130px;
-  }
-
-
-  #paragraph2{
-    position: relative;
-    top: 35px;
-    display: inline-block;
-    left: 150px;
-    font-size: 20px;
-  }
-
-
-  #input2{
-    position: relative;
-    left: 420px;
-    top: 32px;
-    width: 130px;
-  }
-
-
-  
-  #paragraph3{
-    position: relative;
-    top: 35px;
-    display: inline-block;
-    left: 235px;
-    font-size: 20px;
-  }
-
-
-  #input3{
-    position: relative;
-    left: 420px;
-    top: 32px;
-    width: 130px;
-  }
-
-
-  
-  #paragraph4{
-    position: relative;
-    display: inline-block;
-    top: 35px;
-    left: 235px;
-    font-size: 20px;
-  }
-
-
-  #input4{
-    position: relative;
-    left: 420px;
-    top: 15px;
-    width: 130px;
-  }
-
-
-  
-  #paragraph5{
-    position: relative;
-    top: 17px;
-    display: inline-block;
-    left: 260px;
-    font-size: 20px;
-  }
-
-
-  #input5{
-    position: relative;
-    left: 420px;
-    top: 17px;
-    width: 130px;
-  }
-=======
-    margin: 20px; /* Margin hinzugefügt */
+  display: block;
+  position: absolute;
+  bottom: 120px;
+  right: 650px;
+  list-style: none;
+  text-align: right;
 }
 
-/* Media Queries für verschiedene Bildschirmgrößen */
-@media (max-width: 768px) {
-    #frdiv {
-        padding: 10px; /* Padding reduziert */
-    }
-
-    #Freunde {
-        font-size: 15px; /* Schriftgröße reduziert */
-    }
+#paragraph {
+  position: relative;
+  top: 35px;
+  display: inline-block;
+  left: 150px;
+  font-size: 20px;
 }
 
-@media (max-width: 480px) {
-    #Freunde {
-        font-size: 13px; /* Schriftgröße weiter reduziert */
-    }
+#input1 {
+  position: relative;
+  left: 420px;
+  top: 32px;
+  width: 130px;
 }
->>>>>>> 773adc6edc421adba71b7d273d0032b09860da29
+
+#paragraph2 {
+  position: relative;
+  top: 35px;
+  display: inline-block;
+  left: 150px;
+  font-size: 20px;
+}
+
+#input2 {
+  position: relative;
+  left: 420px;
+  top: 32px;
+  width: 130px;
+}
+
+#paragraph3 {
+  position: relative;
+  top: 35px;
+  display: inline-block;
+  left: 235px;
+  font-size: 20px;
+}
+
+#input3 {
+  position: relative;
+  left: 420px;
+  top: 32px;
+  width: 130px;
+}
+
+#paragraph4 {
+  position: relative;
+  display: inline-block;
+  top: 35px;
+  left: 235px;
+  font-size: 20px;
+}
+
+#input4 {
+  position: relative;
+  left: 420px;
+  top: 15px;
+  width: 130px;
+}
+
+#paragraph5 {
+  position: relative;
+  top: 17px;
+  display: inline-block;
+  left: 260px;
+  font-size: 20px;
+}
+
+#input5 {
+  position: relative;
+  left: 420px;
+  top: 17px;
+  width: 130px;
+}

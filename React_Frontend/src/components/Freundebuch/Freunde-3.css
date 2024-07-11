@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Freunde3 {
   position: absolute;
   top: 540px;
@@ -107,9 +106,9 @@
   left: 530px;
   top: -35px;
   width: 130px;
-=======
-/* Stil für #Familienfoto */
-#Familienfoto {
+}
+
+  #Familienfoto {
     display: flex;
     position: relative; /* Absolute Positionierung entfernt */
     width: 100%; /* Volle Breite für Flexbox */
@@ -121,7 +120,7 @@
     opacity: 0.7;
 }
 
-/* Stil für den #Freunde3 Button */
+
 #Freunde3 {
     position: relative; /* Absolute Positionierung entfernt */
     top: auto; /* Abstand nach oben entfernt */
@@ -133,7 +132,7 @@
     display: block; /* Als Blockelement dargestellt */
 }
 
-/* Stil für den #Zurück3 Button */
+
 #Zurück3 {
     position: relative; /* Absolute Positionierung entfernt */
     top: auto; /* Abstand nach oben entfernt */
@@ -143,20 +142,4 @@
     font-family: "Dancing Script";
     margin: 20px; /* Margin hinzugefügt */
     display: block; /* Als Blockelement dargestellt */
-}
-
-/* Media Queries für verschiedene Bildschirmgrößen */
-@media (max-width: 768px) {
-    #Familienfoto, #Freunde3, #Zurück3 {
-        font-size: 14px; /* Schriftgröße reduziert */
-        margin: 10px; /* Margin reduziert */
-    }
-}
-
-@media (max-width: 480px) {
-    #Familienfoto, #Freunde3, #Zurück3 {
-        font-size: 12px; /* Schriftgröße weiter reduziert */
-        margin: 5px; /* Margin weiter reduziert */
-    }
->>>>>>> 773adc6edc421adba71b7d273d0032b09860da29
 }

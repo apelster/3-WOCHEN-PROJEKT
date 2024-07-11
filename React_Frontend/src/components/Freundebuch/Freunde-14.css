@@ -1,4 +1,3 @@
-/* Stil für den #Freunde14 Button */
 #Freunde14 {
     position: relative; /* Relative Positionierung für flexibles Layout */
     top: auto; /* Abstand nach oben entfernt */
@@ -10,7 +9,7 @@
     display: block; /* Als Blockelement dargestellt */
 }
 
-/* Stil für den #Zurück14 Button */
+
 #Zurück14 {
     position: relative; /* Relative Positionierung für flexibles Layout */
     top: auto; /* Abstand nach oben entfernt */
@@ -20,19 +19,4 @@
     font-family: "Dancing Script";
     margin: 20px; /* Margin hinzugefügt */
     display: block; /* Als Blockelement dargestellt */
-}
-
-/* Media Queries für verschiedene Bildschirmgrößen */
-@media (max-width: 768px) {
-    #Freunde14, #Zurück14 {
-        font-size: 14px; /* Schriftgröße reduziert */
-        margin: 10px; /* Margin reduziert */
-    }
-}
-
-@media (max-width: 480px) {
-    #Freunde14, #Zurück14 {
-        font-size: 12px; /* Schriftgröße weiter reduziert */
-        margin: 5px; /* Margin weiter reduziert */
-    }
 }

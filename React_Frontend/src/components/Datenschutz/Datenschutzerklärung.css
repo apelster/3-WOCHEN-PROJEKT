@@ -1,11 +1,10 @@
-/* Überschrift zentrieren, absolute Positionierung entfernt */
 #h1DE1 {
     text-align: center;
     margin-top: 125px; /* Abstand nach oben */
     font-size: 20px;
 }
 
-/* Allgemeine Einstellungen, absolute Positionierung entfernt, Breite angepasst */
+
 #Allg {
     display: block;
     margin-top: 20px; /* Abstand nach oben */
@@ -15,7 +14,7 @@
     font-weight: bold;
 }
 
-/* ZugD Einstellungen, absolute Positionierung entfernt */
+
 #ZugD {
     display: block;
     margin-top: 20px; /* Abstand nach oben */
@@ -25,14 +24,14 @@
     text-align: left;
 }
 
-/* ulDE1 Einstellungen */
+
 .ulDE1 {
     text-align: left;
     list-style: decimal;
     margin-left: 20px; /* Abstand nach links */
 }
 
-/* Umgang Einstellungen, absolute Positionierung entfernt */
+
 #Umgang {
     display: block;
     margin-top: 20px; /* Abstand nach oben */
@@ -42,14 +41,14 @@
     font-weight: bold;
 }
 
-/* ulDE2 Einstellungen */
+
 .ulDE2 {
     text-align: left;
     list-style: decimal;
     margin-left: 20px; /* Abstand nach links */
 }
 
-/* Rechte Einstellungen, absolute Positionierung entfernt */
+
 #Rechte {
     display: block;
     margin-top: 20px; /* Abstand nach oben */
@@ -59,7 +58,7 @@
     font-weight: bold;
 }
 
-/* Widerspruch Einstellungen, absolute Positionierung entfernt */
+
 #Widerspruch {
     display: block;
     margin-top: 20px; /* Abstand nach oben */
@@ -69,7 +68,7 @@
     font-weight: bold;
 }
 
-/* Kontaktaufnahme Einstellungen, absolute Positionierung entfernt */
+
 #Kontaktaufnahme {
     display: block;
     margin-top: 20px; /* Abstand nach oben */
@@ -79,7 +78,7 @@
     font-weight: bold;
 }
 
-/* Speicherung Einstellungen, absolute Positionierung entfernt */
+
 #Speicherung {
     display: block;
     margin-top: 20px; /* Abstand nach oben */
@@ -89,7 +88,7 @@
     font-weight: bold;
 }
 
-/* Änderungen Einstellungen, absolute Positionierung entfernt */
+
 #Änderungen {
     display: block;
     margin-top: 20px; /* Abstand nach oben */
@@ -99,7 +98,7 @@
     font-weight: bold;
 }
 
-/* Löschung Einstellungen, absolute Positionierung entfernt */
+
 #Löschung {
     display: block;
     margin-top: 20px; /* Abstand nach oben */
@@ -107,37 +106,4 @@
     width: 100%; /* Volle Breite */
     font-size: 12.5px;
     font-weight: bold;
-}
-
-/* Media Queries für verschiedene Bildschirmgrößen */
-@media (max-width: 768px) {
-    #h1DE1 {
-        font-size: 18px; /* Schriftgröße reduziert */
-        margin-top: 100px; /* Abstand nach oben reduziert */
-    }
-    
-    #Allg, #ZugD, #Umgang, #Rechte, #Widerspruch, #Kontaktaufnahme, #Speicherung, #Änderungen, #Löschung {
-        font-size: 9px; /* Schriftgröße reduziert */
-        margin-top: 15px; /* Abstand nach oben reduziert */
-    }
-    
-    .ulDE1, .ulDE2 {
-        margin-left: 15px; /* Abstand nach links reduziert */
-    }
-}
-
-@media (max-width: 480px) {
-    #h1DE1 {
-        font-size: 16px; /* Schriftgröße weiter reduziert */
-        margin-top: 80px; /* Abstand nach oben weiter reduziert */
-    }
-    
-    #Allg, #ZugD, #Umgang, #Rechte, #Widerspruch, #Kontaktaufnahme, #Speicherung, #Änderungen, #Löschung {
-        font-size: 8px; /* Schriftgröße weiter reduziert */
-        margin-top: 10px; /* Abstand nach oben weiter reduziert */
-    }
-    
-    .ulDE1, .ulDE2 {
-        margin-left: 10px; /* Abstand nach links weiter reduziert */
-    }
 }

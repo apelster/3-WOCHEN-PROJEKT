@@ -1,6 +1,3 @@
-/* Korrigierter CSS-Code für eine responsive Webseite */
-
-/* Haupt-Content-Styles */
 .main-content1 {
   overflow: hidden;
   max-height: 100vh;
@@ -12,78 +9,74 @@
   flex-direction: column; /* Flexrichtung auf Spalte gesetzt */
 }
 
-/* Buch-Hintergrund-Styles */
+
 .Book-Background1 {
-  max-height: 80vh;
-<<<<<<< HEAD
-  width: 100vw;
-  opacity: 0.5;
   position: relative;
-  top: 230px;
-  left: 100px;
+  top: 4%;
+  left: 10%;
+  width: 100%;
+  position: absolute;
   opacity: 0.5;
-=======
-  width: 90vw; /* Breite reduziert, um Platz zu schaffen */
-  opacity: 1;
-  margin-top: 2rem; /* Margin statt Positionierung */
-  position: relative;
->>>>>>> 773adc6edc421adba71b7d273d0032b09860da29
 }
 
-/* Feder-Styles */
+
 .feder1 {
-  transform: scaleX(-1) rotate(17deg);
-  width: 20vw;
-  height: 70vh;
-  opacity: 1;
-  margin-top: 2rem; /* Margin statt Positionierung */
-  position: relative;
-<<<<<<< HEAD
-  bottom: 300px;
-  right: 445px;
+  transform: rotateY(180deg);
+  rotate: 20deg;
+  width: 30%;
+  height: 70%;
+  position: absolute;
+  bottom: 23%;
+  left: 0%;
   opacity: 0.5;
-=======
->>>>>>> 773adc6edc421adba71b7d273d0032b09860da29
 }
 
-/* Registrierungs-Container */
 .register-container {
   background: white;
-  padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 90vw;
-  text-align: center;
   color: #0e2e2e;
-<<<<<<< HEAD
   position: absolute;
-  left: 360px;
-  bottom: 155px;
-=======
-  margin: 2rem auto; /* Margin statt Positionierung */
->>>>>>> 773adc6edc421adba71b7d273d0032b09860da29
+  left: 29.5%;
+  bottom: 16%;
+  width: 20%;
+  height: 42%;
+  padding-bottom: 6.5%;
 }
 
-/* Headline-Styles */
+
+
+.confirm-container {
+  background: white;
+  border-radius: 8%;
+  color: #0e2e2e;
+  position: absolute;
+  left: 29%;
+  bottom: 23%;
+  width: 25%;
+  height: 50%;
+  padding: 1%;
+}
+
+
 .Headline1 {
   font-size: 24px;
   color: #0e2e2e;
-  margin-bottom: 1rem; /* Margin statt Positionierung */
+  margin-bottom: 1rem;
   text-align: center;
 }
 
-/* Registrierungs-Formular */
+
 .register-form {
   display: flex;
   flex-direction: column;
 }
 
-/* Formular-Label */
+
 .register-form label {
   text-align: left;
 }
 
-/* Eingabefeld */
+
 .input-field {
   width: 100%;
   border: 1px solid #ccc;
@@ -91,7 +84,7 @@
   box-sizing: border-box;
 }
 
-/* Registrierungs-Button */
+
 .register-button {
   background-color: #007bff;
   color: white;
@@ -104,10 +97,10 @@
   background-color: #0056b3;
 }
 
-/* Zurück-Link */
+
 #Zurück {
-  margin-top: 2rem; /* Margin statt Positionierung */
-  text-align: center; /* Zentriert den Text */
+  margin-top: 2rem; 
+  text-align: center;
 }
 
 #Zurück a {
@@ -119,25 +112,20 @@
   text-decoration: underline;
 }
 
+
+
 /* Login-Bereich */
 .register-container1 {
   background: white;
-  padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 90vw;
-  text-align: center;
   color: #0e2e2e;
-<<<<<<< HEAD
   position: absolute;
-  left: 360px;
-  top: 250px;
-=======
-  margin: 2rem auto; /* Margin statt Positionierung */
->>>>>>> 773adc6edc421adba71b7d273d0032b09860da29
+  left: 29.5%;
+  top: 25%;
 }
 
-/* Modal-Styles */
+
 .modal {
   display: flex;
   justify-content: center;
@@ -152,7 +140,7 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal-Content */
+
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -166,7 +154,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Close-Button */
+
 .close {
   color: #aaa;
   float: right;
@@ -179,42 +167,4 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-
-/* Media Queries für verschiedene Bildschirmgrößen */
-@media (max-width: 768px) {
-  .Book-Background1, .feder1, .register-container, .register-container1 {
-    width: 100%; /* Volle Breite für kleinere Bildschirme */
-  }
-
-  .Headline1 {
-    font-size: 1.5rem; /* Kleinere Schriftgröße für kleinere Bildschirme */
-  }
-
-  .register-button {
-    width: 100%; /* Volle Breite für kleinere Bildschirme */
-    padding: 8px 16px; /* Kleinere Padding */
-  }
-
-  #Zurück {
-    margin-top: 1rem; /* Kleinere Abstände für kleinere Bildschirme */
-  }
-}
-
-@media (max-width: 480px) {
-  .Book-Background1, .feder1, .register-container, .register-container1 {
-    width: 100%; /* Volle Breite für sehr kleine Bildschirme */
-  }
-
-  .Headline1 {
-    font-size: 1.2rem; /* Noch kleinere Schriftgröße */
-  }
-
-  .register-button {
-    padding: 6px 12px; /* Noch kleinere Padding */
-  }
-
-  #Zurück {
-    margin-top: 0.5rem; /* Noch kleinere Abstände */
-  }
 }

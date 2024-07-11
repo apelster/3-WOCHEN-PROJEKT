@@ -1,149 +1,108 @@
-<<<<<<< HEAD
-#Freunde5{
-    position: absolute;
-    top: 540px;
-    right: 130px;
-=======
-/* Stil für #Familienfoto */
 #Familienfoto {
-    display: flex;
-    position: relative; /* Absolute Positionierung entfernt */
-    width: 100%; /* Volle Breite für Flexbox */
-    max-width: 31%; /* Maximale Breite begrenzt */
-    height: auto; /* Höhe automatisch anpassen */
-    margin: 20px auto; /* Zentrierung und Margin hinzugefügt */
-    opacity: 0.7;
+  display: flex;
+  position: relative; /* Absolute Positionierung entfernt */
+  width: 100%; /* Volle Breite für Flexbox */
+  max-width: 31%; /* Maximale Breite begrenzt */
+  height: auto; /* Höhe automatisch anpassen */
+  margin: 20px auto; /* Zentrierung und Margin hinzugefügt */
+  opacity: 0.7;
 }
 
-/* Stil für den #Freunde5 Button */
+
 #Freunde5 {
-    position: relative; /* Absolute Positionierung entfernt */
-    margin-top: 20px; /* Abstand nach oben hinzugefügt */
->>>>>>> 773adc6edc421adba71b7d273d0032b09860da29
-    background-color: initial;
-    border: none;
-    font-family: "Dancing Script";
-    display: block; /* Als Blockelement dargestellt */
-    text-align: center; /* Zentriert den Text */
+  position: absolute;
+  top: 540px;
+  right: 130px;
 }
 
-/* Stil für den #Zurück5 Button */
+
 #Zurück5 {
-    position: relative; /* Absolute Positionierung entfernt */
-    margin-top: 20px; /* Abstand nach oben hinzugefügt */
-    background-color: initial;
-    border: none;
-    font-family: "Dancing Script";
-    display: block; /* Als Blockelement dargestellt */
-    text-align: center; /* Zentriert den Text */
+  position: relative; /* Absolute Positionierung entfernt */
+  background-color: initial;
+  border: none;
+  font-family: "Dancing Script";
 }
-
-/* Media Queries für verschiedene Bildschirmgrößen */
-@media (max-width: 768px) {
-    #Familienfoto, #Freunde5, #Zurück5 {
-        font-size: 14px; /* Schriftgröße reduziert */
-        margin: 10px; /* Margin reduziert */
-    }
-}
-
-@media (max-width: 480px) {
-    #Familienfoto, #Freunde5, #Zurück5 {
-        font-size: 12px; /* Schriftgröße weiter reduziert */
-        margin: 5px; /* Margin weiter reduziert */
-    }
-}
-
-
 
 
 #Headline2 {
-    position: absolute;
-    top: 150px;
-    left: 325px;
-    text-decoration: underline;
-  }
-  
-  
-  #paragraph11 {
-    position: relative;
-    top: 25px;
-    display: inline-block;
-    left: 350px;
-    font-size: 20px;
-  }
-  
-  
-  #input11 {
-    position: relative;
-    left: 530px;
-    top: 25px;
-    width: 130px;
-  }
-  
-  
-  #paragraph12 {
-    position: relative;
-    top: 10px;
-    display: inline-block;
-    left: 300px;
-    font-size: 20px;
-  }
-  
-  
-  #input12 {
-    position: relative;
-    left: 530px;
-    top: 10px;
-    width: 130px;
-  }
-  
-  
-  #paragraph13 {
-    position: relative;
-    top: -5px;
-    display: inline-block;
-    left: 300px;
-    font-size: 20px;
-  }
-  
-  
-  #input13 {
-    position: relative;
-    left: 530px;
-    top: -5px;
-    width: 130px;
-  }
-  
-  
-  #paragraph14{
-    position: relative;
-    display: inline-block;
-    top: -15px;
-    left: 300px;
-    font-size: 20px;
-  }
-  
-  
-  #input14 {
-    position: relative;
-    left: 530px;
-    top: -25px;
-    width: 130px;
-  }
-  
-  
-  #paragraph15 {
-    position: relative;
-    top: -35px;
-    display: inline-block;
-    left: 350px;
-    font-size: 20px;
-  }
-  
-  
-  #input15 {
-    position: relative;
-    left: 530px;
-    top: -45px;
-    width: 130px;
-  }
+  position: absolute;
+  top: 150px;
+  left: 325px;
+  text-decoration: underline;
+}
+
+
+#paragraph11 {
+  position: relative;
+  top: 25px;
+  display: inline-block;
+  left: 350px;
+  font-size: 20px;
+}
+
+#input11 {
+  position: relative;
+  left: 530px;
+  top: 25px;
+  width: 130px;
+}
+
+#paragraph12 {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  left: 300px;
+  font-size: 20px;
+}
+
+#input12 {
+  position: relative;
+  left: 530px;
+  top: 10px;
+  width: 130px;
+}
+
+#paragraph13 {
+  position: relative;
+  top: -5px;
+  display: inline-block;
+  left: 300px;
+  font-size: 20px;
+}
+
+#input13 {
+  position: relative;
+  left: 530px;
+  top: -5px;
+  width: 130px;
+}
+
+#paragraph14 {
+  position: relative;
+  display: inline-block;
+  top: -15px;
+  left: 300px;
+  font-size: 20px;
+}
+
+#input14 {
+  position: relative;
+  left: 530px;
+  top: -25px;
+  width: 130px;
+}
+
+#paragraph15 {
+  position: relative;
+  top: -35px;
+  display: inline-block;
+  left: 350px;
+  font-size: 20px;
+}
+
+#input15 {
+  position: relative;
+  left: 530px;
+  top: -45px;
+  width: 130px;
+}

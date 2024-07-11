@@ -1,4 +1,3 @@
-/* Flexibles Layout für den Freunde13-Button */
 #Freunde13 {
     position: relative; /* Relative Positionierung für flexibles Layout */
     top: auto; /* Abstand nach oben entfernt */
@@ -10,7 +9,7 @@
     display: block; /* Als Blockelement dargestellt */
 }
 
-/* Flexibles Layout für den Zurück13-Button */
+
 #Zurück13 {
     position: relative; /* Relative Positionierung für flexibles Layout */
     top: auto; /* Abstand nach oben entfernt */
@@ -21,22 +20,6 @@
     margin: 20px; /* Margin hinzugefügt */
     display: block; /* Als Blockelement dargestellt */
 }
-
-/* Media Queries für verschiedene Bildschirmgrößen */
-@media (max-width: 768px) {
-    #Freunde13, #Zurück13 {
-        font-size: 14px; /* Schriftgröße reduziert */
-        margin: 10px; /* Margin reduziert */
-    }
-}
-
-@media (max-width: 480px) {
-    #Freunde13, #Zurück13 {
-        font-size: 12px; /* Schriftgröße weiter reduziert */
-        margin: 5px; /* Margin weiter reduziert */
-    }
-}
-
 
 
 #Headline6 {

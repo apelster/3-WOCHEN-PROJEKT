@@ -1,4 +1,3 @@
-/* Stil für #Familienfoto2 */
 #Familienfoto2 {
     display: flex;
     position: relative; /* Relative Positionierung für flexibles Layout */
@@ -11,7 +10,7 @@
     opacity: 0.5;
 }
 
-/* Stil für den #Freunde2 Button */
+
 #Freunde2 {
     position: relative; /* Relative Positionierung für flexibles Layout */
     top: auto; /* Abstand nach oben entfernt */
@@ -23,7 +22,7 @@
     display: block; /* Als Blockelement dargestellt */
 }
 
-/* Stil für den #Zurück2 Button */
+
 #Zurück2 {
     position: relative; /* Relative Positionierung für flexibles Layout */
     top: auto; /* Abstand nach oben entfernt */
@@ -35,7 +34,7 @@
     display: block; /* Als Blockelement dargestellt */
 }
 
-/* Stil für die #Headline1 */
+
 #Headline1 {
     display: flex;
     position: relative; /* Relative Positionierung für flexibles Layout */
@@ -45,14 +44,14 @@
     text-decoration: underline;
 }
 
-/* Liste-Stile optimiert */
+
 .liste1, .liste2, .liste3, .liste4, .liste5, .liste6, .liste7 {
     position: relative;
     left: 20px;
     top: 10px;
 }
 
-/* Stil für die .checkbox */
+
 .checkbox {
     display: block;
     position: relative; /* Relative Positionierung für flexibles Layout */
@@ -63,7 +62,7 @@
     margin: 20px; /* Margin hinzugefügt */
 }
 
-/* Stil für #Ja und #Nein */
+
 #Ja, #Nein {
     display: inline-block;
     position: relative; /* Relative Positionierung für flexibles Layout */
@@ -71,19 +70,4 @@
     top: auto; /* Abstand nach oben entfernt */
     margin: 20px; /* Margin hinzugefügt */
     font-family: "Dancing Script", cursive;
-}
-
-/* Media Queries für verschiedene Bildschirmgrößen */
-@media (max-width: 768px) {
-    #Familienfoto2, #Freunde2, #Zurück2, #Headline1, .checkbox, #Ja, #Nein {
-        font-size: 14px; /* Schriftgröße reduziert */
-        margin: 10px; /* Margin reduziert */
-    }
-}
-
-@media (max-width: 480px) {
-    #Familienfoto2, #Freunde2, #Zurück2, #Headline1, .checkbox, #Ja, #Nein {
-        font-size: 12px; /* Schriftgröße weiter reduziert */
-        margin: 5px; /* Margin weiter reduziert */
-    }
 }

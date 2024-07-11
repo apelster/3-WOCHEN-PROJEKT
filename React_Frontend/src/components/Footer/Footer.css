@@ -1,47 +1,26 @@
-/* Footer Container, absolute Positionierung entfernt */
 .footer {
     background-color: #0E2427;
     text-align: center;
     opacity: 0.4;
     overflow-y: visible;
-    padding: 20px 0; /* Abstand oben und unten hinzugefügt */
-    width: 100%; /* Breite auf 100% gesetzt */
-    position: relative; /* Relative Positionierung für flexibles Layout */
+    width: 100%; 
+    position: absolute;
+    top: 87%; 
 }
 
-/* Footer Image */
+
 .footer img {
-    width: 100%; /* Breite auf 100% gesetzt für responsive Skalierung */
-    height: auto; /* Höhe automatisch angepasst */
+    width: 100%;  
 }
 
-/* Navigation Bar im Footer */
+
 .nav-bar-down {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Lücken zwischen den Elementen angepasst */
+    gap: 5%; 
     list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%; /* Breite auf 100% gesetzt */
-    height: 10vh; /* Höhe beibehalten */
-    position: relative; /* Relative Positionierung für flexibles Layout */
-    bottom: 0; /* Abstand nach unten entfernt */
-}
-
-/* Media Queries für verschiedene Bildschirmgrößen */
-@media (max-width: 768px) {
-    .nav-bar-down {
-        gap: 10px; /* Lücken zwischen den Elementen reduziert */
-        height: 8vh; /* Höhe reduziert */
-    }
-}
-
-@media (max-width: 480px) {
-    .nav-bar-down {
-        flex-direction: column; /* Spaltenlayout für kleine Bildschirme */
-        gap: 5px; /* Lücken zwischen den Elementen weiter reduziert */
-        height: auto; /* Höhe automatisch an Inhalt angepasst */
-    }
+    width: 100%;
+    position: absolute;
+    right: 2%
 }
