@@ -1,14 +1,41 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import "./Kontakt.css";
-import absendenImage from "./absendenImage.png"; // Make sure this path is correct
+import absendenImage from "./absendenImage.png"; // Stellen Sie sicher, dass der Pfad korrekt ist
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+    };
+
+    emailjs.send(
+      "service_k4r4wrs",  // Ihre EmailJS-Service-ID
+      "template_kyeyihw", // Ihre EmailJS-Template-ID
+      templateParams,
+      "tKK2H8TUXqqd8k17m"      // Ihre EmailJS-User-ID
+    )
+    .then((response) => {
+      console.log("SUCCESS!", response.status, response.text);
+      alert("Nachricht wurde erfolgreich gesendet!");
+      setName("");
+      setEmail("");
+      setMessage("");
+    })
+    .catch((err) => {
+      console.error("FAILED...", err);
+      alert("Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.");
+    });
   };
+
   return (
     <div className="containerK">
       <div id="text-section">
@@ -82,4 +109,5 @@ const Contact = () => {
     </div>
   );
 };
+
 export default Contact;
