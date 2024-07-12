@@ -1,145 +1,133 @@
-#Freunde3 {
+#Book-Background5{
   position: absolute;
-  top: 540px;
-  right: 130px;
+  right: 1%;
+  width: 100%;
+  height: 80vh;
+  opacity: 0.5;
+}
+
+
+#Freunde5 {
+  position: absolute;
+  top: 79%;
+  right: 19%;
+  border: none;
+  font-size: 100%;
+  background-color: initial;
+  font-family: "Dancing Script";
+}
+
+#Zurück5 {
+  position: absolute;
+  top: 79%;
+  left: 16%;
+  font-size: 100%;
   border: none;
   background-color: initial;
   font-family: "Dancing Script";
 }
 
-#Zurück3 {
+#Headline2 {
+  display: flex;
   position: absolute;
-  top: 540px;
-  left: 320px;
-  border: none;
-  background-color: initial;
-  font-family: "Dancing Script";
-}
-
-#Headline1 {
-  position: absolute;
-  top: 150px;
-  left: 325px;
+  top: 22%;
+  left: 17%;
   text-decoration: underline;
 }
 
 
-#paragraph6 {
-  position: relative;
-  top: 10px;
-  display: inline-block;
-  left: 350px;
+#paragraph11 {
+  position: absolute;
+  top: 30%;
+  right: 55%;
   font-size: 20px;
 }
 
 
-#input6 {
-  position: relative;
-  left: 530px;
-  top: 5px;
-  width: 130px;
-}
-
-
-#paragraph7 {
-  position: relative;
-  top: -5px;
-  display: inline-block;
-  left: 300px;
+#input11 {
+  position: absolute;
+  top: 34vh;
+  right: 30%;
+  width: 13%;
   font-size: 20px;
 }
 
 
-#input7 {
-  position: relative;
-  left: 530px;
-  top: -15px;
-  width: 130px;
-}
-
-
-#paragraph8 {
-  position: relative;
-  top: -25px;
-  display: inline-block;
-  left: 350px;
+#paragraph12 {
+  
+  position: absolute;
+  top: 39%;
+  right: 60%;
   font-size: 20px;
 }
 
 
-#input8 {
-  position: relative;
-  left: 530px;
-  top: -35px;
-  width: 130px;
-}
-
-
-#paragraph9 {
-  position: relative;
-  display: inline-block;
-  top: -35px;
-  left: 350px;
+#input12 {
+  
+  position: absolute;
+  top: 44vh;
+  right: 30%;
+  width: 13%;
   font-size: 20px;
 }
 
 
-#input9 {
-  position: relative;
-  left: 530px;
-  top: -35px;
-  width: 130px;
-}
-
-
-#paragraph10 {
-  position: relative;
-  top: -35px;
-  display: inline-block;
-  left: 375px;
+#paragraph13 {
+  
+  position: absolute;
+  top: 49%;
+  right: 52%;
   font-size: 20px;
 }
 
 
-#input10 {
-  position: relative;
-  left: 530px;
-  top: -35px;
-  width: 130px;
-}
-
-  #Familienfoto {
-    display: flex;
-    position: relative; /* Absolute Positionierung entfernt */
-    width: 100%; /* Volle Breite für Flexbox */
-    max-width: 31%; /* Maximale Breite begrenzt */
-    height: auto; /* Höhe automatisch anpassen */
-    top: auto; /* Abstand nach oben entfernt */
-    left: auto; /* Abstand nach links entfernt */
-    margin: 20px auto; /* Zentrierung und Margin hinzugefügt */
-    opacity: 0.7;
+#input13 {
+   
+  position: absolute;
+  top: 54vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
 }
 
 
-#Freunde3 {
-    position: relative; /* Absolute Positionierung entfernt */
-    top: auto; /* Abstand nach oben entfernt */
-    right: auto; /* Abstand nach rechts entfernt */
-    border: none;
-    background-color: initial;
-    font-family: "Dancing Script";
-    margin: 20px; /* Margin hinzugefügt */
-    display: block; /* Als Blockelement dargestellt */
+#paragraph14 {
+  
+  position: absolute;
+  top: 60%;
+  right: 64%;
+  font-size: 20px;
 }
 
 
-#Zurück3 {
-    position: relative; /* Absolute Positionierung entfernt */
-    top: auto; /* Abstand nach oben entfernt */
-    left: auto; /* Abstand nach links entfernt */
-    border: none;
-    background-color: initial;
-    font-family: "Dancing Script";
-    margin: 20px; /* Margin hinzugefügt */
-    display: block; /* Als Blockelement dargestellt */
+#input14 {
+  
+  position: absolute;
+  top: 63vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
+}
+
+
+#paragraph15 {  
+  position: absolute;
+  top: 69%;
+  right: 55%;
+  font-size: 20px;
+}
+
+
+#input15 {
+  position: absolute;
+  top: 72vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
+}
+
+
+
+#liste5{
+  list-style-type: none;
 }

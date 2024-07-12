@@ -1,24 +1,23 @@
 #frdiv {
-  position: relative; /* Relative Positionierung für flexibles Layout */
-  bottom: 0; /* Abstand nach unten entfernt */
-  height: auto; /* Höhe automatisch an Inhalt angepasst */
-  width: 100%; /* Breite auf 100% gesetzt */
+  width: 100%; 
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 20px; /* Padding hinzugefügt */
 }
 
 #frbook {
-  height: 100%;
+  position: absolute;
+  top: 12%;
+  height: 80%;
   width: 100%;
   opacity: 0.5;
 }
 
+
 #Freunde {
-  position: relative; /* Relative Positionierung für flexibles Layout */
-  top: auto; /* Abstand nach oben entfernt */
-  right: auto; /* Abstand nach rechts entfernt */
+  position: absolute;
+  bottom: 19%;
+  right: 20%; 
   border: none;
   background-color: inherit;
   font-family: "Dancing Script";
@@ -27,113 +26,103 @@
   opacity: 1;
 }
 
-/* 
-#ja{
-    position: absolute;
-    top: 120px;
-    left: 235px;
-}
-
-
-#nein{
-    position: absolute;
-    top: 120px;
-    left: 270px;
-} */
-
-.liste {
-  position: relative;
-  left: -150px;
-  top: 55px;
-}
 
 #Headline {
   position: absolute;
-  top: 60px;
-  left: 235px;
+  top: 21%;
+  left: 18%;
   text-decoration: underline;
 }
 
+
 .input {
-  display: block;
-  position: absolute;
-  bottom: 120px;
-  right: 650px;
   list-style: none;
   text-align: right;
 }
 
+
+
 #paragraph {
-  position: relative;
-  top: 35px;
+  position: absolute;
+  top: 29%;
   display: inline-block;
-  left: 150px;
+  left: 22%;
   font-size: 20px;
 }
 
 #input1 {
-  position: relative;
-  left: 420px;
-  top: 32px;
-  width: 130px;
+  position: absolute;
+  right: 29%;
+  top: 35%;
+  width: 10%;
 }
 
+
 #paragraph2 {
-  position: relative;
-  top: 35px;
+  position: absolute;
+  top: 850%;
   display: inline-block;
-  left: 150px;
+  left: -170%;
   font-size: 20px;
 }
 
 #input2 {
   position: relative;
-  left: 420px;
-  top: 32px;
-  width: 130px;
+  right: -72.6%;
+  top: 31vh;
+  width:75%;
 }
 
+
+
 #paragraph3 {
-  position: relative;
-  top: 35px;
+  position: absolute;
+  top: 1050%;
   display: inline-block;
-  left: 235px;
+  left: -230%;
   font-size: 20px;
 }
 
 #input3 {
+  
   position: relative;
-  left: 420px;
-  top: 32px;
-  width: 130px;
+  right: -72.6%;
+  top: 37vh;
+  width:75%;
 }
 
+
+
 #paragraph4 {
-  position: relative;
+  position: absolute;
+  top: 1250%;
   display: inline-block;
-  top: 35px;
-  left: 235px;
+  left: -220%;
   font-size: 20px;
+  text-align: center;
 }
 
 #input4 {
+  
   position: relative;
-  left: 420px;
-  top: 15px;
-  width: 130px;
+  right: -72.6%;
+  top: 44vh;
+  width:75%;
 }
 
 #paragraph5 {
-  position: relative;
-  top: 17px;
+  position: absolute;
+  top: 1480%;
   display: inline-block;
-  left: 260px;
+  left: -230%;
   font-size: 20px;
+  text-align: center;
 }
 
 #input5 {
+  
   position: relative;
-  left: 420px;
-  top: 17px;
-  width: 130px;
+  right: -72.6%;
+  top: 51vh;
+  width:75%;
 }

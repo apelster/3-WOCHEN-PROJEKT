@@ -1,31 +1,136 @@
-#Familienfoto {
-    display: flex;
-    position: relative; /* Absolute Positionierung entfernt */
-    width: 100%; /* Volle Breite für Flexbox */
-    max-width: 31%; /* Maximale Breite begrenzt */
-    height: auto; /* Höhe automatisch anpassen */
-    margin: 20px auto; /* Zentrierung und Margin hinzugefügt */
-    opacity: 0.7;
+#Book-Background15{
+  position: absolute;
+  right: 1%;
+  width: 100%;
+  height: 80vh;
+  opacity: 0.5;
 }
 
 
-#Freunde8 {
-    position: relative; /* Absolute Positionierung entfernt */
-    margin-top: 20px; /* Abstand nach oben hinzugefügt */
-    background-color: initial;
-    border: none;
-    font-family: "Dancing Script";
-    display: block; /* Als Blockelement dargestellt */
-    text-align: center; /* Zentriert den Text */
+#Freunde15 {
+  position: absolute;
+  top: 79%;
+  right: 19%;
+  border: none;
+  font-size: 100%;
+  background-color: initial;
+  font-family: "Dancing Script";
+}
+
+#Zurück15 {
+  position: absolute;
+  top: 79%;
+  left: 16%;
+  font-size: 100%;
+  border: none;
+  background-color: initial;
+  font-family: "Dancing Script";
 }
 
 
-#Zurück8 {
-    position: relative; /* Absolute Positionierung entfernt */
-    margin-top: 20px; /* Abstand nach oben hinzugefügt */
-    background-color: initial;
-    border: none;
-    font-family: "Dancing Script";
-    display: block; /* Als Blockelement dargestellt */
-    text-align: center; /* Zentriert den Text */
+#Headline15 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 22%;
+  left: 17%;
+  text-decoration: underline;
+}
+
+
+#paragraph36 {
+  position: absolute;
+  top: 30%;
+  right: 52%;
+  font-size: 20px;
+}
+
+
+#input36 {
+  position: absolute;
+  top: 34vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
+}
+
+
+#paragraph37 {
+  
+  position: absolute;
+  top: 39%;
+  right: 60%;
+  font-size: 20px;
+}
+
+
+#input37 {
+  
+  position: absolute;
+  top: 44vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
+}
+
+
+#paragraph38 {
+  
+  position: absolute;
+  top: 49%;
+  right: 52%;
+  font-size: 20px;
+}
+
+
+#input38 {
+   
+  position: absolute;
+  top: 54vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
+}
+
+
+#paragraph39 {
+  
+  position: absolute;
+  top: 60%;
+  right: 62%;
+  font-size: 20px;
+}
+
+
+#input39 {
+  
+  position: absolute;
+  top: 63vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
+}
+
+
+#paragraph40 {  
+  position: absolute;
+  top: 69%;
+  right: 55%;
+  font-size: 20px;
+}
+
+
+#input40 {
+  position: absolute;
+  top: 72vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
+}
+
+
+
+#liste15{
+  list-style-type: none;
 }

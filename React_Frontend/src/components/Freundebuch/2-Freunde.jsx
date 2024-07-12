@@ -1,102 +1,73 @@
 import React from "react";
-import "../Profil/Profil-Design.css"
+import "../Profil/Profil-Design.css";
 import "./Freunde-2.css";
 import { Link } from "react-router-dom";
 
-
 const Freunde2 = () => {
   return (
-    <main className="main-content">
-      <div className="container">
-        <img className="feder" src="/img/feder.png" alt="Foto von einer Feder" />
-      </div>
-
+    <>
       <div>
+        <img id="Book-Background3" src="/img/book.png" alt="" />
 
-      <img className="Book-Background" src="/img/book.png" alt="" />
+        <h1 id="Headline3">Beantworte kurz ein paar Fragen</h1>
 
-      <img
-        id="Familienfoto2"
-        src="/img/Familienfoto_2-removebg-preview.png"
-        alt="Familienfoto"
-      />      
-
-      <h1 id="Headline1">Ich hab noch nie?</h1>
-
-      <p id="Ja">Ja</p>
-      <p id="Nein">Nein</p>
-
-
-        <ul className="checkbox">
-          <li className="liste1">
+        <ul id="input">
+          <li id="liste">
             <label htmlFor="question1">
-              <p className="paragraph"></p>
-              <input className="box" type="radio" name="question1" />
-              <input className="box" type="radio" name="question1" />
+              <p id="paragraph6">
+                Wenn du eine Zeitmaschine hättest, in welches
+                <br /> Jahr würdest du reisen und warum?
+              </p>
+              <input id="input6" type="text" />
             </label>
           </li>
 
-          <li className="liste2">
+          <li id="liste">
             <label htmlFor="question2">
-              <p className="paragraph"></p>
-              <input className="box" type="radio" name="question2" />
-              <input className="box" type="radio" name="question2" />
+              <p id="paragraph7">
+                Was ist das Lustigste, das du jemals im
+                <br /> Unterricht gemacht hast?
+              </p>
+              <input id="input7" type="text" />
             </label>
           </li>
 
-          <li className="liste3">
+          <li id="liste">
             <label htmlFor="question3">
-              <p className="paragraph"></p>
-              <input className="box" type="radio" name="question3" />
-              <input className="box" type="radio" name="question3" />
+              <p id="paragraph8">
+                Wenn du einen Tag mit jemandem tauschen
+                <br /> könntest, wer wäre es und warum?
+              </p>
+              <input id="input8" type="text" />
             </label>
           </li>
 
-          <li className="liste4">
+          <li id="liste">
             <label htmlFor="question4">
-              <p className="paragraph"></p>
-              <input className="box" type="radio" name="question4" />
-              <input className="box" type="radio" name="question4" />
+              <p id="paragraph9">Was ist deine Lieblingsschimpfwort?</p>
+              <input id="input9" type="text" />
             </label>
           </li>
 
-          <li className="liste5">
+          <li id="liste">
             <label htmlFor="question5">
-              <p className="paragraph"></p>
-              <input className="box" type="radio" name="question5" />
-              <input className="box" type="radio" name="question5" />
-            </label>
-          </li>
-
-          <li className="liste6">
-            <label htmlFor="question6">
-              <p className="paragraph"></p>
-              <input className="box" type="radio" name="question6" />
-              <input className="box" type="radio" name="question6" />
-            </label>
-          </li>
-
-          <li className="liste7">
-            <label htmlFor="question7">
-              <p className="paragraph"></p>
-              <input className="box" type="radio" name="question7" />
-              <input className="box" type="radio" name="question7" />
+              <p id="paragraph10">
+                Was ist die seltsamste Angewohnheit, die du hast?
+              </p>
+              <input id="input10" type="text" />
             </label>
           </li>
         </ul>
       </div>
 
-
-      <button id="Freunde2">
+      <button id="Freunde3">
         <Link to="/3-Freunde">3.Seite</Link>
       </button>
 
-
-      <button id="Zurück2">
-        <Link to="/Freundebuch">1.Seite</Link>
+      <button id="Zurück3">
+        <Link to="/1-Freunde">1.Seite</Link>
       </button>
-    
-    </main>
+    </>
   );
 };
 

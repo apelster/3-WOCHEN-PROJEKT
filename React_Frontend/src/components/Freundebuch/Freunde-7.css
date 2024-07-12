@@ -1,111 +1,136 @@
-
-#Familienfoto {
-  display: flex;
-  position: relative; /* Absolute Positionierung entfernt */
-  width: 100%; /* Volle Breite für Flexbox */
-  max-width: 31%; /* Maximale Breite begrenzt */
-  height: auto; /* Höhe automatisch anpassen */
-  margin: 20px auto; /* Zentrierung und Margin hinzugefügt */
-  opacity: 0.7;
-}
-
-
-#Freunde7 {
+#Book-Background13{
   position: absolute;
-  top: 540px;
-  right: 130px;
+  right: 1%;
+  width: 100%;
+  height: 80vh;
+  opacity: 0.5;
 }
 
 
-#Zurück7 {
-  position: relative; /* Absolute Positionierung entfernt */
-  margin-top: 20px; /* Abstand nach oben hinzugefügt */
-  background-color: initial;
+#Freunde13 {
+  position: absolute;
+  top: 79%;
+  right: 19%;
   border: none;
+  font-size: 100%;
+  background-color: initial;
   font-family: "Dancing Script";
-  display: block; /* Als Blockelement dargestellt */
-  text-align: center; /* Zentriert den Text */
+}
+
+#Zurück13 {
+  position: absolute;
+  top: 79%;
+  left: 16%;
+  font-size: 100%;
+  border: none;
+  background-color: initial;
+  font-family: "Dancing Script";
 }
 
 
-#Headline3 {
+#Headline13 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 150px;
-  left: 325px;
+  top: 22%;
+  left: 17%;
   text-decoration: underline;
 }
 
-#paragraph16 {
-  position: relative;
-  top: 15px;
-  display: inline-block;
-  left: 350px;
+
+#paragraph31 {
+  position: absolute;
+  top: 30%;
+  right: 55%;
   font-size: 20px;
 }
 
-#input16 {
-  position: relative;
-  left: 530px;
-  top: 5px;
-  width: 130px;
-}
 
-#paragraph17 {
-  position: relative;
-  top: 5px;
-  display: inline-block;
-  left: 300px;
+#input31 {
+  position: absolute;
+  top: 34vh;
+  right: 30%;
+  width: 13%;
   font-size: 20px;
 }
 
-#input17 {
-  position: relative;
-  left: 530px;
-  top: -10px;
-  width: 130px;
-}
 
-#paragraph18 {
-  position: relative;
-  top: -10px;
-  display: inline-block;
-  left: 350px;
+#paragraph32 {
+  
+  position: absolute;
+  top: 37%;
+  right: 60%;
   font-size: 20px;
 }
 
-#input18 {
-  position: relative;
-  left: 530px;
-  top: -10px;
-  width: 130px;
-}
 
-#paragraph19 {
-  position: relative;
-  display: inline-block;
-  top: -15px;
-  left: 300px;
+#input32 {
+  
+  position: absolute;
+  top: 44vh;
+  right: 30%;
+  width: 13%;
   font-size: 20px;
 }
 
-#input19 {
-  position: relative;
-  left: 530px;
-  top: -10px;
-  width: 130px;
-}
 
-#paragraph20 {
-  position: relative;
-  top: -30px;
-  display: inline-block;
-  left: 330px;
+#paragraph33 {
+  
+  position: absolute;
+  top: 49%;
+  right: 52%;
   font-size: 20px;
 }
 
-#input20 {
-  position: relative;
-  left: 530px;
-  top: -35px;
-  width: 130px;
+
+#input33 {
+   
+  position: absolute;
+  top: 54vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
+}
+
+
+#paragraph34 {
+  
+  position: absolute;
+  top: 60%;
+  right: 62%;
+  font-size: 20px;
+}
+
+
+#input34 {
+  
+  position: absolute;
+  top: 63vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
+}
+
+
+#paragraph35 {  
+  position: absolute;
+  top: 69%;
+  right: 55%;
+  font-size: 20px;
+}
+
+
+#input35 {
+  position: absolute;
+  top: 72vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
+}
+
+
+
+#liste13{
+  list-style-type: none;
 }

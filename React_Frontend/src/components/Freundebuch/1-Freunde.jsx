@@ -13,7 +13,7 @@ const Freunde1 = () => {
         <h1 id="Headline">Beantworte kurz ein paar Fragen</h1>
 
         <ul className="input">
-          <li className="liste">
+          <li>
             <label htmlFor="question1">
               <p id="paragraph">
                 Wenn du eine Superkraft haben <br /> könntest, welche wäre es

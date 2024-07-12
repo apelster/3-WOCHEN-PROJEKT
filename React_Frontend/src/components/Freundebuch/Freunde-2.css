@@ -1,73 +1,133 @@
-#Familienfoto2 {
-    display: flex;
-    position: relative; /* Relative Positionierung für flexibles Layout */
-    width: 100%; /* Volle Breite für Flexbox */
-    max-width: 29%; /* Maximale Breite begrenzt */
-    height: auto; /* Höhe automatisch anpassen */
-    top: auto; /* Abstand nach oben entfernt */
-    left: auto; /* Abstand nach links entfernt */
-    margin: 20px auto; /* Zentrierung und Margin hinzugefügt */
-    opacity: 0.5;
+#Book-Background3{
+  position: absolute;
+  right: 1%;
+  width: 100%;
+  height: 80vh;
+  opacity: 0.5;
 }
 
 
-#Freunde2 {
-    position: relative; /* Relative Positionierung für flexibles Layout */
-    top: auto; /* Abstand nach oben entfernt */
-    right: auto; /* Abstand nach rechts entfernt */
-    background-color: initial;
-    border: none;
-    font-family: "Dancing Script";
-    margin: 20px; /* Margin hinzugefügt */
-    display: block; /* Als Blockelement dargestellt */
+#Freunde3 {
+  position: absolute;
+  top: 79%;
+  right: 19%;
+  border: none;
+  font-size: 100%;
+  background-color: initial;
+  font-family: "Dancing Script";
+}
+
+#Zurück3 {
+  position: absolute;
+  top: 79%;
+  left: 16%;
+  font-size: 100%;
+  border: none;
+  background-color: initial;
+  font-family: "Dancing Script";
+}
+
+#Headline3 {
+  display: flex;
+  position: absolute;
+  top: 22%;
+  left: 17%;
+  text-decoration: underline;
 }
 
 
-#Zurück2 {
-    position: relative; /* Relative Positionierung für flexibles Layout */
-    top: auto; /* Abstand nach oben entfernt */
-    left: auto; /* Abstand nach links entfernt */
-    border: none;
-    background-color: initial;
-    font-family: "Dancing Script";
-    margin: 20px; /* Margin hinzugefügt */
-    display: block; /* Als Blockelement dargestellt */
+#paragraph6 {
+  position: absolute;
+  top: 30%;
+  right: 55%;
+  font-size: 20px;
 }
 
 
-#Headline1 {
-    display: flex;
-    position: relative; /* Relative Positionierung für flexibles Layout */
-    top: auto; /* Abstand nach oben entfernt */
-    left: auto; /* Abstand nach links entfernt */
-    margin: 20px auto; /* Zentrierung und Margin hinzugefügt */
-    text-decoration: underline;
+#input6 {
+  position: absolute;
+  top: 34vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
 }
 
 
-.liste1, .liste2, .liste3, .liste4, .liste5, .liste6, .liste7 {
-    position: relative;
-    left: 20px;
-    top: 10px;
+#paragraph7 {
+  
+  position: absolute;
+  top: 39%;
+  right: 60%;
+  font-size: 20px;
 }
 
 
-.checkbox {
-    display: block;
-    position: relative; /* Relative Positionierung für flexibles Layout */
-    bottom: auto; /* Abstand nach unten entfernt */
-    right: auto; /* Abstand nach rechts entfernt */
-    list-style: none;
-    text-align: right;
-    margin: 20px; /* Margin hinzugefügt */
+#input7 {
+  
+  position: absolute;
+  top: 44vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
 }
 
 
-#Ja, #Nein {
-    display: inline-block;
-    position: relative; /* Relative Positionierung für flexibles Layout */
-    right: auto; /* Abstand nach rechts entfernt */
-    top: auto; /* Abstand nach oben entfernt */
-    margin: 20px; /* Margin hinzugefügt */
-    font-family: "Dancing Script", cursive;
+#paragraph8 {
+  
+  position: absolute;
+  top: 49%;
+  right: 52%;
+  font-size: 20px;
+}
+
+
+#input8 {
+  
+  position: absolute;
+  top: 54vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
+}
+
+
+#paragraph9 {
+  
+  position: absolute;
+  top: 60%;
+  right: 64%;
+  font-size: 20px;
+}
+
+
+#input9 {
+  
+  position: absolute;
+  top: 63vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
+}
+
+
+#paragraph10 {  
+  position: absolute;
+  top: 69%;
+  right: 55%;
+  font-size: 20px;
+}
+
+
+#input10 {
+  position: absolute;
+  top: 72vh;
+  right: 30%;
+  width: 13%;
+  font-size: 20px;
+}
+
+
+
+#liste{
+  list-style-type: none;
 }

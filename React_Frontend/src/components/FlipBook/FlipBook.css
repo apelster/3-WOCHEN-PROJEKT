@@ -1,11 +1,10 @@
 .flipbook {
-    margin: 0 auto; /* Zentriert das Element */
     box-shadow: 10px 25px 100px 1px aqua;
-    /* Positionierung angepasst */
-    margin-top: 143px; /* Abstand nach oben */
-    max-width: 90%; /* Maximale Breite auf 90% des Bildschirms beschränkt */
+    display: flex;
+    position: absolute;
+    top: 19%;
+    left: 30%;
 }
-
 
 .demoPage {
     width: 100%;
@@ -21,8 +20,9 @@
 
 
 #ZurückFlipBook {
-    position: relative;
-    margin-top: 20px; /* Abstand nach oben */
+    position: absolute;
+    top: 50%;
+    left: 5%;
     font-size: 40px;
     border: none;
     background-color: initial;

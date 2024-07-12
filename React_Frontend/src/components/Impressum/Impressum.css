@@ -1,20 +1,31 @@
 .containerI {
     width: 100%;
     text-align: left;
-    margin: 2rem; /* Margin hinzugefügt, um Abstand zu schaffen */
-    position: relative; /* Positionierung geändert */
+    position: relative;
 }
 
 
 #Impressum {
+    position: relative;
+    top: 10vh;
+    left: 10%;
     font-size: 2em;
-    margin: 2rem 0; /* Margin hinzugefügt für Abstand */
 }
 
 
 .pI {
-    margin-top: 1rem; /* Standard-Margin für Abstand */
-    padding-left: 1rem; /* Padding für Abstand */
+    position: relative; 
+    left: 10%;
+    top: 10vh;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.pI3 {
+    position: absolute;
+    top: 20%;
+    right: 20%;
     font-size: 14px;
     font-weight: bold;
 }

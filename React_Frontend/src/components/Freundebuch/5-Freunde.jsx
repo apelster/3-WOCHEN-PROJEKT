@@ -5,64 +5,70 @@ import { Link } from "react-router-dom";
 
 const Freunde5 = () => {
   return (
-    <main className="main-content">
-      <div className="container">
-        <img className="feder" src="/img/feder.png" alt="" />
-      </div>
+    <main>
 
       <div>
-        <img className="Book-Background" src="/img/book.png" alt="" />
+        <img id="Book-Background9" src="/img/book.png" alt="" />
 
-        <h1 id="Headline2">Beantworte kurz ein paar Fragen</h1>
-        
-        <ul className="input">
-          <li className="liste">
+        <h1 id="Headline9">Beantworte kurz ein paar Fragen</h1>
+
+        <ul>
+          <li id="liste9">
             <label htmlFor="question1">
-              <p id="paragraph11">Welche fiktive Figur wärst du gerne für einen Tag?
+              <p id="paragraph21">
+              Was ist deine liebste Verschwörungstheorie?
               </p>
-              <input id="input11" type="text" />
+              <input id="input21" type="text" />
             </label>
           </li>
 
-          <li className="liste">
+          <li id="liste9">
             <label htmlFor="question2">
-              <p id="paragraph12">Was ist das Dümmste, was du <br />je gemacht hast, ohne es zu bereuen?</p>
-              <input id="input12" type="text" />
+              <p id="paragraph22">
+              Welche Sportart würdest du erfinden, <br /> wenn du könntest?
+
+              </p>
+              <input id="input22" type="text" />
             </label>
           </li>
 
-          <li className="liste">
+          <li id="liste9">
             <label htmlFor="question3">
-              <p id="paragraph13">Wenn du ein eigenes Land gründen<br /> könntest, wie würdest du es nennen?</p>
-              <input id="input13" type="text" />
+              <p id="paragraph23">
+              Was ist das lustigste Geschenk, <br /> das du jemals erhalten hast?
+
+              </p>
+              <input id="input23" type="text" />
             </label>
           </li>
 
-          <li className="liste">
+          <li id="liste9">
             <label htmlFor="question4">
-              <p id="paragraph14">
-              Was ist dein Lieblingsessen, das du <br />heimlich nicht so gerne magst?
-              </p>
-              <input id="input14" type="text" />
+              <p id="paragraph24">
+              Wenn du eine beliebige Sprache sofort <br /> fließend sprechen könntest, welche wäre es?
+
+                </p>
+              <input id="input24" type="text" />
             </label>
           </li>
 
-          <li className="liste">
+          <li id="liste9">
             <label htmlFor="question5">
-              <p id="paragraph15">
-              Was ist die verrückteste Ausrede, die du je benutzt<br /> hast, um nicht zur Schule/Arbeit zu gehen?
+              <p id="paragraph25">
+              Welches Promi-Paar findest du am seltsamsten?
+
               </p>
-              <input id="input15" type="text" />
+              <input id="input25" type="text" />
             </label>
           </li>
         </ul>
       </div>
 
-      <button id="Freunde5">
+      <button id="Freunde9">
         <Link to="/6-Freunde">6.Seite</Link>
       </button>
 
-      <button id="Zurück5">
+      <button id="Zurück9">
         <Link to="/4-Freunde">4.Seite</Link>
       </button>
     </main>
