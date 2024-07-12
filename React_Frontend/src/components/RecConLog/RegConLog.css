@@ -36,8 +36,8 @@
   border-radius: 10px;
   color: #0e2e2e;
   position: absolute;
-  left: 29.5%;
-  bottom: 16%;
+  left: 30.5%;
+  bottom: 19%;
   width: 20%;
   height: 42%;
   padding-bottom: 6.5%;
@@ -52,7 +52,7 @@
   color: #0e2e2e;
   position: absolute;
   left: 29%;
-  bottom: 23%;
+  bottom: 24.5%;
   width: 25%;
   height: 50%;
   padding: 1%;
@@ -123,9 +123,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #0e2e2e;
   position: absolute;
-  left: 29.5%;
-  top: 25%;
+  left: 31%;
+  top: 28%;
   opacity: 0.8;
+  padding: 70px;
 }
 
 

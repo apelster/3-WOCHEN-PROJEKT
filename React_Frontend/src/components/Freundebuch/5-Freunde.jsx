@@ -66,7 +66,12 @@ const Freunde5 = ({ profilId }) => {
         </ul>
       </div>
 
-      <button id="Freunde" onClick={handleSaveAnswers}>
+      
+      <button id="Zurück9" onClick={handleSaveAnswers}>
+        <Link to="/4-Freunde">4.Seite</Link>
+      </button>
+
+      <button id="Freunde9" onClick={handleSaveAnswers}>
         <Link to="/6-Freunde">6.Seite</Link>
       </button>
     </div>

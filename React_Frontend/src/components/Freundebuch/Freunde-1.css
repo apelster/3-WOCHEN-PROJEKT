@@ -16,12 +16,12 @@
 
 #Freunde {
   position: absolute;
-  bottom: 19%;
-  right: 20%; 
+  bottom: 21.6%;
+  right: 19.1%; 
   border: none;
   background-color: inherit;
   font-family: "Dancing Script";
-  font-size: 17px;
+  font-size: 15px;
   text-decoration: underline;
   opacity: 1;
 }
@@ -30,7 +30,7 @@
 #Headline {
   position: absolute;
   top: 21%;
-  left: 18%;
+  left: 21%;
   text-decoration: underline;
 }
 

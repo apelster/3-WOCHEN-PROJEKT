@@ -9,7 +9,7 @@
 
 #Freunde3 {
   position: absolute;
-  top: 79%;
+  top: 76%;
   right: 19%;
   border: none;
   font-size: 100%;
@@ -19,8 +19,8 @@
 
 #Zurück3 {
   position: absolute;
-  top: 79%;
-  left: 16%;
+  top: 76%;
+  left: 17%;
   font-size: 100%;
   border: none;
   background-color: initial;
@@ -31,7 +31,7 @@
   display: flex;
   position: absolute;
   top: 22%;
-  left: 17%;
+  left: 21%;
   text-decoration: underline;
 }
 

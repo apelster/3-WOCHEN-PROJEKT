@@ -1,15 +1,16 @@
 #Book-Background15{
+
   position: absolute;
-  right: 1%;
+  right: 0%;
   width: 100%;
-  height: 80vh;
+  height: 80.2vh;
   opacity: 0.5;
 }
 
 
 #Freunde15 {
   position: absolute;
-  top: 79%;
+  top: 76%;
   right: 19%;
   border: none;
   font-size: 100%;
@@ -19,8 +20,8 @@
 
 #Zurück15 {
   position: absolute;
-  top: 79%;
-  left: 16%;
+  top: 76%;
+  left: 17%;
   font-size: 100%;
   border: none;
   background-color: initial;
@@ -34,7 +35,7 @@
   justify-content: center;
   position: absolute;
   top: 22%;
-  left: 17%;
+  left: 21%;
   text-decoration: underline;
 }
 
