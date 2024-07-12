@@ -6,13 +6,13 @@
     width: 80%; /* Vergrößert die Breite auf 80% des Containers */
 }
 #text-section {
-    margin-top: 1.7%;
+    margin-top: 4%;
     flex: 1;
     min-width: 300px; /* Mindestbreite festgelegt */
     margin-right: 2rem; /* Abstand zum rechten Element */
 }
 #form-section {
-    margin-top: 6%;
+    margin-top: 9%;
     flex: 1;
     min-width: 300px; /* Mindestbreite festgelegt */
 }
