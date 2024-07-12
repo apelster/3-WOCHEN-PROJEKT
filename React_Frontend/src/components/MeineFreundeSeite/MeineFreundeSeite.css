@@ -31,7 +31,16 @@
 
 .right-side{
   position: absolute;
-  right: 25%;
+  right: 28%;
+  font-size: 20px;
+  
+}
+
+
+.left-side{
+  position: absolute;
+  left: 3%;
+  font-size: 20px;
 }
 
 

@@ -36,7 +36,6 @@ const Profil1 = () => {
         <h1 id="ÜberMich">Über Mich</h1>
 
         <form action="">
-          {" "}
           <textarea
             name="description"
             id="description"

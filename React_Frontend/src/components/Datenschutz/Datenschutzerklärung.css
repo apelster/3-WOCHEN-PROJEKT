@@ -8,9 +8,9 @@
   display: inline-block;
   position: relative;
   right: -1%;
-  top: 5vh;
+  top: 10vh;
   width: 100%;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bold;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
@@ -19,12 +19,12 @@
 #ZugD {
   display: inline-block;
   width: 100%;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bold;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  top: 5vh;
+  top: 9vh;
   left: 1%;
 }
 
@@ -40,7 +40,7 @@
 #Umgang {
   display: inline-block;
   width: 100%; 
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
@@ -60,7 +60,7 @@
   display: inline-block;
   text-align: left;
   width: 100%;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
@@ -72,7 +72,7 @@
   display: inline-block;
   text-align: left;
   width: 100%;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
@@ -85,7 +85,7 @@
   display: inline-block;
   text-align: left;
   width: 100%; 
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
@@ -97,7 +97,7 @@
   display: inline-block;
   text-align: left;
   width: 100%; 
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
@@ -108,8 +108,8 @@
 #Änderungen {
   display: inline-block;
   text-align: left;
-  width: 100%; /* Volle Breite */
-  font-size: 10px;
+  width: 100%;
+  font-size: 13px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
@@ -121,7 +121,7 @@
   display: inline-block;
   text-align: left;
   width: 100%;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;

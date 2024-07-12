@@ -19,11 +19,7 @@ const Home = () => {
       <button id="RegistrierungHome">
         <Link to="/register">Registrierung</Link>
       </button>
-      
-      <button id="LinkHome">
-        Link einfügen
-      </button>
-
+  
       <img id="federhome" src="/img/feder.png" alt="feder" />
     </div>
   );
