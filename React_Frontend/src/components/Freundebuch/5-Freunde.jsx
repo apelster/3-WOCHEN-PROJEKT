@@ -10,7 +10,7 @@ const Freunde5 = ({ profilId }) => {
 
   useEffect(() => {
     // API-Aufruf, um die zufälligen Fragen zu holen
-    fetch('http://localhost:3001/random-questions')
+    fetch('http://3.124.9.130:3000/random-questions')
       .then(response => response.json())
       .then(data => setFragen(data))
       .catch(error => console.error('Error fetching random questions:', error));
@@ -22,7 +22,7 @@ const Freunde5 = ({ profilId }) => {
       antwort: antworten[index] || ''
     }));
 
-    fetch('http://localhost:3001/antworten', {
+    fetch('http://3.124.9.130:3000/antworten', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -66,7 +66,12 @@ const Freunde5 = ({ profilId }) => {
         </ul>
       </div>
 
-      <button id="Freunde" onClick={handleSaveAnswers}>
+      
+      <button id="Zurück9" onClick={handleSaveAnswers}>
+        <Link to="/4-Freunde">4.Seite</Link>
+      </button>
+
+      <button id="Freunde9" onClick={handleSaveAnswers}>
         <Link to="/6-Freunde">6.Seite</Link>
       </button>
     </div>

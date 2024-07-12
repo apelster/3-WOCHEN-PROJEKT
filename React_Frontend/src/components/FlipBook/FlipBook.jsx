@@ -60,8 +60,8 @@ function DemoBook() {
   return (
     <>
       <HTMLFlipBook
-        width={300}
-        height={450}
+        width={400}
+        height={570}
         size="fixed"
         drawShadow={false}
         flippingTime={1000}
