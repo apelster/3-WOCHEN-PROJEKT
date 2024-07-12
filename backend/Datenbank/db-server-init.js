@@ -23,8 +23,7 @@ async function initDatabase() {
     });
 
     try {
-        await executeSQLFile(connection, path.join(__dirname, 'create_database.sql'));
-        await executeSQLFile(connection, path.join(__dirname, 'create_tables.sql'));
+        await executeSQLFile(connection, path.join(__dirname, 'freundebuch.sql'));
         console.log('Datenbank und Tabellen erfolgreich erstellt.');
     } catch (error) {
         console.error('Fehler beim Erstellen der Datenbank und Tabellen:', error);
