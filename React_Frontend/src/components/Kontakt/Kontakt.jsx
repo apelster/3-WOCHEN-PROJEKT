@@ -59,7 +59,7 @@ const Contact = () => {
           </p>
           <p className="pK">
             Telefon: 1234/56789 <br />
-            E-Mail: Max.Mustermann1785@gmail.com
+            E-Mail: teamforceone2024@web.de
           </p>
         </div>
       </div>
