@@ -19,7 +19,7 @@ const Contact = () => {
 
     emailjs.send(
       "service_k4r4wrs",  // Ihre EmailJS-Service-ID
-      "template_kyeyihw", // Ihre EmailJS-Template-ID
+      "template_w792nal", // Ihre EmailJS-Template-ID
       templateParams,
       "tKK2H8TUXqqd8k17m"      // Ihre EmailJS-User-ID
     )
