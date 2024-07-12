@@ -5,9 +5,9 @@ const app = express();
 const port = 3000;
 
 const dbConfig = {
-    host: 'your-rds-endpoint', // Ersetze 'your-rds-endpoint' durch deinen RDS-Endpunkt
-    user: 'your-rds-username', // Ersetze 'your-rds-username' durch deinen RDS-Benutzernamen
-    password: 'your-rds-password', // Ersetze 'your-rds-password' durch dein RDS-Passwort
+    host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com', // Ersetze 'your-rds-endpoint' durch deinen RDS-Endpunkt
+    user: 'root', // Ersetze 'your-rds-username' durch deinen RDS-Benutzernamen
+    password: 'Eisbombe11#', // Ersetze 'your-rds-password' durch dein RDS-Passwort
     database: 'freundebuch'
 };
 

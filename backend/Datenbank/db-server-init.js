@@ -2,7 +2,7 @@ const mysql = require('mysql2/promise');
 
 async function initializeDatabase() {
     const connection = await mysql.createConnection({
-        host: 'freundebuch-db-1.cfseo6ieksme.eu-central-1.rds.amazonaws.com', 
+        host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com', 
         user: 'root', 
         password: 'Eisbombe11#', 
     });
