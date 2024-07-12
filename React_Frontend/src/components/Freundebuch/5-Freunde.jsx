@@ -1,66 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-5.css";
 import { Link } from "react-router-dom";
 
 const Freunde5 = () => {
+  const [fragen, setFragen] = useState([]);
+
+  useEffect(() => {
+    // API-Aufruf, um die Fragen zu holen
+    fetch('http://localhost:3001/fragen5')
+      .then(response => response.json())
+      .then(data => setFragen(data))
+      .catch(error => console.error('Error fetching questions:', error));
+  }, []);
+
   return (
     <main>
-
       <div>
         <img id="Book-Background9" src="/img/book.png" alt="" />
 
         <h1 id="Headline9">Beantworte kurz ein paar Fragen</h1>
 
         <ul>
-          <li id="liste9">
-            <label htmlFor="question1">
-              <p id="paragraph21">
-              Was ist deine liebste Verschwörungstheorie?
-              </p>
-              <input id="input21" type="text" />
-            </label>
-          </li>
-
-          <li id="liste9">
-            <label htmlFor="question2">
-              <p id="paragraph22">
-              Welche Sportart würdest du erfinden, <br /> wenn du könntest?
-
-              </p>
-              <input id="input22" type="text" />
-            </label>
-          </li>
-
-          <li id="liste9">
-            <label htmlFor="question3">
-              <p id="paragraph23">
-              Was ist das lustigste Geschenk, <br /> das du jemals erhalten hast?
-
-              </p>
-              <input id="input23" type="text" />
-            </label>
-          </li>
-
-          <li id="liste9">
-            <label htmlFor="question4">
-              <p id="paragraph24">
-              Wenn du eine beliebige Sprache sofort <br /> fließend sprechen könntest, welche wäre es?
-
-                </p>
-              <input id="input24" type="text" />
-            </label>
-          </li>
-
-          <li id="liste9">
-            <label htmlFor="question5">
-              <p id="paragraph25">
-              Welches Promi-Paar findest du am seltsamsten?
-
-              </p>
-              <input id="input25" type="text" />
-            </label>
-          </li>
+          {fragen.map((frage, index) => (
+            <li id="liste9" key={index}>
+              <label htmlFor={`question${index + 21}`}>
+                <p id={`paragraph${index + 21}`}>{frage.frage}</p>
+                <input id={`input${index + 21}`} type="text" />
+              </label>
+            </li>
+          ))}
         </ul>
       </div>
 

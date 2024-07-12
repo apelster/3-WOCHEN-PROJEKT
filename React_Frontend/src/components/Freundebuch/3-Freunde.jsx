@@ -1,57 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-3.css";
 import { Link } from "react-router-dom";
 
 const Freunde3 = () => {
+  const [fragen, setFragen] = useState([]);
+
+  useEffect(() => {
+    // API-Aufruf, um die Fragen zu holen
+    fetch('http://localhost:3001/fragen3')
+      .then(response => response.json())
+      .then(data => setFragen(data))
+      .catch(error => console.error('Error fetching questions:', error));
+  }, []);
+
   return (
     <main>
-
       <div>
         <img id="Book-Background5" src="/img/book.png" alt="" />
 
         <h1 id="Headline2">Beantworte kurz ein paar Fragen</h1>
         
         <ul>
-          <li id="liste5">
-            <label htmlFor="question1">
-              <p id="paragraph11">Welche fiktive Figur wärst du gerne für einen Tag?
-              </p>
-              <input id="input11" type="text" />
-            </label>
-          </li>
-
-          <li id="liste5">
-            <label htmlFor="question2">
-              <p id="paragraph12">Was ist das Dümmste, was du <br />je gemacht hast, ohne es zu bereuen?</p>
-              <input id="input12" type="text" />
-            </label>
-          </li>
-
-          <li id="liste5">
-            <label htmlFor="question3">
-              <p id="paragraph13">Wenn du ein eigenes Land gründen<br /> könntest, wie würdest du es nennen?</p>
-              <input id="input13" type="text" />
-            </label>
-          </li>
-
-          <li id="liste5">
-            <label htmlFor="question4">
-              <p id="paragraph14">
-              Was ist dein Lieblingsessen, das du <br />heimlich nicht so gerne magst?
-              </p>
-              <input id="input14" type="text" />
-            </label>
-          </li>
-
-          <li id="liste5">
-            <label htmlFor="question5">
-              <p id="paragraph15">
-              Was ist die verrückteste Ausrede, die du je benutzt<br /> hast, um nicht zur Schule/Arbeit zu gehen?
-              </p>
-              <input id="input15" type="text" />
-            </label>
-          </li>
+          {fragen.map((frage, index) => (
+            <li id="liste5" key={index}>
+              <label htmlFor={`question${index + 11}`}>
+                <p id={`paragraph${index + 11}`}>{frage.frage}</p>
+                <input id={`input${index + 11}`} type="text" />
+              </label>
+            </li>
+          ))}
         </ul>
       </div>
 

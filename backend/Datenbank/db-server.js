@@ -25,16 +25,16 @@ db.connect(err => {
   console.log('Connected to the MySQL database.');
 });
 
-// Endpunkt zum Abrufen der Fragen
+// Endpunkt zum Abrufen aller Fragen
 app.get('/fragen', (req, res) => {
   const query = `
-    SELECT frage FROM Fragen_1
+    SELECT * FROM Fragen_1
     UNION
-    SELECT frage FROM Fragen_2
+    SELECT * FROM Fragen_2
     UNION
-    SELECT frage FROM Fragen_3
+    SELECT * FROM Fragen_3
     UNION
-    SELECT frage FROM Fragen_4
+    SELECT * FROM Fragen_4
   `;
   db.query(query, (err, results) => {
     if (err) {
@@ -44,6 +44,58 @@ app.get('/fragen', (req, res) => {
       res.json(results);
     }
   });
+});
+
+// Endpunkt zum Abrufen der Antworten eines Profils
+app.get('/antworten/:profil_id', (req, res) => {
+  const { profil_id } = req.params;
+  const query = `
+    SELECT * FROM Fragen_1 WHERE profil_id = ?
+    UNION
+    SELECT * FROM Fragen_2 WHERE profil_id = ?
+    UNION
+    SELECT * FROM Fragen_3 WHERE profil_id = ?
+    UNION
+    SELECT * FROM Fragen_4 WHERE profil_id = ?
+  `;
+  db.query(query, [profil_id, profil_id, profil_id, profil_id], (err, results) => {
+    if (err) {
+      console.error('Error fetching answers:', err);
+      res.status(500).json({ error: 'Error fetching answers' });
+    } else {
+      res.json(results);
+    }
+  });
+});
+
+// Endpunkt zum Speichern von Antworten
+app.post('/antworten', (req, res) => {
+  const { profil_id, antworten } = req.body;
+  const queries = [];
+
+  antworten.forEach((antwort, index) => {
+    const tableIndex = Math.floor(index / 5) + 1;
+    const query = `
+      INSERT INTO Fragen_${tableIndex} (profil_id, frage, antwort)
+      VALUES (?, ?, ?)
+      ON DUPLICATE KEY UPDATE antwort = VALUES(antwort)
+    `;
+    queries.push(new Promise((resolve, reject) => {
+      db.query(query, [profil_id, antwort.frage, antwort.antwort], (err, result) => {
+        if (err) reject(err);
+        else resolve(result);
+      });
+    }));
+  });
+
+  Promise.all(queries)
+    .then(results => {
+      res.json({ message: 'Antworten erfolgreich gespeichert' });
+    })
+    .catch(err => {
+      console.error('Error saving answers:', err);
+      res.status(500).json({ error: 'Error saving answers' });
+    });
 });
 
 app.listen(port, () => {
