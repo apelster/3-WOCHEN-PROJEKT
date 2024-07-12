@@ -10,15 +10,15 @@ const Footer = () => {
 
       <nav>
         <ul className="nav-bar-down">
-          <li>
+          <li id="Imp">
           <Link to="/Impressum">Impressum</Link>
           </li>
 
-          <li>
+          <li id="Dat">
           <Link to="/Datenschutz">Datenschutz</Link>
           </li>
 
-          <li>
+          <li id="Kon">
             <Link to="/Kontakt">Kontakt</Link>
           </li>
         </ul>

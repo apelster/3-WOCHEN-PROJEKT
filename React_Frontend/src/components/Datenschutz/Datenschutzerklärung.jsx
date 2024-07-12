@@ -5,7 +5,6 @@ const Datenschutzerklärung = () => {
   return (
     <div class="containerDE">
       <div id="content">
-        <h1 id="h1DE1">Datenschutzerklärung</h1>
         <div id="Allg">
           <h2 className="h2DEA">1. Allgemeine Hinweise</h2>
 
@@ -84,14 +83,14 @@ const Datenschutzerklärung = () => {
           <h2 className="h2DE">4. Rechte des Nutzers</h2>
 
           <p className="pDE">
-            Sie haben als Nutzer das Recht, auf Antrag eine kostenlose Auskunft
-            darüber zu erhalten, welche personenbezogenen Daten über Sie
-            gespeichert wurden. Sie haben außerdem das Recht auf Berichtigung
-            falscher Daten und auf die Verarbeitungseinschränkung oder Löschung
-            Ihrer personenbezogenen Daten. Falls zutreffend, können Sie auch Ihr
-            Recht auf Datenportabilität geltend machen. Sollten Sie annehmen,
-            dass Ihre Daten unrechtmäßig verarbeitet wurden, können Sie eine
-            Beschwerde bei der zuständigen Aufsichtsbehörde einreichen.
+            Sie haben als Nutzer das Recht, auf Antrag <br /> eine kostenlose Auskunft
+            darüber zu erhalten,<br /> welche personenbezogenen Daten über Sie
+            <br />gespeichert wurden. Sie haben außerdem das<br /> Recht auf Berichtigung
+            falscher Daten und auf<br /> die Verarbeitungseinschränkung oder Löschung<br />
+            Ihrer personenbezogenen Daten. Falls zutreffend,<br /> können Sie auch Ihr
+            Recht auf Datenportabilität <br />geltend machen. Sollten Sie annehmen,
+            dass <br />Ihre Daten unrechtmäßig verarbeitet wurden,<br /> können Sie eine
+            Beschwerde bei der zuständigen<br /> Aufsichtsbehörde einreichen.
           </p>
         </div>
 
@@ -101,9 +100,9 @@ const Datenschutzerklärung = () => {
           <h2 className="h2DE">5. Widerspruchsrecht</h2>
 
           <p className="pDE">
-            Nutzer dieser Webseite können von ihrem Widerspruchsrecht
-            Gebrauch machen und
-            der Verarbeitung ihrer personenbezogenen Daten zu jeder Zeit
+            Nutzer dieser Webseite können von  <br />ihrem Widerspruchsrecht
+            Gebrauch <br />machen und
+            der Verarbeitung ihrer <br />personenbezogenen Daten zu jeder<br /> Zeit
             widersprechen.
           </p>
         </div>
@@ -114,11 +113,11 @@ const Datenschutzerklärung = () => {
           <h2 className="h2DE">6. Kontaktaufnahme</h2>
 
           <p className="pDE">
-            Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden
-            Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort
-            angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den
-            Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir
-            nicht ohne Ihre Einwilligung weiter.
+            Wenn Sie uns per Kontaktformular Anfragen <br />zukommen lassen, werden
+            Ihre Angaben <br />aus dem Anfrageformular inklusive der von<br /> Ihnen dort
+            angegebenen Kontaktdaten zwecks <br />Bearbeitung der Anfrage und für den
+            Fall <br />von Anschlussfragen bei uns gespeichert.<br /> Diese Daten geben wir
+            nicht ohne Ihre<br /> Einwilligung weiter.
           </p>
         </div>
 
@@ -128,10 +127,10 @@ const Datenschutzerklärung = () => {
           <h2 className="h2DE">7. Speicherung von Bildern</h2>
 
           <p className="pDE">
-            Wenn Sie uns Bilder zur Verfügung stellen, speichern wir diese auf
-            unseren Servern. Diese Speicherung erfolgt nur mit Ihrer
-            ausdrücklichen Einwilligung. Sie haben das Recht, diese Einwilligung
-            jederzeit zu widerrufen.
+            Wenn Sie uns Bilder zur Verfügung stellen, <br />speichern wir diese auf
+            unseren Servern. <br />Diese Speicherung erfolgt nur mit Ihrer
+            <br />ausdrücklichen Einwilligung. Sie haben<br /> das Recht, diese Einwilligung
+            jederzeit<br /> zu widerrufen.
           </p>
         </div>
 
@@ -140,11 +139,11 @@ const Datenschutzerklärung = () => {
         <div id="Änderungen">
           <h2 className="h2DE">8. Änderungen der Datenschutzerklärung</h2>
           <p className="pDE">
-            Wir behalten uns vor, die Datenschutzerklärung anzupassen, um sie
-            stets den aktuellen rechtlichen Anforderungen anzupassen oder um
-            Änderungen unserer Leistungen in der Datenschutzerklärung
-            umzusetzen, z. B. bei der Einführung neuer Services. Für Ihren
-            erneuten Besuch gilt dann die neue Datenschutzerklärung.
+            Wir behalten uns vor, die Datenschutzerklärung anzupassen,<br /> um sie
+            stets den aktuellen rechtlichen Anforderungen<br /> anzupassen oder um
+            Änderungen unserer Leistungen<br /> in der Datenschutzerklärung
+            umzusetzen, z. B. bei<br /> der Einführung neuer Services. Für Ihren
+            erneuten<br /> Besuch gilt dann die neue Datenschutzerklärung.
           </p>
           </div>
 
@@ -154,15 +153,15 @@ const Datenschutzerklärung = () => {
             <h2 className="h2DE">9. Löschung von Daten</h2>
 
             <p className="pDE">
-              Sofern Ihr Wunsch nicht mit einer gesetzlichen Pflicht zur
-              Aufbewahrung von Daten (z. B. Vorratsdatenspeicherung) kollidiert,
-              haben Sie ein Anrecht auf Löschung Ihrer Daten. Von uns
-              gespeicherte Daten werden, sollten sie für ihre Zweck- bestimmung
-              nicht mehr vonnöten sein und es keine gesetzlichen
-              Aufbewahrungsfristen geben, gelöscht. Falls eine Löschung nicht
-              durchgeführt werden kann, da die Daten für zulässige gesetzliche
+              Sofern Ihr Wunsch nicht mit einer gesetzlichen Pflicht <br />zur
+              Aufbewahrung von Daten (z. B. Vorratsdatenspeicherung) <br />kollidiert,
+              haben Sie ein Anrecht auf Löschung Ihrer Daten.<br /> Von uns
+              gespeicherte Daten werden, sollten sie für ihre Zweck-<br /> bestimmung
+              nicht mehr vonnöten sein und es keine gesetzlichen<br />
+              Aufbewahrungsfristen geben, gelöscht. Falls eine Löschung nicht<br />
+              durchgeführt werden kann, da die Daten für zulässige gesetzliche<br />
               Zwecke erforderlich sind, erfolgt eine Einschränkung der
-              Datenverarbeitung. In diesem Fall werden die Daten gesperrt und
+              <br />Datenverarbeitung. In diesem Fall werden die Daten gesperrt und<br />
               nicht für andere Zwecke verarbeitet.
             </p>
           </div>

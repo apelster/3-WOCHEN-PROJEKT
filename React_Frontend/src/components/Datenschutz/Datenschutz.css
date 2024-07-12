@@ -1,18 +1,16 @@
 .containerD {
     width: 100%;
-    padding: 20px;
     font-size: 15px;
     text-align: left;
-    position: relative; /* Ändern zu relative */
-    top: 130px;
-    left: 0; /* Entfernen der absoluten Positionierung */
-    margin: 0 auto; /* Zentriert den Inhalt */
+    position: absolute; /* Ändern zu relative */
+    top: 19%;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 10%;
 }
 
 
 #h1D {
     font-size: 2em;
-    text-align: center; /* Überschrift zentriert */
 }
 
 

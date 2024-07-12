@@ -36,8 +36,8 @@ const Impressum = () => {
         <p className='pI3'> 
           Haftungsausschluss:<br />
           Haftung für Inhalte<br />
-          Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. <br />Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen <br /> oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.<br />
-          Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. <br /> Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. <br />Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+          Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte <br /> auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. <br />Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, <br /> übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach <br /> Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+          Verpf- <br />lichtungen  zur Entfernung oder Sperrung der Nutzung von Informationen <br /> nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche <br />Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten <br />Rechtsverletzung  möglich. Bei Bekanntwerden von entsprechenden <br />Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
         </p>
       
       </div>

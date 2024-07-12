@@ -1,11 +1,11 @@
 .footer {
     background-color: #0E2427;
     text-align: center;
-    opacity: 0.4;
+    opacity: 0.5;
     overflow-y: visible;
     width: 100%; 
     position: absolute;
-    top: 88%; 
+    top:88%; 
 }
 
 
@@ -22,6 +22,6 @@
     list-style: none;
     width: 100%;
     position: absolute;
-    right: 2%;
-    
+    right: 2%;    
+    opacity: 1;
 }

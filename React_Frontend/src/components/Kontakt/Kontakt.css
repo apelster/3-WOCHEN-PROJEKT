@@ -1,62 +1,83 @@
 .containerK {
-    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 2rem auto; /* Zentriert und Abstand hinzugefügt */
-    position: relative; /* Positionierung geändert */
+    width: 80%; /* Vergrößert die Breite auf 80% des Containers */
 }
-
-
+#text-section {
+    margin-top: 1.7%;
+    flex: 1;
+    min-width: 300px; /* Mindestbreite festgelegt */
+    margin-right: 2rem; /* Abstand zum rechten Element */
+}
+#form-section {
+    margin-top: 6%;
+    flex: 1;
+    min-width: 300px; /* Mindestbreite festgelegt */
+}
 #h1K {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 1rem 0; /* Margin hinzugefügt für Abstand */
     text-align: center; /* Zentriert den Text */
 }
-
-
 .pK {
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 25px;
 }
-
-
 #contact-form {
     text-align: left;
 }
-
-
 .inputK, #textareaK {
     width: 100%;
-    padding: 3px;
+    padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 7px;
+    box-sizing: border-box;
 }
-
-
-input[type="submit"] {
-    background-color: #00bfff;
-    color: white;
-    border: 3px solid white;
-    padding: 10px 20px;
+.submit-button {
+    background: none;
+    border: none;
     cursor: pointer;
-    border-radius: 4px;
     display: block; /* Block-Display für volle Breite */
     margin: 1rem auto; /* Zentriert den Button */
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+    position: relative;
+    padding: 0; /* Entfernt das Padding */
 }
-
-
-input[type="submit"]:hover {
-    background-color: #008fcc;
+.submit-image {
+    width: 100%; /* Breite auf 100% gesetzt */
+    height: auto;
+    border-radius: 7px;
 }
-
-
 #form-input-position {
-    margin-top: 2rem; /* Abstand nach oben */
-    width: 80%;
-    margin: 0 auto; /* Zentriert das Element */
+    width: 100%;
 }
-
-
 #p-position {
-    margin-top: 1rem; /* Abstand nach oben */
+    margin-top: 2%; /* Abstand nach oben */
     text-align: left; /* Text linksbündig */
+}
+.alternativ-text {
+    margin-bottom: 1rem; /* Abstand nach unten */
+    text-align: left;
+    font-size: 25px;
+}
+@media (max-width: 768px) {
+    .containerK {
+        flex-direction: column; /* Ändert Richtung zu Spalte für kleine Bildschirme */
+        width: 80%;
+    }
+    #text-section {
+        margin-right: 0; /* Entfernt rechten Abstand */
+        margin-bottom: 2rem; /* Fügt unteren Abstand hinzu */
+    }
+}
+@media (max-width: 480px) {
+    .containerK {
+        width: 95%;
+    }
 }
