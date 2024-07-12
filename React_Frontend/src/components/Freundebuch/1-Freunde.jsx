@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-1.css";
 
 import { Link } from "react-router-dom";
 
 const Freunde1 = () => {
+  const [fragen, setFragen] = useState([]);
+
+  useEffect(() => {
+    // API-Aufruf, um die Fragen zu holen
+    fetch('http://localhost:3001/fragen')
+      .then(response => response.json())
+      .then(data => setFragen(data))
+      .catch(error => console.error('Error fetching questions:', error));
+  }, []);
+
   return (
     <div id="frdiv">
       <img id="frbook" src="/img/book.png" alt="book" />
@@ -13,48 +23,14 @@ const Freunde1 = () => {
         <h1 id="Headline">Beantworte kurz ein paar Fragen</h1>
 
         <ul className="input">
-          <li>
-            <label htmlFor="question1">
-              <p id="paragraph">
-                Wenn du eine Superkraft haben <br /> könntest, welche wäre es
-                und warum?
-              </p>
-              <input id="input1" type="text" />
-            </label>
-          </li>
-
-          <li className="liste">
-            <label htmlFor="question2">
-              <p id="paragraph2">Was ist dein peinlichstes Erlebnis?</p>
-              <input id="input2" type="text" />
-            </label>
-          </li>
-
-          <li className="liste">
-            <label htmlFor="question3">
-              <p id="paragraph3">Welcher Song bringt dich immer zum Tanzen?</p>
-              <input id="input3" type="text" />
-            </label>
-          </li>
-
-          <li className="liste">
-            <label htmlFor="question4">
-              <p id="paragraph4">
-                Wenn du eine berühmte Person treffen könntest,
-                <br /> wer wäre es und warum?
-              </p>
-              <input id="input4" type="text" />
-            </label>
-          </li>
-
-          <li className="liste">
-            <label htmlFor="question5">
-              <p id="paragraph5">
-                Was ist das Verrückteste, das du jemals gegessen hast?
-              </p>
-              <input id="input5" type="text" />
-            </label>
-          </li>
+          {fragen.map((frage, index) => (
+            <li className="liste" key={index}>
+              <label htmlFor={`question${index + 1}`}>
+                <p id={`paragraph${index + 1}`}>{frage.frage}</p>
+                <input id={`input${index + 1}`} type="text" />
+              </label>
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -64,4 +40,5 @@ const Freunde1 = () => {
     </div>
   );
 };
+
 export default Freunde1;
