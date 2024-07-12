@@ -2,7 +2,7 @@ const express = require('express');
 const mysql = require('mysql2/promise');
 
 const app = express();
-const port = 3000;
+const port = 3005;
 
 const dbConfig = {
     host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com', // Ersetze 'your-rds-endpoint' durch deinen RDS-Endpunkt
