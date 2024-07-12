@@ -2,17 +2,17 @@ const mysql = require('mysql2/promise');
 
 async function initializeDatabase() {
     const connection = await mysql.createConnection({
-        host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com', 
-        user: 'root', 
-        password: 'Eisbombe11#', 
+        host: 'your-rds-endpoint', // Ersetze 'your-rds-endpoint' durch deinen RDS-Endpunkt
+        user: 'your-rds-username', // Ersetze 'your-rds-username' durch deinen RDS-Benutzernamen
+        password: 'your-rds-password', // Ersetze 'your-rds-password' durch dein RDS-Passwort
     });
 
     // SQL Skript zur Initialisierung der Datenbank und Tabellen
-    const initSQL = `
+    const createDatabaseSQL = `
         CREATE DATABASE IF NOT EXISTS freundebuch;
+    `;
 
-        USE freundebuch;
-
+    const createTablesSQL = `
         CREATE TABLE IF NOT EXISTS Profil (
             id INT AUTO_INCREMENT PRIMARY KEY,
             name VARCHAR(255) NOT NULL,
@@ -60,8 +60,20 @@ async function initializeDatabase() {
         );
     `;
 
-    await connection.query(initSQL);
+    await connection.query(createDatabaseSQL);
+
+    // Verbindung zur freundebuch-Datenbank herstellen
+    const dbConnection = await mysql.createConnection({
+        host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com', // Ersetze 'your-rds-endpoint' durch deinen RDS-Endpunkt
+        user: 'root', // Ersetze 'your-rds-username' durch deinen RDS-Benutzernamen
+        password: 'Eisbombe11#', // Ersetze 'your-rds-password' durch dein RDS-Passwort
+        database: 'freundebuch'
+    });
+
+    await dbConnection.query(createTablesSQL);
+
     console.log('Database and tables created successfully');
+    await dbConnection.end();
     await connection.end();
 }
 
