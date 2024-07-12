@@ -25,43 +25,33 @@ db.connect(err => {
   console.log('Connected to the MySQL database.');
 });
 
-// Endpunkt zum Abrufen aller Fragen
-app.get('/fragen', (req, res) => {
+// Endpunkt zum Abrufen von zufälligen Fragen aus jedem der Fragen-Tabellen
+app.get('/random-questions', (req, res) => {
   const query = `
-    SELECT * FROM Fragen_1
-    UNION
-    SELECT * FROM Fragen_2
-    UNION
-    SELECT * FROM Fragen_3
-    UNION
-    SELECT * FROM Fragen_4
+    SELECT * FROM (
+      SELECT frage FROM Fragen_1 ORDER BY RAND() LIMIT 6
+    ) AS t1
+    UNION ALL
+    SELECT * FROM (
+      SELECT frage FROM Fragen_2 ORDER BY RAND() LIMIT 6
+    ) AS t2
+    UNION ALL
+    SELECT * FROM (
+      SELECT frage FROM Fragen_3 ORDER BY RAND() LIMIT 6
+    ) AS t3
+    UNION ALL
+    SELECT * FROM (
+      SELECT frage FROM Fragen_4 ORDER BY RAND() LIMIT 6
+    ) AS t4
+    UNION ALL
+    SELECT * FROM (
+      SELECT frage FROM Fragen_5 ORDER BY RAND() LIMIT 6
+    ) AS t5
   `;
   db.query(query, (err, results) => {
     if (err) {
-      console.error('Error fetching questions:', err);
-      res.status(500).json({ error: 'Error fetching questions' });
-    } else {
-      res.json(results);
-    }
-  });
-});
-
-// Endpunkt zum Abrufen der Antworten eines Profils
-app.get('/antworten/:profil_id', (req, res) => {
-  const { profil_id } = req.params;
-  const query = `
-    SELECT * FROM Fragen_1 WHERE profil_id = ?
-    UNION
-    SELECT * FROM Fragen_2 WHERE profil_id = ?
-    UNION
-    SELECT * FROM Fragen_3 WHERE profil_id = ?
-    UNION
-    SELECT * FROM Fragen_4 WHERE profil_id = ?
-  `;
-  db.query(query, [profil_id, profil_id, profil_id, profil_id], (err, results) => {
-    if (err) {
-      console.error('Error fetching answers:', err);
-      res.status(500).json({ error: 'Error fetching answers' });
+      console.error('Error fetching random questions:', err);
+      res.status(500).json({ error: 'Error fetching random questions' });
     } else {
       res.json(results);
     }
@@ -96,6 +86,30 @@ app.post('/antworten', (req, res) => {
       console.error('Error saving answers:', err);
       res.status(500).json({ error: 'Error saving answers' });
     });
+});
+
+// Endpunkt zum Abrufen der Antworten eines Profils
+app.get('/antworten/:profil_id', (req, res) => {
+  const { profil_id } = req.params;
+  const query = `
+    SELECT * FROM Fragen_1 WHERE profil_id = ?
+    UNION
+    SELECT * FROM Fragen_2 WHERE profil_id = ?
+    UNION
+    SELECT * FROM Fragen_3 WHERE profil_id = ?
+    UNION
+    SELECT * FROM Fragen_4 WHERE profil_id = ?
+    UNION
+    SELECT * FROM Fragen_5 WHERE profil_id = ?
+  `;
+  db.query(query, [profil_id, profil_id, profil_id, profil_id, profil_id], (err, results) => {
+    if (err) {
+      console.error('Error fetching answers:', err);
+      res.status(500).json({ error: 'Error fetching answers' });
+    } else {
+      res.json(results);
+    }
+  });
 });
 
 app.listen(port, () => {

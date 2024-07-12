@@ -1,46 +1,75 @@
 import React, { useEffect, useState } from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-3.css";
+
 import { Link } from "react-router-dom";
 
-const Freunde3 = () => {
+const Freunde3 = ({ profilId }) => {
   const [fragen, setFragen] = useState([]);
+  const [antworten, setAntworten] = useState([]);
 
   useEffect(() => {
-    // API-Aufruf, um die Fragen zu holen
-    fetch('http://localhost:3001/fragen3')
+    // API-Aufruf, um die zufälligen Fragen zu holen
+    fetch('http://localhost:3001/random-questions')
       .then(response => response.json())
       .then(data => setFragen(data))
-      .catch(error => console.error('Error fetching questions:', error));
+      .catch(error => console.error('Error fetching random questions:', error));
   }, []);
 
-  return (
-    <main>
-      <div>
-        <img id="Book-Background5" src="/img/book.png" alt="" />
+  const handleSaveAnswers = () => {
+    const answersToSave = fragen.map((frage, index) => ({
+      frage: frage.frage,
+      antwort: antworten[index] || ''
+    }));
 
-        <h1 id="Headline2">Beantworte kurz ein paar Fragen</h1>
-        
-        <ul>
-          {fragen.map((frage, index) => (
-            <li id="liste5" key={index}>
-              <label htmlFor={`question${index + 11}`}>
-                <p id={`paragraph${index + 11}`}>{frage.frage}</p>
-                <input id={`input${index + 11}`} type="text" />
+    fetch('http://localhost:3001/antworten', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ profil_id: profilId, antworten: answersToSave })
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Antworten erfolgreich gespeichert:', data);
+      })
+      .catch(error => {
+        console.error('Error saving answers:', error);
+      });
+  };
+
+  return (
+    <div id="frdiv">
+      <img id="frbook" src="/img/book.png" alt="book" />
+
+      <div>
+        <h1 id="Headline">Beantworte kurz ein paar Fragen</h1>
+
+        <ul className="input">
+          {fragen.slice(12, 18).map((frage, index) => (
+            <li key={index} className="liste">
+              <label htmlFor={`question${index + 1}`}>
+                <p id={`paragraph${index + 1}`}>{frage.frage}</p>
+                <input
+                  id={`input${index + 1}`}
+                  type="text"
+                  value={antworten[index] || ''}
+                  onChange={(e) => {
+                    const newAntworten = [...antworten];
+                    newAntworten[index] = e.target.value;
+                    setAntworten(newAntworten);
+                  }}
+                />
               </label>
             </li>
           ))}
         </ul>
       </div>
 
-      <button id="Freunde5">
+      <button id="Freunde" onClick={handleSaveAnswers}>
         <Link to="/4-Freunde">4.Seite</Link>
       </button>
-
-      <button id="Zurück5">
-        <Link to="/2-Freunde">2.Seite</Link>
-      </button>
-    </main>
+    </div>
   );
 };
 
