@@ -3,9 +3,10 @@ import "./Datenschutzerklärung.css";
 
 const Datenschutzerklärung = () => {
   return (
-    <div class="containerDE">
+
+    <>
         <div id="Allg">
-          <h2 className="h2DEA">1. Allgemeine Hinweise</h2>
+          <h2 className="h2DE">1. Allgemeine Hinweise</h2>
 
           <p>
             Der Schutz Ihrer persönlichen Daten ist <br />uns sehr wichtig. In dieser
@@ -19,26 +20,18 @@ const Datenschutzerklärung = () => {
 
         </div>
 
-        {/* -------------------------- */}
         <div id="ZugD">
-          <h2>2. Zugriffsdaten</h2>
+          <h2 className="h2DE">2. Zugriffsdaten</h2>
 
           <p>
             Wir, der Websitebetreiber bzw. Seitenprovider, <br />
             erheben aufgrund unseres berechtigten Interesses <br />
             (s. Art. 6 Abs. 1 lit. f. DSGVO) Daten über Zugriffe auf <br />
             die Website und speichern diese als „Server-Logfiles“ <br />
-            auf dem Server der Website ab. Die Server-Logfiles <br />werden für maximal 7 Tage gespeichert <br /> und
-            anschließend gelöscht. Die Speicherung <br />der Daten erfolgt <br />
-            aus Sicherheitsgründen, um z. B. <br />Missbrauchsfälle aufklären zu
-            <br /> können. Müssen Daten aus Beweisgründen aufgehoben <br /> werden,
-            sind sie solange von der Löschung ausgenommen <br />bis der Vorfall endgültig geklärt ist.
-            Folgende Daten werden <br /> so
+            auf dem Server der Website ab. Folgende Daten werden <br /> so
             protokolliert:
-          
-          </p>
-
-          <ul className="ulDE1">
+            
+          <ul>
             <li>Besuchte Website</li>
             <li>Uhrzeit zum Zeitpunkt des Zugriffes</li>
             <li>Menge der gesendeten Daten in Byte</li>
@@ -48,12 +41,22 @@ const Datenschutzerklärung = () => {
             <li>Verwendete IP-Adresse</li>
           </ul>
 
+          </p>
+
+          <p>
+            Die Server-Logfiles werden für maximal 7 Tage gespeichert <br /> und
+            anschließend gelöscht. Die Speicherung der Daten erfolgt <br />
+            aus Sicherheitsgründen, um z. B. Missbrauchsfälle aufklären zu
+            <br /> können. Müssen Daten aus Beweisgründen aufgehoben werden,{" "}
+            <br /> sind sie solange von der Löschung ausgenommen bis der Vorfall{" "}
+            <br />
+            endgültig geklärt ist.
+          </p>
         </div>
 
-        {/* ----------------------- */}
 
         <div id="Umgang">
-          <h2 className="h2DE2">
+          <h2 className="h2DE">
             3. Umgang mit <br />
             personenbezogenen Daten
           </h2>
@@ -64,16 +67,15 @@ const Datenschutzerklärung = () => {
             wenn dies <br />im gesetzlichen Rahmen erlaubt <br />ist 
             oder Sie in die Datenerhebung <br />einwilligen. Zu den
             personen- <br />bezogenen Daten gehören:
-          </p>
-
-          <ul className="ulDE2">
+            
+          <ul>
             <li>Name</li>
             <li>E-Mail-Adresse</li>
             <li>Bilder</li>
           </ul>
+          </p>
         </div>
 
-        {/* ------------------------------- */}
 
         <div id="Rechte">
           <h2 className="h2DE">4. Rechte des Nutzers</h2>
@@ -90,7 +92,6 @@ const Datenschutzerklärung = () => {
           </p>
         </div>
 
-        {/* -------------------------------- */}
 
         <div id="Widerspruch">
           <h2 className="h2DE">5. Widerspruchsrecht</h2>
@@ -103,7 +104,6 @@ const Datenschutzerklärung = () => {
           </p>
         </div>
 
-        {/* -------------------------- */}
 
         <div id="Kontaktaufnahme">
           <h2 className="h2DE">6. Kontaktaufnahme</h2>
@@ -117,7 +117,6 @@ const Datenschutzerklärung = () => {
           </p>
         </div>
 
-        {/* ------------------------------ */}
 
         <div id="Speicherung">
           <h2 className="h2DE">7. Speicherung von Bildern</h2>
@@ -130,7 +129,6 @@ const Datenschutzerklärung = () => {
           </p>
         </div>
 
-        {/* ------------------------- */}
 
         <div id="Änderungen">
           <h2 className="h2DE">8. Änderungen der Datenschutzerklärung</h2>
@@ -143,12 +141,11 @@ const Datenschutzerklärung = () => {
           </p>
           </div>
 
-          {/* -------------------------------- */}
 
           <div id="Löschung">
             <h2 className="h2DE">9. Löschung von Daten</h2>
 
-            <p>
+            <p >
               Sofern Ihr Wunsch nicht mit einer gesetzlichen Pflicht <br />zur
               Aufbewahrung von Daten (z. B. Vorratsdatenspeicherung) <br />kollidiert,
               haben Sie ein Anrecht auf Löschung Ihrer Daten.<br /> Von uns
@@ -161,7 +158,7 @@ const Datenschutzerklärung = () => {
               nicht für andere Zwecke verarbeitet.
             </p>
           </div>
-      </div>
+          </>
   );
 };
 

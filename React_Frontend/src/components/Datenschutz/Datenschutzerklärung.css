@@ -1,158 +1,377 @@
-.containerDE {
-  overflow: scroll;
-  scrollbar-width:unset ;
-  overflow-inline:visible;
-  display: block;
-
+.h2DE {
+  display: inline-block;
+  font-size: 12px;
 }
 
 #Allg {
   display: inline-block;
-  position: fixed;
-  left: 3%;
-  top: 15%;
   width: fit-content;
-  height: fit-content;
-
-  font-size: 14px;
+  font-size: 11px;
   font-weight: bold;
-  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 18vh;
+  left: 5%;
+  height: fit-content;
+  text-align: left;
+
+  overflow-y: scroll;
+  height: 150px;
+  overflow-x: hidden;
 }
 
 #ZugD {
   display: inline-block;
-  position: fixed;
-  left: 40%;
-  top: 15%;
   width: fit-content;
-  height: fit-content;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: bold;
-  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.ulDE1 {
   position: fixed;
-  top: 50%;
-  left: 40%;
-  width: fit-content;
   height: fit-content;
-  list-style: decimal;
   text-align: left;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+
+  top: 18vh;
+  left: 34.8%;
+  overflow-y: scroll;
+  height: 150px;
+  overflow-x: hidden;
 }
 
 #Umgang {
   display: inline-block;
-  position: fixed;
-  left: 3%;
-  top: 50%;
   width: fit-content;
-  height: fit-content;
-
-  font-size: 13px;
+  font-size: 11px;
   font-weight: bold;
-  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.ulDE2 {
   position: fixed;
-  top: 72%;
-  left: 4%;
-  width: fit-content;
   height: fit-content;
-  text-align: left;
-  list-style: decimal;
-  display: inline-block;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
+
+  top: 18vh;
+  left: 80%;
+
+  overflow-y: scroll;
+  height: 150px;
+  overflow-x: hidden;
 }
 
 #Rechte {
   display: inline-block;
-  position: fixed;
-  right: 3%;
-  top: 10%;
-  height: fit-content;
   width: fit-content;
+  font-size: 11px;
+  height: fit-content;
 
-  font-size: 13px;
   font-weight: bold;
-  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 42vh;
+  left: 6.7%;
+  overflow-y: scroll;
+  height: 150px;
+  overflow-x: hidden;
 }
 
 #Widerspruch {
   display: inline-block;
-  position: fixed;
-  right: 8%;
-  top: 50%;
   width: fit-content;
   height: fit-content;
+  font-size: 11px;
 
-  font-size: 13px;
   font-weight: bold;
-  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 42vh;
+  left: 44.3%;
+
+  overflow-y: scroll;
+  height: 150px;
+  overflow-x: hidden;
 }
 
 #Kontaktaufnahme {
   display: inline-block;
-  position: fixed;
-  right: 0%;
-  top: 70%;
   width: fit-content;
+  font-size: 11px;
+  font-weight: bold;
   height: fit-content;
 
-  font-size: 13px;
-  font-weight: bold;
-  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 23vw;
+  left: 76%;
+
+  overflow-y: scroll;
+  height: 150px;
+  overflow-x: hidden;
 }
 
 #Speicherung {
   display: inline-block;
-  position: fixed;
-  right: 10%;
-  top: 60%;
   width: fit-content;
+  font-size: 11px;
+  font-weight: bold;
   height: fit-content;
 
-  font-size: 13px;
-  font-weight: bold;
-  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 67vh;
+  left: 8.8%;
+
+  overflow-y: scroll;
+  height: 150px;
+  overflow-x: hidden;
 }
 
 #Änderungen {
   display: inline-block;
-  position: fixed;
-  right: 25%;
-  top: 70%;
-  width: fit-content;
   height: fit-content;
 
-  font-size: 13px;
+  width: fit-content;
+  font-size: 11px;
   font-weight: bold;
-  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 66vh;
+  left: 36.2%;
+
+  overflow-y: scroll;
+  height: 150px;
+  overflow-x: hidden;
 }
 
 #Löschung {
   display: inline-block;
-  position: fixed;
-  right: 50%;
-  top: 70%;
   width: fit-content;
   height: fit-content;
 
-  font-size: 13px;
+  font-size: 11px;
   font-weight: bold;
-  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 66vh;
+  left: 69.7%;
+  text-align: left;
+
+  overflow-y: scroll;
+  height: 150px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1514px) {
+  #Umgang {
+    font-size: 10px;
+    left: 80%;
+  }
+
+  #Kontaktaufnahme {
+    left: 74.8%;
+    top: 42%;
+    position: absolute;
+  }
+
+  #Löschung {
+    left: 68.1%;
+  }
+
+  #Widerspruch {
+    position: absolute;
+    left: 45%;
+  }
+}
+
+@media (max-width: 1292px) {
+  #Allg {
+    left: 3%;
+    font-size: 9px;
+    overflow-y: hidden;
+  }
+
+  #ZugD {
+    left: 34%;
+    font-size: 9px;
+    text-align: left;
+  }
+
+  #Umgang {
+    left: 80%;
+    font-size: 9px;
+  }
+
+  #Rechte {
+    left: 3%;
+    font-size: 9px;
+  }
+
+  #Widerspruch {
+    left: 38%;
+    font-size: 9px;
+    overflow-y: hidden;
+  }
+
+  #Kontaktaufnahme {
+    left: 76.4%;
+    font-size: 9px;
+  }
+
+  #Speicherung {
+    left: 3%;
+    font-size: 9px;
+    overflow-y: hidden;
+  }
+
+  #Änderungen {
+    left: 34%;
+    font-size: 9px;
+    overflow-y: hidden;
+  }
+
+  #Löschung {
+    left: 70%;
+    font-size: 9px;
+    text-align: left;    
+  }
+}
+
+
+
+@media (max-width: 1012px) {
+  #Allg {
+    left: 3%;
+    font-size: 8px;
+    overflow-y: hidden;
+  }
+
+  #ZugD {
+    left: 34%;
+    font-size: 8px;
+    text-align: left;
+  }
+
+  #Umgang {
+    left: 76.4%;
+    font-size: 8px;
+  }
+
+  #Rechte {
+    left: 3%;
+    font-size: 8px;
+  }
+
+  #Widerspruch {
+    left: 38%;
+    font-size: 8px;
+    overflow-y: hidden;
+  }
+
+  #Kontaktaufnahme {
+    left: 73.5%;
+    font-size: 8px;
+  }
+
+  #Speicherung {
+    left: 3%;
+    font-size: 8px;
+    overflow-y: hidden;
+  }
+
+  #Änderungen {
+    left: 34%;
+    font-size: 8px;
+    overflow-y: hidden;
+  }
+
+  #Löschung {
+    left: 73%;
+    font-size: 8px;
+    width: 24%;
+    text-align: left;
+    position: fixed;    
+  }
+}
+
+
+
+
+@media (max-width: 741px) {
+  #Allg {
+    left: 3%;
+    font-size: 8px;
+    overflow-y: hidden;
+    width: 22%;
+    text-align: left;
+
+  }
+
+  #ZugD {
+    left: 34%;
+    font-size: 8px;
+    text-align: left;
+    width: 22%;
+
+  }
+
+  #Umgang {
+    left: 67%;
+    font-size: 8px;
+    width: 22%;
+    text-align: left;
+
+
+  }
+
+  #Rechte {
+    left: 3%;
+    font-size: 8px;
+    width: 22%;
+    text-align: left;
+
+
+  }
+
+  #Widerspruch {
+    left: 35%;
+    font-size: 8px;
+    overflow-y: hidden;
+    width: 22%;
+    text-align: left;
+
+
+  }
+
+  #Kontaktaufnahme {
+    left: 67%;
+    font-size: 8px;
+    width: 22%;
+    text-align: left;
+
+  }
+
+  #Speicherung {
+    left: 3%;
+    font-size: 8px;
+    overflow-y: hidden;
+    text-align: left;
+    width: 22%;
+
+  }
+
+  #Änderungen {
+    left: 34%;
+    font-size: 8px;
+    overflow-y: hidden;
+    text-align: left;
+    width: 22%;
+
+  }
+
+  #Löschung {
+    left: 67%;
+    font-size: 8px;
+    width: 24%;
+    text-align: left;
+    position: fixed;    
+    width: 22%;
+    text-align: left;
+
+
+  }
 }
