@@ -31,11 +31,12 @@ CREATE TABLE IF NOT EXISTS Fragen_4 (
 CREATE TABLE IF NOT EXISTS Antworten (
     id INT AUTO_INCREMENT PRIMARY KEY,
     profil_id INT,
-    frage_id INT,
+    frage VARCHAR(255) NOT NULL,
     antwort VARCHAR(255),
-    FOREIGN KEY (profil_id) REFERENCES Profil(id),
-    FOREIGN KEY (frage_id) REFERENCES Fragen_1(id)
+    FOREIGN KEY (profil_id) REFERENCES Profil(id)
 );
+
+-- Einfügen von Fragen in die Tabellen
 
 -- Fragen_1
 INSERT INTO Fragen_1 (frage) VALUES 
@@ -72,8 +73,3 @@ INSERT INTO Fragen_4 (frage) VALUES
 ('Was ist das Dümmste, was du je gemacht hast, ohne es zu bereuen?'),
 ('Wenn du ein eigenes Land gründen könntest, wie würdest du es nennen?'),
 ('Was ist dein Lieblingsessen, das du heimlich nicht so gerne magst?');
-
-
--- Fragen_5
-INSERT INTO Fragen_5 (frage) VALUES 
-('Was war dein schlimmster Modetrend, dem du gefolgt bist?'),

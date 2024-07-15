@@ -2,17 +2,14 @@ const mysql = require('mysql2/promise');
 const fs = require('fs');
 const path = require('path');
 
-
 async function readSQLFile(filePath) {
     return fs.promises.readFile(filePath, 'utf8');
 }
-
 
 async function executeSQLFile(connection, filePath) {
     const sql = await readSQLFile(filePath);
     await connection.query(sql);
 }
-
 
 async function initDatabase() {
     const connection = await mysql.createConnection({
@@ -32,5 +29,4 @@ async function initDatabase() {
     }
 }
 
-
-initDatabase();
+module.exports = { initDatabase };
