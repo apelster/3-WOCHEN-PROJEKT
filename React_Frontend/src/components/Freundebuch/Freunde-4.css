@@ -1,16 +1,16 @@
-#Book-Background7{
+#Book-Background7 {
   position: absolute;
-  right: 1%;
+  right: 0%;
+  top: 12%;
   width: 100%;
   height: 80vh;
   opacity: 0.5;
 }
 
-
 #Freunde7 {
   position: absolute;
-  top: 76%;
-  right: 19%;
+  top: 78%;
+  right: 18%;
   border: none;
   font-size: 100%;
   background-color: initial;
@@ -19,25 +19,24 @@
 
 #Zurück7 {
   position: absolute;
-  top: 76%;
-  left: 17%;
+  top: 79%;
+  left: 16%;
   font-size: 100%;
   border: none;
   background-color: initial;
   font-family: "Dancing Script";
 }
 
-
-#Headline7 {
+#Headline8 {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 22%;
+  top: 21%;
   left: 21%;
   text-decoration: underline;
+  font-size: 2px;
 }
-
 
 #paragraph16 {
   position: absolute;
@@ -45,7 +44,6 @@
   right: 55%;
   font-size: 20px;
 }
-
 
 #input16 {
   position: absolute;
@@ -55,18 +53,14 @@
   font-size: 20px;
 }
 
-
 #paragraph17 {
-  
   position: absolute;
   top: 39%;
   right: 60%;
   font-size: 20px;
 }
 
-
-#input17{
-  
+#input17 {
   position: absolute;
   top: 44vh;
   right: 30%;
@@ -74,18 +68,14 @@
   font-size: 20px;
 }
 
-
 #paragraph18 {
-  
   position: absolute;
   top: 49%;
   right: 52%;
   font-size: 20px;
 }
 
-
 #input18 {
-   
   position: absolute;
   top: 54vh;
   right: 30%;
@@ -93,18 +83,14 @@
   font-size: 20px;
 }
 
-
 #paragraph19 {
-  
   position: absolute;
   top: 60%;
   right: 62%;
   font-size: 20px;
 }
 
-
 #input19 {
-  
   position: absolute;
   top: 63vh;
   right: 30%;
@@ -112,14 +98,12 @@
   font-size: 20px;
 }
 
-
-#paragraph20 {  
+#paragraph20 {
   position: absolute;
   top: 69%;
   right: 55%;
   font-size: 20px;
 }
-
 
 #input20 {
   position: absolute;
@@ -129,8 +113,119 @@
   font-size: 20px;
 }
 
-
-
-#liste7{
+#liste7 {
   list-style-type: none;
+}
+
+@media (max-width: 1403px) {
+  #Headline {
+    font-size: 23px;
+    left: 22%;
+  }
+}
+
+@media (max-width: 1252px) {
+  #Headline {
+    font-size: 22px;
+    left: 21%;
+  }
+
+  #frbook {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1108px) {
+  #Headline {
+    font-size: 20px;
+    left: 21%;
+  }
+
+  #frbook {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1005px) {
+  #Headline {
+    font-size: 22px;
+    left: 13.5%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 78%;
+  }
+  
+  #Freunde7 {
+    top: 77vh;
+    right: 8%;
+  }
+
+  #Zurück7 {
+    top: 77vh;
+    left: 6%;
+  }
+}
+
+@media (max-width: 859px) {
+  #Headline {
+    font-size: 22px;
+    left: 11%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 78%;
+  }
+
+}
+
+@media (max-width: 742px) {
+  #Headline {
+    font-size: 18px;
+    left: 11%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 78%;
+  }
+
+}
+
+@media (max-width: 625px) {
+  #Headline {
+    font-size: 17px;
+    left: 9%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 78%;
+  }
+
+}
+
+@media (max-width: 537px) {
+  #Headline {
+    font-size: 15px;
+    top: 22%;
+    left: 9%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 84%;
+  }
+
+  #Freunde7 {
+    top: 82vh;
+    right: 8%;
+  }
+
+  #Zurück7 {
+    top: 82.5vh;
+    left: 6%;
+  }
 }

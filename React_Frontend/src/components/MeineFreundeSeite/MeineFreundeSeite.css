@@ -9,18 +9,21 @@
   top: 8%;
 }
 
-
 #bookinfriends {
-  height: 85%;
-  width: 110%;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   position: absolute;
+  top: 8%;
   opacity: 0.5;
 }
 
-
 .friends-grid {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   width: 85%;
   position: absolute;
   top: 25%;
@@ -29,20 +32,25 @@
   box-sizing: border-box;
 }
 
-.right-side{
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   position: absolute;
-  right: 28%;
-  font-size: 20px;
-  
+  top: 8%;
+  left: 39%;
 }
 
-
-.left-side{
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   position: absolute;
-  left: 3%;
-  font-size: 20px;
+  top: 8%;
+  left: 7%;
 }
-
 
 .left-side,
 .right-side {
@@ -51,7 +59,6 @@
   gap: 50px;
 }
 
-
 .friend img {
   border-radius: 50%;
   width: 100px;
@@ -59,7 +66,6 @@
   object-fit: cover;
   color: white;
 }
-
 
 #leftbtn1 {
   position: absolute;
@@ -73,7 +79,6 @@
   color: black;
 }
 
-
 #rightbtn1 {
   position: absolute;
   bottom: -185px;
@@ -86,9 +91,132 @@
   color: black;
 }
 
-
 #leftbtn1:disabled,
 #rightbtn1:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+@media (max-width: 1280px) {
+  .left-side {
+    left: 5%;
+  }
+
+  .right-side {
+    left: 40%;
+  }
+}
+
+@media (max-width: 1205px) {
+  .left-side {
+    left: %;
+    width: 20%;
+  }
+
+  .right-side {
+    left: 43%;
+    width: 20%;
+  }
+}
+
+@media (max-width: 950px) {
+  #bookinfriends {
+    width: 120%;
+  }
+
+  .left-side {
+    left: 3%;
+    width: 0%;
+  }
+
+  .right-side {
+    left: 45%;
+    width: 0%;
+  }
+}
+
+@media (max-width: 900px) {
+  .left-side {
+    left: 0%;
+    width: 0%;
+  }
+
+  .right-side {
+    left: 45%;
+    width: 0%;
+  }
+
+  #bookinfriends {
+    width: 130%;
+  }
+}
+
+@media (max-width: 800px) {
+  .left-side {
+    left: -3%;
+    width: 0%;
+  }
+
+  .right-side {
+    left: 42%;
+    width: 0%;
+  }
+
+  #bookinfriends {
+    width: 130%;
+  }
+}
+
+@media (max-width: 690px) {
+  .left-side {
+    left: -7%;
+    width: 0%;
+    font-size: 12px;
+  }
+
+  .right-side {
+    left: 43%;
+    width: 0%;
+    font-size: 12px;
+  }
+
+  #bookinfriends {
+    width: 130%;
+  }
+}
+
+@media (max-width: 550px) {
+  .left-side {
+    left: -8%;
+    width: 0%;
+    font-size: 8px;
+  }
+
+  .right-side {
+    left: 44%;
+    width: 0%;
+    font-size: 8px;
+  }
+
+  #bookinfriends {
+    width: 130%;
+  }
+}
+
+@media (max-width: 460px) {
+  .left-side {
+    left: -10%;
+    width: 0%;
+    font-size: 8px;
+  }
+
+  .right-side {
+    left: 43%;
+    width: 0%;
+    font-size: 8px;
+  }
+
+  #bookinfriends {
+    width: 130%;
+  }
 }

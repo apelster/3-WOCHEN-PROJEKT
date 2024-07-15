@@ -1,5 +1,5 @@
 #frdiv {
-  width: 100%; 
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -13,11 +13,10 @@
   opacity: 0.5;
 }
 
-
 #Freunde {
   position: absolute;
-  bottom: 21.6%;
-  right: 19.1%; 
+  top: 78%;
+  right: 18%;
   border: none;
   background-color: inherit;
   font-family: "Dancing Script";
@@ -26,21 +25,18 @@
   opacity: 1;
 }
 
-
 #Headline {
-  position: absolute;
-  top: 21%;
-  left: 21%;
+  position: fixed;
+  top: 21vh;
+  left: 21vw;
+  font-size: 29px;
   text-decoration: underline;
 }
-
 
 .input {
   list-style: none;
   text-align: right;
 }
-
-
 
 #paragraph {
   position: absolute;
@@ -57,7 +53,6 @@
   width: 10%;
 }
 
-
 #paragraph2 {
   position: absolute;
   top: 850%;
@@ -70,10 +65,8 @@
   position: relative;
   right: -72.6%;
   top: 31vh;
-  width:75%;
+  width: 75%;
 }
-
-
 
 #paragraph3 {
   position: absolute;
@@ -84,14 +77,11 @@
 }
 
 #input3 {
-  
   position: relative;
   right: -72.6%;
   top: 37vh;
-  width:75%;
+  width: 75%;
 }
-
-
 
 #paragraph4 {
   position: absolute;
@@ -103,11 +93,10 @@
 }
 
 #input4 {
-  
   position: relative;
   right: -72.6%;
   top: 44vh;
-  width:75%;
+  width: 75%;
 }
 
 #paragraph5 {
@@ -120,9 +109,130 @@
 }
 
 #input5 {
-  
   position: relative;
   right: -72.6%;
   top: 51vh;
-  width:75%;
+  width: 75%;
+}
+
+@media (max-width: 1403px) {
+  #Headline {
+    font-size: 23px;
+    left: 22%;
+  }
+}
+
+@media (max-width: 1252px) {
+  #Headline {
+    font-size: 23px;
+    left: 21%;
+  }
+
+  #frbook {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1108px) {
+  #Headline {
+    font-size: 20px;
+    left: 21%;
+  }
+
+  #frbook {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1005px) {
+  #Headline {
+    font-size: 22px;
+    left: 13.5%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 78%;
+  }
+
+  #Freunde {
+    top: 77vh;
+    right: 8%;
+  }
+}
+
+
+
+@media (max-width: 859px) {
+  #Headline {
+    font-size: 22px;
+    left: 11%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 78%;
+  }
+
+  #Freunde {
+    right: 10%;
+  }
+}
+
+
+
+@media (max-width: 742px) {
+  #Headline {
+    font-size: 18px;
+    left: 11%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 78%;
+  }
+
+  #Freunde {
+    right: 10%;
+  }
+}
+
+
+
+
+@media (max-width: 625px) {
+  #Headline {
+    font-size: 17px;
+    left: 9%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 78%;
+  }
+
+  #Freunde {
+    right: 10%;
+  }
+}
+
+
+
+
+@media (max-width: 537px) {
+  #Headline {
+    font-size: 15px;
+    top: 22%;
+    left: 9%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 84%;
+  }
+
+  #Freunde {
+    top: 82vh;
+    right: 6%;
+  }
 }
