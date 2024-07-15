@@ -106,8 +106,8 @@ const Login = () => {
   return (
     <main className="main-content1">
       <div>
-        <img className="Book-Background1" src="/img/book.png" alt="Book Background" />
-        <img className="feder1" src="/img/feder.png" alt="Feder" />
+        <img className="Book-Background2" src="/img/book.png" alt="Book Background" />
+        <img className="feder2" src="/img/feder.png" alt="Feder" />
       </div>
       <div className="register-container1">
         <h1 className="Headline1">Login</h1>

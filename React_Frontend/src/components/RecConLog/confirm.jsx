@@ -42,8 +42,8 @@ const Confirm = () => {
   return (
     <main className="main-content1">
       <div>
-        <img className="Book-Background1" src="/img/book.png" alt="Book Background" />
-        <img className="feder1" src="/img/feder.png" alt="Feder" />
+        <img className="Book-Background3" src="/img/book.png" alt="Book Background" />
+        <img className="feder3" src="/img/feder.png" alt="Feder" />
       </div>
       <div className="confirm-container">
         <h1 className="Headline1">Bestätigen</h1>

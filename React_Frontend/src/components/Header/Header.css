@@ -146,10 +146,14 @@
         top: 2vh;
 
     }
+
+    .generated-link {
+        font-size: 15px;
+        top: 8vh;
+        left: 2%;
+    }
+    
 }
-
-
-
 
 
 @media (max-width: 860px) {
@@ -170,8 +174,8 @@
     .generated-link {
         position: fixed;
         font-size: 10px;
-        top: 82vh;
-        left: 33%;
+        top: 14vh;
+        left: 29%;
     }
 
 }
@@ -195,7 +199,8 @@
     }
 
     .generated-link{
-        left: 20vh;
+        top: 16%;
+        left: 28%;
     }
 
 
@@ -219,7 +224,8 @@
     }
 
     .generated-link{
-        left: 22%;
+        top: 16%;
+        left: 20%;
     }
 
 
