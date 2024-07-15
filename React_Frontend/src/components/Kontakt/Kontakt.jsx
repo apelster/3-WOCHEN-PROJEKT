@@ -42,7 +42,7 @@ const Contact = () => {
         <h1 id="h1K">Kontakt</h1>
         <div id="p-position">
           <p className="pK">
-            Wenn Sie Fragen zu unserem Unternehmen haben oder weitere
+            Wenn Sie Fragen zu unserem Unternehmen <br /> haben oder weitere
             Informationen benötigen,
             <br /> können Sie uns gerne kontaktieren:
           </p>

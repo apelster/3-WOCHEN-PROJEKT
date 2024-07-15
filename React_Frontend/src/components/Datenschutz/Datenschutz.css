@@ -1,6 +1,6 @@
 .containerD {
     width: 100%;
-    font-size: 20px;
+    font-size: 95%;
     text-align: left;
     position: absolute; /* Ändern zu relative */
     top: 19%;
@@ -29,4 +29,42 @@ a {
 .pD {
     font-weight: bold;
     text-align: left;
+}
+
+
+@media (max-width: 1037px) {
+
+    .containerD{
+        font-size: 12.5px;
+        position: fixed;
+        left: 5%;
+        top: 27%;
+    }
+
+}
+
+
+@media (max-width: 816px) {
+
+    .containerD{
+        font-size: 11px;
+        position: fixed;
+        left: 5%;
+        top: 30%;
+    }
+
+}
+
+
+
+@media (max-width: 719px) {
+
+    .containerD{
+        font-size: 12px;
+        position: fixed;
+        left: 3%;
+        top: 30%;
+        width: 80%;
+    }
+
 }

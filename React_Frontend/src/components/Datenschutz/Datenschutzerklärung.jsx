@@ -4,11 +4,10 @@ import "./Datenschutzerklärung.css";
 const Datenschutzerklärung = () => {
   return (
     <div class="containerDE">
-      <div id="content">
         <div id="Allg">
           <h2 className="h2DEA">1. Allgemeine Hinweise</h2>
 
-          <p className="pDEA">
+          <p>
             Der Schutz Ihrer persönlichen Daten ist <br />uns sehr wichtig. In dieser
             Datenschutz- <br />erklärung informieren wir Sie über die <br /> wichtigsten
             Aspekte der Datenverarbeitung <br /> im Rahmen unserer Website.
@@ -24,13 +23,19 @@ const Datenschutzerklärung = () => {
         <div id="ZugD">
           <h2>2. Zugriffsdaten</h2>
 
-          <p className="pDE1">
+          <p>
             Wir, der Websitebetreiber bzw. Seitenprovider, <br />
             erheben aufgrund unseres berechtigten Interesses <br />
             (s. Art. 6 Abs. 1 lit. f. DSGVO) Daten über Zugriffe auf <br />
             die Website und speichern diese als „Server-Logfiles“ <br />
-            auf dem Server der Website ab. Folgende Daten werden <br /> so
+            auf dem Server der Website ab. Die Server-Logfiles <br />werden für maximal 7 Tage gespeichert <br /> und
+            anschließend gelöscht. Die Speicherung <br />der Daten erfolgt <br />
+            aus Sicherheitsgründen, um z. B. <br />Missbrauchsfälle aufklären zu
+            <br /> können. Müssen Daten aus Beweisgründen aufgehoben <br /> werden,
+            sind sie solange von der Löschung ausgenommen <br />bis der Vorfall endgültig geklärt ist.
+            Folgende Daten werden <br /> so
             protokolliert:
+          
           </p>
 
           <ul className="ulDE1">
@@ -43,15 +48,6 @@ const Datenschutzerklärung = () => {
             <li>Verwendete IP-Adresse</li>
           </ul>
 
-          <p className="pDE1">
-            Die Server-Logfiles werden für maximal 7 Tage gespeichert <br /> und
-            anschließend gelöscht. Die Speicherung der Daten erfolgt <br />
-            aus Sicherheitsgründen, um z. B. Missbrauchsfälle aufklären zu
-            <br /> können. Müssen Daten aus Beweisgründen aufgehoben werden,{" "}
-            <br /> sind sie solange von der Löschung ausgenommen bis der Vorfall{" "}
-            <br />
-            endgültig geklärt ist.
-          </p>
         </div>
 
         {/* ----------------------- */}
@@ -62,7 +58,7 @@ const Datenschutzerklärung = () => {
             personenbezogenen Daten
           </h2>
 
-          <p className="pDE">
+          <p>
             Der Websitebetreiber erhebt, nutzt <br />und gibt 
             Ihre personenbezogenen  <br />Daten nur dann weiter,
             wenn dies <br />im gesetzlichen Rahmen erlaubt <br />ist 
@@ -82,7 +78,7 @@ const Datenschutzerklärung = () => {
         <div id="Rechte">
           <h2 className="h2DE">4. Rechte des Nutzers</h2>
 
-          <p className="pDE">
+          <p>
             Sie haben als Nutzer das Recht, auf Antrag <br /> eine kostenlose Auskunft
             darüber zu erhalten,<br /> welche personenbezogenen Daten über Sie
             <br />gespeichert wurden. Sie haben außerdem das<br /> Recht auf Berichtigung
@@ -99,7 +95,7 @@ const Datenschutzerklärung = () => {
         <div id="Widerspruch">
           <h2 className="h2DE">5. Widerspruchsrecht</h2>
 
-          <p className="pDE">
+          <p>
             Nutzer dieser Webseite können von  <br />ihrem Widerspruchsrecht
             Gebrauch <br />machen und
             der Verarbeitung ihrer <br />personenbezogenen Daten zu jeder<br /> Zeit
@@ -112,7 +108,7 @@ const Datenschutzerklärung = () => {
         <div id="Kontaktaufnahme">
           <h2 className="h2DE">6. Kontaktaufnahme</h2>
 
-          <p className="pDE">
+          <p>
             Wenn Sie uns per Kontaktformular Anfragen <br />zukommen lassen, werden
             Ihre Angaben <br />aus dem Anfrageformular inklusive der von<br /> Ihnen dort
             angegebenen Kontaktdaten zwecks <br />Bearbeitung der Anfrage und für den
@@ -126,7 +122,7 @@ const Datenschutzerklärung = () => {
         <div id="Speicherung">
           <h2 className="h2DE">7. Speicherung von Bildern</h2>
 
-          <p className="pDE">
+          <p>
             Wenn Sie uns Bilder zur Verfügung stellen, <br />speichern wir diese auf
             unseren Servern. <br />Diese Speicherung erfolgt nur mit Ihrer
             <br />ausdrücklichen Einwilligung. Sie haben<br /> das Recht, diese Einwilligung
@@ -138,7 +134,7 @@ const Datenschutzerklärung = () => {
 
         <div id="Änderungen">
           <h2 className="h2DE">8. Änderungen der Datenschutzerklärung</h2>
-          <p className="pDE">
+          <p>
             Wir behalten uns vor, die Datenschutzerklärung anzupassen,<br /> um sie
             stets den aktuellen rechtlichen Anforderungen<br /> anzupassen oder um
             Änderungen unserer Leistungen<br /> in der Datenschutzerklärung
@@ -152,7 +148,7 @@ const Datenschutzerklärung = () => {
           <div id="Löschung">
             <h2 className="h2DE">9. Löschung von Daten</h2>
 
-            <p className="pDE">
+            <p>
               Sofern Ihr Wunsch nicht mit einer gesetzlichen Pflicht <br />zur
               Aufbewahrung von Daten (z. B. Vorratsdatenspeicherung) <br />kollidiert,
               haben Sie ein Anrecht auf Löschung Ihrer Daten.<br /> Von uns
@@ -165,7 +161,6 @@ const Datenschutzerklärung = () => {
               nicht für andere Zwecke verarbeitet.
             </p>
           </div>
-        </div>
       </div>
   );
 };
