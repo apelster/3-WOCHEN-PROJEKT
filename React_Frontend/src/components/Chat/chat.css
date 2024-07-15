@@ -1,0 +1,42 @@
+/* Spezifische Chat-Stile */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.chat-container .messages {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.chat-container .messages li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.chat-container .message-form {
+    display: flex;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.chat-container .message-form input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+.chat-container .message-form button {
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+

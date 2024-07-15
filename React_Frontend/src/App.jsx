@@ -1,3 +1,4 @@
+// src/App.jsx
 import React from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
@@ -30,6 +31,8 @@ import Confirm from "./components/RecConLog/confirm.jsx";
 import Profil1 from "./components/Profil/1-Profil-Rohling.jsx";
 
 import Book from "./components/MeineFreundeSeite/MeineFreundeSeite.jsx";
+
+import Chat from "./components/Chat/chat.jsx"; // Importiert die Chat-Komponente
 
 function App() {
   const location = useLocation();
@@ -68,6 +71,8 @@ function App() {
         <Route path="/confirm" element={<Confirm />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+
+        <Route path="/chat" element={<Chat />} /> {/* Fügen Sie diese Zeile hinzu */}
       </Routes>
       <Footer />
     </>
