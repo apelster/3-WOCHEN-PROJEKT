@@ -7,22 +7,18 @@
   flex-direction: column;
 }
 
-
-#homelogo{
+#homelogo {
   position: absolute;
   width: 15%;
   right: 80%;
   top: 0%;
 }
 
-
-
 #Brownbook {
   position: absolute;
   top: -10%;
   width: 70%;
 }
-
 
 #federhome {
   position: absolute;
@@ -32,7 +28,6 @@
   opacity: 0.5;
 }
 
-
 #h1Home {
   display: inline-block;
   position: absolute;
@@ -40,7 +35,6 @@
   left: 38%;
   transform: rotate(-15deg);
 }
-
 
 #LoginHome {
   position: absolute;
@@ -53,8 +47,9 @@
   border: 5px solid inherit;
   border-radius: 50px;
   cursor: pointer;
+  width: fit-content;
+  height: fit-content;
 }
-
 
 #RegistrierungHome {
   position: absolute;
@@ -67,4 +62,215 @@
   border: 5px solid inherit;
   border-radius: 50px;
   cursor: pointer;
+  width: fit-content;
+  height: fit-content;
 }
+
+@media (max-width: 1321px) {
+  #Brownbook {
+    position: absolute;
+    top: -10%;
+    width: 70%;
+  }
+
+  #h1Home {
+    top: 15%;
+  }
+
+  #RegistrierungHome {
+    left: 42%;
+  }
+
+  #federhome {
+    width: 26%;
+    top: 10%;
+  }
+
+  #LoginHome {
+    top: 34%;
+    left: 43%;
+  }
+
+  #homelogo {
+    width: 15%;
+  }
+}
+
+@media (max-width: 1205px) {
+  #Brownbook {
+    width: 70%;
+    top: 0%;
+  }
+
+  #h1Home {
+    top: 20%;
+    left: 37%;
+  }
+
+  #RegistrierungHome {
+    top: 52%;
+    left: 42%;
+  }
+
+  #federhome {
+    width: 26%;
+    top: 15%;
+  }
+
+  #LoginHome {
+    top: 37%;
+    left: 43%;
+  }
+}
+
+@media (max-width: 1050px) {
+  #Brownbook {
+    width: 80%;
+    top: 0%;
+  }
+
+  #h1Home {
+    top: 23%;
+    left: 35%;
+  }
+
+  #RegistrierungHome {
+    top: 52%;
+    left: 41%;
+  }
+
+  #federhome {
+    width: 26%;
+    top: 22%;
+  }
+
+  #LoginHome {
+    top: 38%;
+    left: 42%;
+  }
+}
+
+@media (max-width: 981px) {
+  #Brownbook {
+    width: 80%;
+    top: 0%;
+  }
+
+  #h1Home {
+    top: 23%;
+    left: 35%;
+  }
+
+  #federhome {
+    width: 26%;
+    top: 25%;
+  }
+
+  #LoginHome {
+    top: 38%;
+    left: 41%;
+  }
+
+  #RegistrierungHome {
+    top: 50%;
+    left: 41%;
+  }
+}
+
+@media (max-width: 910px) {
+  #Brownbook {
+    width: 100%;
+    top: 0%;
+  }
+
+  #federhome {
+    width: 26%;
+    left: 62%;
+    top: 34%;
+  }
+
+  #h1Home {
+    top: 25%;
+    left: 31%;
+  }
+
+  #LoginHome {
+    top: 37%;
+    left: 39%;
+  }
+  #RegistrierungHome {
+    top: 47%;
+    left: 37%;
+  }
+}
+
+
+@media (max-width: 687px) {
+  #Brownbook {
+    width: 100%;
+    top: 10%;
+  }
+
+  #federhome {
+    width: 25%;
+    height: 40%;
+    top: 23%;
+    left: 62%;
+  }
+
+  #h1Home {
+    top: 27%;
+    left: 32%;
+    font-size: 25px;
+  }
+
+  #LoginHome {
+    top: 39%;
+    left: 40%;
+    font-size: 20px;
+  }
+
+  #RegistrierungHome {
+    top: 49%;
+    left: 38%;
+    font-size: 20px;
+  }
+}
+
+
+
+@media (max-width: 580px) {
+  #Brownbook {
+    width: 100%;
+    top: 10%;
+  }
+
+  #federhome {
+    width: 25%;
+    height: 40%;
+    top: 16%;
+    left: 62%;
+  }
+
+  #h1Home {
+    top: 22%;
+    left: 31%;
+    font-size: 22px;
+  }
+
+  #LoginHome {
+    top: 32%;
+    left: 39%;
+    font-size: 20px;
+  }
+
+  #RegistrierungHome {
+    top: 41%;
+    left: 36%;
+    font-size: 20px;
+  }
+}
+
+
+
+

@@ -3,10 +3,9 @@ import "../Profil/Profil-Design.css";
 import "./Freunde-6.css";
 import { Link } from "react-router-dom";
 
-const Freunde6= () => {
+const Freunde6 = () => {
   return (
     <main>
-
       <div>
         <img id="Book-Background11" src="/img/book.png" alt="" />
 
@@ -16,45 +15,48 @@ const Freunde6= () => {
           <li id="liste11">
             <label htmlFor="question1">
               <p id="paragraph26">
-              Welches ist dein Lieblings-TikTok-Trend?
+                Welches ist dein Lieblings-TikTok-Trend?
+                <input id="input26" type="text" />
               </p>
-              <input id="input26" type="text" />
             </label>
           </li>
 
           <li id="liste11">
             <label htmlFor="question2">
               <p id="paragraph27">
-              Wenn du für einen Tag das Gegenteil deines Geschlechts <br /> sein könntest, was würdest du tun?
+                Wenn du für einen Tag das Gegenteil deines Geschlechts
+                sein könntest, was würdest du tun?
+                <input id="input27" type="text" />
               </p>
-              <input id="input27" type="text" />
             </label>
           </li>
 
           <li id="liste11">
             <label htmlFor="question3">
               <p id="paragraph28">
-              Was ist das lustigste Missgeschick, <br /> das dir in der Küche passiert ist?
+                Was ist das lustigste Missgeschick, <br /> das dir in der Küche
+                passiert ist?
+                <input id="input28" type="text" />
               </p>
-              <input id="input28" type="text" />
             </label>
           </li>
 
           <li id="liste11">
             <label htmlFor="question4">
               <p id="paragraph29">
-              Welcher Gegenstand aus deiner <br /> Kindheit fehlt dir am meisten?
-                </p>
-              <input id="input29" type="text" />
+                Welcher Gegenstand aus deiner <br /> Kindheit fehlt dir am
+                meisten?
+                <input id="input29" type="text" />
+              </p>
             </label>
           </li>
 
           <li id="liste11">
             <label htmlFor="question5">
               <p id="paragraph30">
-              Welches ist dein peinlichstes Foto?
+                Welches ist dein peinlichstes Foto?
+                <input id="input30" type="text" />
               </p>
-              <input id="input30" type="text" />
             </label>
           </li>
         </ul>

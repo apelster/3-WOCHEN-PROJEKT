@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 body {
   background-color: #0e2e2e;
@@ -60,7 +59,6 @@ body {
   margin-right: auto;
 }
 
-
 .Headline {
   position: relative;
   top: 145px;
@@ -70,13 +68,11 @@ body {
   border-bottom: 4px solid #fff;
 }
 
-
 .box {
   position: relative;
   top: 2px;
   width: 40px;
 }
-
 
 .paragraph {
   display: inline-block;
@@ -85,8 +81,8 @@ body {
   font-family: "Dancing Script", cursive;
 }
 
-
-#ja, #nein {
+#ja,
+#nein {
   display: inline-block;
   position: relative;
   top: 205px;
@@ -94,18 +90,15 @@ body {
   margin: 0 10px;
 }
 
-
 .liste {
   position: relative;
   left: 40px;
   top: 10px;
 }
 
-
 .logo img {
   width: 13%;
 }
-
 
 .book2 {
   height: 100%;
@@ -113,7 +106,6 @@ body {
   position: absolute;
   left: 10%;
 }
-
 
 #bookProfil {
   height: 80%;
@@ -123,7 +115,6 @@ body {
   opacity: 0.5;
 }
 
-
 .left-page {
   position: relative;
   bottom: 47%;
@@ -132,10 +123,9 @@ body {
   text-align: left;
 }
 
-
 #description {
   position: absolute;
-  top:  32%;
+  top: 32%;
   left: 6%;
   height: 68%;
   width: 90%;
@@ -148,7 +138,6 @@ body {
   box-shadow: 0 5px 20px 15px rgba(255, 255, 255, 1);
 }
 
-
 #description::placeholder {
   color: rgb(0, 255, 255);
   text-align: center;
@@ -156,7 +145,6 @@ body {
   font-family: "Dancing Script", Arial, Helvetica, sans-serif;
   text-decoration: underline;
 }
-
 
 #savingdescription {
   position: relative;
@@ -172,7 +160,6 @@ body {
   font-family: "Dancing Script", Arial, Helvetica, sans-serif;
 }
 
-
 #ÜberMich {
   color: greenyellow;
   font-family: "IBM Plex Mono";
@@ -180,7 +167,6 @@ body {
   top: 15%;
   right: 31%;
 }
-
 
 #rightPage {
   position: relative;
@@ -190,23 +176,21 @@ body {
   height: 60%;
 }
 
-
 .image-placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Dancing Script", Times, serif;
-  width: 55%;
-  height: 100%;
+  width: 50%;
+  height: 120%;
   border-radius: 100%;
   background-color: rgba(255, 255, 255, 0.3);
   font-size: 18px;
   animation: textShake 0.9s ease infinite;
   position: absolute;
-  top: -75%;
+  top: -105%;
   left: -5%;
 }
-
 
 @keyframes textShake {
   0% {
@@ -244,17 +228,14 @@ body {
   }
 }
 
-
 #file {
   visibility: hidden;
   width: 0px;
 }
 
-
 #file2 {
   cursor: pointer;
 }
-
 
 .input1 {
   display: inline-block;
@@ -268,8 +249,7 @@ body {
   outline: none;
 }
 
-
-.pProfil{
+.image-placeholder .pProfil {
   display: inline-block;
   position: relative;
   top: 12vh;
@@ -278,7 +258,6 @@ body {
   text-align: left;
   font-size: 20px;
 }
-
 
 .custom-input {
   background-color: transparent;
@@ -295,15 +274,123 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
-
-
-#federProfil{
+#federProfil {
   position: relative;
-  right:  202%;
+  right: 202%;
   top: 5%;
   width: 100%;
   height: 100%;
   transform: scaleX(-1);
   rotate: 20deg;
   opacity: 0.5;
+}
+
+.pProfil {
+  position: relative;
+  top: 80px;
+}
+
+@media (max-width: 1287px) {
+  #ÜberMich {
+    position: relative;
+    top: 20%;
+    right: 2%;
+  }
+
+  #federProfil {
+    position: relative;
+    top: -5%;
+  }
+
+  .pProfil {
+    position: relative;
+    top: 100px;
+  }
+
+  #description {
+    top: 33%;
+  }
+
+  #savingdescription {
+    position: relative;
+    top: 95%;
+  }
+
+  #bookProfil {
+    top: 5%;
+    padding-bottom: 20px;
+  }
+
+  .image-placeholder {
+    top: -150px;
+  }
+}
+
+@media (max-width: 1032px) {
+  #ÜberMich {
+    position: fixed;
+    top: 17vh;
+    right: 19vw;
+  }
+
+  #federProfil {
+    display: none;
+  }
+
+  .pProfil {
+    position: relative;
+    top: 780px;
+    left: -50%;
+    font-size: 15px;
+  }
+
+  #description {
+    position: fixed;
+    top: 28%;
+    left: 55%;
+    width: 30vw;
+    height: 40vh;
+  }
+
+  #savingdescription {
+    position: fixed;
+    top: 74vh;
+    left: 70vw;
+  }
+
+  #bookProfil {
+    position: fixed;
+    top: 9%;
+    width: 130%;
+    left: -14%;
+  }
+
+  .image-placeholder {
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    height: 25%;
+    width: 25%;
+  }
+}
+
+
+
+
+
+@media (max-width: 800px) {
+
+
+  #ÜberMich{
+    top: 20%;
+    left: 59.4%;
+    font-size: 20px;
+  }
+
+  .pProfil {
+    position: relative;
+    top: 750px;
+    left: -50%;
+    font-size: 15px;
+  }
 }

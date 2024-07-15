@@ -64,11 +64,11 @@ const Freunde10 = () => {
         </ul>
       </div>
 
-      <button id="Zurück10">
+      <button id="Zurück19">
         <Link to="/9-Freunde">9.Seite</Link>
       </button>
 
-      <button id="Freunde10">
+      <button id="Freunde19">
         <Link to="/Flipbook">Eintrag Erstellen</Link>
       </button>
     </main>

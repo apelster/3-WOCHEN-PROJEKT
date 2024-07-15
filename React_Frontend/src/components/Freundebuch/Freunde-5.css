@@ -9,8 +9,8 @@
 
 #Freunde9 {
   position: absolute;
-  top: 76%;
-  right: 19%;
+  top: 78%;
+  right: 18%;
   border: none;
   font-size: 100%;
   background-color: initial;
@@ -19,8 +19,8 @@
 
 #Zurück9 {
   position: absolute;
-  top: 76%;
-  left: 17%;
+  top: 79%;
+  left: 16%;
   font-size: 100%;
   border: none;
   background-color: initial;
@@ -133,4 +133,127 @@
 
 #liste9{
   list-style-type: none;
+}
+
+
+@media (max-width: 1403px) {
+  #Headline {
+    font-size: 23px;
+    left: 22%;
+  }
+}
+
+@media (max-width: 1252px) {
+  #Headline {
+    font-size: 23px;
+    left: 21%;
+  }
+
+  #frbook {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1108px) {
+  #Headline {
+    font-size: 20px;
+    left: 21%;
+  }
+
+  #frbook {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1005px) {
+  #Headline {
+    font-size: 22px;
+    left: 13.5%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 78%;
+  }
+  
+  #Freunde9 {
+    top: 77vh;
+    right: 8%;
+  }
+
+  #Zurück9 {
+    top: 77vh;
+    left: 6%;
+  }
+}
+
+@media (max-width: 859px) {
+  #Headline {
+    font-size: 22px;
+    left: 11%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 78%;
+  }
+
+  #Freunde {
+    right: 10%;
+  }
+}
+
+@media (max-width: 742px) {
+  #Headline {
+    font-size: 18px;
+    left: 11%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 78%;
+  }
+
+  #Freunde {
+    right: 10%;
+  }
+}
+
+@media (max-width: 625px) {
+  #Headline {
+    font-size: 17px;
+    left: 9%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 78%;
+  }
+
+  #Freunde {
+    right: 10%;
+  }
+}
+
+@media (max-width: 537px) {
+  #Headline {
+    font-size: 15px;
+    top: 22%;
+    left: 9%;
+  }
+
+  #frbook {
+    width: 130%;
+    height: 84%;
+  }
+
+  #Freunde9 {
+    top: 82vh;
+    right: 8%;
+  }
+
+  #Zurück9 {
+    top: 82.5vh;
+    left: 6%;
+  }
 }

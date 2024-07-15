@@ -16,7 +16,7 @@ const Freunde8 = () => {
           <li id="liste15">
             <label htmlFor="question1">
               <p id="paragraph36">
-              Wenn du eine Erfindung der Vergangenheit rückgängig <br /> machen könntest, welche wäre es?
+              Wenn du eine Erfindung der Vergangenheit rückgängig machen könntest, welche wäre es?
               </p>
               <input id="input36" type="text" />
             </label>
