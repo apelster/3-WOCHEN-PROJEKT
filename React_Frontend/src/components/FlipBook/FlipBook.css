@@ -61,7 +61,6 @@
   }
 }
 
-
 @media (max-width: 1028px) {
   .flipbook {
     transform: translate(-5%, 45%) scale(0.95);
@@ -78,77 +77,66 @@
   }
 }
 
-
-
 @media (max-width: 900px) {
-    .flipbook {
-      transform: translate(-5%, 55%) scale(0.95);
-    }
-  
-    .demoPage {
-      font-size: 15px;
-    }
-  
-    #ZurückFlipBook {
-      top: 20%;
-      left: 43%;
-      font-size: 30px;
-    }
+  .flipbook {
+    transform: translate(-5%, 55%) scale(0.95);
   }
-  
+
+  .demoPage {
+    font-size: 15px;
+  }
+
+  #ZurückFlipBook {
+    top: 20%;
+    left: 43%;
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 809px) {
-    .flipbook {
-      transform: translate(-5%, 75%) scale(0.95);
-    }
-  
-    .demoPage {
-      font-size: 15px;
-    }
-  
-    #ZurückFlipBook {
-      top: 20%;
-      left: 43%;
-      font-size: 30px;
-    }
+  .flipbook {
+    transform: translate(-5%, 75%) scale(0.95);
   }
-  
-  
+
+  .demoPage {
+    font-size: 15px;
+  }
+
+  #ZurückFlipBook {
+    top: 20%;
+    left: 43%;
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 653px) {
-    .flipbook {
-      transform: translate(-5%, 105%) scale(0.95, 1.5);
-    }
-  
-    .demoPage {
-      font-size: 10px;
-    }
-  
-    #ZurückFlipBook {
-      top: 20%;
-      left: 43%;
-      font-size: 30px;
-    }
+  .flipbook {
+    transform: translate(-5%, 105%) scale(0.95, 1.5);
   }
-  
 
-
-  
-  @media (max-width: 505px) {
-    .flipbook {
-      transform: translate(-5%, 155%) scale(0.95, 1.9);
-    }
-  
-    .demoPage {
-      font-size: 11px;
-    }
-  
-    #ZurückFlipBook {
-      top: 20%;
-      left: 43%;
-      font-size: 30px;
-    }
+  .demoPage {
+    font-size: 10px;
   }
-  
 
-  
+  #ZurückFlipBook {
+    top: 20%;
+    left: 43%;
+    font-size: 30px;
+  }
+}
 
+@media (max-width: 505px) {
+  .flipbook {
+    transform: translate(-5%, 155%) scale(0.95, 1.9);
+  }
 
+  .demoPage {
+    font-size: 11px;
+  }
+
+  #ZurückFlipBook {
+    top: 20%;
+    left: 43%;
+    font-size: 30px;
+  }
+}
