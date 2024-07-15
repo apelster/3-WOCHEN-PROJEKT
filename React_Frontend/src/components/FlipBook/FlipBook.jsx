@@ -4,6 +4,12 @@ import './FlipBook.css';
 import '../Profil/Profil-Design.css';
 import { Link } from "react-router-dom";
 
+
+
+
+
+
+// Seite-Komponente mit Vorwärts-Referenzierung
 const Page = React.forwardRef((props, ref) => {
   return (
     <div className="demoPage" ref={ref}>
@@ -13,6 +19,19 @@ const Page = React.forwardRef((props, ref) => {
 });
 
 function DemoBook() {
+
+
+  const [windowSize, setWindowsSize] = useState({width: undefined, height: undefined})
+
+  useEffect(() => {
+    
+    window.addEventListener("resize", () => {
+      setWindowsSize({width: window.innerWidth, height : window.innerHeight})
+    })
+  }, [])
+
+ 
+
   const book = useRef();
   const [name, setName] = useState("");
   const [fragen, setFragen] = useState([]);
@@ -57,12 +76,14 @@ function DemoBook() {
       });
   };
 
+        
+
   return (
     <>
       <HTMLFlipBook
-        width={400}
-        height={570}
-        size="fixed"
+        width={200}
+        height={170}
+        size="stretch"
         drawShadow={false}
         flippingTime={1000}
         usePortrait={true}
@@ -78,6 +99,9 @@ function DemoBook() {
         ref={book}
         className="flipbook"
       >
+
+
+        
         <Page>
           <h1>Wer bin ich?</h1>
           <p>Ich heiße <input type="text" placeholder="Dein Name" value={name} onChange={(e) => setName(e.target.value)} /></p>
@@ -96,9 +120,8 @@ function DemoBook() {
         ))}
       </HTMLFlipBook>
 
-      <button id="SaveAnswers" onClick={handleSaveAnswers}>Antworten speichern</button>
       <button id="ZurückFlipBook">
-        <Link to="/10-Freunde">10.Seite</Link>
+        <Link to="/10-Freunde">10. Seite</Link>
       </button>
     </>
   );

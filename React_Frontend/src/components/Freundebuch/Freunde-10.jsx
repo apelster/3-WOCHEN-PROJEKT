@@ -69,7 +69,7 @@ const Freunde10 = () => {
       </button>
 
       <button id="Freunde19">
-        <Link to="/Flipbook">Eintrag Erstellen</Link>
+        <Link to="/Flipbook">Eintrag Speichern</Link>
       </button>
     </main>
   );

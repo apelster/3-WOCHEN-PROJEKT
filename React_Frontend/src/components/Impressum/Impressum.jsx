@@ -30,7 +30,7 @@ const Impressum = () => {
         <p className='pI'>
           Kontakt:<br />
           Telefon: 1234/56789 <br />
-          E-Mail: teamforceone2024@web.de
+          E-Mail: teamforceone2024@gmail.com
         </p>
        
         <p className='pI3'> 

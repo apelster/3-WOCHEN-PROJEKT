@@ -39,11 +39,11 @@ const Freunde2 = ({ profilId }) => {
   };
 
   return (
-    <div id="frdiv">
-      <img id="frbook" src="/img/book.png" alt="book" />
+    <div>
+      <img id="Book-Background3" src="/img/book.png" alt="book" />
 
       <div>
-        <h1 id="Headline">Beantworte kurz ein paar Fragen</h1>
+        <h1 id="Headline3">Beantworte kurz ein paar Fragen</h1>
 
         <ul className="input">
           {fragen.slice(6, 12).map((frage, index) => (
