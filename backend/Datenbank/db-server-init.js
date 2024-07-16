@@ -1,4 +1,5 @@
 const mysql = require('mysql');
+const fs = require('fs');
 
 // MySQL connection setup
 const db = mysql.createConnection({
@@ -30,7 +31,6 @@ db.connect(err => {
       }
 
       // Run the SQL script to initialize the database
-      const fs = require('fs');
       const initSql = fs.readFileSync('./init-db.sql', 'utf8');
 
       db.query(initSql, (err, result) => {
