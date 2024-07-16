@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "amazon-cognito-identity-js": "^6.3.12",
     "aws-sdk": "^2.1656.0",
+    "axios": "^1.7.2",
     "cors": "^2.8.5",
     "emailjs-com": "^3.2.0",
     "express": "^4.19.2",
