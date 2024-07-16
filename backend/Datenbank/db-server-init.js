@@ -1,36 +1,48 @@
-const mysql = require('mysql2/promise');
+const mysql = require('mysql');
 const fs = require('fs');
 const path = require('path');
 
-// Function to read an SQL file
-async function readSQLFile(filePath) {
-    return fs.promises.readFile(filePath, 'utf8');
-}
+// MySQL connection setup
+const db = mysql.createConnection({
+  host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com',
+  user: 'root',
+  password: 'Eisbombe11#'
+});
 
-// Function to execute an SQL file
-async function executeSQLFile(connection, filePath) {
-    const sql = await readSQLFile(filePath);
-    await connection.query(sql);
-}
+db.connect(err => {
+  if (err) {
+    console.error('error connecting: ' + err.stack);
+    return;
+  }
+  console.log('connected as id ' + db.threadId);
 
-// Function to initialize the database and tables
-async function initDatabase() {
-    const connection = await mysql.createConnection({
-        host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com',
-        user: 'root',
-        password: 'Eisbombe11#',
-        multipleStatements: true // Allows multiple SQL statements in one query
-    });
-
-    try {
-        await executeSQLFile(connection, path.join(__dirname, 'init-db.sql'));
-        console.log('Database and tables successfully created.');
-    } catch (error) {
-        console.error('Error creating database and tables:', error);
-    } finally {
-        await connection.end();
+  // Create database if it doesn't exist
+  db.query('CREATE DATABASE IF NOT EXISTS freundebuch', (err, result) => {
+    if (err) {
+      console.error('Error creating database: ' + err.stack);
+      return;
     }
-}
+    console.log('Database created or exists already.');
 
-// Execute the initialization function
-initDatabase();
+    // Switch to the new database
+    db.changeUser({ database: 'freundebuch' }, err => {
+      if (err) {
+        console.error('Error changing database: ' + err.stack);
+        return;
+      }
+
+      // Run the SQL script to initialize the database
+      const initSql = fs.readFileSync(path.join(__dirname, 'init-db.sql'), 'utf8');
+
+      db.query(initSql, (err, result) => {
+        if (err) {
+          console.error('Error executing init script: ' + err.stack);
+          return;
+        }
+        console.log('Database initialized.');
+      });
+    });
+  });
+});
+
+module.exports = db;
