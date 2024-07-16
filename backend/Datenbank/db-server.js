@@ -13,8 +13,8 @@ app.use(cors());
 // MySQL connection setup
 const db = mysql.createConnection({
   host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com',
-  user: 'your-username',
-  password: 'your-password',
+  user: 'root',
+  password: 'PatDocTest',
   database: 'your-database'
 });
 
