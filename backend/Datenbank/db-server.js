@@ -1,31 +1,47 @@
-const express = require('express');
 const mysql = require('mysql');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const db = require('./db-server-init'); // Importiere die Datenbankverbindung
+const fs = require('fs');
 
-const app = express();
-const port = 3001;
+// MySQL connection setup
+const db = mysql.createConnection({
+  host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com',
+  user: 'root',
+  password: 'PatDocTest'
+});
 
-// Middleware
-app.use(bodyParser.json());
-app.use(cors());
+db.connect(err => {
+  if (err) {
+    console.error('error connecting: ' + err.stack);
+    return;
+  }
+  console.log('connected as id ' + db.threadId);
 
-// Endpoint to save profile data
-app.post('/saveProfile', (req, res) => {
-  const { name, city, phone, birthday, description } = req.body;
-
-  const query = 'INSERT INTO profiles (name, city, phone, birthday, description) VALUES (?, ?, ?, ?, ?)';
-  db.query(query, [name, city, phone, birthday, description], (err, result) => {
+  // Create database if it doesn't exist
+  db.query('CREATE DATABASE IF NOT EXISTS freundebuch', (err, result) => {
     if (err) {
-      console.error(err);
-      res.status(500).send('Error saving profile data');
-    } else {
-      res.status(200).send('Profile data saved successfully');
+      console.error('Error creating database: ' + err.stack);
+      return;
     }
+    console.log('Database created or exists already.');
+
+    // Switch to the new database
+    db.changeUser({ database: 'freundebuch' }, err => {
+      if (err) {
+        console.error('Error changing database: ' + err.stack);
+        return;
+      }
+
+      // Run the SQL script to initialize the database
+      const initSql = fs.readFileSync('./init-db.sql', 'utf8');
+
+      db.query(initSql, (err, result) => {
+        if (err) {
+          console.error('Error executing init script: ' + err.stack);
+          return;
+        }
+        console.log('Database initialized.');
+      });
+    });
   });
 });
 
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+module.exports = db;

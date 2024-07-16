@@ -27,84 +27,80 @@ const Profil1 = () => {
   };
 
   return (
-    <>
-      <div className="p1">
-        <img id="bookProfil" src="/img/book.png" alt="book" />
+    <div className="p1">
+      <img id="bookProfil" src="/img/book.png" alt="book" />
 
-        <div className="left-page">
-          <div className="image-placeholder">
-            <label id="file2" htmlFor="file">
-              Bild einfügen
-            </label>
-            <input type="image" id="file" />
-          </div>
-
-      
-          <p className="pProfil1">
-            Hallo! Mein Name ist
-            <input
-              type="text"
-              className="input1"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            .
-          </p>
-
-          <p className="pProfil2">
-            Ich wohne in
-            <input
-              type="text"
-              className="input1"
-              value={city}
-              onChange={(e) => setCity(e.target.value)}
-            />
-            .
-          </p>
-
-          <p className="pProfil3">
-            Meine Telefonnummer ist
-            <input
-              type="text"
-              className="input1"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-            />
-            .
-          </p>
-
-          <p className="pProfil4">
-            Ich habe Geburtstag am
-            <input
-              type="text"
-              className="input1"
-              value={birthday}
-              onChange={(e) => setBirthday(e.target.value)}
-            />
-            .
-          </p>
+      <div className="left-page">
+        <div className="image-placeholder">
+          <label id="file2" htmlFor="file">
+            Bild einfügen
+          </label>
+          <input type="file" id="file" />
         </div>
 
-        <div id="rightPage">
-          <h1 id="ÜberMich">Über Mich</h1>
+        <p className="pProfil1">
+          Hallo! Mein Name ist
+          <input
+            type="text"
+            className="input1"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          .
+        </p>
 
-          <form action="">
-            <textarea
-              name="description"
-              id="description"
-              placeholder="Beschreibung"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-            ></textarea>
-          </form>
+        <p className="pProfil2">
+          Ich wohne in
+          <input
+            type="text"
+            className="input1"
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+          />
+          .
+        </p>
 
-          <button id="savingdescription" onClick={handleSubmit}>
-            Speichern
-          </button>
-        </div>
-        <img id="federProfil" src="/img/feder.png" alt="feder" />
+        <p className="pProfil3">
+          Meine Telefonnummer ist
+          <input
+            type="text"
+            className="input1"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+          .
+        </p>
+
+        <p className="pProfil4">
+          Ich habe Geburtstag am
+          <input
+            type="date"
+            className="input1"
+            value={birthday}
+            onChange={(e) => setBirthday(e.target.value)}
+          />
+          .
+        </p>
       </div>
-    </>
+
+      <div id="rightPage">
+        <h1 id="ÜberMich">Über Mich</h1>
+
+        <textarea
+          name="description"
+          id="description"
+          placeholder="Beschreibung"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+        ></textarea>
+
+        <button id="savingdescription" onClick={handleSubmit}>
+          Speichern
+        </button>
+      </div>
+      <img id="federProfil" src="/img/feder.png" alt="feder" />
+    </div>
   );
 };
+
 export default Profil1;
