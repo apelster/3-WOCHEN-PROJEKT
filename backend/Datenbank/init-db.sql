@@ -1,5 +1,4 @@
 CREATE DATABASE IF NOT EXISTS freundebuch;
-
 USE freundebuch;
 
 CREATE TABLE IF NOT EXISTS profiles (
