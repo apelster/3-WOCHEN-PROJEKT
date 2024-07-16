@@ -1,4 +1,4 @@
-#Book-Background17{
+#Book-Background17 {
   position: fixed;
   top: 12vh;
   right: 0%;
@@ -6,7 +6,6 @@
   height: 80vh;
   opacity: 0.5;
 }
-
 
 #Freunde17 {
   position: absolute;
@@ -36,9 +35,7 @@
   text-decoration: underline;
 }
 
-
-#paragraph41 {  
-  
+#paragraph41 {
   position: fixed;
   top: 42%;
   left: 20%;
@@ -46,132 +43,95 @@
   font-size: 23px;
 }
 
-
-
-#radio11{
-
+#radio11 {
   position: fixed;
   left: 37%;
   top: 45.5%;
-  }
-  
-  
-  
-  
-  #radio12{
-    position: fixed;
-    left: 39.5%;
-    top: 45.5%;  
-  }
-  
+}
 
+#radio12 {
+  position: fixed;
+  left: 39.5%;
+  top: 45.5%;
+}
 
-
-
-#paragraph42 {  
-  
+#paragraph42 {
   position: fixed;
   top: 63%;
   left: 25%;
   font-size: 23px;
 }
 
-
-#radio13{
+#radio13 {
   position: fixed;
   left: 35%;
-  top: 66.5%;  
-
+  top: 66.5%;
 }
 
-
-#radio14{
+#radio14 {
   position: fixed;
   left: 37.5%;
-  top: 66.5%;  
-
+  top: 66.5%;
 }
 
-
 #paragraph43 {
-  
   position: fixed;
   top: 24%;
   right: 26%;
   font-size: 23px;
 }
 
-#radio15{
+#radio15 {
   position: fixed;
   right: 24%;
-  top: 27.3%;  
+  top: 27.3%;
 }
 
-
-#radio16{
+#radio16 {
   position: fixed;
   right: 21.5%;
-  top: 27.3%;  
+  top: 27.3%;
 }
 
-
-
 #paragraph44 {
-  
   position: fixed;
   top: 42%;
   right: 24%;
   font-size: 23px;
 }
 
-#radio17{
+#radio17 {
   position: fixed;
-  right:  22%;
-  top: 45%;  
+  right: 22%;
+  top: 45.5%;
 }
 
-#radio18{
+#radio18 {
   position: fixed;
-  right: 19.5%;
-  top: 45%;  
+  right: 20%;
+  top: 45.5%;
 }
 
-
-
-
-
-#paragraph45 {  
-  
+#paragraph45 {
   position: fixed;
-  top: 63%;
-  right: 24%;
-  width: 20%;
+  top: 62%;
+  right: 28%;
   font-size: 23px;
 }
 
-#radio19{
+#radio19 {
   position: fixed;
-  top: 66.7%;
-  right: 24%;
+  right: 25%;
+  top: 65.5%;
 }
 
-
-
-#radio20{
+#radio20 {
   position: fixed;
-  top: 66.7%;
-  right: 21.5%;
+  right: 22%;
+  top: 65.5%;
 }
 
-
-
-
-
-
-
-
-
-#liste17{
+#liste17 {
   list-style-type: none;
 }
 
@@ -185,35 +145,16 @@
     width: 100%;
   }
 
-  #paragraph41 {
-    font-size: 17px;
+
+  #paragraph41{
+    left: 18%;
   }
+
 
   
-
-  #paragraph42 {
-    font-size: 17px;
+  #paragraph42{
+    left: 22%;
   }
-
-  
-
-  #paragraph43 {
-    font-size: 17px;
-    left: 60%;
-  }
-
-
-  #paragraph44 {
-    font-size: 17px;
-    left: 55%;
-  }
-
-  #paragraph45 {
-    font-size: 17px;
-    left: 58%;
-
-  }
-
 }
 
 @media (max-width: 1322px) {
@@ -226,44 +167,18 @@
     width: 100%;
   }
 
-  #paragraph41 {
-    font-size: 17px;
-    left: 22%;
+  #radio11 {
+    left: 39%;
   }
 
-
-  #paragraph42 {
-    font-size: 15px;
-    left: 19%;
+  #radio12 {
+    left: 41.5%;
   }
-
-  
-
-  #paragraph43 {
-    font-size: 17px;
-    right: 23%;
-  }
-
-  
-
-  #paragraph44 {
-    font-size: 17px;
-    right: 21%;
-  }
-
-  
-
-  #paragraph45 {
-    font-size: 17px;
-    right: 20%;
-  }
-
-  
 }
 
-@media (max-width: 1005px) {
+@media (max-width: 1140px) {
   #Headline17 {
-    font-size: 22px;
+    font-size: 25px;
     left: 13.5%;
   }
   #Book-Background17 {
@@ -282,45 +197,71 @@
   }
 
   #paragraph41 {
-    font-size: 17px;
-    left: 20%;
+    font-size: 22.5px;
+    left: 17%;
   }
 
-  
+  #radio11 {
+    left: 38%;
+  }
 
   #paragraph42 {
-    font-size: 15px;
-    left: 15%;
+    font-size: 22.5px;
+    left: 24%;
   }
 
-  
+  #radio13 {
+    left: 40%;
+  }
+
+  #radio14 {
+    left: 44%;
+  }
 
   #paragraph43 {
-    font-size: 17px;
-    left: 62%;
-    width: 20%;
+    top: 23.5%;
+    font-size: 22.5px;
+    left: 42%;
+    width: 50%;
   }
 
-  
+  #radio15 {
+    right: 18%;
+  }
+
+  #radio16 {
+    right: 14%;
+  }
 
   #paragraph44 {
-    font-size: 17px;
-    left: 58%;
+    font-size: 22.5px;
+    left: 55%;
     width: 30%;
   }
 
-  
-
-  #paragraph45 {
-    font-size: 17px;
-    left: 62%;
-    
+  #radio17 {
+    right: 16%;
   }
 
-  
+  #radio18 {
+    right: 12%;
+  }
+
+  #paragraph45 {
+    font-size: 22.5px;
+    left: 75%;
+    top: 60%;
+  }
+
+  #radio19 {
+    right: 15%;
+  }
+  #radio20 {
+    right: 11%;
+  }
 }
 
-@media (max-width: 859px) {
+@media (max-width: 950px) {
   #Headline17 {
     font-size: 22px;
     left: 11%;
@@ -330,91 +271,37 @@
     left: -14%;
   }
 
-  
   #paragraph41 {
-    font-size: 15px;
+    font-size: 22px;
     left: 20%;
   }
 
-  
-
   #paragraph42 {
-    font-size: 15px;
-    left: 16%;
+    font-size: 22px;
+    left: 22%;
   }
-
-  
 
   #paragraph43 {
-    font-size: 15px;
-    left: 63%;
+    font-size: 20px;
+    left: 48%;
+    top: 22%;
   }
-
-
-  
 
   #paragraph44 {
-    font-size: 15px;
-    right: 12%;
+    font-size: 20px;
+    left: 55%;
+    top: 42%;
   }
-
-  
 
   #paragraph45 {
-    font-size: 15px;
-    right: 12%;
+    font-size: 20px;
+    left:  66%;
+    top: 62.5%;
+    width: 20%;
   }
-
-  
 }
 
-@media (max-width: 782px) {
-  #Headline17 {
-    font-size: 18px;
-    left: 11%;
-  }
-  #Book-Background17 {
-    width: 130%;
-  }
-
-  
-  #paragraph41 {
-    font-size: 15px;
-    left: 15%;
-    width: 30%;
-  }
-
-  
-
-  #paragraph42 {
-    font-size: 15px;
-    left: 15%;
-  }
-
-  
-
-  #paragraph43 {
-    font-size: 15px;
-    right: 15%;
-  }
-
-  
-
-  #paragraph44 {
-    font-size: 15px;
-    right: 12%;
-  }
-
-  
-  #paragraph45 {
-    font-size: 15px;
-    right: 12%;
-  }
-
-  
-}
-
-@media (max-width: 736px) {
+@media (max-width: 800px) {
   #Headline17 {
     font-size: 17px;
     left: 9%;
@@ -423,162 +310,43 @@
     width: 130%;
   }
 
-  
   #paragraph41 {
-    font-size: 14px;
-    left: 15%;
+    top: 43.5%;
+    font-size: 15px;
+    left: 17%;
   }
 
+  
   #paragraph42 {
-    font-size: 14px;
-    left: 15%;
+    top: 64.5%;
+    font-size: 15px;
   }
-
-
 
   #paragraph43 {
+    font-size:  15px;
+    left: 60%;
+    top: 23.5%;
+    width: 22%;
 
-    font-size: 14px;
-    right: 14%;
   }
 
-
-  
-  #paragraph44{
-    font-size: 14px;
-    right: 12%;
+  #paragraph44 {
+    font-size: 15px;
+    left: 60%;
+    top: 42%;
+    width: 20%;
   }
 
-
-  #paragraph45{
-    font-size: 14px;
-    right: 12%;
-    
+  #paragraph45 {
+    top: 63.5%;
+    left: 63%;
+    font-size: 15px;
   }
-
 }
 
-@media (max-width: 664px) {
-  #Headline17 {
-    font-size: 16px;
-    top: 22%;
-    left: 9%;
-  }
-  #Book-Background17 {
-    width: 130%;
-  }
-
-  #Freunde17 {
-    top: 78vh;
-    right: 8%;
-  }
-
-  #Zurück17 {
-    top: 78vh;
-    left: 7%;
-  }
-
-
-  
-  #paragraph41 {
-    font-size: 13px;
-    left: 14%;
-  }
-
-  #paragraph42 {
-    font-size: 13px;
-    left: 14%;
-  }
-
-
-  #paragraph43{
-
-    font-size: 13px;
-    right: 14%;
-  }
-
-
-  
-  #paragraph44{
-    font-size: 13px;
-    right: 12%;
-  }
-
-  
-  #paragraph45{
-    font-size: 13px;
-    right: 10%;
-    
-  }
-
-  
-}
-
-
-@media (max-width: 599px) {
-
-  #Headline17 {
-    font-size: 16px;
-    top: 22%;
-    left: 9%;
-  }
-  #Book-Background17 {
-    width: 130%;
-  }
-
-  #Freunde17 {
-    top: 78vh;
-    right: 8%;
-  }
-
-  #Zurück17 {
-    top: 78vh;
-    left: 7%;
-  }
-
-  #paragraph41 {
-    font-size: 13px;
-    left: 12%;
-  }
-
-  
-
-  #paragraph42 {
-    font-size: 13px;
-    left: 12%;
-  }
-
-  
-
-  #paragraph43{
-
-    font-size: 13px;
-    right: 12%;
-  }
-
-
-  
-  #paragraph44{
-    font-size: 13px;
-    right: 10%;
-  }
-
-
-  #paragraph45{
-    font-size: 13px;
-    right: 10%;
-    
-  }
-
-}
-
-
-
-  
 @media (max-width: 545px) {
-
   #Headline17 {
-    font-size: 16px;
+    font-size: 15px;
     top: 22%;
     left: 9%;
   }
@@ -597,38 +365,29 @@
   }
 
   #paragraph41 {
-    font-size: 11px;
-    left: 12%;
+    font-size: 15px;
+    left: 15%;
   }
 
-  
   #paragraph42 {
-    font-size: 11px;
-    left: 12%;
+    font-size: 15px;
+    left: 18%;
+    width: 20%;
   }
 
-  
-
-
-  #paragraph43{
-
-font-size: 11px;
-    right: 12%;
+  #paragraph43 {
+    font-size: 15px;
+    right: 28%;
   }
 
-  
-  
-  #paragraph44{
-    font-size: 11px;
-    right: 10%;
+  #paragraph44 {
+    font-size: 15px;
+    left: 60%;
   }
 
-  
-  #paragraph45{
-    font-size: 11px;
-    right: 10%;
-    
+  #paragraph45 {
+    font-size: 15px;
+    left: 61%;
+    top: 61.5%;
   }
-
- 
 }

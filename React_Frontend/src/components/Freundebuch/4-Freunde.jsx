@@ -35,7 +35,7 @@ const Freunde4 = () => {
           <li id="liste17">
             <label htmlFor="question3">
               <p id="paragraph43">
-                Konzerte im kleinen Club oder große Arena?
+                Konzerte im kleinen Club oder <br /> große Arena?
                 <input id="radio15" type="radio" name="Answer8" />
                 <input id="radio16" type="radio" name="Answer8" />
               </p>
@@ -45,7 +45,7 @@ const Freunde4 = () => {
           <li id="liste17">
             <label htmlFor="question4">
               <p id="paragraph44">
-                Neues ausprobieren oder Bewährtes genießen?
+                Neues ausprobieren oder  <br />Bewährtes genießen?
                 <input id="radio17" type="radio" name="Answer9" />
                 <input id="radio18" type="radio" name="Answer9" />
               </p>
