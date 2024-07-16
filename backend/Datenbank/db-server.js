@@ -12,7 +12,7 @@ app.use(cors());
 
 // MySQL connection setup
 const db = mysql.createConnection({
-  host: 'your-rds-endpoint',
+  host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com',
   user: 'your-username',
   password: 'your-password',
   database: 'your-database'
