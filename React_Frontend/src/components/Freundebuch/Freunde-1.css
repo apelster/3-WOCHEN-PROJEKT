@@ -1,11 +1,4 @@
-#frdiv {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-#frbook {
+#Book-Background11{
   position: fixed;
   top: 12vh;
   right: 0%;
@@ -14,641 +7,715 @@
   opacity: 0.5;
 }
 
-#Freunde {
+
+#Freunde11 {
   position: absolute;
   top: 78%;
   right: 18%;
   border: none;
-  background-color: inherit;
+  font-size: 100%;
+  background-color: initial;
   font-family: "Dancing Script";
-  font-size: 15px;
-  text-decoration: underline;
-  opacity: 1;
 }
 
-#Headline {
+#Zurück11 {
+  position: absolute;
+  top: 79%;
+  left: 16%;
+  font-size: 100%;
+  border: none;
+  background-color: initial;
+  font-family: "Dancing Script";
+}
+
+#Headline11 {
+  display: flex;
+  position: absolute;
+  top: 22%;
+  left: 21%;
+  text-decoration: underline;
+}
+
+
+#paragraph26 {  
+  
   position: fixed;
-  top: 21vh;
-  left: 21vw;
-  font-size: 29px;
-  text-decoration: underline;
-}
-
-.input {
-  list-style: none;
-  text-align: right;
-}
-
-#paragraph {
-  position: absolute;
-  top: 29%;
-  display: inline-block;
-  left: 22%;
+  top: 45%;
+  left: 21%;
   font-size: 20px;
 }
 
-#input1 {
-  position: absolute;
-  right: 29%;
-  top: 35%;
-  width: 10%;
-}
 
-#paragraph2 {
-  position: absolute;
-  top: 850%;
-  display: inline-block;
-  left: -170%;
-  font-size: 20px;
-}
-
-#input2 {
-  position: relative;
-  right: -72.6%;
-  top: 31vh;
-  width: 75%;
-}
-
-#paragraph3 {
-  position: absolute;
-  top: 1050%;
-  display: inline-block;
-  left: -230%;
-  font-size: 20px;
-}
-
-#input3 {
-  position: relative;
-  right: -72.6%;
-  top: 37vh;
-  width: 75%;
-}
-
-#paragraph4 {
-  position: absolute;
-  top: 1250%;
-  display: inline-block;
-  left: -220%;
-  font-size: 20px;
-  text-align: center;
-}
-
-#input4 {
-  position: relative;
-  right: -72.6%;
-  top: 44vh;
-  width: 75%;
-}
-
-#paragraph5 {
-  position: absolute;
-  top: 1480%;
-  display: inline-block;
-  left: -230%;
-  font-size: 20px;
-  text-align: center;
-}
-
-#input5 {
-  position: relative;
-  right: -72.6%;
+#input26{
+  
+  position: fixed;
   top: 51vh;
-  width: 75%;
+  left: 23vw;
+  width: 14%;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
+}
+
+#paragraph27 {  
+  
+  position: fixed;
+  top: 60%;
+  left: 20%;
+  font-size: 20px;
+  width: 19%;
+}
+
+
+#input27 {
+  
+  position: fixed;
+  top: 72vh;
+  left: 23vw;
+  width: 14%;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
+
+}
+
+#paragraph28 {
+  
+  position: fixed;
+  top: 24%;
+  right: 27%;
+  font-size: 20px;
+}
+
+#input28 {
+  
+  position: fixed;
+  top: 33vh;
+  right: 27vw;
+  width: 14%;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
+}
+
+
+#paragraph29 {
+  
+  position: fixed;
+  top: 42%;
+  right: 27.5%;
+  font-size: 20px;
+}
+
+
+#input29 {  
+  position: fixed;
+  top: 51vh;
+  right: 27vw;
+  width: 14%;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
+}
+
+
+#paragraph30 {  
+  
+  position: fixed;
+  top: 63%;
+  right: 26%;
+  font-size: 20px;
+}
+
+
+#input30 {
+   
+  position: fixed;
+  top: 72vh;
+  right: 27vw;
+  width: 14%;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
+
+}
+
+
+#liste11{
+  list-style-type: none;
 }
 
 
 
 
 @media (max-width: 1403px) {
-  #Headline {
+  #Headline11 {
     font-size: 23px;
     left: 22%;
   }
 
-  #frbook {
+  #Book-Background11 {
     width: 100%;
   }
 
-  #paragraph {
+  #paragraph26 {
     font-size: 17px;
     width: 25%;
     left: 20%;
+
   }
 
-  #input {
+  #input26 {
     left: 24%;
   }
 
-  #paragraph1 {
+  #paragraph27 {
     font-size: 17px;
     left: 22%;
   }
 
-  #input1 {
+  #input27 {
     left: 24%;
   }
 
-  #paragraph2 {
+  #paragraph28 {
     font-size: 17px;
   }
 
-  #input2 {
+  #input28 {
   }
 
-  #paragraph3 {
+  #paragraph29 {
     font-size: 17px;
   }
 
-  #input3 {
+  #input29 {
   }
 
-  #paragraph4 {
+  #paragraph30 {
     font-size: 17px;
   }
 
-  #input4 {
+  #input30 {
   }
 }
 
 @media (max-width: 1322px) {
-  #Headline {
+  #Headline11 {
     font-size: 23px;
     left: 21%;
   }
 
-  #frbook {
+  #Book-Background11 {
     width: 100%;
   }
 
-  #paragraph {
+  #paragraph26 {
     font-size: 17px;
     left: 19%;
     width: 30%;
   }
 
-  #input {
+  #input26 {
     left: 26%;
   }
 
-  #paragraph1 {
+  #paragraph27 {
     font-size: 15px;
     left: 24%;
   }
 
-  #input1 {
+  #input27 {
     left: 26%;
   }
 
-  #paragraph2 {
+  #paragraph28 {
     font-size: 17px;
     right: 25%;
   }
 
-  #input2 {
+  #input28 {
     right: 26%;
   }
 
-  #paragraph3 {
+  #paragraph29 {
     font-size: 17px;
     right: 25%;
   }
 
-  #input3 {
+  #input29 {
     right: 26%;
   }
 
-  #paragraph4 {
+  #paragraph30 {
     font-size: 17px;
     right: 24.5%;
   }
 
-  #input4 {
+  #input30 {
     right: 26%;
   }
 }
 
+
+
 @media (max-width: 1105px) {
-  #Headline {
+  #Headline11 {
     font-size: 22px;
     left: 18%;
   }
-  #frbook {
+  #Book-Background11 {
     width: 125%;
     left: -12%;
   }
 
-  #Freunde {
+  #Freunde11 {
     top: 78vh;
     right: 10%;
   }
 
-  #Zurück {
+  #Zurück11 {
     top: 78vh;
     left: 9%;
   }
 
-  #paragraph {
+  #paragraph26 {
     font-size: 17px;
     left: 13%;
     width: 35%;
   }
 
-  #input {
+  #input26 {
     left: 23%;
   }
 
-  #paragraph1 {
+  #paragraph27 {
     font-size: 15px;
     left: 20%;
   }
 
-  #input1 {
+  #input27 {
     left: 23%;
   }
 
-  #paragraph2 {
+  #paragraph28 {
     font-size: 17px;
     right: 18%;
   }
 
-  #input2 {
+  #input28 {
     right: 21%;
   }
 
-  #paragraph3 {
+  #paragraph29 {
     font-size: 17px;
     right: 19%;
   }
 
-  #input3 {
+  #input29 {
     right: 21%;
   }
 
-  #paragraph4 {
+  #paragraph30 {
     font-size: 17px;
     right: 17%;
   }
 
-  #input4 {
+  #input30 {
     right: 20%;
   }
 }
 
 @media (max-width: 859px) {
-  #Headline {
+  #Headline11 {
     font-size: 22px;
     left: 11%;
   }
-  #frbook {
+  #Book-Background11 {
     width: 130%;
     left: -14%;
   }
 
-  #paragraph {
+  
+  #paragraph26 {
     font-size: 15px;
     left: 16%;
     width: 30%;
   }
 
-  #input {
+  #input26 {
     left: 23%;
   }
 
-  #paragraph1 {
+  #paragraph27 {
     font-size: 15px;
     left: 21%;
   }
 
-  #input1 {
+  #input27 {
     left: 23%;
   }
 
-  #paragraph2 {
+  #paragraph28 {
     font-size: 15px;
     right: 15%;
   }
 
-  #input2 {
+  #input28 {
     right: 19%;
   }
 
-  #paragraph3 {
+  #paragraph29 {
     font-size: 15px;
     right: 16%;
   }
 
-  #input3 {
+  #input29 {
     right: 19%;
   }
 
-  #paragraph4 {
+  #paragraph30 {
     font-size: 15px;
     right: 14%;
   }
 
-  #input4 {
+  #input30 {
     right: 19%;
   }
 }
 
 @media (max-width: 782px) {
-  #Headline {
+  #Headline11 {
     font-size: 18px;
     left: 11%;
   }
-  #frbook {
+  #Book-Background11 {
     width: 130%;
   }
 
-  #paragraph {
+  
+  #paragraph26 {
     font-size: 15px;
     left: 15%;
   }
 
-  #input {
+  #input26 {
     left: 22%;
   }
 
-  #paragraph1 {
+  #paragraph27 {
     font-size: 15px;
     left: 20%;
   }
 
-  #input1 {
+  #input27 {
     left: 22%;
   }
 
-  #paragraph2 {
+  #paragraph28 {
     font-size: 15px;
     right: 13%;
   }
 
-  #input2 {
+  #input28 {
     right: 19%;
   }
 
-  #paragraph3 {
+  #paragraph29 {
     font-size: 15px;
     right: 14%;
   }
 
-  #input3 {
+  #input29 {
     right: 19%;
   }
 
-  #paragraph4 {
+  #paragraph30 {
     font-size: 15px;
     right: 12%;
   }
 
-  #input4 {
+  #input30 {
     right: 19%;
   }
 }
 
 @media (max-width: 736px) {
-  #Headline {
+  #Headline11 {
     font-size: 17px;
     left: 9%;
   }
-  #frbook {
+  #Book-Background11 {
     width: 130%;
   }
 
-  #paragraph {
+  
+  #paragraph26 {
     font-size: 14px;
     left: 15%;
   }
 
-  #input {
+  #input26 {
     left: 22%;
   }
 
-  #paragraph1 {
+  #paragraph27 {
     font-size: 14px;
     left: 20%;
   }
 
-  #input1 {
+  #input27 {
     left: 22%;
   }
 
-  #paragraph2 {
+
+  #paragraph28{
+
     font-size: 14px;
     right: 13%;
   }
 
-  #input2 {
+  #input28{
+
   }
 
-  #paragraph3 {
+  
+  #paragraph29{
     font-size: 14px;
     right: 15%;
   }
 
-  #input3 {
+  #input29{
     right: 20%;
   }
 
-  #paragraph4 {
+  #paragraph30{
     font-size: 14px;
     right: 13%;
+    
   }
 
-  #input4 {
+  #input30{
+
   }
+
 }
 
 @media (max-width: 664px) {
-  #Headline {
+  #Headline11 {
     font-size: 16px;
     top: 22%;
     left: 9%;
   }
-  #frbook {
+  #Book-Background11 {
     width: 130%;
   }
 
-  #Freunde {
+  #Freunde11 {
     top: 78vh;
     right: 8%;
   }
 
-  #Zurück {
+  #Zurück11 {
     top: 78vh;
     left: 7%;
   }
 
-  #paragraph {
+
+  
+  #paragraph26 {
     font-size: 13px;
     left: 15%;
   }
 
-  #input {
+  #input26 {
     left: 22%;
   }
 
-  #paragraph1 {
+  #paragraph27 {
     font-size: 13px;
     left: 20%;
   }
 
-  #input1 {
+  #input27 {
     left: 22%;
   }
 
-  #paragraph2 {
-    font-size: 13px;
+
+  #paragraph28{
+
+  font-size: 13px;
     right: 14%;
   }
 
-  #input2 {
+  #input28{
+
   }
 
-  #paragraph3 {
+  
+  #paragraph29{
     font-size: 13px;
     right: 15%;
   }
 
-  #input3 {
+  #input29{
     right: 20%;
   }
 
-  #paragraph4 {
+  #paragraph30{
     font-size: 13px;
     right: 13%;
+    
   }
 
-  #input4 {
+  #input30{
+
   }
 }
+
 
 @media (max-width: 599px) {
-  #Headline {
+
+  #Headline11 {
     font-size: 16px;
     top: 22%;
     left: 9%;
   }
-  #frbook {
+  #Book-Background11 {
     width: 130%;
   }
 
-  #Freunde {
+  #Freunde11 {
     top: 78vh;
     right: 8%;
   }
 
-  #Zurück {
+  #Zurück11 {
     top: 78vh;
     left: 7%;
   }
 
-  #paragraph {
+  #paragraph26 {
     font-size: 13px;
     left: 13%;
   }
 
-  #input {
+  #input26 {
     left: 20%;
   }
 
-  #paragraph1 {
+  #paragraph27 {
     font-size: 13px;
     left: 19%;
   }
 
-  #input1 {
+  #input27 {
     left: 20%;
   }
 
-  #paragraph2 {
-    font-size: 13px;
+
+  #paragraph28{
+
+font-size: 13px;
     right: 12%;
   }
 
-  #input2 {
+  #input28{
+
   }
 
-  #paragraph3 {
+  
+  #paragraph29{
     font-size: 13px;
     right: 13%;
   }
 
-  #input3 {
+  #input29{
     right: 20%;
   }
 
-  #paragraph4 {
+  #paragraph30{
     font-size: 13px;
     right: 10%;
+    
   }
 
-  #input4 {
+  #input30{
     right: 20%;
   }
 }
 
+
+
+  
 @media (max-width: 545px) {
-  #Headline {
+
+  #Headline11 {
     font-size: 16px;
     top: 22%;
     left: 9%;
   }
-  #frbook {
+  #Book-Background11 {
     width: 130%;
   }
 
-  #Freunde {
+  #Freunde11 {
     top: 78vh;
     right: 8%;
   }
 
-  #Zurück {
+  #Zurück11 {
     top: 78vh;
     left: 7%;
   }
 
-  #paragraph {
+  #paragraph26 {
     font-size: 11px;
     left: 13%;
   }
 
-  #input {
+  #input26 {
     left: 20%;
   }
 
-  #paragraph1 {
+  #paragraph27 {
     font-size: 11px;
     left: 19%;
   }
 
-  #input1 {
+  #input27 {
     left: 20%;
   }
 
-  #paragraph2 {
-    font-size: 11px;
+
+  #paragraph28{
+
+font-size: 11px;
     right: 12%;
   }
 
-  #input2 {
+  #input28{
+
   }
 
-  #paragraph3 {
+  
+  #paragraph29{
     font-size: 11px;
     right: 13%;
   }
 
-  #input3 {
+  #input29{
     right: 20%;
   }
 
-  #paragraph4 {
+  #paragraph30{
     font-size: 11px;
     right: 10%;
+    
   }
 
-  #input4 {
+  #input30{
     right: 20%;
   }
+
 }

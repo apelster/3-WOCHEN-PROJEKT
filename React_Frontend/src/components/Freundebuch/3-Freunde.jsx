@@ -1,80 +1,77 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-3.css";
-
 import { Link } from "react-router-dom";
 
-const Freunde3 = ({ profilId }) => {
-  const [fragen, setFragen] = useState([]);
-  const [antworten, setAntworten] = useState([]);
-
-  useEffect(() => {
-    // API-Aufruf, um die zufälligen Fragen zu holen
-    fetch('http://3.124.9.130:3000/random-questions')
-      .then(response => response.json())
-      .then(data => setFragen(data))
-      .catch(error => console.error('Error fetching random questions:', error));
-  }, []);
-
-  const handleSaveAnswers = () => {
-    const answersToSave = fragen.map((frage, index) => ({
-      frage: frage.frage,
-      antwort: antworten[index] || ''
-    }));
-
-    fetch('http://3.124.9.130:3000/antworten', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ profil_id: profilId, antworten: answersToSave })
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Antworten erfolgreich gespeichert:', data);
-      })
-      .catch(error => {
-        console.error('Error saving answers:', error);
-      });
-  };
-
+const Freunde3 = () => {
   return (
-    <div>
-      <img id="Book-Background5" src="/img/book.png" alt="book" />
+    <main>
 
       <div>
-        <h1 id="Headline2">Beantworte kurz ein paar Fragen</h1>
+        <img id="Book-Background15" src="/img/book.png" alt="" />
 
-        <ul className="input">
-          {fragen.slice(12, 18).map((frage, index) => (
-            <li key={index} className="liste">
-              <label htmlFor={`question${index + 1}`}>
-                <p id={`paragraph${index + 1}`}>{frage.frage}</p>
-                <input
-                  id={`input${index + 1}`}
-                  type="text"
-                  value={antworten[index] || ''}
-                  onChange={(e) => {
-                    const newAntworten = [...antworten];
-                    newAntworten[index] = e.target.value;
-                    setAntworten(newAntworten);
-                  }}
-                />
-              </label>
-            </li>
-          ))}
+        <h1 id="Headline15">Beantworte kurz ein paar Fragen</h1>
+
+        <ul>
+          <li id="liste15">
+            <label htmlFor="question1">
+              <p id="paragraph36">
+              Wenn du eine Erfindung der Vergangenheit rückgängig machen könntest, welche wäre es?
+              </p>
+              <input id="input36" type="text" />
+            </label>
+          </li>
+
+          <li id="liste15">
+            <label htmlFor="question2">
+              <p id="paragraph37">
+              Was ist das merkwürdigste Ritual, das du <br /> vor Prüfungen hast?
+
+              </p>
+              <input id="input37" type="text" />
+            </label>
+          </li>
+
+          <li id="liste15">
+            <label htmlFor="question3">
+              <p id="paragraph38">
+              Wenn du in einem Märchen leben könntest, <br /> welches wäre es und warum?
+
+              </p>
+              <input id="input38" type="text" />
+            </label>
+          </li>
+
+          <li id="liste15">
+            <label htmlFor="question4">
+              <p id="paragraph39">
+              Was ist das Lustigste, was du je <br /> bei einer Familienfeier erlebt hast?
+
+                </p>
+              <input id="input39" type="text" />
+            </label>
+          </li>
+
+          <li id="liste15">
+            <label htmlFor="question5">
+              <p id="paragraph40">
+              Wenn du ein Lied schreiben müsstest, <br /> wovon würde es handeln?
+
+              </p>
+              <input id="input40" type="text" />
+            </label>
+          </li>
         </ul>
       </div>
 
-      
-      <button id="Zurück5" onClick={handleSaveAnswers}>
-        <Link to="/2-Freunde">2.Seite</Link>
-      </button>
-
-      <button id="Freunde5" onClick={handleSaveAnswers}>
+      <button id="Freunde15">
         <Link to="/4-Freunde">4.Seite</Link>
       </button>
-    </div>
+
+      <button id="Zurück15">
+        <Link to="/2-Freunde">2.Seite</Link>
+      </button>
+    </main>
   );
 };
 

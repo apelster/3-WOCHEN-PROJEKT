@@ -12,16 +12,14 @@ import Footer from './components/Footer/Footer.jsx';
 import Header from "./components/Header/Header.jsx";
 import Datenschutzerklärung from "./components/Datenschutz/Datenschutzerklärung.jsx";
 
-import Freunde1 from "./components/Freundebuch/1-Freunde.jsx";
-import Freunde2 from "./components/Freundebuch/2-Freunde.jsx";
-import Freunde3 from "./components/Freundebuch/3-Freunde.jsx";
-import Freunde4 from "./components/Freundebuch/4-Freunde.jsx";
-import Freunde5 from "./components/Freundebuch/5-Freunde.jsx";
-import Freunde6 from "./components/Freundebuch/Freunde-6.jsx";
-import Freunde7 from "./components/Freundebuch/Freunde-7.jsx";
-import Freunde8 from "./components/Freundebuch/Freunde-8.jsx";
-import Freunde9 from "./components/Freundebuch/Freunde-9.jsx";
-import Freunde10 from "./components/Freundebuch/Freunde-10.jsx";
+
+import Freunde1 from "./components/Freundebuch/1-Freunde.jsx"
+import Freunde2 from "./components/Freundebuch/2-Freunde.jsx"
+import Freunde3 from "./components/Freundebuch/3-Freunde.jsx"
+import Freunde4 from "./components/Freundebuch/4-Freunde.jsx"
+import Freunde5 from "./components/Freundebuch/5-Freunde.jsx"
+import Freunde6 from "./components/Freundebuch/6-Freunde.jsx";
+
 import DemoBook from "./components/FlipBook/FlipBook.jsx";
 
 import Register from "./components/RecConLog/register.jsx";
@@ -32,11 +30,12 @@ import Profil1 from "./components/Profil/1-Profil-Rohling.jsx";
 
 import Book from "./components/MeineFreundeSeite/MeineFreundeSeite.jsx";
 
-import Chat from "./components/Chat/chat.jsx"; // Importiert die Chat-Komponente
+import Chat from "./components/Chat/chat.jsx"; 
 
 function App() {
   const location = useLocation();
-  const profilId = 1; // Beispiel-Profil-ID, dies sollte dynamisch sein
+  const profilId = 1;
+
 
   const hideHeaderRoutes = ['/', '/Home', '/login', '/register', '/confirm'];
 
@@ -56,12 +55,7 @@ function App() {
         <Route path="/3-Freunde" element={<Freunde3 profilId={profilId} />} />
         <Route path="/4-Freunde" element={<Freunde4 profilId={profilId} />} />
         <Route path="/5-Freunde" element={<Freunde5 profilId={profilId} />} />
-        <Route path="/6-Freunde" element={<Freunde6 profilId={profilId} />} />
-        <Route path="/7-Freunde" element={<Freunde7 profilId={profilId} />} />
-        <Route path="/8-Freunde" element={<Freunde8 profilId={profilId} />} />
-        <Route path="/9-Freunde" element={<Freunde9 profilId={profilId} />} />
-        <Route path="/10-Freunde" element={<Freunde10 profilId={profilId} />} />
-        
+        <Route path="/6-Freunde" element={<Freunde6 />}></Route>
         <Route path="/FlipBook" element={<DemoBook profilId={profilId} />} />
 
         <Route path="/MeineFreunde" element={<Book />} />

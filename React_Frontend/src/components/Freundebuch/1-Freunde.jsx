@@ -1,75 +1,71 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-1.css";
-
 import { Link } from "react-router-dom";
 
-const Freunde1 = ({ profilId }) => {
-  const [fragen, setFragen] = useState([]);
-  const [antworten, setAntworten] = useState([]);
-
-  useEffect(() => {
-    // API-Aufruf, um die zufälligen Fragen zu holen
-    fetch('http://3.124.9.130:3000/random-questions')
-      .then(response => response.json())
-      .then(data => setFragen(data))
-      .catch(error => console.error('Error fetching random questions:', error));
-  }, []);
-
-  const handleSaveAnswers = () => {
-    const answersToSave = fragen.map((frage, index) => ({
-      frage: frage.frage,
-      antwort: antworten[index] || ''
-    }));
-
-    fetch('http://3.124.9.130:3000/antworten', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ profil_id: profilId, antworten: answersToSave })
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Antworten erfolgreich gespeichert:', data);
-      })
-      .catch(error => {
-        console.error('Error saving answers:', error);
-      });
-  };
-
+const Freunde1 = () => {
   return (
-    <div id="frdiv">
-      <img id="frbook" src="/img/book.png" alt="book" />
-
+    <main>
       <div>
-        <h1 id="Headline">Beantworte kurz ein paar Fragen</h1>
+        <img id="Book-Background11" src="/img/book.png" alt="" />
 
-        <ul className="input">
-          {fragen.slice(0, 6).map((frage, index) => (
-            <li key={index} className="liste">
-              <label htmlFor={`question${index + 1}`}>
-                <p id={`paragraph${index + 1}`}>{frage.frage}</p>
-                <input
-                  id={`input${index + 1}`}
-                  type="text"
-                  value={antworten[index] || ''}
-                  onChange={(e) => {
-                    const newAntworten = [...antworten];
-                    newAntworten[index] = e.target.value;
-                    setAntworten(newAntworten);
-                  }}
-                />
-              </label>
-            </li>
-          ))}
+        <h1 id="Headline11">Beantworte kurz ein paar Fragen</h1>
+
+        <ul>
+          <li id="liste11">
+            <label htmlFor="question1">
+              <p id="paragraph26">
+                Welches ist dein Lieblings-TikTok-Trend?
+                <input id="input26" type="text" />
+              </p>
+            </label>
+          </li>
+
+          <li id="liste11">
+            <label htmlFor="question2">
+              <p id="paragraph27">
+                Wenn du für einen Tag das Gegenteil deines Geschlechts
+                sein könntest, was würdest du tun?
+                <input id="input27" type="text" />
+              </p>
+            </label>
+          </li>
+
+          <li id="liste11">
+            <label htmlFor="question3">
+              <p id="paragraph28">
+                Was ist das lustigste Missgeschick, <br /> das dir in der Küche
+                passiert ist?
+                <input id="input28" type="text" />
+              </p>
+            </label>
+          </li>
+
+          <li id="liste11">
+            <label htmlFor="question4">
+              <p id="paragraph29">
+                Welcher Gegenstand aus deiner <br /> Kindheit fehlt dir am
+                meisten?
+                <input id="input29" type="text" />
+              </p>
+            </label>
+          </li>
+
+          <li id="liste11">
+            <label htmlFor="question5">
+              <p id="paragraph30">
+                Welches ist dein peinlichstes Foto?
+                <input id="input30" type="text" />
+              </p>
+            </label>
+          </li>
         </ul>
       </div>
 
-      <button id="Freunde" onClick={handleSaveAnswers}>
+      <button id="Freunde11">
         <Link to="/2-Freunde">2.Seite</Link>
       </button>
-    </div>
+    </main>
   );
 };
 

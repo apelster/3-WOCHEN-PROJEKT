@@ -1,80 +1,83 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-2.css";
-
 import { Link } from "react-router-dom";
 
-const Freunde2 = ({ profilId }) => {
-  const [fragen, setFragen] = useState([]);
-  const [antworten, setAntworten] = useState([]);
-
-  useEffect(() => {
-    // API-Aufruf, um die zufälligen Fragen zu holen
-    fetch('http://3.124.9.130:3000/random-questions')
-      .then(response => response.json())
-      .then(data => setFragen(data))
-      .catch(error => console.error('Error fetching random questions:', error));
-  }, []);
-
-  const handleSaveAnswers = () => {
-    const answersToSave = fragen.map((frage, index) => ({
-      frage: frage.frage,
-      antwort: antworten[index] || ''
-    }));
-
-    fetch('http://3.124.9.130:3000/antworten', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ profil_id: profilId, antworten: answersToSave })
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Antworten erfolgreich gespeichert:', data);
-      })
-      .catch(error => {
-        console.error('Error saving answers:', error);
-      });
-  };
-
+const Freunde2 = () => {
   return (
-    <div>
-      <img id="Book-Background3" src="/img/book.png" alt="book" />
+    <main>
 
       <div>
-        <h1 id="Headline3">Beantworte kurz ein paar Fragen</h1>
+        <img id="Book-Background13" src="/img/book.png" alt="" />
 
-        <ul className="input">
-          {fragen.slice(6, 12).map((frage, index) => (
-            <li key={index} className="liste">
-              <label htmlFor={`question${index + 1}`}>
-                <p id={`paragraph${index + 1}`}>{frage.frage}</p>
-                <input
-                  id={`input${index + 1}`}
-                  type="text"
-                  value={antworten[index] || ''}
-                  onChange={(e) => {
-                    const newAntworten = [...antworten];
-                    newAntworten[index] = e.target.value;
-                    setAntworten(newAntworten);
-                  }}
-                />
-              </label>
-            </li>
-          ))}
+        <h1 id="Headline13">Beantworte kurz ein paar Fragen</h1>
+
+        <ul>
+          <li id="liste13">
+            <label htmlFor="question1">
+              <p id="paragraph31">
+              Großes Abenteuer oder kleine Freuden im Alltag?
+              
+              <input id="radio1" type="radio" name="Answer1"/>
+              <input id="radio2" type="radio" name="Answer1"/>
+              </p>
+            </label>
+          </li>
+
+          <li id="liste13">
+            <label htmlFor="question2">
+              <p id="paragraph32">
+              Arbeit im Büro oder Home-Office?
+              <input id="radio3" type="radio" name="Answer2"/>
+              <input id="radio4" type="radio" name="Answer2"/>
+              </p>
+
+            </label>
+          </li>
+
+          <li id="liste13">
+            <label htmlFor="question3">
+              <p id="paragraph33">
+              Actionreiches Videospiel oder Puzzle-Spiel?
+              <input id="radio5" type="radio" name="Answer3"/>
+              <input id="radio6" type="radio" name="Answer3"/>
+              </p>
+          
+            </label>
+          </li>
+
+          <li id="liste13">
+            <label htmlFor="question4">
+              <p id="paragraph34">
+              Frische Blumen oder künstliche Pflanzen?
+              <input id="radio7" type="radio" name="Answer4"/>
+              <input id="radio8" type="radio" name="Answer4"/>
+              </p>
+
+                </label>
+          </li>
+
+          <li id="liste13">
+            <label htmlFor="question5">
+              <p id="paragraph35">
+              Popcorn oder Nachos im Kino?
+              <input id="radio9" type="radio" name="Answer5" />
+              <input id="radio10" type="radio" name="Answer5" />
+              </p>
+
+            </label>
+          </li>
         </ul>
       </div>
 
-      
-      <button id="Zurück3" onClick={handleSaveAnswers}>
-        <Link to="/1-Freunde">1.Seite</Link>
-      </button>
-
-      <button id="Freunde3" onClick={handleSaveAnswers}>
+      <button id="Freunde13">
         <Link to="/3-Freunde">3.Seite</Link>
       </button>
-    </div>
+
+      <button id="Zurück13">
+        <Link to="/1-Freunde">1.Seite</Link>
+      </button>
+    </main>
   );
 };
 

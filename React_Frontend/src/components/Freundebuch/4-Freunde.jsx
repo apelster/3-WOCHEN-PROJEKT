@@ -1,80 +1,77 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-4.css";
-
 import { Link } from "react-router-dom";
 
-const Freunde4 = ({ profilId }) => {
-  const [fragen, setFragen] = useState([]);
-  const [antworten, setAntworten] = useState([]);
-
-  useEffect(() => {
-    // API-Aufruf, um die zufälligen Fragen zu holen
-    fetch('http://3.124.9.130:3000/random-questions')
-      .then(response => response.json())
-      .then(data => setFragen(data))
-      .catch(error => console.error('Error fetching random questions:', error));
-  }, []);
-
-  const handleSaveAnswers = () => {
-    const answersToSave = fragen.map((frage, index) => ({
-      frage: frage.frage,
-      antwort: antworten[index] || ''
-    }));
-
-    fetch('http://3.124.9.130:3000/antworten', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ profil_id: profilId, antworten: answersToSave })
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Antworten erfolgreich gespeichert:', data);
-      })
-      .catch(error => {
-        console.error('Error saving answers:', error);
-      });
-  };
-
+const Freunde4 = () => {
   return (
-    <div>
-      <img id="Book-Background7" src="/img/book.png" alt="book" />
-
+    <main>
       <div>
-        <h1 id="Headline8">Beantworte kurz ein paar Fragen</h1>
+        <img id="Book-Background17" src="/img/book.png" alt="" />
 
-        <ul className="input">
-          {fragen.slice(18, 24).map((frage, index) => (
-            <li key={index} className="liste">
-              <label htmlFor={`question${index + 1}`}>
-                <p id={`paragraph${index + 1}`}>{frage.frage}</p>
-                <input
-                  id={`input${index + 1}`}
-                  type="text"
-                  value={antworten[index] || ''}
-                  onChange={(e) => {
-                    const newAntworten = [...antworten];
-                    newAntworten[index] = e.target.value;
-                    setAntworten(newAntworten);
-                  }}
-                />
-              </label>
-            </li>
-          ))}
+        <h1 id="Headline17">Beantworte kurz ein paar Fragen</h1>
+
+        <ul>
+          <li id="liste17">
+            <label htmlFor="question1">
+              <p id="paragraph41">
+                Teezeit oder Kaffeepause?
+                <input id="radio11" type="radio" name="Answer6" />
+                <input id="radio12" type="radio" name="Answer6" />
+              </p>
+            </label>
+          </li>
+
+          <li id="liste17">
+            <label htmlFor="question2">
+              <p id="paragraph42">
+                Joggen oder Yoga?
+                <input id="radio13" type="radio" name="Answer7" />
+                <input id="radio14" type="radio" name="Answer7" />
+              </p>
+            </label>
+          </li>
+
+          <li id="liste17">
+            <label htmlFor="question3">
+              <p id="paragraph43">
+                Konzerte im kleinen Club oder große Arena?
+                <input id="radio15" type="radio" name="Answer8" />
+                <input id="radio16" type="radio" name="Answer8" />
+              </p>
+            </label>
+          </li>
+
+          <li id="liste17">
+            <label htmlFor="question4">
+              <p id="paragraph44">
+                Neues ausprobieren oder Bewährtes genießen?
+                <input id="radio17" type="radio" name="Answer9" />
+                <input id="radio18" type="radio" name="Answer9" />
+              </p>
+            </label>
+          </li>
+
+          <li id="liste17">
+            <label htmlFor="question5">
+              <p id="paragraph45">
+                Geduldig oder ungeduldig?
+                <input id="radio19" type="radio" name="Answer10" />
+                <input id="radio20" type="radio" name="Answer10" />
+              </p>
+            </label>
+          </li>
         </ul>
       </div>
 
-      
-      <button id="Zurück7" onClick={handleSaveAnswers}>
-        <Link to="/3-Freunde">3.Seite</Link>
-      </button>
-
-      <button id="Freunde7" onClick={handleSaveAnswers}>
+      <button id="Freunde17">
         <Link to="/5-Freunde">5.Seite</Link>
       </button>
-    </div>
+
+      <button id="Zurück17">
+        <Link to="/3-Freunde">3.Seite</Link>
+      </button>
+    </main>
   );
 };
 
