@@ -138,7 +138,7 @@ body {
 #savingdescription {
   position: absolute;
   bottom: 7vh;
-  transform: translateX(-50%);
+  right: 35%;
   background-color: inherit;
   border: none;
   color: rgb(255, 255, 255);
@@ -347,6 +347,11 @@ body {
   .left-page{
     left: 18%;
   }
+
+  #savingdescription{
+
+    right: 27%;
+  }
  
  }
 
@@ -357,8 +362,13 @@ body {
  .image-placeholder{
   width: 28%;
  }
+
  
+ #savingdescription{
+  right: 20%;
+}
  }
+
 
 
  
@@ -373,9 +383,13 @@ body {
   #file2{
     left: 25%;
   }
+
+  
+ #savingdescription{
+  right: 17%;
+}
   
   }
-
 
 
   
@@ -392,9 +406,22 @@ body {
     left: 25%;
     font-size: 15px;
   }
+
+  
+ #savingdescription{
+  right:   10%;
+}
   
   }
 
+
+  @media (max-width: 444px) {
+     
+ #savingdescription{
+  right:   6%;
+}
+ 
+  }
 
   
 @media (max-width: 408px) {
@@ -435,6 +462,13 @@ body {
     left: 22%;
     font-size: 15px;
   }
+
+   
+ #savingdescription{
+  right:   8%;
+  font-size: 14px;
+}
+ 
   
   }
 
@@ -455,8 +489,8 @@ body {
 
 
   #savingdescription{
-    left: 53%;
-    font-size: 15px;
+    right:  6%;
+    font-size: 14px;
   }
   
   }
@@ -475,17 +509,20 @@ body {
   #file2{
     left: 12%;
   }
-  
+    
+  #savingdescription{
+    right: 2%;
+  }
+
+  }
+
+  @media (max-width: 262px) {
 
 
   #savingdescription{
-    left: 53%;
-    font-size: 15px;
+    right: -6%;
   }
-  
-  }
-
-
+}
 
   @media (max-width: 250px) {
 
