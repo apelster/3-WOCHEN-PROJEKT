@@ -2,6 +2,7 @@ const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const db = require('./db-server-init'); // Importiere die Datenbankverbindung
 
 const app = express();
 const port = 3001;
@@ -9,22 +10,6 @@ const port = 3001;
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
-
-// MySQL connection setup
-const db = mysql.createConnection({
-  host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com',
-  user: 'root',
-  password: 'PatDocTest',
-  database: 'your-database'
-});
-
-db.connect(err => {
-  if (err) {
-    console.error('error connecting: ' + err.stack);
-    return;
-  }
-  console.log('connected as id ' + db.threadId);
-});
 
 // Endpoint to save profile data
 app.post('/saveProfile', (req, res) => {
