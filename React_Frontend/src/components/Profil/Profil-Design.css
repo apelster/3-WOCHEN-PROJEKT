@@ -95,37 +95,36 @@ body {
   height: 70%;
   width: 80%;
   position: absolute;
-  left: 18%;
-  top: 17%;
+  left: 18vw;
+  top: 16vh;
   opacity: 0.5;
 }
 
 .left-page {
   position: absolute;
-  top: 19%;
-  left: 26%;
-  width: 32%;
-  height: 65%;
+  top: 18.3%;
+  left: 23.5%;
+  width: 34%;
+  height: 65.5%;
   text-align: left;
 }
 
 #ÜberMich {
   color: greenyellow;
   font-family: "IBM Plex Mono";
-  font-size: 2rem;
+  font-size: 4vh;
 }
 
 #description {
-  margin-top: 10%;
   height: 30vh;
-  width: 15vw;
+  width: 20vw;
   color: #012700;
-  opacity: 0.8;
   font-size: 18px;
   font-family: "IBM Plex Mono", Arial, Helvetica, sans-serif;
-  border: 5px solid white;
+  border: 5px solid rgb(255, 255, 255);
   border-radius: 20px;
-  box-shadow: 0 5px 20px 15px rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 20px 15px rgb(255, 255, 255);
+  background-color: black;
 }
 
 #description::placeholder {
@@ -137,8 +136,8 @@ body {
 }
 
 #savingdescription {
-  position: fixed;
-  bottom: 20vh;
+  position: absolute;
+  bottom: 7vh;
   transform: translateX(-50%);
   background-color: inherit;
   border: none;
@@ -151,23 +150,43 @@ body {
 
 #rightPage {
   position: absolute;
-  top: 19%;
-  right: 7%;
+  top: 17%;
+  right: 8.5%;
   width: 32%;
-  height: 65%;
+  height: 66%;
 }
 
 .image-placeholder {
   font-family: "Dancing Script", Times, serif;
-  width: 13vw;
-  height: 23vh;
+  width: 15vw;
+  height: 22vh;
   border-radius: 100%;
   background-color: rgba(255, 255, 255, 0.3);
   font-size: 18px;
   animation: textShake 0.9s ease infinite;
   position: fixed;
-  top: 25%;
+  top: 23%;
 }
+
+
+
+#file {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#file2 {
+  cursor: pointer;
+  position: absolute;
+  top: 42%;
+  left: 29%;
+  width: fit-content;
+  height: fit-content;
+}
+
 
 @keyframes textShake {
   0% {
@@ -203,22 +222,6 @@ body {
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
   }
-}
-
-#file {
-  visibility: hidden;
-  width: 0px;
-  height: 0px;
-  padding: 0;
-  margin: 0;
-}
-
-#file2 {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  left: 27%;
-  font-size: 100%;
 }
 
 .input1 {
@@ -263,28 +266,28 @@ body {
   position: fixed;
   top: 49%;
   width: 20%;
-  height: 20%;
+  height: fit-content;
 }
 
 .pProfil2 {
   position: fixed;
   top: 57%;
   width: 20%;
-  height: 20%;
+  height: fit-content;
 }
 
 .pProfil3 {
   position: fixed;
   top: 65%;
   width: 20%;
-  height: 20%;
+  height: fit-content
 }
 
 .pProfil4 {
   position: fixed;
   top: 75%;
   width: 20%;
-  height: 20%;
+  height: fit-content;
   font-size: 100%;
 }
 
@@ -292,15 +295,214 @@ body {
 @media (max-width: 1240px) {
 
  .image-placeholder{
-  width: 15%;
+  width: 17%;
  }
 
  #federProfil{
-  display: none;
- }
-
- #bookProfil{
-  left: 10%;
+  left: -3%;
  }
 
 }
+
+
+
+
+@media (max-width: 1103px) {
+
+ 
+  #federProfil{
+    left: -8%;
+    width: 30%;
+  }
+
+  .image-placeholder{
+    width: 20%;
+  }
+ 
+ }
+
+
+ 
+@media (max-width: 910px) {
+
+ 
+  #federProfil{
+    display: none;
+  }
+
+  .image-placeholder{
+    width: 23%;
+  }
+
+  #bookProfil{
+    left: 10%;
+  }
+
+  #rightPage{
+    top: 20%;
+    right: 17%;
+  }
+
+
+  .left-page{
+    left: 18%;
+  }
+ 
+ }
+
+
+  
+@media (max-width: 746px) {
+
+ .image-placeholder{
+  width: 28%;
+ }
+ 
+ }
+
+
+ 
+
+  
+@media (max-width: 605px) {
+
+  .image-placeholder{
+   width: 30%;
+  }
+
+  #file2{
+    left: 25%;
+  }
+  
+  }
+
+
+
+  
+  
+@media (max-width: 490px) {
+
+  .image-placeholder{
+   width: 30%;
+   height: 15%;
+   left: 16%;
+  }
+
+  #file2{
+    left: 25%;
+    font-size: 15px;
+  }
+  
+  }
+
+
+  
+@media (max-width: 408px) {
+
+
+  #bookProfil{
+    width:95%;
+    left: 0%;
+  }
+
+  .left-page{
+    left: 8%;
+  }
+
+  .image-placeholder{
+   width: 33%;
+   height: 15%;
+   left: 8%;
+  }
+
+  #rightPage{
+    right: 15%;
+  }
+
+  #ÜberMich{
+    font-size: 20px;
+  }
+
+
+  #description{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    width: 80%;
+  }
+
+  #file2{
+    left: 22%;
+    font-size: 15px;
+  }
+  
+  }
+
+
+
+  
+  
+@media (max-width: 342px) {
+
+
+  .image-placeholder{
+   width: 38%;
+   height: 15%;
+   left: 8%;
+  }
+
+
+
+
+  #savingdescription{
+    left: 53%;
+    font-size: 15px;
+  }
+  
+  }
+
+
+    
+@media (max-width: 290px) {
+
+
+  .image-placeholder{
+   width: 35%;
+   height: 12%;
+   left: 8%;
+  }
+
+  #file2{
+    left: 12%;
+  }
+  
+
+
+  #savingdescription{
+    left: 53%;
+    font-size: 15px;
+  }
+  
+  }
+
+
+
+  @media (max-width: 250px) {
+
+    .pProfil1{
+      top: 40%;
+    }
+
+    
+    .pProfil2{
+      top: 52%;
+    }
+    
+    .pProfil3{
+      top: 62%;
+    }
+    
+    .pProfil4{
+      top: 72%;
+    }
+  }
