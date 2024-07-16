@@ -81,7 +81,6 @@ body {
   font-family: "Dancing Script", cursive;
 }
 
-
 .liste {
   position: relative;
   left: 40px;
@@ -92,39 +91,38 @@ body {
   width: 13%;
 }
 
-.book2 {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 10%;
-}
-
 #bookProfil {
-  height: 80%;
-  width: 100%;
-  position: relative;
-  top: 2%;
+  height: 70%;
+  width: 80%;
+  position: absolute;
+  left: 18%;
+  top: 17%;
   opacity: 0.5;
 }
 
 .left-page {
-  position: relative;
-  bottom: 47%;
-  left: 20%;
-  width: 30%;
+  position: absolute;
+  top: 19%;
+  left: 26%;
+  width: 32%;
+  height: 65%;
   text-align: left;
 }
 
+#ÜberMich {
+  color: greenyellow;
+  font-family: "IBM Plex Mono";
+  font-size: 2rem;
+}
+
 #description {
-  position: absolute;
-  top: 32%;
-  left: 6%;
-  height: 68%;
-  width: 90%;
-  background-color: black;
-  color: rgb(0, 255, 255);
-  font-family: "Dancing Script";
-  font-size: 20px;
+  margin-top: 10%;
+  height: 30vh;
+  width: 15vw;
+  color: #012700;
+  opacity: 0.8;
+  font-size: 18px;
+  font-family: "IBM Plex Mono", Arial, Helvetica, sans-serif;
   border: 5px solid white;
   border-radius: 20px;
   box-shadow: 0 5px 20px 15px rgba(255, 255, 255, 1);
@@ -139,49 +137,36 @@ body {
 }
 
 #savingdescription {
-  position: relative;
-  top: 107%;
-  left: 15%;
+  position: fixed;
+  bottom: 20vh;
   transform: translateX(-50%);
   background-color: inherit;
   border: none;
   color: rgb(255, 255, 255);
-  font-size: 25px;
+  font-size: 120%;
   cursor: pointer;
   text-decoration: underline;
-  font-family: "Dancing Script", Arial, Helvetica, sans-serif;
-}
-
-#ÜberMich {
-  color: greenyellow;
-  font-family: "IBM Plex Mono";
-  position: absolute;
-  top: 15%;
-  right: 31%;
+  font-family: "IBM Plex Mono", Arial, Helvetica, sans-serif;
 }
 
 #rightPage {
-  position: relative;
-  bottom: 99%;
-  right: -50%;
-  width: 30%;
-  height: 60%;
+  position: absolute;
+  top: 19%;
+  right: 7%;
+  width: 32%;
+  height: 65%;
 }
 
 .image-placeholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: "Dancing Script", Times, serif;
-  width: 50%;
-  height: 120%;
+  width: 13vw;
+  height: 23vh;
   border-radius: 100%;
   background-color: rgba(255, 255, 255, 0.3);
   font-size: 18px;
   animation: textShake 0.9s ease infinite;
-  position: absolute;
-  top: -105%;
-  left: -5%;
+  position: fixed;
+  top: 25%;
 }
 
 @keyframes textShake {
@@ -223,10 +208,17 @@ body {
 #file {
   visibility: hidden;
   width: 0px;
+  height: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 #file2 {
   cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 27%;
+  font-size: 100%;
 }
 
 .input1 {
@@ -239,16 +231,6 @@ body {
   width: 50%;
   font-size: 20px;
   outline: none;
-}
-
-.image-placeholder .pProfil {
-  display: inline-block;
-  position: relative;
-  top: 12vh;
-  right: 10%;
-  margin-top: 0%;
-  text-align: left;
-  font-size: 20px;
 }
 
 .custom-input {
@@ -267,124 +249,58 @@ body {
 }
 
 #federProfil {
-  position: relative;
-  right: 202%;
-  top: 5%;
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  top: 17%;
+  left: 0%;
+  width: 20%;
+  height: 65vh;
   transform: scaleX(-1);
   rotate: 20deg;
   opacity: 0.5;
 }
 
-.pProfil {
-  position: relative;
-  top: 80px;
+.pProfil1 {
+  position: fixed;
+  top: 49%;
+  width: 20%;
+  height: 20%;
 }
 
-@media (max-width: 1287px) {
-  #ÜberMich {
-    position: relative;
-    top: 20%;
-    right: 2%;
-  }
-
-  #federProfil {
-    position: relative;
-    top: -5%;
-  }
-
-  .pProfil {
-    position: relative;
-    top: 100px;
-  }
-
-  #description {
-    top: 33%;
-  }
-
-  #savingdescription {
-    position: relative;
-    top: 95%;
-  }
-
-  #bookProfil {
-    top: 5%;
-    padding-bottom: 20px;
-  }
-
-  .image-placeholder {
-    top: -150px;
-  }
-
-  
+.pProfil2 {
+  position: fixed;
+  top: 57%;
+  width: 20%;
+  height: 20%;
 }
 
-@media (max-width: 1032px) {
-  #ÜberMich {
-    position: fixed;
-    top: 17vh;
-    right: 19vw;
-  }
+.pProfil3 {
+  position: fixed;
+  top: 65%;
+  width: 20%;
+  height: 20%;
+}
 
-  #federProfil {
-    display: none;
-  }
-
-  .pProfil {
-    position: relative;
-    top: 780px;
-    left: -50%;
-    font-size: 15px;
-  }
-
-  #description {
-    position: fixed;
-    top: 28%;
-    left: 55%;
-    width: 30vw;
-    height: 40vh;
-  }
-
-  #savingdescription {
-    position: fixed;
-    top: 74vh;
-    left: 70vw;
-  }
-
-  #bookProfil {
-    position: fixed;
-    top: 9%;
-    width: 130%;
-    left: -14%;
-  }
-
-  .image-placeholder {
-    position: fixed;
-    top: 20%;
-    left: 10%;
-    height: 25%;
-    width: 25%;
-  }
+.pProfil4 {
+  position: fixed;
+  top: 75%;
+  width: 20%;
+  height: 20%;
+  font-size: 100%;
 }
 
 
+@media (max-width: 1240px) {
 
+ .image-placeholder{
+  width: 15%;
+ }
 
+ #federProfil{
+  display: none;
+ }
 
-@media (max-width: 800px) {
+ #bookProfil{
+  left: 10%;
+ }
 
-
-  #ÜberMich{
-    top: 20%;
-    left: 59.4%;
-    font-size: 20px;
-  }
-
-  .pProfil {
-    position: relative;
-    top: 750px;
-    left: -50%;
-    font-size: 15px;
-  }
 }

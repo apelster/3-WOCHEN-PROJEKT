@@ -16,7 +16,7 @@
 #logoH {
     position: fixed;
     top:0%;
-    left: 54.4%;
+    left: 51%;
     width: 10%;
     height: fit-content;
 }
@@ -33,16 +33,14 @@
 }
 
 .generated-link {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
+    position: fixed;
+    top: 6%;
+    left: 2.4%;
     color: #000;
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 0.5rem;
     border-radius: 5px;
-    position: fixed;
-    top: 6.2vh;
 }
 
 .generated-link a {
