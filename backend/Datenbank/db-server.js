@@ -5,7 +5,7 @@ const fs = require('fs');
 const db = mysql.createConnection({
   host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com',
   user: 'root',
-  password: 'PatDocTest'
+  password: 'Eisbombe11#'
 });
 
 db.connect(err => {
