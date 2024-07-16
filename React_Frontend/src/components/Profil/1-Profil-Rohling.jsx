@@ -11,7 +11,7 @@ const Profil1 = () => {
 
   const handleSubmit = () => {
     axios
-      .post("http://localhost:3001/saveProfile", {
+      .post("http://3.124.9.130:3001/saveProfile", {
         name,
         city,
         phone,
