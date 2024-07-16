@@ -16,7 +16,7 @@ const Freunde2 = () => {
           <li id="liste13">
             <label htmlFor="question1">
               <p id="paragraph31">
-              Großes Abenteuer oder kleine Freuden im Alltag?
+              Großes Abenteuer oder <br /> kleine Freuden im Alltag?
               
               <input id="radio1" type="radio" name="Answer1"/>
               <input id="radio2" type="radio" name="Answer1"/>
@@ -38,7 +38,7 @@ const Freunde2 = () => {
           <li id="liste13">
             <label htmlFor="question3">
               <p id="paragraph33">
-              Actionreiches Videospiel oder Puzzle-Spiel?
+              Actionreiches Videospiel oder <br /> Puzzle-Spiel?
               <input id="radio5" type="radio" name="Answer3"/>
               <input id="radio6" type="radio" name="Answer3"/>
               </p>

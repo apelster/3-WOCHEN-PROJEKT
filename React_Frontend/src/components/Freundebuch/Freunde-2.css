@@ -57,7 +57,7 @@ top: 48.5%;
 #paragraph31 {  
   position: fixed;
   top: 45%;
-  left: 18%;
+  left: 30%;
   font-size: 23px;
 }
 
@@ -168,96 +168,7 @@ top: 48.5%;
 }
 
 
-
-
-@media (max-width: 1403px) {
-  #Headline13 {
-    font-size: 23px;
-    left: 22%;
-  }
-
-  #Book-Background13 {
-    width: 100%;
-  }
-
-  #paragraph31 {
-    font-size: 17px;
-    width: 25%;
-    left: 20%;
-
-  }
-
-
-  #paragraph32 {
-    font-size: 17px;
-  }
-
-
-  #paragraph33 {
-    font-size: 17px;
-  }
-
-
-  #paragraph34 {
-    font-size: 17px;
-  }
-
-  
-
-  #paragraph35 {
-    font-size: 17px;
-  }
-
-  
-}
-
-@media (max-width: 1322px) {
-  #Headline13 {
-    font-size: 23px;
-    left: 21%;
-  }
-
-  #Book-Background13 {
-    width: 100%;
-  }
-
-  #paragraph31 {
-    font-size: 17px;
-    left: 19%;
-    width: 30%;
-  }
-
-
-  #paragraph32 {
-    font-size: 15px;
-    left: 19%;
-  }
-
-
-  #paragraph33 {
-    font-size: 17px;
-    right: 23%;
-  }
-
-
-  #paragraph34 {
-    font-size: 17px;
-    right: 25%;
-  }
-
-  
-
-  #paragraph35 {
-    font-size: 17px;
-    right: 24.5%;
-  }
-
-  
-}
-
-
-
-@media (max-width: 1005px) {
+@media (max-width: 1500px) {
   #Headline13 {
     font-size: 22px;
     left: 13.5%;
@@ -278,41 +189,111 @@ top: 48.5%;
   }
 
   #paragraph31 {
-    font-size: 17px;
-    left: 13%;
-    width: 35%;
+    font-size: 20px;
+    left: 18%;
+  }
+
+  #radio1{
+    left: 32%;
+  }
+
+  
+  #radio2{
+    left: 34.5%;
   }
 
   
 
   #paragraph32 {
-    font-size: 15px;
-    left: 16%;
+    font-size: 20px;
+    top: 63.5%;
+    left: 12%;
+  }
+
+  #radio3{
+    left: 30%;
+  }
+
+  
+  #radio4{
+    left: 32.5%;
   }
 
 
   #paragraph33 {
-    font-size: 17px;
-    right: 15%;
+    font-size: 20px;
+    top: 22%;
+    right: 22%;
   }
 
 
   #paragraph34 {
-    font-size: 17px;
-    right: 16%;
+    font-size: 20px;
+    right: 17%;
+    top: 42.5%;
   }
 
-  #paragraph35 {
-    font-size: 17px;
-    right: 15%;
+  #radio7{
+    right: 12%;
   }
 
   
+  #radio8{
+    right: 14.5%;
+  }
+
+  #paragraph35 {
+    top: 63.5%;
+    font-size: 20px;
+    right: 18%;
+  }
+
+  
+  #radio9{
+    right: 14.5%;
+  }
+
+  #radio10{
+    right: 12%;
+  }
 }
 
-@media (max-width: 859px) {
+
+@media (max-width : 1410px) {
+
+
+  #radio1{
+    position: absolute;
+    top: 24%;
+    left: 110%;
+  }
+
+  #radio2{
+    position: absolute;
+    top: 24%;
+    left: 135%;
+  }
+
+
+
+  #radio3{
+    position: absolute;
+    top: 26%;
+    left: 110%;
+  }
+
+  
+  #radio4{
+    position: absolute;
+    left: 127%;
+    top: 26%;
+  }
+
+}
+
+@media (max-width: 970px) {
   #Headline13 {
-    font-size: 22px;
+    font-size: 20px;
     left: 11%;
   }
   #Book-Background13 {
@@ -320,44 +301,67 @@ top: 48.5%;
     left: -14%;
   }
 
-  
   #paragraph31 {
-    font-size: 15px;
-    left: 16%;
-    width: 30%;
+    left: 10%;
   }
 
   
+  #radio1{
+    top: 24%;
+    left: 103%;
+  }
 
-  #paragraph32 {
-    font-size: 15px;
-    left: 16%;
+  #radio2{
+    top: 24%;
+    left: 120%;
+  }
+
+
+
+  #paragraph32{
+    left: 10%;
+    width: 20%;
+  }
+
+  #radio3{
+    top: 26%;
+    left: 103%;
   }
 
   
-
-  #paragraph33 {
-    font-size: 15px;
-    right: 13%;
+  #radio4{
+    left: 127%;
+    top: 26%;
   }
 
+  #paragraph33{
+    right: 18%;
+  }
+  #radio5{
+    right: 20%;
+  }
   
-
-  #paragraph34 {
-    font-size: 15px;
+  #radio6{
     right: 15%;
   }
 
+  #paragraph34{
+    width: 20%;
+  }
 
-  #paragraph35 {
-    font-size: 15px;
-    right: 14%;
+   
+  #radio7{
+    right: 10%;
   }
 
   
+  #radio10{
+    right: 10%;
+  }
+  
 }
 
-@media (max-width: 782px) {
+@media (max-width: 732px) {
   #Headline13 {
     font-size: 18px;
     left: 11%;
@@ -369,258 +373,53 @@ top: 48.5%;
   
   #paragraph31 {
     font-size: 15px;
-    left: 15%;
   }
 
 
   #paragraph32 {
     font-size: 15px;
-    left: 15%;
   }
 
 
   #paragraph33 {
     font-size: 15px;
-    right: 12%;
+    top: 23.5%;
+    right: 20%;
   }
 
 
   #paragraph34 {
+    position: absolute;
     font-size: 15px;
-    right: 14%;
+    right: 18%;
   }
 
 
   #paragraph35 {
+    position: absolute;
     font-size: 15px;
-    right: 12%;
+    top: 64.5%;
+    right: 20%;
   }
-
 }
 
-@media (max-width: 736px) {
-  #Headline13 {
-    font-size: 17px;
-    left: 9%;
+
+@media (max-width:602px ){
+
+  #Headline13{
+    font-size: 15px;
   }
-  #Book-Background13 {
-    width: 130%;
+
+  #paragraph33 {
+    right: 17%;
   }
+
 
   
-  #paragraph31 {
-    font-size: 14px;
-    left: 15%;
-  }
-
-  #paragraph32 {
-    font-size: 14px;
-    left: 15%;
-  }
-
-
-
-  #paragraph33{
-
-font-size: 14px;
-    right: 12%;
-  }
-
-  
-  #paragraph34{
-    font-size: 14px;
+  #paragraph35 {
     right: 14%;
+    top: 62.5%;
+    width: 25%;
   }
-
-  
-
-  #paragraph35{
-    font-size: 14px;
-    right: 13%;
-    
-  }
-
-
-}
-
-@media (max-width: 664px) {
-  #Headline13 {
-    font-size: 16px;
-    top: 22%;
-    left: 9%;
-  }
-  #Book-Background13 {
-    width: 130%;
-  }
-
-  #Freunde13 {
-    top: 78vh;
-    right: 8%;
-  }
-
-  #Zurück13 {
-    top: 78vh;
-    left: 7%;
-  }
-
-
-  
-  #paragraph31 {
-    font-size: 13px;
-    left: 14%;
-  }
-
-
-  #paragraph32 {
-    font-size: 13px;
-    left: 14%;
-  }
-
-
-
-  #paragraph33{
-
-font-size: 13px;
-    right: 14%;
-  }
-
-  
-
-  
-  #paragraph34{
-    font-size: 13px;
-    right: 12%;
-  }
-
-  
-
-  #paragraph35{
-    font-size: 13px;
-    right: 10%;
-    
-  }
-
-  
-}
-
-
-@media (max-width: 599px) {
-
-  #Headline13 {
-    font-size: 16px;
-    top: 22%;
-    left: 9%;
-  }
-  #Book-Background13 {
-    width: 130%;
-  }
-
-  #Freunde13 {
-    top: 78vh;
-    right: 8%;
-  }
-
-  #Zurück13 {
-    top: 78vh;
-    left: 7%;
-  }
-
-  #paragraph31 {
-    font-size: 13px;
-    left: 12%;
-  }
-
-  
-
-  #paragraph32 {
-    font-size: 13px;
-    left: 12%;
-  }
-
-
-
-  #paragraph33{
-
-font-size: 13px;
-    right: 12%;
-  }
-
-  #paragraph34{
-    font-size: 13px;
-    right: 10%;
-  }
-
-  
-
-  #paragraph35{
-    font-size: 13px;
-    right: 10%;
-    
-  }
-
-  
-}
-
-
-
-  
-@media (max-width: 545px) {
-
-  #Headline13 {
-    font-size: 16px;
-    top: 22%;
-    left: 9%;
-  }
-  #Book-Background13 {
-    width: 130%;
-  }
-
-  #Freunde13 {
-    top: 78vh;
-    right: 8%;
-  }
-
-  #Zurück13 {
-    top: 78vh;
-    left: 7%;
-  }
-
-  #paragraph31 {
-    font-size: 11px;
-    left: 12%;
-  }
-
-
-  #paragraph32 {
-    font-size: 11px;
-    left: 12%;
-  }
-
-  
-
-
-  #paragraph33{
-
-    font-size: 11px;
-    right: 12%;
-  }
-
-  
-
-  
-  #paragraph34{
-    font-size: 11px;
-    right: 13%;
-  }
-
-  
-
-  #paragraph35{
-    font-size: 11px;
-    right: 10%;
-    
-  }
-
-  
 
 }

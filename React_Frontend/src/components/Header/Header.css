@@ -219,12 +219,12 @@
 
     .search-bar{
         position: fixed;
-        left: 36%;
-        top: 11vh;
+        left: 30%;
+        top: 9.4vh;
     }
 
     .generated-link{
-        top: 16%;
+        top: 13.5%;
         left: 20%;
     }
 
