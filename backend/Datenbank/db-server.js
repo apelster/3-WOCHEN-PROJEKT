@@ -27,7 +27,7 @@ app.use(cors()); // Enable CORS
 app.use(bodyParser.json());
 
 // Route für das Speichern von Profilen
-app.post('/api/saveProfile', (req, res) => {
+app.post('/saveProfile', (req, res) => {
   const { name, city, phone, birthday, description } = req.body;
 
   console.log('Received profile data:', req.body);
