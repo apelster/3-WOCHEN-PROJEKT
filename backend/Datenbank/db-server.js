@@ -11,7 +11,8 @@ const db = mysql.createConnection({
   host: 'freundebuchnew.cfseo6ieksme.eu-central-1.rds.amazonaws.com',
   user: 'root',
   password: 'Eisbombe11#',
-  database: 'freundebuch'
+  database: 'freundebuch',
+  port:3306
 });
 
 db.connect(err => {
