@@ -46,5 +46,5 @@ app.post('/saveProfile', (req, res) => {
 
 // Server starten
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Server running on http://3.124.9.130/:${port}`);
 });

@@ -12,7 +12,7 @@ const Profil1 = () => {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/saveProfile",
+        "http://3.124.9.130:3001/saveProfile",
         {
           name,
           city,
