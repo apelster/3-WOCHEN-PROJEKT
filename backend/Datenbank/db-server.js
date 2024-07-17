@@ -1,5 +1,5 @@
 const express = require('express');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
@@ -28,7 +28,7 @@ app.use(cors()); // Enable CORS
 app.use(bodyParser.json());
 
 // Route für das Speichern von Profilen
-app.post('/api/saveProfile', (req, res) => {
+app.post('/saveProfile', (req, res) => {
   const { name, city, phone, birthday, description } = req.body;
 
   console.log('Received profile data:', req.body);
@@ -47,5 +47,5 @@ app.post('/api/saveProfile', (req, res) => {
 
 // Server starten
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Server running on http://3.124.9.130/:${port}`);
 });
