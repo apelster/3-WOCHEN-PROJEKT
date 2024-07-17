@@ -103,8 +103,8 @@ function DemoBook() {
 
         
         <Page>
-          <h1>Wer bin ich?</h1>
-          <p>Ich heiße <input type="text" placeholder="Dein Name" value={name} onChange={(e) => setName(e.target.value)} /></p>
+          <h1 id='heißeh1'>Wer bin ich?</h1>
+          <p id='heißep'>Ich heiße <input id='heiße' type="text" placeholder="Dein Name" value={name} onChange={(e) => setName(e.target.value)} /></p>
         </Page>
 
         {fragen.map((frage, index) => (

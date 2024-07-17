@@ -1,16 +1,16 @@
 #Book-Background21 {
   position: fixed;
-  top: 12vh;
-  right: 0%;
-  width: 100vw;
-  height: 80vh;
+  top: 20vh;
+  right: 5%;
+  width: 90vw;
+  height: 65vh;
   opacity: 0.5;
 }
 
 #Freunde21 {
   position: absolute;
   top: 78%;
-  right: 18%;
+  right: 10%;
   border: none;
   font-size: 100%;
   background-color: initial;
@@ -19,10 +19,10 @@
 
 #Zurück21 {
   position: absolute;
-  top: 79%;
-  left: 16%;
-  font-size: 100%;
+  top: 78%;
+  left: 10%;
   border: none;
+  font-size: 100%;
   background-color: initial;
   font-family: "Dancing Script";
 }
@@ -37,365 +37,1072 @@
 
 #paragraph51 {
   position: fixed;
-  top: 42%;
-  left: 19%;
-  width: 20%;
-  font-size: 23px;
+  top: 48%;
+  left: 20%;
+  font-size: 20px;
 }
 
 #radio21 {
   position: fixed;
-  left: 37%;
-  top: 45.5%;
+  top: 51vh;
+  left: 33vw;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
+}
+
+#paragraph52 {
+  position: fixed;
+  top: 60%;
+  left: 18%;
+  font-size: 20px;
+  width: 19%;
 }
 
 #radio22 {
   position: fixed;
-  left: 39.5%;
-  top: 45.5%;
+  top: 51vh;
+  left: 35vw;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
 }
 
-
-
-
-
-
-#paragraph52 {
+#paragraph53 {
   position: fixed;
-  top: 63%;
-  left: 20%;
-  font-size: 23px;
-  width: 15%;
+  top: 26.5%;
+  right: 24vw;
+  font-size: 20px;
 }
 
 #radio23 {
   position: fixed;
-  left: 36%;
-  top: 66.5%;
-}
-
-#radio24 {
-  position: fixed;
-  left: 38.5%;
-  top: 66.5%;
-}
-
-
-
-
-
-
-
-
-#paragraph53 {
-  position: fixed;
-  top: 24%;
-  right: 30%;
-  font-size: 23px;
-}
-
-#radio25 {
-  position: fixed;
-  right: 27%;
-  top: 27.3%;
-}
-
-#radio26 {
-  position: fixed;
-  right: 24.5%;
-  top: 27.3%;
+  top: 63vh;
+  left: 38vw;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
 }
 
 #paragraph54 {
   position: fixed;
   top: 42%;
-  right: 27%;
-  font-size: 23px;
+  right: 23%;
+  font-size: 20px;
 }
 
-#radio27 {
+#radio24 {
   position: fixed;
-  right: 24%;
-  top: 45.5%;
-}
-
-#radio28 {
-  position: fixed;
-  right: 21.5%;
-  top: 45.5%;
+  top: 63vh;
+  left: 40vw;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
 }
 
 #paragraph55 {
   position: fixed;
   top: 63%;
-  right: 26%;
-  width: 15%;
-  font-size: 23px;
+  right: 18%;
+  font-size: 20px;
 }
 
+#radio25 {
+  position: fixed;
+  top: 29.5vh;
+  right: 19vw;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
+}
+
+#radio26 {
+  position: fixed;
+  top: 29.5vh;
+  right: 21vw;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
+}
+
+#radio27 {
+  position: fixed;
+  top: 45vh;
+  right: 20vw;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
+}
+#radio28 {
+  position: fixed;
+  top: 45vh;
+  right: 18vw;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
+}
 #radio29 {
   position: fixed;
-  top: 66.5%;
-  right: 24%;
+  top: 66vh;
+  right: 14vw;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
 }
-
 #radio30 {
   position: fixed;
-  top: 66.5%;
-  right: 21.5%;
+  top: 66vh;
+  right: 16vw;
+  border: none;
+  background-color: inherit;
+  border-bottom: dashed;
 }
 
 #liste21 {
   list-style-type: none;
 }
 
-
-
 @media (max-width: 1403px) {
   #Headline21 {
     font-size: 23px;
-    left: 22%;
+    left: 18%;
   }
 
-  #Book-Background21 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1322px) {
-  #Headline21 {
-    font-size: 23px;
-    left: 21%;
+  #radio21 {
+    left: 35%;
   }
 
-  #Book-Background21 {
-    width: 100%;
-  }
-
-  #radio21{
-    left: 39%;
-  }
-
-  
-  #radio22{
-    left: 41.5%;
-  }
-
-  
-}
-
-@media (max-width: 1105px) {
-  #Headline21 {
-    font-size: 25px;
-    left: 13.5%;
-  }
-  #Book-Background21 {
-    width: 125%;
-    left: -12%;
-  }
-
-  #Freunde21 {
-    top: 78vh;
-    right: 10%;
-  }
-
-  #Zurück21 {
-    top: 78vh;
-    left: 9%;
-  }
-
-  #paragraph51 {
-    font-size: 22.5px;
-    left: 20%;
-  }
-
-  #radio21{
+  #radio22 {
     left: 38%;
   }
 
-  #paragraph52 {
-    font-size: 22.5px;
-    left: 24%;
+  #radio23 {
+    left: 37%;
   }
 
-  #radio23 {
+  #radio24 {
     left: 40%;
   }
 
-  
-  #radio24 {
-    left: 44%;
+  #radio25 {
+    right: 22%;
   }
 
+  #radio26 {
+    right: 19%;
+  }
+
+  #radio27 {
+    right: 20.5%;
+  }
+
+  #radio28 {
+    right: 17.5%;
+  }
+
+  #radio29 {
+    right: 16%;
+  }
+
+  #radio30 {
+    right: 13%;
+  }
+
+  #paragraph51 {
+    font-size: 20px;
+
+    left: 20%;
+  }
+
+  #paragraph52 {
+    font-size: 20px;
+    left: 18%;
+  }
 
   #paragraph53 {
-    top: 23.5%;
-    font-size: 22.5px;
-    left: 69%;
-  }
-
-  
-  #radio25 {
-    right:  20%;
-  }
-
-  
-  #radio26 {
-    right: 16%;
+    font-size: 17px;
+    top: 27%;
   }
 
   #paragraph54 {
-    font-size: 22.5px;
-    left: 55%;
-    width: 30%;
+    font-size: 17px;
+    top: 42.5%;
   }
 
-  
+  #paragraph55 {
+    font-size: 17px;
+    top: 63.5%;
+  }
+}
+
+@media (max-width: 1321px) {
+  #Headline21 {
+    font-size: 23px;
+    left: 18%;
+  }
+
+  #radio21 {
+    left: 35%;
+  }
+
+  #radio22 {
+    left: 38%;
+  }
+
+  #radio23 {
+    left: 37%;
+  }
+
+  #radio24 {
+    left: 40%;
+  }
+
+  #radio25 {
+    right: 22%;
+  }
+
+  #radio26 {
+    right: 19%;
+  }
+
   #radio27 {
+    right: 20.5%;
+  }
+
+  #radio28 {
+    right: 17.5%;
+  }
+
+  #radio29 {
     right: 16%;
   }
 
-  
+  #radio30 {
+    right: 13%;
+  }
+
+  #paragraph51 {
+    font-size: 20px;
+    left: 18%;
+  }
+
+  #paragraph52 {
+    font-size: 20px;
+    left: 17%;
+  }
+
+  #paragraph53 {
+    font-size: 17px;
+    top: 27%;
+    right: 26%;
+  }
+
+  #paragraph54 {
+    font-size: 17px;
+    top: 42.5%;
+    right: 25%;
+  }
+
+  #paragraph55 {
+    font-size: 17px;
+    top: 63.5%;
+    right: 21%;
+  }
+}
+
+@media (max-width: 1125px) {
+  #Headline21 {
+    font-size: 23px;
+    left: 18%;
+  }
+
+  #radio21 {
+    left: 35%;
+  }
+
+  #radio22 {
+    left: 38%;
+  }
+
+  #radio23 {
+    left: 37%;
+  }
+
+  #radio24 {
+    left: 40%;
+  }
+
+  #radio25 {
+    right: 22%;
+  }
+
+  #radio26 {
+    right: 19%;
+  }
+
+  #radio27 {
+    right: 20.5%;
+  }
+
+  #radio28 {
+    right: 17.5%;
+  }
+
+  #radio29 {
+    right: 16%;
+  }
+
+  #radio30 {
+    right: 13%;
+  }
+
+  #paragraph51 {
+    font-size: 20px;
+    left: 16%;
+  }
+
+  #paragraph52 {
+    font-size: 20px;
+    left: 17%;
+  }
+
+  #paragraph53 {
+    font-size: 17px;
+    top: 27%;
+    right: 26%;
+  }
+
+  #paragraph54 {
+    font-size: 17px;
+    top: 42.5%;
+    right: 25%;
+  }
+
+  #paragraph55 {
+    font-size: 17px;
+    top: 63.5%;
+    right: 20%;
+  }
+}
+
+@media (max-width: 1015px) {
+  #Headline21 {
+    font-size: 20px;
+    left: 18%;
+  }
+
+  #radio21 {
+    left: 38%;
+  }
+
+  #radio22 {
+    left: 41%;
+  }
+
+  #radio23 {
+    left: 37%;
+  }
+
+  #radio24 {
+    left: 40%;
+  }
+
+  #radio25 {
+    right: 22%;
+  }
+
+  #radio26 {
+    right: 19%;
+  }
+
+  #radio27 {
+    right: 20.5%;
+  }
+
+  #radio28 {
+    right: 17.5%;
+  }
+
+  #radio29 {
+    right: 16%;
+  }
+
+  #radio30 {
+    right: 13%;
+  }
+
+  #paragraph51 {
+    font-size: 20px;
+    left: 16%;
+  }
+
+  #paragraph52 {
+    font-size: 20px;
+    left: 17%;
+  }
+
+  #paragraph53 {
+    font-size: 17px;
+    top: 27%;
+    right: 26%;
+  }
+
+  #paragraph54 {
+    font-size: 17px;
+    top: 42.5%;
+    right: 25%;
+  }
+
+  #paragraph55 {
+    font-size: 17px;
+    top: 63.5%;
+    right: 20%;
+  }
+}
+
+@media (max-width: 890px) {
+  #Headline21 {
+    font-size: 20px;
+    left: 12%;
+  }
+
+  #radio21 {
+    left: 32%;
+  }
+
+  #radio22 {
+    left: 36%;
+  }
+
+  #radio23 {
+    left: 37%;
+  }
+
+  #radio24 {
+    left: 40%;
+  }
+
+  #radio25 {
+    right: 22%;
+  }
+
+  #radio26 {
+    right: 19%;
+  }
+
+  #radio27 {
+    right: 20.5%;
+  }
+
+  #radio28 {
+    right: 17.5%;
+  }
+
+  #radio29 {
+    right: 16%;
+  }
+
+  #radio30 {
+    right: 13%;
+  }
+
+  #paragraph51 {
+    font-size: 20px;
+    left: 13%;
+    width: 20%;
+  }
+
+  #paragraph52 {
+    font-size: 20px;
+    left: 17%;
+  }
+
+  #paragraph53 {
+    font-size: 17px;
+    top: 27%;
+    right: 26%;
+  }
+
+  #paragraph54 {
+    font-size: 17px;
+    top: 42.5%;
+    right: 25%;
+  }
+
+  #paragraph55 {
+    font-size: 17px;
+    top: 63.5%;
+    right: 20%;
+    width: 20%;
+  }
+}
+
+@media (max-width: 705px) {
+  #Headline21 {
+    font-size: 16px;
+    left: 12%;
+  }
+
+  #radio21 {
+    left: 32%;
+  }
+
+  #radio22 {
+    left: 36%;
+  }
+
+  #radio23 {
+    left: 37%;
+  }
+
+  #radio24 {
+    left: 40%;
+  }
+
+  #radio25 {
+    right: 22%;
+  }
+
+  #radio26 {
+    right: 19%;
+  }
+
+  #radio27 {
+    right: 20.5%;
+  }
+
+  #radio28 {
+    right: 17.5%;
+  }
+
+  #radio29 {
+    right: 16%;
+  }
+
+  #radio30 {
+    right: 13%;
+  }
+
+  #paragraph51 {
+    font-size: 20px;
+    left: 10%;
+    width: 20%;
+  }
+
+  #paragraph52 {
+    font-size: 20px;
+    left: 17%;
+  }
+
+  #paragraph53 {
+    font-size: 17px;
+    top: 27%;
+    right: 23%;
+    width: 20%;
+  }
+
+  #paragraph54 {
+    font-size: 17px;
+    top: 42.5%;
+    right: 24%;
+    width: 20%;
+  }
+
+  #paragraph55 {
+    font-size: 17px;
+    top: 63.5%;
+    right: 20%;
+    width: 20%;
+  }
+}
+
+@media (max-width: 601px) {
+  #Headline21 {
+    font-size: 16px;
+    left: 12%;
+    width: 30%;
+  }
+
+  #radio21 {
+    left: 38%;
+  }
+
+  #radio22 {
+    left: 45%;
+  }
+
+  #radio23 {
+    left: 38%;
+  }
+
+  #radio24 {
+    left: 45%;
+  }
+
+  #radio25 {
+    right: 18%;
+  }
+
+  #radio26 {
+    right: 12%;
+  }
+
+  #radio27 {
+    right: 18%;
+  }
+
   #radio28 {
     right: 12%;
   }
 
-  #paragraph55 {
-    font-size: 22.5px;
-    left: 65%;
-    top: 60%;
-  }
-
-  
   #radio29 {
-    right: 15%;
-  }
-  #radio30 {
-    right: 11%;
-  }
-}
-
-@media (max-width: 900px) {
-  #Headline21 {
-    font-size: 22px;
-    left: 11%;
-  }
-  #Book-Background21 {
-    width: 130%;
-    left: -14%;
-  }
-
-  #paragraph51 {
-    font-size: 22px;
-    left: 20%;
-  }
-
-  #paragraph52 {
-    font-size: 22px;
-    left: 22%;
-  }
-
-  #paragraph53 {
-    font-size: 22px;
-    left: 63%;
-  }
-
-  #paragraph54 {
-    font-size: 20px;
-    left:  52%;
-    top: 43%;
-  }
-
-  #paragraph55 {
-    font-size: 20px;
     right: 12%;
   }
-}
 
-
-
-@media (max-width: 736px) {
-  #Headline21 {
-    font-size: 17px;
-    left: 9%;
-  }
-  #Book-Background21 {
-    width: 130%;
-  }
-
-
-  #paragraph51{
-    font-size: 20px;
-    left: 17%;  
-  }
-
-  
-  #paragraph52{
-    font-size: 20px;
-    left: 18%;  
-    width: 22%;
-  }
-
-
-  
-  #paragraph54{
-    font-size: 20px;
-    left: 62%;
-    top: 42%;
-    width: 15%;
-  }
-
-  
-  #paragraph55{
-    top: 60.5%;
-  }
-}
-
-
-@media (max-width: 545px) {
-  #Headline21 {
-    font-size: 15px;
-    top: 22%;
-    left: 9%;
-  }
-  #Book-Background21 {
-    width: 130%;
-  }
-
-  #Freunde21 {
-    top: 78vh;
-    right: 8%;
-  }
-
-  #Zurück21 {
-    top: 78vh;
-    left: 7%;
+  #radio30 {
+    right: 18%;
   }
 
   #paragraph51 {
-    font-size: 18px;
-    left: 15%;
-  }
-
-  #paragraph52 {
-    font-size: 18px;
-    left: 18%;
+    font-size: 17px;
+    left: 16%;
     width: 20%;
   }
 
+  #paragraph52 {
+    font-size: 17px;
+    left: 17%;
+  }
+
   #paragraph53 {
-    font-size: 18px;
-    right: 28%;
+    font-size: 17px;
+    top: 27%;
+    right: 21%;
+    width: 20%;
   }
 
   #paragraph54 {
-    font-size: 18px;
-    left:62%
+    font-size: 17px;
+    top: 42.5%;
+    right: 23%;
+    width: 20%;
   }
 
   #paragraph55 {
-    font-size: 18px;
-    left: 61%;
-    top: 61.5%;
+    font-size: 17px;
+    top: 61.4%;
+    right: 20%;
+    width: 20%;
+  }
+}
+
+@media (max-width: 425px) {
+  #Headline21 {
+    font-size: 16px;
+    left: 22%;
+    width: 10%;
+  }
+
+  #radio21 {
+    left: 22%;
+  }
+
+  #radio22 {
+    left: 38%;
+  }
+
+  #radio23 {
+    top: 70%;
+    left: 22%;
+  }
+
+  #radio24 {
+    top: 70%;
+
+    left: 38%;
+  }
+
+  #radio25 {
+    right: 33%;
+  }
+
+  #radio26 {
+    right: 18%;
+  }
+
+  #radio27 {
+    right: 33%;
+    top: 51%;
+  }
+
+  #radio28 {
+    right: 18%;
+    top: 51%;
+  }
+
+  #radio29 {
+    right: 33%;
+    top: 70%;
+  }
+
+  #radio30 {
+    right: 18%;
+    top: 70%;
+  }
+
+  #paragraph51 {
+    font-size: 17px;
+    left: 23%;
+    top: 42%;
+  }
+
+  #paragraph52 {
+    font-size: 17px;
+    left: 13%;
+    top: 57%;
+    width: 35%;
+  }
+
+  #paragraph53 {
+    font-size: 17px;
+    top: 20%;
+    right: 18%;
+    width: 20%;
+  }
+
+  #paragraph54 {
+    font-size: 17px;
+    top: 42%;
+    right: 18%;
+    width: 20%;
+  }
+
+  #paragraph55 {
+    font-size: 17px;
+    top: 60%;
+    right: 11%;
+    width: 35%;
+  }
+}
+
+@media (max-width: 341px) {
+  #Headline21 {
+    left: 15%;
+  }
+
+  #radio21 {
+    left: 17%;
+  }
+
+  #radio22 {
+    left: 33%;
+  }
+
+  #radio23 {
+    top: 70%;
+    left: 17%;
+  }
+
+  #radio24 {
+    top: 70%;
+
+    left: 33%;
+  }
+
+  #radio25 {
+    right: 33%;
+  }
+
+  #radio26 {
+    right: 18%;
+  }
+
+  #radio27 {
+    right: 33%;
+    top: 51%;
+  }
+
+  #radio28 {
+    right: 18%;
+    top: 51%;
+  }
+
+  #radio29 {
+    right: 33%;
+    top: 70%;
+  }
+
+  #radio30 {
+    right: 18%;
+    top: 70%;
+  }
+
+  #paragraph51 {
+    font-size: 13px;
+    left: 20%;
+    top: 42%;
+  }
+
+  #paragraph52 {
+    font-size: 13px;
+    left: 13%;
+    top: 60%;
+    width: 35%;
+  }
+
+  #paragraph53 {
+    font-size: 13px;
+
+    top: 20%;
+    right: 18%;
+    width: 20%;
+  }
+
+  #paragraph54 {
+    font-size: 13px;
+    top: 42%;
+    right: 18%;
+    width: 20%;
+  }
+
+  #paragraph55 {
+    font-size: 13px;
+    top: 60%;
+    right: 12%;
+  }
+
+  #Book-Background21 {
+    width: 100%;
+    left: -1%;
+  }
+  
+  #Freunde21 {
+
+    top: 78%;
+    right: 6%;
+  }
+
+  #Zurück21 {
+    top: 78%;
+    left: 4%;
+  }
+}
+
+
+
+
+@media (max-width: 240px) {
+  #Headline21 {
+    left: 11%;
+  }
+
+  #radio21 {
+    left: 17%;
+  }
+
+  #radio22 {
+    left: 33%;
+  }
+
+  #radio23 {
+    top: 70%;
+    left: 17%;
+  }
+
+  #radio24 {
+    top: 70%;
+
+    left: 33%;
+  }
+
+  #radio25 {
+    right: 33%;
+  }
+
+  #radio26 {
+    right: 18%;
+  }
+
+  #radio27 {
+    right: 33%;
+    top: 51%;
+  }
+
+  #radio28 {
+    right: 18%;
+    top: 51%;
+  }
+
+  #radio29 {
+    right: 33%;
+    top: 70%;
+  }
+
+  #radio30 {
+    right: 18%;
+    top: 70%;
+  }
+
+  #paragraph51 {
+    font-size: 11px;
+    left: 20%;
+    top: 42%;
+  }
+
+  #paragraph52 {
+    font-size: 11px;
+
+    left: 11%;
+    top: 60%;
+    width: 35%;
+  }
+
+  #paragraph53 {
+    font-size: 11px;
+    top: 20%;
+    right: 18%;
+    width: 20%;
+  }
+
+  #paragraph54 {
+    font-size: 11px;
+    top: 42%;
+    right: 18%;
+    width: 20%;
+  }
+
+  #paragraph55 {
+    font-size: 11px;
+    top: 60%;
+    right: 16%;
+    width: 29%;
+  }
+
+  #Book-Background21 {
+    width: 100%;
+    left: -1%;
+  }
+
+  #Freunde21 {
+
+    top: 78%;
+    right: 4%;
+    font-size: 10px;
+  }
+
+  #Zurück21 {
+    top: 78%;
+    left: 2%;
+    font-size: 10px;
+
+  }
+}
+
+
+
+@media (max-width: 212px) {
+  #Headline21 {
+    font-size: 11px;
+    left: 11%;
+  }
+
+  #radio21 {
+    left: 17%;
+  }
+
+  #radio22 {
+    left: 33%;
+  }
+
+  #radio23 {
+    top: 70%;
+    left: 17%;
+  }
+
+  #radio24 {
+    top: 70%;
+
+    left: 33%;
+  }
+
+  #radio25 {
+    right: 33%;
+  }
+
+  #radio26 {
+    right: 18%;
+  }
+
+  #radio27 {
+    right: 33%;
+    top: 51%;
+  }
+
+  #radio28 {
+    right: 18%;
+    top: 51%;
+  }
+
+  #radio29 {
+    right: 33%;
+    top: 70%;
+  }
+
+  #radio30 {
+    right: 18%;
+    top: 70%;
+  }
+
+  #paragraph51 {
+    font-size: 9px;
+    left: 16%;
+    top: 42%;
+  }
+
+  #paragraph52 {
+    font-size: 9px;
+    left: 11%;
+    top: 60%;
+    width: 35%;
+  }
+
+  #paragraph53 {
+    font-size: 9px;
+    top: 23%;
+    right: 22%;
+    width: 20%;
+  }
+
+  #paragraph54 {
+    font-size: 9px;
+    top: 42%;
+    right: 20%;
+    width: 20%;
+  }
+
+  #paragraph55 {
+    font-size: 9px;
+    top: 60%;
+    right: 21%;
+    width: 29%;
+  }
+
+  #Book-Background21 {
+    width: 100%;
+    left: -1%;
+  }
+
+  #Freunde21 {
+
+    top: 78%;
+    right: 4%;
+    font-size: 9px;
+  }
+
+  #Zurück21 {
+    top: 78%;
+    left: 4%;
+    font-size: 9px;
+
   }
 }

@@ -26,7 +26,7 @@ const Freunde5 = () => {
           <li id="liste19">
             <label htmlFor="question2">
               <p id="paragraph47">
-                Wenn du ein Haus aus Süßigkeiten bauen könntest, <br /> welche
+                Wenn du ein Haus aus Süßigkeiten bauen könntest,welche
                 Süßigkeit wäre die Hauptzutat?
               </p>
               <input id="input47" type="text" />

@@ -8,6 +8,7 @@ const Profil1 = () => {
   const [phone, setPhone] = useState("");
   const [birthday, setBirthday] = useState("");
   const [description, setDescription] = useState("");
+  const [image, setImage] = useState(""); // new state to store image URL
 
   const handleSubmit = async () => {
     try {
@@ -39,16 +40,46 @@ const Profil1 = () => {
     }
   };
 
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+    reader.onload = () => {
+      setImage(reader.result); // update image state with the URL
+    };
+    reader.readAsDataURL(file);
+  };
+
   return (
     <div className="p1">
       <img id="bookProfil" src="/img/book.png" alt="book" />
 
       <div className="left-page">
         <div className="image-placeholder">
-          <label id="file2" htmlFor="file">
-            Bild einfügen
-          </label>
-          <input type="file" id="file" />
+          {image? null : (
+            <label id="file2" htmlFor="file">
+              Bild einfügen
+            </label>
+          )}
+          <input
+            src="input"
+            type="file"
+            id="file"
+            name="picture"
+            accept="image/png, image/jpeg"
+            onChange={handleImageChange}
+          />
+          {image && (
+            <img
+              src={image}
+              alt="img"
+              id="profile-picture"
+              style={{
+                width: "100%", // set width to 100% of the container
+                height: "100%", // set height to 100% of the container
+                objectFit: "cover", // ensure the image is resized to cover the entire area
+              }}
+            />
+          )}
         </div>
 
         <p className="pProfil1">
@@ -59,40 +90,40 @@ const Profil1 = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          .
+         .
         </p>
 
         <p className="pProfil2">
           Ich wohne in
           <input
             type="text"
-            className="input1"
+            className="input2"
             value={city}
             onChange={(e) => setCity(e.target.value)}
           />
-          .
+         .
         </p>
 
         <p className="pProfil3">
           Meine Telefonnummer ist
           <input
             type="text"
-            className="input1"
+            className="input3"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
-          .
+         .
         </p>
 
         <p className="pProfil4">
           Ich habe Geburtstag am
           <input
             type="date"
-            className="input1"
+            className="input4"
             value={birthday}
             onChange={(e) => setBirthday(e.target.value)}
           />
-          .
+         .
         </p>
       </div>
 
