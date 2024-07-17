@@ -16,7 +16,7 @@ async function executeSQLFile(connection, filePath) {
 // Function to initialize the database and tables
 async function initDatabase() {
     const connection = await mysql.createConnection({
-        host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com',
+        host: 'freundebuchnew.cfseo6ieksme.eu-central-1.rds.amazonaws.com',
         user: 'root',
         password: 'Eisbombe11#',
         multipleStatements: true // Allows multiple SQL statements in one query

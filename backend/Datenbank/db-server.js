@@ -8,7 +8,7 @@ const port = 3001;
 
 // MySQL-Verbindung einrichten
 const db = mysql.createConnection({
-  host: 'freundebuch.cfseo6ieksme.eu-central-1.rds.amazonaws.com',
+  host: 'freundebuchnew.cfseo6ieksme.eu-central-1.rds.amazonaws.com',
   user: 'root',
   password: 'Eisbombe11#',
   database: 'freundebuch'
