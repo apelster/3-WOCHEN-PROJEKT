@@ -3,9 +3,6 @@ import axios from "axios";
 import "./Profil-Design.css";
 import { Link } from "react-router-dom";
 
-
-
-
 const Profil1 = () => {
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
@@ -46,11 +43,18 @@ const Profil1 = () => {
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
-    const reader = new FileReader();
-    reader.onload = () => {
-      setImage(reader.result); // update image state with the URL
-    };
-    reader.readAsDataURL(file);
+    const fileType = file.type;
+    const allowedTypes = ['image/png', 'image/jpeg', 'image/gif']; // add more types as needed
+
+    if (allowedTypes.includes(fileType)) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setImage(reader.result); // update image state with the URL
+      };
+      reader.readAsDataURL(file);
+    } else {
+      alert('Only image files with.png,.jpg,.jpeg, or.gif extensions are allowed.');
+    }
   };
 
   return (
@@ -65,11 +69,10 @@ const Profil1 = () => {
             </label>
           )}
           <input
-            src="input"
             type="file"
             id="file"
-            name="picture"
-            accept="image/png, image/jpeg"
+            name="Image"
+            accept=".png,.jpg,.jpeg,.gif" // only allow these file extensions
             onChange={handleImageChange}
           />
           {image && (
@@ -94,7 +97,7 @@ const Profil1 = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-         .
+        .
         </p>
 
         <p className="pProfil2">
@@ -105,7 +108,7 @@ const Profil1 = () => {
             value={city}
             onChange={(e) => setCity(e.target.value)}
           />
-         .
+        .
         </p>
 
         <p className="pProfil3">
@@ -116,7 +119,7 @@ const Profil1 = () => {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
-         .
+        .
         </p>
 
         <p className="pProfil4">
@@ -127,7 +130,7 @@ const Profil1 = () => {
             value={birthday}
             onChange={(e) => setBirthday(e.target.value)}
           />
-         .
+        .
         </p>
       </div>
 
