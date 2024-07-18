@@ -1,17 +1,57 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../Profil/Profil-Design.css";
+import { useLocation } from "react-router-dom";
 import "./Freunde-1.css";
-import { Link } from "react-router-dom";
+
+const useQuery = () => {
+  return new URLSearchParams(useLocation().search);
+};
 
 const Freunde1 = () => {
+  const [name, setName] = useState("");
+  const [city, setCity] = useState("");
+  const [phone, setPhone] = useState("");
+  const [birthday, setBirthday] = useState("");
+  const [description, setDescription] = useState("");
   const [question1, setQuestion1] = useState("");
   const [question2, setQuestion2] = useState("");
   const [question3, setQuestion3] = useState("");
   const [question4, setQuestion4] = useState("");
   const [question5, setQuestion5] = useState("");
+  const [friendProfileId, setFriendProfileId] = useState(null);
 
-  const handleSubmit = async () => {
+  const query = useQuery();
+  const userProfileToken = query.get("token");
+
+  const handleSubmitProfile = async () => {
+    try {
+      const response = await axios.post(
+        "http://3.70.29.185:3001/saveFriendProfile",
+        {
+          name,
+          city,
+          phone,
+          birthday,
+          description,
+          userProfileToken,
+        },
+        {
+          timeout: 10000, // 10 seconds timeout
+        }
+      );
+      alert("Friend profile saved successfully!");
+      setFriendProfileId(response.data.friendProfileId); // save friend's profile ID
+    } catch (error) {
+      console.error("There was an error saving the friend's profile!", error);
+    }
+  };
+
+  const handleSubmitAnswers = async () => {
+    if (!friendProfileId) {
+      alert("Please save the profile first!");
+      return;
+    }
+
     try {
       const response = await axios.post(
         "http://3.70.29.185:3001/saveAnswers",
@@ -21,6 +61,7 @@ const Freunde1 = () => {
           question3,
           question4,
           question5,
+          friendProfileId,
         },
         {
           timeout: 10000, // 10 seconds timeout
@@ -29,15 +70,6 @@ const Freunde1 = () => {
       alert(response.data);
     } catch (error) {
       console.error("There was an error saving the answers!", error);
-      if (error.response) {
-        console.error("Response data:", error.response.data);
-        console.error("Response status:", error.response.status);
-        console.error("Response headers:", error.response.headers);
-      } else if (error.request) {
-        console.error("Request data:", error.request);
-      } else {
-        console.error("Error message:", error.message);
-      }
     }
   };
 
@@ -122,11 +154,55 @@ const Freunde1 = () => {
             </label>
           </li>
         </ul>
-      </div>
 
-      <button id="Freunde11" onClick={handleSubmit}>
-      <Link to="/2-Freunde">2.Seite</Link>
-      </button>
+        <div>
+          <h2>Freundesprofil erstellen</h2>
+          <p>
+            Name:
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </p>
+          <p>
+            Stadt:
+            <input
+              type="text"
+              value={city}
+              onChange={(e) => setCity(e.target.value)}
+            />
+          </p>
+          <p>
+            Telefonnummer:
+            <input
+              type="text"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+            />
+          </p>
+          <p>
+            Geburtstag:
+            <input
+              type="date"
+              value={birthday}
+              onChange={(e) => setBirthday(e.target.value)}
+            />
+          </p>
+          <p>
+            Beschreibung:
+            <textarea
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+          </p>
+          <button onClick={handleSubmitProfile}>Freundesprofil speichern</button>
+        </div>
+
+        <button id="Freunde11" onClick={handleSubmitAnswers}>
+          Antworten speichern
+        </button>
+      </div>
     </main>
   );
 };
