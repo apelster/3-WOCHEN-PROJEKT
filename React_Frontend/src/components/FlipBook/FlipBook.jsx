@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
 import "../Profil/Profil-Design.css";
-import "./Flipbook.css";
+import "./FlipBook.css";
 
 const Flipbook = () => {
   const [entries, setEntries] = useState([]);
