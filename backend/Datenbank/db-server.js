@@ -104,6 +104,34 @@ app.get('/getProfile/:profileToken', (req, res) => {
   });
 });
 
+// Route to get user profile with friend profiles
+app.get('/getProfileWithFriends/:profileToken', (req, res) => {
+  const profileToken = req.params.profileToken;
+
+  const getUserProfileQuery = 'SELECT * FROM profiles WHERE profile_token = ?';
+  db.query(getUserProfileQuery, [profileToken], (err, profileResults) => {
+    if (err) {
+      console.error('Error retrieving profile: ' + err.stack);
+      res.status(500).send('Error retrieving profile');
+      return;
+    }
+    if (profileResults.length === 0) {
+      res.status(404).send('Profile not found');
+      return;
+    }
+
+    const userProfileId = profileResults[0].id;
+    const getFriendProfilesQuery = 'SELECT * FROM freundeprofiles WHERE user_profile_id = ?';
+    db.query(getFriendProfilesQuery, [userProfileId], (err, friendResults) => {
+      if (err) {
+        console.error('Error retrieving friend profiles: ' + err.stack);
+        res.status(500).send('Error retrieving friend profiles');
+        return;
+      }
+      res.send({ userProfile: profileResults[0], friendProfiles: friendResults });
+    });
+  });
+});
 
 // Start server
 app.listen(port, () => {
