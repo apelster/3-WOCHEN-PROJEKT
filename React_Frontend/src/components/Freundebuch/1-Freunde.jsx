@@ -19,7 +19,7 @@ const Freunde1 = () => {
   const [question3, setQuestion3] = useState("");
   const [question4, setQuestion4] = useState("");
   const [question5, setQuestion5] = useState("");
-  const [friendProfileId, setFriendProfileId] = useState(null);
+  const [friendProfileId, setFriendProfileId] = useState(localStorage.getItem("friendProfileId"));
 
   const query = useQuery();
   const userProfileToken = query.get("token");
@@ -43,6 +43,7 @@ const Freunde1 = () => {
       );
       alert("Friend profile saved successfully!");
       setFriendProfileId(response.data.friendProfileId);
+      localStorage.setItem("friendProfileId", response.data.friendProfileId);
       return response.data.friendProfileId;
     } catch (error) {
       console.error("There was an error saving the friend's profile!", error);
