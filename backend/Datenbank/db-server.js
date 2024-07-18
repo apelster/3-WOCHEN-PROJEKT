@@ -139,6 +139,32 @@ app.get('/getProfileWithFriends/:profileToken', (req, res) => {
   });
 });
 
+// Route zum Abrufen aller Antworten für ein Freundeprofil
+app.get('/getAllAnswers/:friendProfileId', (req, res) => {
+  const friendProfileId = req.params.friendProfileId;
+
+  const getFriendProfileQuery = 'SELECT * FROM freundeprofiles WHERE id = ?';
+  const getAnswersQuery = 'SELECT * FROM answers WHERE freundeprofile_id = ?';
+
+  db.query(getFriendProfileQuery, [friendProfileId], (err, friendProfileResults) => {
+    if (err) {
+      console.error('Fehler beim Abrufen des Freundesprofils: ' + (err.message || err));
+      res.status(500).send('Fehler beim Abrufen des Freundesprofils');
+      return;
+    }
+
+    db.query(getAnswersQuery, [friendProfileId], (err, answersResults) => {
+      if (err) {
+        console.error('Fehler beim Abrufen der Antworten: ' + (err.message || err));
+        res.status(500).send('Fehler beim Abrufen der Antworten');
+        return;
+      }
+
+      res.send({ friendProfile: friendProfileResults[0], answers: answersResults });
+    });
+  });
+});
+
 // Server starten
 app.listen(port, () => {
   console.log(`Server läuft unter http://3.70.29.185:${port}`);
