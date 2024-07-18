@@ -159,13 +159,11 @@ const Freunde1 = () => {
         </ul>
       </div>
 
-      <button id="saveProfile" onClick={handleSubmitProfile}>
+      <button id="Freunde11" onClick={handleSubmitAnswers}>
         Profil Speichern
       </button>
 
-      <button id="Freunde11" onClick={handleSubmitAnswers}>
-        2.Seite
-      </button>
+
     </main>
   );
 };
