@@ -9,3 +9,12 @@ CREATE TABLE IF NOT EXISTS profiles (
   birthday DATE NOT NULL,
   description TEXT NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS answers (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  question1 VARCHAR(255),
+  question2 VARCHAR(255),
+  question3 VARCHAR(255),
+  question4 VARCHAR(255),
+  question5 VARCHAR(255)
+);

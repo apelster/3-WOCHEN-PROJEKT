@@ -45,6 +45,25 @@ app.post('/saveProfile', (req, res) => {
   });
 });
 
+// Route für das Speichern von Antworten
+app.post('/saveAnswers', (req, res) => {
+  const { question1, question2, question3, question4, question5 } = req.body;
+
+  console.log('Received answers data:', req.body);
+
+  const query = 'INSERT INTO answers (question1, question2, question3, question4, question5) VALUES (?, ?, ?, ?, ?)';
+  db.query(query, [question1, question2, question3, question4, question5], (err, result) => {
+    if (err) {
+      console.error('Error saving answers: ' + err.stack);
+      res.status(500).send('Error saving answers');
+      return;
+    }
+    console.log('Answers saved successfully:', result);
+    res.send('Answers saved successfully');
+  });
+});
+
+
 // Server starten
 app.listen(port, () => {
   console.log(`Server running on http://3.70.29.185:${port}`);
