@@ -6,20 +6,22 @@ import { useLocation } from "react-router-dom";
 const Header = () => {
   const location = useLocation();
 
+  const [isImpressum, setIsImpressum] = useState(false);
 
-  const [isImpressum, setIsImpressum]  = useState(false)
-
-  const liste = ["/impressum", "/kontakt", "/datenschutz", "/home", "/", "/login", "/register", "/confirm"]
+  const liste = [
+    "/impressum",
+    "/kontakt",
+    "/datenschutz",
+    "/home",
+    "/",
+    "/login",
+    "/register",
+    "/confirm",
+  ];
 
   useEffect(() => {
-    
-    setIsImpressum( liste.includes(location.pathname.toLowerCase()));
-
-
-  } , [location])
-
-  
-
+    setIsImpressum(liste.includes(location.pathname.toLowerCase()));
+  }, [location]);
 
   const [link, setLink] = useState("");
 
@@ -43,36 +45,35 @@ const Header = () => {
               Home
             </Link>
           </li>
-        
 
-        {!isImpressum && (
-
+          {!isImpressum && (
             <>
-
-            <li>
-              <Link className="nav-button" to="/Profil">
-                Profil
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-button" to="/1-Freunde">
-                Freundebuch
-              </Link>
-            </li>
-            <li>
-              <a href="/" className="nav-button" onClick={generateLink}>
-                Mein Freundebuch teilen
-              </a>
-            </li>
-            <li>
-              <Link className="nav-button" to="/MeineFreunde">
-                Meine Freunde
-              </Link>
-            </li>
-          
-          
-    </>
-        )}
+              <li>
+                <Link className="nav-button" to="/Profil">
+                  Profil
+                </Link>
+              </li>
+              <li>
+                <Link className="nav-button" to="/0-Freunde">
+                  Freundebuch
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="nav-button"
+                  onClick={generateLink}
+                  to="/MeineFreunde"
+                >
+                  Mein Freundebuch teilen
+                </Link>
+              </li>
+              <li>
+                <Link className="nav-button" to="/MeineFreunde">
+                  Meine Freunde
+                </Link>
+              </li>
+            </>
+          )}
         </ul>
       </nav>
 
@@ -84,16 +85,16 @@ const Header = () => {
         </div>
       )}
 
-{!isImpressum && (
-<>
-<div className="logo">
-        <img id="logoH" src="/img/logo.png" alt="logo" />
-      </div>
-      <div className="search-bar">
-        <input type="text" placeholder=":lupe:" name="search" />
-      </div>
-</>
-    )}
+      {!isImpressum && (
+        <>
+          <div className="logo">
+            <img id="logoH" src="/img/logo.png" alt="logo" />
+          </div>
+          <div className="search-bar">
+            <input type="text" placeholder=":lupe:" name="search" />
+          </div>
+        </>
+      )}
     </header>
   );
 };

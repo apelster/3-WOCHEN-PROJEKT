@@ -88,10 +88,16 @@
   color: black;
 }
 
-#leftbtn1:disabled,
+
 #rightbtn1:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+#leftbtn1:disabled{
+  opacity: 0;
+  cursor: not-allowed;
+
 }
 
 @media (max-width: 1280px) {

@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Profil-Design.css";
+import "../Profil/Profil-Design.css";
+import { Link } from "react-router-dom";
 
-const Profil1 = () => {
+
+
+
+const Freunde = () => {
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
   const [phone, setPhone] = useState("");
@@ -139,7 +143,7 @@ const Profil1 = () => {
         ></textarea>
 
         <button id="savingdescription" onClick={handleSubmit}>
-          Speichern
+          <Link to="/1-Freunde">Speichern</Link>
         </button>
       </div>
       <img id="federProfil" src="/img/feder.png" alt="feder" />
@@ -147,4 +151,4 @@ const Profil1 = () => {
   );
 };
 
-export default Profil1;
+export default Freunde;
