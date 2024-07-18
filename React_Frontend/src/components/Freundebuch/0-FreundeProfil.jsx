@@ -3,20 +3,19 @@ import axios from "axios";
 import "../Profil/Profil-Design.css";
 import { Link, useLocation } from "react-router-dom";
 
-
 const Profil1 = () => {
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
   const [phone, setPhone] = useState("");
   const [birthday, setBirthday] = useState("");
   const [description, setDescription] = useState("");
-  const [image, setImage] = useState(""); // new state to store image URL
-  const [profileToken, setProfileToken] = useState(""); // state to store profile token
+  const [image, setImage] = useState("");
+  const [profileToken, setProfileToken] = useState("");
 
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "http://3.70.29.185:3001/savefreundeprofiles",
+        "http://3.70.29.185:3001/saveProfile",
         {
           name,
           city,
@@ -25,13 +24,13 @@ const Profil1 = () => {
           description,
         },
         {
-          timeout: 10000, // 10 seconds timeout
+          timeout: 10000,
         }
       );
-      alert('Profile saved successfully!');
-      setProfileToken(response.data.profileToken); // save profile token
+      alert('Profil erfolgreich gespeichert!');
+      setProfileToken(response.data.profileToken);
     } catch (error) {
-      console.error("There was an error saving the profile!", error);
+      console.error("Fehler beim Speichern des Profils!", error);
     }
   };
 
@@ -39,7 +38,7 @@ const Profil1 = () => {
     const file = e.target.files[0];
     const reader = new FileReader();
     reader.onload = () => {
-      setImage(reader.result); // update image state with the URL
+      setImage(reader.result);
     };
     reader.readAsDataURL(file);
   };
@@ -136,11 +135,9 @@ const Profil1 = () => {
           <Link to="/1-Freunde">Speichern</Link>
         </button>
 
-
-
         {profileToken && (
           <div>
-            <p>Share this link with your friends:</p>
+            <p>Teilen Sie diesen Link mit Ihren Freunden:</p>
             <p>{window.location.origin}/friend-profile?token={profileToken}</p>
           </div>
         )}
