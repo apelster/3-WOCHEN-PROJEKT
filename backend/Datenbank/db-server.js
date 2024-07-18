@@ -85,6 +85,26 @@ app.post('/saveAnswers', (req, res) => {
   });
 });
 
+// Route to get user profile
+app.get('/getProfile/:profileToken', (req, res) => {
+  const profileToken = req.params.profileToken;
+
+  const query = 'SELECT * FROM profiles WHERE profile_token = ?';
+  db.query(query, [profileToken], (err, results) => {
+    if (err) {
+      console.error('Error retrieving profile: ' + err.stack);
+      res.status(500).send('Error retrieving profile');
+      return;
+    }
+    if (results.length === 0) {
+      res.status(404).send('Profile not found');
+      return;
+    }
+    res.send(results[0]);
+  });
+});
+
+
 // Start server
 app.listen(port, () => {
   console.log(`Server running on http://3.70.29.185:${port}`);
