@@ -10,29 +10,30 @@ const Profil1 = () => {
   const [birthday, setBirthday] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState(""); // new state to store image URL
-  const [profileToken, setProfileToken] = useState(""); // state to store profile token
+  const [friendProfiles, setFriendProfiles] = useState([]); // state to store friend profiles
 
-  // Fetch user profile on component mount
+  // Fetch user profile and friend profiles on component mount
   useEffect(() => {
-    const fetchProfile = async () => {
+    const fetchProfileWithFriends = async () => {
       try {
         const savedProfileToken = localStorage.getItem("profileToken");
-        setProfileToken(savedProfileToken);
         const response = await axios.get(
-          `http://3.70.29.185:3001/getProfile/${savedProfileToken}`
+          `http://3.70.29.185:3001/getProfileWithFriends/${savedProfileToken}`
         );
-        const { name, city, phone, birthday, description } = response.data;
+        const { userProfile, friendProfiles } = response.data;
+        const { name, city, phone, birthday, description } = userProfile;
         setName(name);
         setCity(city);
         setPhone(phone);
         setBirthday(birthday);
         setDescription(description);
+        setFriendProfiles(friendProfiles);
       } catch (error) {
-        console.error("There was an error fetching the profile!", error);
+        console.error("There was an error fetching the profile and friend profiles!", error);
       }
     };
 
-    fetchProfile();
+    fetchProfileWithFriends();
   }, []);
 
   const handleSubmit = async () => {
@@ -50,7 +51,7 @@ const Profil1 = () => {
           timeout: 10000, // 10 seconds timeout
         }
       );
-      alert(response.data);
+      alert(response.data.message);
     } catch (error) {
       console.error("There was an error saving the profile!", error);
       if (error.response) {
@@ -172,8 +173,17 @@ const Profil1 = () => {
         <button id="savingdescription" onClick={handleSubmit}>
           Bearbeiten
         </button>
-
         
+        <h2>Freundesprofile</h2>
+        {friendProfiles.map((friend) => (
+          <div key={friend.id} className="friend-profile">
+            <p>Name: {friend.name}</p>
+            <p>Stadt: {friend.city}</p>
+            <p>Telefon: {friend.phone}</p>
+            <p>Geburtstag: {friend.birthday}</p>
+            <p>Beschreibung: {friend.description}</p>
+          </div>
+        ))}
       </div>
       <img id="federProfil" src="/img/feder.png" alt="feder" />
     </div>
