@@ -137,6 +137,12 @@ const Profil1 = () => {
         <button id="savingdescription" onClick={handleSubmit}>
           Speichern
         </button>
+        {profileToken && (
+          <div>
+            <p>Share this link with your friends:</p>
+            <p>{window.location.origin}/friend-profile?token={profileToken}</p>
+          </div>
+        )}
       </div>
       <img id="federProfil" src="/img/feder.png" alt="feder" />
     </div>
