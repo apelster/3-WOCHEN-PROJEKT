@@ -2,11 +2,12 @@ const express = require('express');
 const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const crypto = require('crypto');
 
 const app = express();
 const port = 3001;
 
-// MySQL-Verbindung einrichten
+// MySQL connection
 const db = mysql.createConnection({
   host: 'freundebuchnew.cfseo6ieksme.eu-central-1.rds.amazonaws.com',
   user: 'root',
@@ -24,48 +25,87 @@ db.connect(err => {
 });
 
 // Middleware
-app.use(cors()); // Enable CORS
+app.use(cors());
 app.use(bodyParser.json());
 
-// Route für das Speichern von Profilen
+// Route to save user profile
 app.post('/saveProfile', (req, res) => {
   const { name, city, phone, birthday, description } = req.body;
+  const profileToken = crypto.randomBytes(16).toString('hex');
 
-  console.log('Received profile data:', req.body);
-
-  const query = 'INSERT INTO profiles (name, city, phone, birthday, description) VALUES (?, ?, ?, ?, ?)';
-  db.query(query, [name, city, phone, birthday, description], (err, result) => {
+  const query = 'INSERT INTO profiles (name, city, phone, birthday, description, profile_token) VALUES (?, ?, ?, ?, ?, ?)';
+  db.query(query, [name, city, phone, birthday, description, profileToken], (err, result) => {
     if (err) {
       console.error('Error saving profile: ' + err.stack);
       res.status(500).send('Error saving profile');
       return;
     }
-    console.log('Profile saved successfully:', result);
-    res.send('Profile saved successfully');
+    res.send({ message: 'Profile saved successfully', profileToken });
   });
 });
 
-// Route für das Speichern von Antworten
+// Route to save friend's profile
+app.post('/saveFriendProfile', (req, res) => {
+  const { name, city, phone, birthday, description, userProfileToken } = req.body;
+
+  const getUserProfileQuery = 'SELECT id FROM profiles WHERE profile_token = ?';
+  db.query(getUserProfileQuery, [userProfileToken], (err, results) => {
+    if (err || results.length === 0) {
+      console.error('Error finding user profile: ' + err.stack);
+      res.status(500).send('Error finding user profile');
+      return;
+    }
+    
+    const userProfileId = results[0].id;
+    const insertFriendProfileQuery = 'INSERT INTO freundeprofiles (user_profile_id, name, city, phone, birthday, description) VALUES (?, ?, ?, ?, ?, ?)';
+    
+    db.query(insertFriendProfileQuery, [userProfileId, name, city, phone, birthday, description], (err, result) => {
+      if (err) {
+        console.error('Error saving friend profile: ' + err.stack);
+        res.status(500).send('Error saving friend profile');
+        return;
+      }
+      res.send({ message: 'Friend profile saved successfully', friendProfileId: result.insertId });
+    });
+  });
+});
+
+// Route to save answers
 app.post('/saveAnswers', (req, res) => {
-  const { question1, question2, question3, question4, question5 } = req.body;
+  const { question1, question2, question3, question4, question5, friendProfileId } = req.body;
 
-  console.log('Received answers data:', req.body);
-
-  const query = 'INSERT INTO answers (question1, question2, question3, question4, question5) VALUES (?, ?, ?, ?, ?)';
-  db.query(query, [question1, question2, question3, question4, question5], (err, result) => {
+  const query = 'INSERT INTO answers (freundeprofile_id, question1, question2, question3, question4, question5) VALUES (?, ?, ?, ?, ?, ?)';
+  db.query(query, [friendProfileId, question1, question2, question3, question4, question5], (err, result) => {
     if (err) {
       console.error('Error saving answers: ' + err.stack);
       res.status(500).send('Error saving answers');
       return;
     }
-    console.log('Answers saved successfully:', result);
     res.send('Answers saved successfully');
   });
 });
 
+// Route to get user profile
+app.get('/getProfile/:profileToken', (req, res) => {
+  const profileToken = req.params.profileToken;
 
-// Server starten
+  const query = 'SELECT * FROM profiles WHERE profile_token = ?';
+  db.query(query, [profileToken], (err, results) => {
+    if (err) {
+      console.error('Error retrieving profile: ' + err.stack);
+      res.status(500).send('Error retrieving profile');
+      return;
+    }
+    if (results.length === 0) {
+      res.status(404).send('Profile not found');
+      return;
+    }
+    res.send(results[0]);
+  });
+});
+
+
+// Start server
 app.listen(port, () => {
   console.log(`Server running on http://3.70.29.185:${port}`);
 });
-

@@ -13,6 +13,7 @@ const Freunde = () => {
   const [birthday, setBirthday] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState(""); // new state to store image URL
+  const [profileToken, setProfileToken] = useState(""); // state to store profile token
 
   const handleSubmit = async () => {
     try {
@@ -29,18 +30,10 @@ const Freunde = () => {
           timeout: 10000, // 10 seconds timeout
         }
       );
-      alert(response.data);
+      alert('Profile saved successfully!');
+      setProfileToken(response.data.profileToken); // save profile token
     } catch (error) {
       console.error("There was an error saving the profile!", error);
-      if (error.response) {
-        console.error("Response data:", error.response.data);
-        console.error("Response status:", error.response.status);
-        console.error("Response headers:", error.response.headers);
-      } else if (error.request) {
-        console.error("Request data:", error.request);
-      } else {
-        console.error("Error message:", error.message);
-      }
     }
   };
 
@@ -59,13 +52,12 @@ const Freunde = () => {
 
       <div className="left-page">
         <div className="image-placeholder">
-          {image? null : (
+          {image ? null : (
             <label id="file2" htmlFor="file">
               Bild einfügen
             </label>
           )}
           <input
-            src="input"
             type="file"
             id="file"
             name="picture"
@@ -78,9 +70,9 @@ const Freunde = () => {
               alt="img"
               id="profile-picture"
               style={{
-                width: "100%", // set width to 100% of the container
-                height: "100%", // set height to 100% of the container
-                objectFit: "cover", // ensure the image is resized to cover the entire area
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
               }}
             />
           )}
@@ -94,7 +86,7 @@ const Freunde = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-         .
+          .
         </p>
 
         <p className="pProfil2">
@@ -105,7 +97,7 @@ const Freunde = () => {
             value={city}
             onChange={(e) => setCity(e.target.value)}
           />
-         .
+          .
         </p>
 
         <p className="pProfil3">
@@ -116,7 +108,7 @@ const Freunde = () => {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
-         .
+          .
         </p>
 
         <p className="pProfil4">
@@ -127,7 +119,7 @@ const Freunde = () => {
             value={birthday}
             onChange={(e) => setBirthday(e.target.value)}
           />
-         .
+          .
         </p>
       </div>
 
@@ -145,6 +137,12 @@ const Freunde = () => {
         <button id="savingdescription" onClick={handleSubmit}>
           <Link to="/1-Freunde">Speichern</Link>
         </button>
+        {profileToken && (
+          <div>
+            <p>Share this link with your friends:</p>
+            <p>{window.location.origin}/friend-profile?token={profileToken}</p>
+          </div>
+        )}
       </div>
       <img id="federProfil" src="/img/feder.png" alt="feder" />
     </div>
