@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom"; // Import useNavigate and useLocation
 import "../Profil/Profil-Design.css";
 import "./Freunde-1.css";
 
