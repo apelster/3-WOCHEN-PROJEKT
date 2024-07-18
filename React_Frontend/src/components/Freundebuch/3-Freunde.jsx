@@ -8,7 +8,7 @@ const Freunde3 = () => {
   const [answers, setAnswers] = useState({ Answer6: "", Answer7: "", Answer8: "", Answer9: "", Answer10: "" });
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
-  const friendProfileId = searchParams.get("friendProfileId");
+  const friendProfileId = searchParams.get("friendProfileId") || localStorage.getItem("friendProfileId");
   const navigate = useNavigate();
 
   const handleChange = (e) => {

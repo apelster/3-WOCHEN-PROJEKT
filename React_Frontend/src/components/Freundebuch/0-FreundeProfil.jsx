@@ -37,7 +37,9 @@ const Freunde = () => {
         }
       );
       alert('Freundesprofil erfolgreich gespeichert!');
-      navigate('/1-Freunde'); // Redirect to /1-Freunde after saving
+      const friendProfileId = response.data.friendProfileId;
+      localStorage.setItem("friendProfileId", friendProfileId);
+      navigate(`/1-Freunde?friendProfileId=${friendProfileId}`); // Redirect to /1-Freunde after saving
     } catch (error) {
       console.error("Fehler beim Speichern des Freundesprofils!", error);
     }
