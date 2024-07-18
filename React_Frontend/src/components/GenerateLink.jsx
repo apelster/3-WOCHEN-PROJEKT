@@ -5,7 +5,7 @@ function GenerateLink() {
 
   const generateLink = async () => {
     try {
-      const response = await fetch('http://3.70.29.185:5000/generate_link');
+      const response = await fetch('http://3.70.29.185:5000/GenerateLink');
       const data = await response.json();
       setLink(data.link);
     } catch (error) {
