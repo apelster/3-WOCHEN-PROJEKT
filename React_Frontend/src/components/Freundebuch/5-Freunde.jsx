@@ -5,7 +5,14 @@ import { useLocation, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 const Freunde5 = () => {
-  const [answers, setAnswers] = useState({ Answer16: "", Answer17: "", Answer18: "", Answer19: "", Answer20: "" });
+  const [answers, setAnswers] = useState({
+    Answer16: "",
+    Answer17: "",
+    Answer18: "",
+    Answer19: "",
+    Answer20: ""
+  });
+
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const friendProfileId = searchParams.get("friendProfileId") || localStorage.getItem("friendProfileId");
@@ -20,9 +27,13 @@ const Freunde5 = () => {
 
   const handleSubmit = async (nextPage) => {
     try {
-      await axios.post("http://3.70.29.185:3001/saveAnswers", {
+      const response = await axios.post("http://3.70.29.185:3001/saveAnswers", {
         friendProfileId,
-        answers: [answers.Answer16, answers.Answer17, answers.Answer18, answers.Answer19, answers.Answer20],
+        question1: answers.Answer16,
+        question2: answers.Answer17,
+        question3: answers.Answer18,
+        question4: answers.Answer19,
+        question5: answers.Answer20,
       });
       alert("Answers saved successfully");
       navigate(nextPage);
@@ -38,7 +49,7 @@ const Freunde5 = () => {
         <h1 id="Headline19">Beantworte kurz ein paar Fragen</h1>
         <ul>
           <li id="liste19">
-            <label htmlFor="question1">
+            <label htmlFor="Answer16">
               <p id="paragraph46">
                 Was ist dein geheimes Lieblingslied, das dir <br /> peinlich ist, laut
                 zu hören?
@@ -47,7 +58,7 @@ const Freunde5 = () => {
             </label>
           </li>
           <li id="liste19">
-            <label htmlFor="question2">
+            <label htmlFor="Answer17">
               <p id="paragraph47">
                 Wenn du ein Haus aus Süßigkeiten bauen könntest,welche
                 Süßigkeit wäre die Hauptzutat?
@@ -56,7 +67,7 @@ const Freunde5 = () => {
             </label>
           </li>
           <li id="liste19">
-            <label htmlFor="question3">
+            <label htmlFor="Answer18">
               <p id="paragraph48">
                 Was ist der lustigste Spitzname, <br /> den du je einem Lehrer gegeben
                 hast?
@@ -65,7 +76,7 @@ const Freunde5 = () => {
             </label>
           </li>
           <li id="liste19">
-            <label htmlFor="question4">
+            <label htmlFor="Answer19">
               <p id="paragraph49">
                 Welche Fernsehwerbung kannst du auswendig <br /> und warum?
               </p>
@@ -73,7 +84,7 @@ const Freunde5 = () => {
             </label>
           </li>
           <li id="liste19">
-            <label htmlFor="question5">
+            <label htmlFor="Answer20">
               <p id="paragraph50">
                 Was war das seltsamste Geburtstagsgeschenk, <br /> das du je erhalten
                 hast?

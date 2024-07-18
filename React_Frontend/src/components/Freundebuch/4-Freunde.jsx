@@ -5,7 +5,14 @@ import { useLocation, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 const Freunde4 = () => {
-  const [answers, setAnswers] = useState({ Answer11: "", Answer12: "", Answer13: "", Answer14: "", Answer15: "" });
+  const [answers, setAnswers] = useState({
+    Answer11: "",
+    Answer12: "",
+    Answer13: "",
+    Answer14: "",
+    Answer15: ""
+  });
+
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const friendProfileId = searchParams.get("friendProfileId") || localStorage.getItem("friendProfileId");
@@ -20,9 +27,13 @@ const Freunde4 = () => {
 
   const handleSubmit = async (nextPage) => {
     try {
-      await axios.post("http://3.70.29.185:3001/saveAnswers", {
+      const response = await axios.post("http://3.70.29.185:3001/saveAnswers", {
         friendProfileId,
-        answers: [answers.Answer11, answers.Answer12, answers.Answer13, answers.Answer14, answers.Answer15],
+        question1: answers.Answer11,
+        question2: answers.Answer12,
+        question3: answers.Answer13,
+        question4: answers.Answer14,
+        question5: answers.Answer15,
       });
       alert("Answers saved successfully");
       navigate(nextPage);
@@ -38,7 +49,7 @@ const Freunde4 = () => {
         <h1 id="Headline17">Beantworte kurz ein paar Fragen</h1>
         <ul>
           <li id="liste17">
-            <label htmlFor="question1">
+            <label htmlFor="Answer11">
               <p id="paragraph41">
                 Teezeit oder Kaffeepause?
                 <input id="radio11" type="radio" name="Answer11" value="Teezeit" onChange={handleChange} />
@@ -47,7 +58,7 @@ const Freunde4 = () => {
             </label>
           </li>
           <li id="liste17">
-            <label htmlFor="question2">
+            <label htmlFor="Answer12">
               <p id="paragraph42">
                 Joggen oder Yoga?
                 <input id="radio13" type="radio" name="Answer12" value="Joggen" onChange={handleChange} />
@@ -56,7 +67,7 @@ const Freunde4 = () => {
             </label>
           </li>
           <li id="liste17">
-            <label htmlFor="question3">
+            <label htmlFor="Answer13">
               <p id="paragraph43">
                 Konzerte im kleinen Club oder <br /> große Arena?
                 <input id="radio15" type="radio" name="Answer13" value="Konzerte im kleinen Club" onChange={handleChange} />
@@ -65,16 +76,16 @@ const Freunde4 = () => {
             </label>
           </li>
           <li id="liste17">
-            <label htmlFor="question4">
+            <label htmlFor="Answer14">
               <p id="paragraph44">
-                Neues ausprobieren oder  <br />Bewährtes genießen?
+                Neues ausprobieren oder <br /> Bewährtes genießen?
                 <input id="radio17" type="radio" name="Answer14" value="Neues ausprobieren" onChange={handleChange} />
                 <input id="radio18" type="radio" name="Answer14" value="Bewährtes genießen" onChange={handleChange} />
               </p>
             </label>
           </li>
           <li id="liste17">
-            <label htmlFor="question5">
+            <label htmlFor="Answer15">
               <p id="paragraph45">
                 Geduldig oder ungeduldig?
                 <input id="radio19" type="radio" name="Answer15" value="Geduldig" onChange={handleChange} />

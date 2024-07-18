@@ -5,7 +5,14 @@ import { useLocation, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 const Freunde3 = () => {
-  const [answers, setAnswers] = useState({ Answer6: "", Answer7: "", Answer8: "", Answer9: "", Answer10: "" });
+  const [answers, setAnswers] = useState({
+    Answer6: "",
+    Answer7: "",
+    Answer8: "",
+    Answer9: "",
+    Answer10: ""
+  });
+
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const friendProfileId = searchParams.get("friendProfileId") || localStorage.getItem("friendProfileId");
@@ -20,9 +27,13 @@ const Freunde3 = () => {
 
   const handleSubmit = async (nextPage) => {
     try {
-      await axios.post("http://3.70.29.185:3001/saveAnswers", {
+      const response = await axios.post("http://3.70.29.185:3001/saveAnswers", {
         friendProfileId,
-        answers: [answers.Answer6, answers.Answer7, answers.Answer8, answers.Answer9, answers.Answer10],
+        question1: answers.Answer6,
+        question2: answers.Answer7,
+        question3: answers.Answer8,
+        question4: answers.Answer9,
+        question5: answers.Answer10,
       });
       alert("Answers saved successfully");
       navigate(nextPage);
@@ -38,31 +49,31 @@ const Freunde3 = () => {
         <h1 id="Headline15">Beantworte kurz ein paar Fragen</h1>
         <ul>
           <li id="liste15">
-            <label htmlFor="question1">
+            <label htmlFor="Answer6">
               <p id="paragraph36">Wenn du eine Erfindung der Vergangenheit rückgängig machen könntest, welche wäre es?</p>
               <input id="input36" type="text" name="Answer6" onChange={handleChange} />
             </label>
           </li>
           <li id="liste15">
-            <label htmlFor="question2">
+            <label htmlFor="Answer7">
               <p id="paragraph37">Was ist das merkwürdigste Ritual, das du <br /> vor Prüfungen hast?</p>
               <input id="input37" type="text" name="Answer7" onChange={handleChange} />
             </label>
           </li>
           <li id="liste15">
-            <label htmlFor="question3">
+            <label htmlFor="Answer8">
               <p id="paragraph38">Wenn du in einem Märchen leben könntest, <br /> welches wäre es und warum?</p>
               <input id="input38" type="text" name="Answer8" onChange={handleChange} />
             </label>
           </li>
           <li id="liste15">
-            <label htmlFor="question4">
+            <label htmlFor="Answer9">
               <p id="paragraph39">Was ist das Lustigste, was du je <br /> bei einer Familienfeier erlebt hast?</p>
               <input id="input39" type="text" name="Answer9" onChange={handleChange} />
             </label>
           </li>
           <li id="liste15">
-            <label htmlFor="question5">
+            <label htmlFor="Answer10">
               <p id="paragraph40">Wenn du ein Lied schreiben müsstest, <br /> wovon würde es handeln?</p>
               <input id="input40" type="text" name="Answer10" onChange={handleChange} />
             </label>

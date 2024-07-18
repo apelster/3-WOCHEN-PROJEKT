@@ -5,7 +5,14 @@ import { useLocation, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 const Freunde6 = () => {
-  const [answers, setAnswers] = useState({ Answer21: "", Answer22: "", Answer23: "", Answer24: "", Answer25: "" });
+  const [answers, setAnswers] = useState({
+    Answer21: "",
+    Answer22: "",
+    Answer23: "",
+    Answer24: "",
+    Answer25: ""
+  });
+
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const friendProfileId = searchParams.get("friendProfileId") || localStorage.getItem("friendProfileId");
@@ -18,14 +25,18 @@ const Freunde6 = () => {
     });
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (nextPage) => {
     try {
-      await axios.post("http://3.70.29.185:3001/saveAnswers", {
+      const response = await axios.post("http://3.70.29.185:3001/saveAnswers", {
         friendProfileId,
-        answers: [answers.Answer21, answers.Answer22, answers.Answer23, answers.Answer24, answers.Answer25],
+        question1: answers.Answer21,
+        question2: answers.Answer22,
+        question3: answers.Answer23,
+        question4: answers.Answer24,
+        question5: answers.Answer25,
       });
       alert("Answers saved successfully");
-      navigate(`/Flipbook?friendProfileId=${friendProfileId}`);
+      navigate(nextPage);
     } catch (error) {
       console.error("There was an error saving the answers!", error);
     }
@@ -38,7 +49,7 @@ const Freunde6 = () => {
         <h1 id="Headline21">Beantworte kurz ein paar Fragen</h1>
         <ul>
           <li id="liste21">
-            <label htmlFor="question1">
+            <label htmlFor="Answer21">
               <p id="paragraph51">
                 Camping oder Hotelurlaub?
                 <input id="radio21" type="radio" name="Answer21" value="Camping" onChange={handleChange} />
@@ -47,7 +58,7 @@ const Freunde6 = () => {
             </label>
           </li>
           <li id="liste21">
-            <label htmlFor="question2">
+            <label htmlFor="Answer22">
               <p id="paragraph52">
                 Fensterplatz oder Gangplatz im Flugzeug?
                 <input id="radio23" type="radio" name="Answer22" value="Fensterplatz" onChange={handleChange} />
@@ -56,7 +67,7 @@ const Freunde6 = () => {
             </label>
           </li>
           <li id="liste21">
-            <label htmlFor="question3">
+            <label htmlFor="Answer23">
               <p id="paragraph53">
                 Energisch oder entspannt?
                 <input id="radio25" type="radio" name="Answer23" value="Energisch" onChange={handleChange} />
@@ -65,7 +76,7 @@ const Freunde6 = () => {
             </label>
           </li>
           <li id="liste21">
-            <label htmlFor="question4">
+            <label htmlFor="Answer24">
               <p id="paragraph54">
                 Wissenschaft oder Kunst?
                 <input id="radio27" type="radio" name="Answer24" value="Wissenschaft" onChange={handleChange} />
@@ -74,7 +85,7 @@ const Freunde6 = () => {
             </label>
           </li>
           <li id="liste21">
-            <label htmlFor="question5">
+            <label htmlFor="Answer25">
               <p id="paragraph55">
                 Sammelleidenschaft oder Minimalismus?
                 <input id="radio29" type="radio" name="Answer25" value="Sammelleidenschaft" onChange={handleChange} />
@@ -84,7 +95,7 @@ const Freunde6 = () => {
           </li>
         </ul>
       </div>
-      <button id="Freunde21" onClick={handleSubmit}>
+      <button id="Freunde21" onClick={() => handleSubmit(`/Flipbook?friendProfileId=${friendProfileId}`)}>
         Eintrag Speichern
       </button>
       <button id="Zurück21">
