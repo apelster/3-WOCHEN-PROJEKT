@@ -9,7 +9,7 @@ async function getUserEntries(userId) {
   return rows;
 }
 
-app.get('/profile', authMiddleware, async (req, res) => {
+app.get('/profiles', authMiddleware, async (req, res) => {
   const userId = req.user.sub;
   try {
     const entries = await getUserEntries(userId);
