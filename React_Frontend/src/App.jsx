@@ -12,6 +12,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import Header from "./components/Header/Header.jsx";
 import Datenschutzerklärung from "./components/Datenschutz/Datenschutzerklärung.jsx";
 
+import Freunde from "./components/Freundebuch/0-FreundeProfil.jsx";
 import Freunde1 from "./components/Freundebuch/1-Freunde.jsx";
 import Freunde2 from "./components/Freundebuch/2-Freunde.jsx";
 import Freunde3 from "./components/Freundebuch/3-Freunde.jsx";
@@ -31,16 +32,16 @@ import Book from "./components/MeineFreundeSeite/MeineFreundeSeite.jsx";
 
 import Chat from "./components/Chat/chat.jsx";
 
+
+
 function App() {
   const location = useLocation();
   const profilId = 1;
 
-  
   return (
     <>
-  <Header />
+      <Header />
       <Routes>
-        
         <Route path="/Home" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/Kontakt" element={<Contact />} />
@@ -50,6 +51,9 @@ function App() {
           path="/Datenschutzerklärung"
           element={<Datenschutzerklärung />}
         />
+
+
+        <Route path="/0-Freunde" element={<Freunde profilId={profilId} />} />
         <Route path="/1-Freunde" element={<Freunde1 profilId={profilId} />} />
         <Route path="/2-Freunde" element={<Freunde2 profilId={profilId} />} />
         <Route path="/3-Freunde" element={<Freunde3 profilId={profilId} />} />
@@ -62,8 +66,7 @@ function App() {
         <Route path="/confirm" element={<Confirm />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/chat" element={<Chat />} />{" "}
-        {/* Fügen Sie diese Zeile hinzu */}
+        <Route path="/chat" element={<Chat />} />
       </Routes>
       <Footer />
     </>
