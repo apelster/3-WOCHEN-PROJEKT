@@ -5,7 +5,14 @@ import { useLocation, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 const Freunde2 = () => {
-  const [answers, setAnswers] = useState({ Answer1: "", Answer2: "", Answer3: "", Answer4: "", Answer5: "" });
+  const [answers, setAnswers] = useState({
+    Answer1: "",
+    Answer2: "",
+    Answer3: "",
+    Answer4: "",
+    Answer5: ""
+  });
+
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const friendProfileId = searchParams.get("friendProfileId") || localStorage.getItem("friendProfileId");
@@ -20,9 +27,13 @@ const Freunde2 = () => {
 
   const handleSubmit = async (nextPage) => {
     try {
-      await axios.post("http://3.70.29.185:3001/saveAnswers", {
+      const response = await axios.post("http://3.70.29.185:3001/saveAnswers", {
         friendProfileId,
-        answers: [answers.Answer1, answers.Answer2, answers.Answer3, answers.Answer4, answers.Answer5],
+        question1: answers.Answer1,
+        question2: answers.Answer2,
+        question3: answers.Answer3,
+        question4: answers.Answer4,
+        question5: answers.Answer5,
       });
       alert("Answers saved successfully");
       navigate(nextPage);
@@ -38,7 +49,7 @@ const Freunde2 = () => {
         <h1 id="Headline13">Beantworte kurz ein paar Fragen</h1>
         <ul>
           <li id="liste13">
-            <label htmlFor="question1">
+            <label htmlFor="Answer1">
               <p id="paragraph31">
                 Großes Abenteuer oder <br /> kleine Freuden im Alltag?
                 <input id="radio1" type="radio" name="Answer1" value="Großes Abenteuer" onChange={handleChange} />
@@ -47,7 +58,7 @@ const Freunde2 = () => {
             </label>
           </li>
           <li id="liste13">
-            <label htmlFor="question2">
+            <label htmlFor="Answer2">
               <p id="paragraph32">
                 Arbeit im Büro oder Home-Office?
                 <input id="radio3" type="radio" name="Answer2" value="Arbeit im Büro" onChange={handleChange} />
@@ -56,7 +67,7 @@ const Freunde2 = () => {
             </label>
           </li>
           <li id="liste13">
-            <label htmlFor="question3">
+            <label htmlFor="Answer3">
               <p id="paragraph33">
                 Actionreiches Videospiel oder <br /> Puzzle-Spiel?
                 <input id="radio5" type="radio" name="Answer3" value="Actionreiches Videospiel" onChange={handleChange} />
@@ -65,7 +76,7 @@ const Freunde2 = () => {
             </label>
           </li>
           <li id="liste13">
-            <label htmlFor="question4">
+            <label htmlFor="Answer4">
               <p id="paragraph34">
                 Frische Blumen oder künstliche Pflanzen?
                 <input id="radio7" type="radio" name="Answer4" value="Frische Blumen" onChange={handleChange} />
@@ -74,7 +85,7 @@ const Freunde2 = () => {
             </label>
           </li>
           <li id="liste13">
-            <label htmlFor="question5">
+            <label htmlFor="Answer5">
               <p id="paragraph35">
                 Popcorn oder Nachos im Kino?
                 <input id="radio9" type="radio" name="Answer5" value="Popcorn" onChange={handleChange} />
