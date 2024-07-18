@@ -10,14 +10,14 @@ const links = {};
 app.get("/generate_link", (req, res) => {
   const linkId = uuidv4();
   links[linkId] = true;
-  res.json({ link: `http://localhost:5000/use_link/${linkId}` });
+  res.json({ link: `http://3.70.29.185:5000/use_link/${linkId}` });
 });
 
 app.get("/use_link/:linkId", (req, res) => {
   const { linkId } = req.params;
   if (links[linkId]) {
     links[linkId] = false;
-    res.redirect("http://localhost:3000/0-Freunde");
+    res.redirect("http://3.70.29.185:3000/0-Freunde");
   } else {
     res
       .status(404)
