@@ -17,7 +17,7 @@ app.get("/use_link/:linkId", (req, res) => {
   const { linkId } = req.params;
   if (links[linkId]) {
     links[linkId] = false;
-    res.redirect("http://localhost:3000/MeineFreunde");
+    res.redirect("http://localhost:3000/0-Freunde");
   } else {
     res
       .status(404)

@@ -32,6 +32,8 @@ import Book from "./components/MeineFreundeSeite/MeineFreundeSeite.jsx";
 
 import Chat from "./components/Chat/chat.jsx";
 
+
+
 function App() {
   const location = useLocation();
   const profilId = 1;

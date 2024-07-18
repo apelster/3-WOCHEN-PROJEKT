@@ -79,7 +79,7 @@ const Header = () => {
 
       {link && (
         <div className="generated-link">
-          <a href={link} target="_blank" rel="noopener noreferrer">
+          <a href="/0-Freunde" target="_blank" rel="noopener noreferrer">
             {link}
           </a>
         </div>
