@@ -23,10 +23,19 @@ const Freunde2 = () => {
       ...answers,
       [e.target.name]: e.target.value,
     });
+    console.log("Aktualisierter Zustand der Antworten: ", answers);
   };
 
   const handleSubmit = async (nextPage) => {
     try {
+      console.log("Zu sendende Daten: ", {
+        friendProfileId,
+        question1: answers.Answer1,
+        question2: answers.Answer2,
+        question3: answers.Answer3,
+        question4: answers.Answer4,
+        question5: answers.Answer5,
+      });
       const response = await axios.post("http://3.70.29.185:3001/saveAnswers", {
         friendProfileId,
         question1: answers.Answer1,
@@ -35,10 +44,10 @@ const Freunde2 = () => {
         question4: answers.Answer4,
         question5: answers.Answer5,
       });
-      alert("Answers saved successfully");
+      alert("Antworten erfolgreich gespeichert");
       navigate(nextPage);
     } catch (error) {
-      console.error("There was an error saving the answers!", error);
+      console.error("Fehler beim Speichern der Antworten!", error);
     }
   };
 
