@@ -228,3 +228,12 @@
 
 
 }
+
+
+@media(max-width: 450px){
+
+    .header{
+        display: none;
+    }
+
+}
