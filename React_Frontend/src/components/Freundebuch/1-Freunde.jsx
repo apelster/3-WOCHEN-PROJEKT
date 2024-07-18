@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Profil-Design.css";
+import "../Profil/Profil-Design.css";
 import "./Freunde-1.css";
 import { Link } from "react-router-dom";
 
