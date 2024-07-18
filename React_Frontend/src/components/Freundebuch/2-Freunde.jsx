@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-2.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Freunde2 = () => {
@@ -9,6 +9,7 @@ const Freunde2 = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const friendProfileId = searchParams.get("friendProfileId");
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setAnswers({
@@ -24,6 +25,7 @@ const Freunde2 = () => {
         answers: [answers.Answer1, answers.Answer2, answers.Answer3, answers.Answer4, answers.Answer5],
       });
       alert("Answers saved successfully");
+      navigate(`/3-Freunde?friendProfileId=${friendProfileId}`);
     } catch (error) {
       console.error("There was an error saving the answers!", error);
     }
@@ -83,7 +85,7 @@ const Freunde2 = () => {
         </ul>
       </div>
       <button id="Freunde13" onClick={handleSubmit}>
-        <Link to={`/3-Freunde?friendProfileId=${friendProfileId}`}>3.Seite</Link>
+        3.Seite
       </button>
       <button id="Zurück13">
         <Link to={`/1-Freunde?friendProfileId=${friendProfileId}`}>1.Seite</Link>

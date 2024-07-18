@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-6.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Freunde6 = () => {
@@ -9,6 +9,7 @@ const Freunde6 = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const friendProfileId = searchParams.get("friendProfileId");
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setAnswers({
@@ -24,6 +25,7 @@ const Freunde6 = () => {
         answers: [answers.Answer21, answers.Answer22, answers.Answer23, answers.Answer24, answers.Answer25],
       });
       alert("Answers saved successfully");
+      navigate(`/Flipbook?friendProfileId=${friendProfileId}`);
     } catch (error) {
       console.error("There was an error saving the answers!", error);
     }
@@ -83,7 +85,7 @@ const Freunde6 = () => {
         </ul>
       </div>
       <button id="Freunde21" onClick={handleSubmit}>
-        <Link to={`/Flipbook?friendProfileId=${friendProfileId}`}>Eintrag Speichern</Link>
+        Eintrag Speichern
       </button>
       <button id="Zurück21">
         <Link to={`/5-Freunde?friendProfileId=${friendProfileId}`}>5.Seite</Link>

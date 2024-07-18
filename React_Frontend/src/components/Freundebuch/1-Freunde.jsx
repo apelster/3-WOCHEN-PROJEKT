@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate, useLocation } from "react-router-dom";
 import "../Profil/Profil-Design.css";
 import "./Freunde-1.css";
-import { Link, useLocation } from "react-router-dom";
 
 const useQuery = () => {
   return new URLSearchParams(useLocation().search);
@@ -23,6 +23,7 @@ const Freunde1 = () => {
 
   const query = useQuery();
   const userProfileToken = query.get("token");
+  const navigate = useNavigate();
 
   const handleSubmitProfile = async () => {
     try {
@@ -37,11 +38,11 @@ const Freunde1 = () => {
           userProfileToken,
         },
         {
-          timeout: 10000, // 10 seconds timeout
+          timeout: 10000,
         }
       );
       alert("Friend profile saved successfully!");
-      setFriendProfileId(response.data.friendProfileId); // save friend's profile ID
+      setFriendProfileId(response.data.friendProfileId);
     } catch (error) {
       console.error("There was an error saving the friend's profile!", error);
     }
@@ -65,11 +66,11 @@ const Freunde1 = () => {
           friendProfileId,
         },
         {
-          timeout: 10000, // 10 seconds timeout
+          timeout: 10000,
         }
       );
-      alert(response.data);
-      <Link to="/2-Freunde">2.Seite</Link>
+      alert("Answers saved successfully!");
+      navigate(`/2-Freunde?friendProfileId=${friendProfileId}`);
     } catch (error) {
       console.error("There was an error saving the answers!", error);
     }
@@ -158,9 +159,12 @@ const Freunde1 = () => {
         </ul>
       </div>
 
+      <button id="saveProfile" onClick={handleSubmitProfile}>
+        Profil Speichern
+      </button>
+
       <button id="Freunde11" onClick={handleSubmitAnswers}>
         2.Seite
-
       </button>
     </main>
   );

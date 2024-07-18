@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-5.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Freunde5 = () => {
@@ -9,6 +9,7 @@ const Freunde5 = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const friendProfileId = searchParams.get("friendProfileId");
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setAnswers({
@@ -24,6 +25,7 @@ const Freunde5 = () => {
         answers: [answers.Answer16, answers.Answer17, answers.Answer18, answers.Answer19, answers.Answer20],
       });
       alert("Answers saved successfully");
+      navigate(`/6-Freunde?friendProfileId=${friendProfileId}`);
     } catch (error) {
       console.error("There was an error saving the answers!", error);
     }
@@ -47,7 +49,7 @@ const Freunde5 = () => {
           <li id="liste19">
             <label htmlFor="question2">
               <p id="paragraph47">
-                Wenn du ein Haus aus Süßigkeiten bauen könntest,welche
+                Wenn du ein Haus aus Süßigkeiten bauen könntest, welche
                 Süßigkeit wäre die Hauptzutat?
               </p>
               <input id="input47" type="text" name="Answer17" onChange={handleChange} />
@@ -82,7 +84,7 @@ const Freunde5 = () => {
         </ul>
       </div>
       <button id="Freunde19" onClick={handleSubmit}>
-        <Link to={`/6-Freunde?friendProfileId=${friendProfileId}`}>6.Seite</Link>
+        6.Seite
       </button>
       <button id="Zurück19">
         <Link to={`/4-Freunde?friendProfileId=${friendProfileId}`}>4.Seite</Link>
