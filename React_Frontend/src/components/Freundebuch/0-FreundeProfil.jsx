@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useHistory, useLocation } from "react-router-dom";
 import "../Profil/Profil-Design.css";
-import { Link, useLocation } from "react-router-dom";
 
-const Profil1 = () => {
+const Freunde = () => {
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
   const [phone, setPhone] = useState("");
   const [birthday, setBirthday] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
-  const [profileToken, setProfileToken] = useState("");
+  const [userProfileToken, setUserProfileToken] = useState("");
+  const history = useHistory();
+  const location = useLocation();
+
+  useEffect(() => {
+    const query = new URLSearchParams(location.search);
+    const token = query.get('token');
+    setUserProfileToken(token);
+  }, [location.search]);
 
   const handleSubmit = async () => {
     try {
@@ -22,15 +30,16 @@ const Profil1 = () => {
           phone,
           birthday,
           description,
+          userProfileToken
         },
         {
           timeout: 10000,
         }
       );
-      alert('Profil erfolgreich gespeichert!');
-      setProfileToken(response.data.profileToken);
+      alert('Freundesprofil erfolgreich gespeichert!');
+      history.push('/1-Freunde'); // Redirect to /1-Freunde after saving
     } catch (error) {
-      console.error("Fehler beim Speichern des Profils!", error);
+      console.error("Fehler beim Speichern des Freundesprofils!", error);
     }
   };
 
@@ -132,19 +141,12 @@ const Profil1 = () => {
         ></textarea>
 
         <button id="savingdescription" onClick={handleSubmit}>
-          <Link to="/1-Freunde">Speichern</Link>
+          Speichern
         </button>
-
-        {profileToken && (
-          <div>
-            <p>Teilen Sie diesen Link mit Ihren Freunden:</p>
-            <p>{window.location.origin}/friend-profile?token={profileToken}</p>
-          </div>
-        )}
       </div>
       <img id="federProfil" src="/img/feder.png" alt="feder" />
     </div>
   );
 };
 
-export default Profil1;
+export default Freunde;

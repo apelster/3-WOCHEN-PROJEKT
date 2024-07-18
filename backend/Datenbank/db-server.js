@@ -45,7 +45,7 @@ app.post('/saveProfile', (req, res) => {
 });
 
 // Route zum Speichern des Freundesprofils
-app.post('/saveFreundeProfile', (req, res) => {
+app.post('/saveFriendProfile', (req, res) => {
   const { name, city, phone, birthday, description, userProfileToken } = req.body;
 
   const getUserProfileQuery = 'SELECT id FROM profiles WHERE profile_token = ?';
