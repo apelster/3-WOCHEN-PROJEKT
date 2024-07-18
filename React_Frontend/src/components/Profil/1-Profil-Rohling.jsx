@@ -31,7 +31,7 @@ const Profil1 = () => {
       );
       alert('Profil erfolgreich gespeichert!');
       setProfileToken(response.data.profileToken);
-      navigate(`/0-FreundeProfil?token=${response.data.profileToken}`); // Redirect to /0-Freunde with the token
+      navigate(`/0-Freunde?token=${response.data.profileToken}`); // Redirect to /0-Freunde with the token
     } catch (error) {
       console.error("Fehler beim Speichern des Profils!", error);
     }
