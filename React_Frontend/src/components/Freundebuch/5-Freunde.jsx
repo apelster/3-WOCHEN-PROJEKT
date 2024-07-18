@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-5.css";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 const Freunde5 = () => {
