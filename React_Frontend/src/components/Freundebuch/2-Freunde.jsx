@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-2.css";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Freunde2 = () => {
@@ -18,14 +18,14 @@ const Freunde2 = () => {
     });
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (nextPage) => {
     try {
       await axios.post("http://3.70.29.185:3001/saveAnswers", {
         friendProfileId,
         answers: [answers.Answer1, answers.Answer2, answers.Answer3, answers.Answer4, answers.Answer5],
       });
       alert("Answers saved successfully");
-      navigate(`/3-Freunde?friendProfileId=${friendProfileId}`);
+      navigate(nextPage);
     } catch (error) {
       console.error("There was an error saving the answers!", error);
     }
@@ -84,7 +84,7 @@ const Freunde2 = () => {
           </li>
         </ul>
       </div>
-      <button id="Freunde13" onClick={handleSubmit}>
+      <button id="Freunde13" onClick={() => handleSubmit(`/3-Freunde?friendProfileId=${friendProfileId}`)}>
         3.Seite
       </button>
       <button id="Zurück13">

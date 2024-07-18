@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom"; // Import useNavigate and useLocation
 import "../Profil/Profil-Design.css";
 import "./Freunde-1.css";
 
@@ -43,13 +43,19 @@ const Freunde1 = () => {
       );
       alert("Friend profile saved successfully!");
       setFriendProfileId(response.data.friendProfileId);
+      return response.data.friendProfileId;
     } catch (error) {
       console.error("There was an error saving the friend's profile!", error);
     }
   };
 
-  const handleSubmitAnswers = async () => {
-    if (!friendProfileId) {
+  const handleSubmitAnswers = async (nextPage) => {
+    let profileId = friendProfileId;
+    if (!profileId) {
+      profileId = await handleSubmitProfile();
+    }
+
+    if (!profileId) {
       alert("Please save the profile first!");
       return;
     }
@@ -63,14 +69,14 @@ const Freunde1 = () => {
           question3,
           question4,
           question5,
-          friendProfileId,
+          friendProfileId: profileId,
         },
         {
           timeout: 10000,
         }
       );
       alert("Answers saved successfully!");
-      navigate(`/2-Freunde?friendProfileId=${friendProfileId}`);
+      navigate(nextPage);
     } catch (error) {
       console.error("There was an error saving the answers!", error);
     }
@@ -159,11 +165,7 @@ const Freunde1 = () => {
         </ul>
       </div>
 
-      <button id="saveProfile" onClick={handleSubmitProfile}>
-        Profil Speichern
-      </button>
-
-      <button id="Freunde11" onClick={handleSubmitAnswers}>
+      <button id="Freunde11" onClick={() => handleSubmitAnswers(`/2-Freunde?friendProfileId=${friendProfileId}`)}>
         2.Seite
       </button>
     </main>

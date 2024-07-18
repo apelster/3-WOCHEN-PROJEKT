@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Profil/Profil-Design.css";
 import "./Freunde-5.css";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Freunde5 = () => {
@@ -18,14 +18,14 @@ const Freunde5 = () => {
     });
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (nextPage) => {
     try {
       await axios.post("http://3.70.29.185:3001/saveAnswers", {
         friendProfileId,
         answers: [answers.Answer16, answers.Answer17, answers.Answer18, answers.Answer19, answers.Answer20],
       });
       alert("Answers saved successfully");
-      navigate(`/6-Freunde?friendProfileId=${friendProfileId}`);
+      navigate(nextPage);
     } catch (error) {
       console.error("There was an error saving the answers!", error);
     }
@@ -49,7 +49,7 @@ const Freunde5 = () => {
           <li id="liste19">
             <label htmlFor="question2">
               <p id="paragraph47">
-                Wenn du ein Haus aus Süßigkeiten bauen könntest, welche
+                Wenn du ein Haus aus Süßigkeiten bauen könntest,welche
                 Süßigkeit wäre die Hauptzutat?
               </p>
               <input id="input47" type="text" name="Answer17" onChange={handleChange} />
@@ -83,7 +83,7 @@ const Freunde5 = () => {
           </li>
         </ul>
       </div>
-      <button id="Freunde19" onClick={handleSubmit}>
+      <button id="Freunde19" onClick={() => handleSubmit(`/6-Freunde?friendProfileId=${friendProfileId}`)}>
         6.Seite
       </button>
       <button id="Zurück19">
