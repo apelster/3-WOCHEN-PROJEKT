@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useHistory, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom"; // Import useNavigate and useLocation
 import "../Profil/Profil-Design.css";
 
 const Freunde = () => {
@@ -11,8 +11,8 @@ const Freunde = () => {
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
   const [userProfileToken, setUserProfileToken] = useState("");
-  const history = useHistory();
-  const location = useLocation();
+  const navigate = useNavigate(); // Use useNavigate for navigation
+  const location = useLocation(); // Use useLocation to get the query parameters
 
   useEffect(() => {
     const query = new URLSearchParams(location.search);
@@ -37,7 +37,7 @@ const Freunde = () => {
         }
       );
       alert('Freundesprofil erfolgreich gespeichert!');
-      history.push('/1-Freunde'); // Redirect to /1-Freunde after saving
+      navigate('/1-Freunde'); // Redirect to /1-Freunde after saving
     } catch (error) {
       console.error("Fehler beim Speichern des Freundesprofils!", error);
     }
