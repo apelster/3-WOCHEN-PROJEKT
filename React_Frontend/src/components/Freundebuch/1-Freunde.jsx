@@ -124,12 +124,8 @@ const Freunde1 = () => {
         </ul>
       </div>
 
-      <button id="savingAnswers" onClick={handleSubmit}>
-        Speichern
-      </button>
-
-      <button id="Freunde11">
-        <Link to="/2-Freunde">2.Seite</Link>
+      <button id="Freunde11" onClick={handleSubmit}>
+      <Link to="/2-Freunde">2.Seite</Link>
       </button>
     </main>
   );
