@@ -139,7 +139,6 @@ app.get('/getProfileWithFriends/:profileToken', (req, res) => {
   });
 });
 
-// Route zum Abrufen aller Antworten für ein Freundeprofil
 app.get('/getAllAnswers/:friendProfileId', (req, res) => {
   const friendProfileId = req.params.friendProfileId;
 
@@ -150,6 +149,11 @@ app.get('/getAllAnswers/:friendProfileId', (req, res) => {
     if (err) {
       console.error('Fehler beim Abrufen des Freundesprofils: ' + (err.message || err));
       res.status(500).send('Fehler beim Abrufen des Freundesprofils');
+      return;
+    }
+
+    if (friendProfileResults.length === 0) {
+      res.status(404).send('Freundesprofil nicht gefunden');
       return;
     }
 
@@ -164,6 +168,7 @@ app.get('/getAllAnswers/:friendProfileId', (req, res) => {
     });
   });
 });
+
 
 // Server starten
 app.listen(port, () => {

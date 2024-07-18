@@ -6,6 +6,8 @@ import "./FlipBook.css";
 
 const Flipbook = () => {
   const [data, setData] = useState({ friendProfile: {}, answers: [] });
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const friendProfileId = searchParams.get("friendProfileId");
@@ -14,14 +16,30 @@ const Flipbook = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(`http://3.70.29.185:3001/getAllAnswers/${friendProfileId}`);
+        console.log("API Response:", response.data);
         setData(response.data);
       } catch (error) {
         console.error("Fehler beim Abrufen der Einträge!", error);
+        setError("Fehler beim Abrufen der Einträge!");
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchData();
   }, [friendProfileId]);
+
+  if (loading) {
+    return <div>Laden...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
+
+  if (!data.friendProfile) {
+    return <div>Freundesprofil nicht gefunden!</div>;
+  }
 
   return (
     <main>
