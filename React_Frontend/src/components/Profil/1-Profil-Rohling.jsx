@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "../Profil/Profil-Design.css";
 
 const Profil1 = () => {
@@ -12,7 +12,7 @@ const Profil1 = () => {
   const [image, setImage] = useState("");
   const [profileToken, setProfileToken] = useState("");
 
-  const history = useHistory(); // Use the useHistory hook for navigation
+  const navigate = useNavigate(); // Use useNavigate for navigation
 
   const handleSubmit = async () => {
     try {
@@ -31,7 +31,7 @@ const Profil1 = () => {
       );
       alert('Profil erfolgreich gespeichert!');
       setProfileToken(response.data.profileToken);
-      history.push(`/0-Freunde?token=${response.data.profileToken}`); // Redirect to /0-Freunde with the token
+      navigate(`/0-Freunde?token=${response.data.profileToken}`); // Redirect to /0-Freunde with the token
     } catch (error) {
       console.error("Fehler beim Speichern des Profils!", error);
     }
