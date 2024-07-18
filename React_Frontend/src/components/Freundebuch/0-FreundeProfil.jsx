@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "../Profil/Profil-Design.css";
+import { Link, useLocation } from "react-router-dom";
+
 
 const Profil1 = () => {
   const [name, setName] = useState("");
@@ -131,8 +133,11 @@ const Profil1 = () => {
         ></textarea>
 
         <button id="savingdescription" onClick={handleSubmit}>
-          Speichern
+          <Link to="/1-Freunde">Speichern</Link>
         </button>
+
+
+
         {profileToken && (
           <div>
             <p>Share this link with your friends:</p>

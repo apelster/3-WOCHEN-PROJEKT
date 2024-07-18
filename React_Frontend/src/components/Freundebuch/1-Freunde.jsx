@@ -159,7 +159,7 @@ const Freunde1 = () => {
       </div>
 
       <button id="Freunde11" onClick={handleSubmitAnswers}>
-        Antworten speichern
+        2.Seite
 
       </button>
     </main>
