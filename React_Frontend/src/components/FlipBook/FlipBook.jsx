@@ -82,7 +82,7 @@ function DemoBook() {
     <>
       <HTMLFlipBook
         width={400}
-        height={500}
+        height={100}
         size="stretch"
         drawShadow={false}
         flippingTime={1000}
@@ -100,7 +100,7 @@ function DemoBook() {
         className="flipbook"
       >
         <Page>
-          <h1>Profil Informationen</h1>
+          <h1 id='Profinf'>Profil Informationen</h1>
           <p>Name: {name}</p>
           <p>Stadt: {city}</p>
           <p>Telefon: {phone}</p>

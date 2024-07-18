@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   left: 5%;
-  transform: translate(0%, 10%) scale(0.7);
+  transform: translate(0%, -10%) scale(0.55);
 }
 
 .demoPage {
@@ -12,12 +12,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 25px;
+  text-align: left;
   background-color: black;
   border: 5px solid blue;
   /* Responsive Anpassung */
   padding: 20px;
   box-sizing: border-box;
+  top: 20%;
+}
+
+
+#Profinf{
+  padding-left: 180px;
 }
 
 #ZurückFlipBook {
