@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 import "../Profil/Profil-Design.css";
 
 const Profil1 = () => {
@@ -8,8 +9,10 @@ const Profil1 = () => {
   const [phone, setPhone] = useState("");
   const [birthday, setBirthday] = useState("");
   const [description, setDescription] = useState("");
-  const [image, setImage] = useState(""); // new state to store image URL
-  const [profileToken, setProfileToken] = useState(""); // state to store profile token
+  const [image, setImage] = useState("");
+  const [profileToken, setProfileToken] = useState("");
+
+  const history = useHistory(); // Use the useHistory hook for navigation
 
   const handleSubmit = async () => {
     try {
@@ -23,13 +26,14 @@ const Profil1 = () => {
           description,
         },
         {
-          timeout: 10000, // 10 seconds timeout
+          timeout: 10000,
         }
       );
-      alert('Profile saved successfully!');
-      setProfileToken(response.data.profileToken); // save profile token
+      alert('Profil erfolgreich gespeichert!');
+      setProfileToken(response.data.profileToken);
+      history.push(`/0-Freunde?token=${response.data.profileToken}`); // Redirect to /0-Freunde with the token
     } catch (error) {
-      console.error("There was an error saving the profile!", error);
+      console.error("Fehler beim Speichern des Profils!", error);
     }
   };
 
@@ -37,7 +41,7 @@ const Profil1 = () => {
     const file = e.target.files[0];
     const reader = new FileReader();
     reader.onload = () => {
-      setImage(reader.result); // update image state with the URL
+      setImage(reader.result);
     };
     reader.readAsDataURL(file);
   };
@@ -133,12 +137,6 @@ const Profil1 = () => {
         <button id="savingdescription" onClick={handleSubmit}>
           Speichern
         </button>
-        {profileToken && (
-          <div>
-            <p>Share this link with your friends:</p>
-            <p>{window.location.origin}/friend-profile?token={profileToken}</p>
-          </div>
-        )}
       </div>
       <img id="federProfil" src="/img/feder.png" alt="feder" />
     </div>
