@@ -69,6 +69,7 @@ const Freunde1 = () => {
         }
       );
       alert(response.data);
+      <Link to="/2-Freunde">2.Seite</Link>
     } catch (error) {
       console.error("There was an error saving the answers!", error);
     }
@@ -157,12 +158,9 @@ const Freunde1 = () => {
         </ul>
       </div>
 
-      <button id="Freunde11" onClick={handleSubmitProfile}>
-        <Link to="/2-Freunde">2.Seite</Link>
-      </button>
-
       <button id="Freunde11" onClick={handleSubmitAnswers}>
         Antworten speichern
+
       </button>
     </main>
   );
