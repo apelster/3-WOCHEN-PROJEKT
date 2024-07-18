@@ -136,7 +136,7 @@ const Profil1 = () => {
         {profileToken && (
           <div>
             <p>Share this link with your friends:</p>
-            <p>{window.location.origin}/friend-profile?token={profileToken}</p>
+            <p>{window.location.origin}/0-FreundeProfil?token={profileToken}</p>
           </div>
         )}
       </div>
