@@ -92,11 +92,12 @@ Willkommen bei unserer Anwendung! Diese Anleitung hilft Ihnen dabei, die grundle
 
 
 ## So funktioniert's
-1. **Starten Sie die Anwendung**: Öffnen Sie die Webanwendung in Ihrem Browser mit diesem [Link]( http://3.70.29.185:3000/):
-2. **Freunde ansehen**: Nutzen Sie die Navigationsknöpfe, um durch die Freundesliste zu blättern.
-3. **Profil ansehen**: Klicken Sie auf ein Freundesbild, um das Profil des Freundes anzuzeigen.
+1. **Starten Sie die Anwendung**: Öffnen Sie die Webanwendung in Ihrem Browser mit diesem [Link]( http://3.70.29.185:3000/)
+2. **Registriere dich**: Klicke auf den Registrierungsknopf und Registriere dich.
+3. **Gebe den 6stelligen Code ein**: Gebe jetzt den 6stelligen Code ein, den wir an deine E-Mail verschickt haben.
+4. **Logge dich ein**: Gebe deinen Benutzernamen und dein Passwort ein. 
 
-![Bildschirmfoto der Freundesliste](https://via.placeholder.com/800x400)
+![Homeseite](https://github.com/Projekt-3-Tage/3-WOCHEN-PROJEKT/blob/755f03e61d9a5e5ec9a82ee8a112bab36f365dec/React_Frontend/public/img/Homeseite.png)
 
 ## Häufige Fragen
 **Wie kann ich meine Freunde hinzufügen?**
