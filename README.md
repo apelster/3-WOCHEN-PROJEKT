@@ -1,6 +1,6 @@
 # 3-WOCHEN-PROJEKT
 
-![Project Logo](https://via.placeholder.com/150)
+![Project Logo](https://..com/)
 
 ## Einleitung
 Dieses Projekt ist eine Webanwendung, die eine Freundesliste mit einem interaktiven Buchdesign darstellt. Es ermöglicht Benutzern, durch eine Liste von Freunden zu blättern und deren Profile anzusehen. Die Anwendung ist responsiv gestaltet und passt sich verschiedenen Bildschirmgrößen an.
@@ -27,15 +27,18 @@ Diese Anleitung richtet sich an Entwickler, die das Projekt installieren, konfig
 3. **Abhängigkeiten installieren**:
    ```bash
    cd React_Frontend
-   npm install.
-   
-   cd und mache ein npm install.
-   
    ```
+   ```bash
+   npm install
+   ``` 
 4. **Anwendung starten**:
    ```bash
    npm start
    ```
+   ```bash
+   node server.js
+   ```
+
 
 
 <!-- DAS IST BACKEND ARBEIT FÜR STEFAN UND CHRISTOPHER -->
@@ -52,12 +55,11 @@ Diese Anleitung richtet sich an Entwickler, die das Projekt installieren, konfig
    ```
 4. **Sicherstellen, dass der Port 80 (HTTP) offen ist**.
 
+____
+
 #### Allgemeines Hosting
 - Das Projekt kann auf jedem Server gehostet werden, der Node.js unterstützt.
 - Für die Konfiguration und den Start sind die gleichen Schritte wie bei der lokalen Installation zu befolgen.
-
-## Optische Gestaltung
-![Screenshot der Anwendung](https://via.placeholder.com/800x400)
 
 
 ### Techstack
