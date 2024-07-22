@@ -85,12 +85,14 @@ Die Anwenderdokumentation finden Sie [hier](tutorial.md).
 ## Einleitung
 Willkommen bei unserer Anwendung! Diese Anleitung hilft Ihnen dabei, die grundlegenden Funktionen unserer Freundesliste zu verstehen und zu nutzen.
 
+
 ## Funktionen
 - **Freundesliste anzeigen**: Blättern Sie durch Ihre Freunde und sehen Sie sich deren Profile an.
 - **Responsives Design**: Die Anwendung passt sich automatisch an verschiedene Bildschirmgrößen an.
 
+
 ## So funktioniert's
-1. **Starten Sie die Anwendung**: Öffnen Sie die Webanwendung in Ihrem Browser.
+1. **Starten Sie die Anwendung**: Öffnen Sie die Webanwendung in Ihrem Browser mit diesem [Link]( http://3.70.29.185:3000/):
 2. **Freunde ansehen**: Nutzen Sie die Navigationsknöpfe, um durch die Freundesliste zu blättern.
 3. **Profil ansehen**: Klicken Sie auf ein Freundesbild, um das Profil des Freundes anzuzeigen.
 
