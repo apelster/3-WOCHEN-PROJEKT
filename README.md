@@ -1,98 +1,118 @@
-**Dieses Projekt ist eine Webanwendung, die ein Freundebuch mit einem interaktiven Buchdesign darstellt. 
-Es ermöglicht Benutzern, durch eine Liste von Freunden zu blättern und deren Profile anzusehen. 
-Die Anwendung ist responsiv gestaltet und passt sich verschiedenen Bildschirmgrößen an.**
-<br>
-<br>
-_____
-# Diese Anleitung richtet sich an Entwickler, die das Projekt installieren, konfigurieren und betreiben möchten.
+## README.md
 
-_____
-# Deployment Anleitung
-## Installation und Start
+# 3-WOCHEN-PROJEKT
 
-Lokale Installation
+![Project Logo](https://via.placeholder.com/150)
 
-Klone im Terminal das Repository: 
-**git clone https://github.com/Projekt-3-Tage/3-WOCHEN-PROJEKT.git**
+## Einleitung
+Dieses Projekt ist eine Webanwendung, die eine Freundesliste mit einem interaktiven Buchdesign darstellt. Es ermöglicht Benutzern, durch eine Liste von Freunden zu blättern und deren Profile anzusehen. Die Anwendung ist responsiv gestaltet und passt sich verschiedenen Bildschirmgrößen an.
 
-**In das Projektverzeichnis wechseln:**
-cd 3-WOCHEN-PROJEKT
+## Zielgruppe
+Diese Anleitung richtet sich an Entwickler, die das Projekt installieren, konfigurieren und betreiben möchten.
 
-Abhängigkeiten installieren:
-bash
-Copy code
-npm install
-Anwendung starten:
-bash
-Copy code
-npm start
-Hosting auf AWS
-AWS EC2 Instanz einrichten:
-Eine neue EC2 Instanz erstellen.
-Node.js und npm auf der Instanz installieren.
-Projekt auf die Instanz kopieren:
-Mit SCP oder einem anderen Tool das Projekt auf die Instanz hochladen.
-Abhängigkeiten installieren und Anwendung starten:
-bash
-Copy code
-npm install
-npm start
-Sicherstellen, dass der Port 80 (HTTP) offen ist.
-Allgemeines Hosting
-Das Projekt kann auf jedem Server gehostet werden, der Node.js unterstützt.
-Für die Konfiguration und den Start sind die gleichen Schritte wie bei der lokalen Installation zu befolgen.
-Optische Gestaltung
+## Deployment Anleitung
 
-Techstack
-Frontend: React
-Backend: Node.js
-Styling: CSS
-Lizenzierung und Copyright
-Dieses Projekt steht unter der MIT-Lizenz. Weitere Informationen finden Sie in der LICENSE Datei.
+### Installation und Start
 
-User-Dokumentation
-Die Anwenderdokumentation finden Sie hier.
+#### Lokale Installation
+1. **Repository klonen**:
+   ```bash
+   git clone https://github.com/Projekt-3-Tage/3-WOCHEN-PROJEKT.git
+   ```
+2. **In das Projektverzeichnis wechseln**:
+   ```bash
+   cd 3-WOCHEN-PROJEKT
+   ```
+3. **Abhängigkeiten installieren**:
+   ```bash
+   npm install
+   ```
+4. **Anwendung starten**:
+   ```bash
+   npm start
+   ```
 
-User-Dokumentation (tutorial.md)
-Anleitung für Endnutzer
-Einleitung
+#### Hosting auf AWS
+1. **AWS EC2 Instanz einrichten**:
+   - Eine neue EC2 Instanz erstellen.
+   - Node.js und npm auf der Instanz installieren.
+2. **Projekt auf die Instanz kopieren**:
+   - Mit SCP oder einem anderen Tool das Projekt auf die Instanz hochladen.
+3. **Abhängigkeiten installieren und Anwendung starten**:
+   ```bash
+   npm install
+   npm start
+   ```
+4. **Sicherstellen, dass der Port 80 (HTTP) offen ist**.
+
+#### Allgemeines Hosting
+- Das Projekt kann auf jedem Server gehostet werden, der Node.js unterstützt.
+- Für die Konfiguration und den Start sind die gleichen Schritte wie bei der lokalen Installation zu befolgen.
+
+## Optische Gestaltung
+![Screenshot der Anwendung](https://via.placeholder.com/800x400)
+
+### Techstack
+- **Frontend**: React
+- **Backend**: Node.js
+- **Styling**: CSS
+
+## Lizenzierung und Copyright
+Dieses Projekt steht unter der MIT-Lizenz. Weitere Informationen finden Sie in der [LICENSE](LICENSE) Datei.
+
+## User-Dokumentation
+Die Anwenderdokumentation finden Sie [hier](tutorial.md).
+
+---
+
+## User-Dokumentation (tutorial.md)
+
+# Anleitung für Endnutzer
+
+## Einleitung
 Willkommen bei unserer Anwendung! Diese Anleitung hilft Ihnen dabei, die grundlegenden Funktionen unserer Freundesliste zu verstehen und zu nutzen.
 
-Funktionen
-Freundesliste anzeigen: Blättern Sie durch Ihre Freunde und sehen Sie sich deren Profile an.
-Responsives Design: Die Anwendung passt sich automatisch an verschiedene Bildschirmgrößen an.
-So funktioniert's
-Starten Sie die Anwendung: Öffnen Sie die Webanwendung in Ihrem Browser.
-Freunde ansehen: Nutzen Sie die Navigationsknöpfe, um durch die Freundesliste zu blättern.
-Profil ansehen: Klicken Sie auf ein Freundesbild, um das Profil des Freundes anzuzeigen.
+## Funktionen
+- **Freundesliste anzeigen**: Blättern Sie durch Ihre Freunde und sehen Sie sich deren Profile an.
+- **Responsives Design**: Die Anwendung passt sich automatisch an verschiedene Bildschirmgrößen an.
 
-Häufige Fragen
-Wie kann ich meine Freunde hinzufügen?
+## So funktioniert's
+1. **Starten Sie die Anwendung**: Öffnen Sie die Webanwendung in Ihrem Browser.
+2. **Freunde ansehen**: Nutzen Sie die Navigationsknöpfe, um durch die Freundesliste zu blättern.
+3. **Profil ansehen**: Klicken Sie auf ein Freundesbild, um das Profil des Freundes anzuzeigen.
 
-Aktuell werden die Freunde statisch in der Anwendung geladen. Für dynamisches Hinzufügen von Freunden ist eine zukünftige Version geplant.
-Warum sehe ich keine Profilbilder?
+![Bildschirmfoto der Freundesliste](https://via.placeholder.com/800x400)
 
-Stellen Sie sicher, dass die Bilddateien im richtigen Verzeichnis gespeichert sind und die Pfade korrekt angegeben sind.
-Support
-Wenn Sie weitere Fragen haben, wenden Sie sich bitte an unseren Support.
+## Häufige Fragen
+**Wie kann ich meine Freunde hinzufügen?**
+- Aktuell werden die Freunde statisch in der Anwendung geladen. Für dynamisches Hinzufügen von Freunden ist eine zukünftige Version geplant.
 
-Planungs- und Erstellungsprozess
-Planen:
+**Warum sehe ich keine Profilbilder?**
+- Stellen Sie sicher, dass die Bilddateien im richtigen Verzeichnis gespeichert sind und die Pfade korrekt angegeben sind.
 
-Skizze der Dokumentationsstruktur
-Festlegung der Inhalte für README.md und tutorial.md
-Erstellen:
+## Support
+Wenn Sie weitere Fragen haben, wenden Sie sich bitte an unseren [Support](mailto:support@example.com).
 
-Schreiben und Formatieren der README.md
-Verfassen und Verlinken der User-Dokumentation
-Entwickeln der Deployment-Anleitung
-Hinzufügen visueller Hilfsmittel (Diagramme, Screenshots)
-Überprüfen:
+---
 
-Überprüfung auf Verständlichkeit und Vollständigkeit
-Feedback einholen und Anpassungen vornehmen
-Veröffentlichen:
+### Planungs- und Erstellungsprozess
 
-Sicherstellen, dass alle Links funktionieren
-Platzieren der README.md im Hauptverzeichnis des Projekts
-Viel Erfolg mit Ihrem Projekt! Besuchen Sie unser GitHub Repository für den Quellcode und weitere Informationen.
+1. **Planen**:
+   - Skizze der Dokumentationsstruktur
+   - Festlegung der Inhalte für README.md und tutorial.md
+
+2. **Erstellen**:
+   - Schreiben und Formatieren der README.md
+   - Verfassen und Verlinken der User-Dokumentation
+   - Entwickeln der Deployment-Anleitung
+   - Hinzufügen visueller Hilfsmittel (Diagramme, Screenshots)
+
+3. **Überprüfen**:
+   - Überprüfung auf Verständlichkeit und Vollständigkeit
+   - Feedback einholen und Anpassungen vornehmen
+
+4. **Veröffentlichen**:
+   - Sicherstellen, dass alle Links funktionieren
+   - Platzieren der README.md im Hauptverzeichnis des Projekts
+
+Viel Erfolg mit Ihrem Projekt! Besuchen Sie unser [GitHub Repository](https://github.com/Projekt-3-Tage/3-WOCHEN-PROJEKT.git) für den Quellcode und weitere Informationen.
