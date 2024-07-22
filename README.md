@@ -70,7 +70,8 @@ ____
   
 
 ## Lizenzierung und Copyright
-Dieses Projekt steht unter der MIT-Lizenz. Weitere Informationen finden Sie in der [LICENSE](LICENSE) Datei.
+Zukunft geplant.
+
 
 ## User-Dokumentation
 Die Anwenderdokumentation finden Sie [hier](tutorial.md).
