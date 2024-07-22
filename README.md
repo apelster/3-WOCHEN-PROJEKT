@@ -1,23 +1,23 @@
-IHR MÜSST IN DEN     "src"  "component"     ORDNER
-3-WOCHEN-PROJEKT
+**Dieses Projekt ist eine Webanwendung, die ein Freundebuch mit einem interaktiven Buchdesign darstellt. 
+Es ermöglicht Benutzern, durch eine Liste von Freunden zu blättern und deren Profile anzusehen. 
+Die Anwendung ist responsiv gestaltet und passt sich verschiedenen Bildschirmgrößen an.**
+<br>
+<br>
+_____
+# Diese Anleitung richtet sich an Entwickler, die das Projekt installieren, konfigurieren und betreiben möchten.
 
-Einleitung
-Dieses Projekt ist eine Webanwendung, die eine Freundesliste mit einem interaktiven Buchdesign darstellt. Es ermöglicht Benutzern, durch eine Liste von Freunden zu blättern und deren Profile anzusehen. Die Anwendung ist responsiv gestaltet und passt sich verschiedenen Bildschirmgrößen an.
+_____
+# Deployment Anleitung
+## Installation und Start
 
-Zielgruppe
-Diese Anleitung richtet sich an Entwickler, die das Projekt installieren, konfigurieren und betreiben möchten.
-
-Deployment Anleitung
-Installation und Start
 Lokale Installation
-Repository klonen:
-bash
-Copy code
-git clone https://github.com/Projekt-3-Tage/3-WOCHEN-PROJEKT.git
-In das Projektverzeichnis wechseln:
-bash
-Copy code
+
+Klone im Terminal das Repository: 
+**git clone https://github.com/Projekt-3-Tage/3-WOCHEN-PROJEKT.git**
+
+**In das Projektverzeichnis wechseln:**
 cd 3-WOCHEN-PROJEKT
+
 Abhängigkeiten installieren:
 bash
 Copy code
