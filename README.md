@@ -1,5 +1,3 @@
-## README.md
-
 # 3-WOCHEN-PROJEKT
 
 ![Project Logo](https://via.placeholder.com/150)
