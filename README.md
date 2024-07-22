@@ -1,6 +1,6 @@
 # 3-WOCHEN-PROJEKT
 
-![Project Logo](https://github.com/Projekt-3-Tage/3-WOCHEN-PROJEKT/blob/f12f723c76229cbe0604e2e2ee974b97b2653a27/React_Frontend/public/img/logo.png)
+![Project Logo](https://github.com/Projekt-3-Tage/3-WOCHEN-PROJEKT/blob/ed7213daefbae702a0fe53b2d9558d4b737c489f/React_Frontend/public/img/faviconNew.jpg)
 
 ## Einleitung
 Dieses Projekt ist eine Webanwendung, die eine Freundesliste mit einem interaktiven Buchdesign darstellt. Es ermöglicht Benutzern, durch eine Liste von Freunden zu blättern und deren Profile anzusehen. Die Anwendung ist responsiv gestaltet und passt sich verschiedenen Bildschirmgrößen an.
