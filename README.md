@@ -74,7 +74,7 @@ Zukunft geplant.
 
 
 ## User-Dokumentation
-Die Anwenderdokumentation finden Sie [hier](tutorial.md).
+Die Anwenderdokumentation finden Sie [hier](https://github.com/Projekt-3-Tage/3-WOCHEN-PROJEKT/blob/f8806150b5583e87df476e7857c2dce3fb3206be/tutorial.md).
 
 ---
 
