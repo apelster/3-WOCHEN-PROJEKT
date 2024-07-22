@@ -10,28 +10,37 @@ Dieses Projekt ist eine Webanwendung, die eine Freundesliste mit einem interakti
 ## Zielgruppe
 Diese Anleitung richtet sich an Entwickler, die das Projekt installieren, konfigurieren und betreiben möchten.
 
-## Deployment Anleitung
 
-### Installation und Start
 
-#### Lokale Installation
+# Deployment Anleitung
+## Installation und Start
+### Lokale Installation
 1. **Repository klonen**:
-   ```bash
+   ```
+   Klone im Terminal das Github Repository: 
    git clone https://github.com/Projekt-3-Tage/3-WOCHEN-PROJEKT.git
    ```
+   
 2. **In das Projektverzeichnis wechseln**:
    ```bash
    cd 3-WOCHEN-PROJEKT
    ```
+   
 3. **Abhängigkeiten installieren**:
    ```bash
-   npm install
+   cd React_Frontend
+   npm install.
+   
+   cd und mache ein npm install.
+   
    ```
 4. **Anwendung starten**:
    ```bash
    npm start
    ```
 
+
+<!-- DAS IST BACKEND ARBEIT FÜR STEFAN UND CHRISTOPHER -->
 #### Hosting auf AWS
 1. **AWS EC2 Instanz einrichten**:
    - Eine neue EC2 Instanz erstellen.
@@ -52,10 +61,13 @@ Diese Anleitung richtet sich an Entwickler, die das Projekt installieren, konfig
 ## Optische Gestaltung
 ![Screenshot der Anwendung](https://via.placeholder.com/800x400)
 
+
 ### Techstack
 - **Frontend**: React
-- **Backend**: Node.js
 - **Styling**: CSS
+
+- **Backend**: Node.js
+  
 
 ## Lizenzierung und Copyright
 Dieses Projekt steht unter der MIT-Lizenz. Weitere Informationen finden Sie in der [LICENSE](LICENSE) Datei.
